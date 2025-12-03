@@ -1,0 +1,218 @@
+2025-12-03 06:33:55,353 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-03 06:33:55,354 - INFO - Use pytorch device_name: cpu
+2025-12-03 06:33:55,354 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-03 06:33:57,894 - INFO - AI Model loaded successfully.
+2025-12-03 06:33:57,894 - INFO - Initializing database connection at: news_articles.db
+2025-12-03 06:33:57,901 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-03 06:33:57,901 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-03 06:33:57,901 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-03 06:33:57,901 - INFO - Proxy is DISABLED.
+2025-12-03 06:33:57,902 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-03 06:33:57,904 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-03 06:33:57,904 - INFO - Initializing headless Selenium Chrome driver (using SeleniumManager)...
+2025-12-03 06:33:57,904 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-03 06:33:57,905 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-03 06:33:57,905 - INFO - Initializing headless Selenium Chrome driver (using SeleniumManager)...
+2025-12-03 06:33:57,905 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-03 06:33:57,986 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 20.
+2025-12-03 06:33:57,987 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2025/dec/02/trump-somali-immigrants-minnesota
+2025-12-03 06:33:57,987 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:33:58,010 - INFO - [The Guardian] Success with 'requests_browser'. Found content (473 words).
+2025-12-03 06:33:58,047 - INFO - Saved article: Trump calls Somali immigrants ‘garbage’ as US reportedly targets Minnesota community | Trump administration | The Guardian from The Guardian
+2025-12-03 06:33:58,059 - INFO - Found 38 articles in BBC RSS feed. Processing up to 20.
+2025-12-03 06:33:58,059 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cwyv0ex7v8ro?at_medium=RSS&at_campaign=rss
+2025-12-03 06:33:58,059 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:33:58,357 - INFO - [BBC] Success with 'requests_browser'. Found content (1025 words).
+2025-12-03 06:33:58,503 - INFO - Saved article: Kremlin signals no breakthrough after Ukraine talks with US from BBC
+2025-12-03 06:33:58,696 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/01/south-africans-court-alleged-recruitment-russia-war-ukraine
+2025-12-03 06:33:58,696 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:33:58,723 - INFO - [The Guardian] Success with 'requests_browser'. Found content (506 words).
+2025-12-03 06:33:58,909 - INFO - Saved article: Five South Africans in court over alleged recruitment for Russia’s war in Ukraine | South Africa | The Guardian from The Guardian
+2025-12-03 06:33:59,086 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cpq47derx2vo?at_medium=RSS&at_campaign=rss
+2025-12-03 06:33:59,086 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:33:59,999 - INFO - [BBC] Success with 'requests_browser'. Found content (991 words).
+2025-12-03 06:34:00,241 - INFO - Saved article: Ukrainians in war-ravaged Donbas weigh prospects of peace deal from BBC
+2025-12-03 06:34:00,310 - INFO - [The Guardian] Article: https://www.theguardian.com/global-development/2025/dec/01/global-health-hiv-aids-funding-cuts-infections-prevention
+2025-12-03 06:34:00,310 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:00,779 - INFO - [The Guardian] Success with 'requests_browser'. Found content (674 words).
+2025-12-03 06:34:01,041 - INFO - Saved article: Aid cuts have shaken HIV/Aids care to its core – and will mean millions more infections ahead | Global health | The Guardian from The Guardian
+2025-12-03 06:34:01,041 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c0r95q9kv1go?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:01,041 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:01,719 - INFO - [BBC] Success with 'requests_browser'. Found content (1075 words).
+2025-12-03 06:34:02,297 - INFO - Saved article: US authorised second deadly Venezuela boat strike, White House says from BBC
+2025-12-03 06:34:02,298 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/nov/30/african-leaders-push-for-recognition-of-colonial-crimes-and-reparations
+2025-12-03 06:34:02,298 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:02,511 - INFO - [The Guardian] Success with 'requests_browser'. Found content (670 words).
+2025-12-03 06:34:03,241 - INFO - Saved article: African leaders push for recognition of colonial crimes and reparations | Colonialism | The Guardian from The Guardian
+2025-12-03 06:34:03,319 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cedxyvx74p4o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:03,319 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:03,347 - INFO - [BBC] Success with 'requests_browser'. Found content (768 words).
+2025-12-03 06:34:03,786 - INFO - Saved article: Sanchar Saathi: India mandates state-owned cyber safety app on all smartphones from BBC
+2025-12-03 06:34:04,623 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/nov/28/jacob-zuma-daughter-resigns-claims-south-africans-tricked-fight-russia
+2025-12-03 06:34:04,624 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:04,646 - INFO - [The Guardian] Success with 'requests_browser'. Found content (753 words).
+2025-12-03 06:34:05,088 - INFO - Saved article: Jacob Zuma’s daughter resigns amid claims South Africans tricked to fight for Russia | South Africa | The Guardian from The Guardian
+2025-12-03 06:34:05,088 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cn41jge1990o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:05,088 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:05,682 - INFO - [BBC] Success with 'requests_browser'. Found content (595 words).
+2025-12-03 06:34:05,717 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/live/2025/dec/02/donald-trump-pete-hegseth-boat-venezuela-maduro-tennessee-us-politics-live-news-updates
+2025-12-03 06:34:05,717 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:06,055 - INFO - [The Guardian] Success with 'requests_browser'. Found content (4155 words).
+2025-12-03 06:34:06,466 - INFO - Saved article: Pope prays at site of Beirut port blast at end of Lebanon visit from BBC
+2025-12-03 06:34:06,861 - INFO - Selenium driver initialized successfully.
+2025-12-03 06:34:06,861 - INFO - Selenium driver initialized successfully.
+2025-12-03 06:34:06,861 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-03 06:34:06,861 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-03 06:34:06,969 - INFO - Saved article: Pete Hegseth says he ‘didn’t stick around’ to watch second strike on alleged drug boat as Democrats slam administration over attacks – as it happened | Trump administration | The Guardian from The Guardian
+2025-12-03 06:34:06,981 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 20.
+2025-12-03 06:34:06,981 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/why-did-twitch-suspend-rakai-again-irl-streamers-two-year-suspension-explained/articleshow/125734329.cms
+2025-12-03 06:34:06,981 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:34:07,030 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 20.
+2025-12-03 06:34:07,030 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/uttar-pradesh/cough-syrup-case-fourth-man-arrested-from-lucknow-for-illegal-storage-trade-of-banned-drug/article70352047.ece
+2025-12-03 06:34:07,030 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:34:07,497 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cg7v24m1leyo?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:07,498 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:07,534 - INFO - [BBC] Success with 'requests_browser'. Found content (236 words).
+2025-12-03 06:34:08,628 - INFO - Saved article: Rare Fabergé egg fetches record £22.9m at London auction from BBC
+2025-12-03 06:34:08,628 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/02/trump-intervention-honduras-presidential-vote-count-stalls-nasry-asfura
+2025-12-03 06:34:08,629 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:08,681 - INFO - [The Guardian] Success with 'requests_browser'. Found content (945 words).
+2025-12-03 06:34:11,195 - INFO - Saved article: Trump frees ex-Honduran president from prison as country awaits knife-edge election result | Honduras | The Guardian from The Guardian
+2025-12-03 06:34:11,195 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c0q5n3x0jn9o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:11,195 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:11,470 - INFO - [BBC] Success with 'requests_browser'. Found content (328 words).
+2025-12-03 06:34:13,151 - INFO - [The Hindu] Page content loaded.
+2025-12-03 06:34:13,384 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (231 words).
+2025-12-03 06:34:14,346 - INFO - Saved article: Thousands of rounds of German army ammunition stolen from lorry from BBC
+2025-12-03 06:34:14,346 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2025/dec/02/pete-hegseth-franklin-the-turtle
+2025-12-03 06:34:14,346 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:14,495 - INFO - [The Guardian] Success with 'requests_browser'. Found content (438 words).
+2025-12-03 06:34:17,456 - INFO - Saved article: Cough syrup case: Fourth man arrested from Lucknow for illegal storage, trade of banned drug - The Hindu from The Hindu
+2025-12-03 06:34:21,687 - INFO - Saved article: Publisher condemns ‘violent’ use of Franklin the Turtle after Hegseth’s boat strike post | Pete Hegseth | The Guardian from The Guardian
+2025-12-03 06:34:21,687 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c93n4nx5yqro?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:21,687 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:21,696 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/nagaland/cultural-performance-attract-thousands-of-tourists-at-hornbill-festival-in-nagaland/article70352270.ece
+2025-12-03 06:34:21,696 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:34:22,465 - INFO - [BBC] Success with 'requests_browser'. Found content (1032 words).
+2025-12-03 06:34:22,554 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2025/dec/02/monterrey-mexico-air-quality-industrial-pollution
+2025-12-03 06:34:22,554 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:22,893 - INFO - [The Guardian] Success with 'requests_browser'. Found content (3688 words).
+2025-12-03 06:34:27,022 - INFO - Saved article: Why is US President Trump threatening Venezuela's President Maduro? from BBC
+2025-12-03 06:34:30,399 - INFO - Saved article: Revealed: Mexico’s industrial boomtown is making goods for the US. Residents say they’re ‘breathing poison’ | Mexico | The Guardian from The Guardian
+2025-12-03 06:34:30,400 - INFO - [BBC] Article: https://www.bbc.com/news/articles/ce3wq2zznz1o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:30,400 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:31,164 - INFO - [BBC] Success with 'requests_browser'. Found content (740 words).
+2025-12-03 06:34:32,279 - INFO - Saved article: Guinea Bissau coup: Nigeria grants asylum to presidential candidate Fernando Dias from BBC
+2025-12-03 06:34:32,279 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/02/st-lucia-election-prime-minister-philip-pierre-wins
+2025-12-03 06:34:32,279 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:32,300 - INFO - [The Guardian] Success with 'requests_browser'. Found content (313 words).
+2025-12-03 06:34:33,259 - INFO - Saved article: St Lucia prime minister Philip Pierre keeps majority as ruling party wins | St Lucia | The Guardian from The Guardian
+2025-12-03 06:34:33,259 - INFO - [BBC] Article: https://www.bbc.com/news/articles/ce8ng18p7v3o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:33,259 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:33,688 - INFO - [BBC] Success with 'requests_browser'. Found content (582 words).
+2025-12-03 06:34:34,673 - INFO - Saved article: Hong Kong leader orders investigation into deadly fire that killed 151 from BBC
+2025-12-03 06:34:34,673 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/03/search-for-malaysia-airline-flight-mh370-to-resume-over-11-years-after-plane-went-missing
+2025-12-03 06:34:34,673 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:34,695 - INFO - [The Guardian] Success with 'requests_browser'. Found content (635 words).
+2025-12-03 06:34:35,905 - INFO - Saved article: Search for Malaysia Airlines flight MH370 to resume more than 11 years after plane went missing | Malaysia Airlines flight MH370 | The Guardian from The Guardian
+2025-12-03 06:34:35,906 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c33mz477p4po?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:35,906 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:36,129 - INFO - [BBC] Success with 'requests_browser'. Found content (882 words).
+2025-12-03 06:34:37,246 - INFO - Saved article: Luigi Mangione in court as lawyers seek to rule out notebook, gun and other key evidence from BBC
+2025-12-03 06:34:37,395 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/02/uk-government-delays-china-super-embassy-january
+2025-12-03 06:34:37,395 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:37,427 - INFO - [The Guardian] Success with 'requests_browser'. Found content (619 words).
+2025-12-03 06:34:38,564 - INFO - Saved article: UK government delays decision on China’s super-embassy until January | China | The Guardian from The Guardian
+2025-12-03 06:34:38,698 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cvgqnklqge7o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:38,698 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:39,073 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/03/uk-china-spying-case-collapse-security-committee-report
+2025-12-03 06:34:39,073 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:39,096 - INFO - [The Guardian] Success with 'requests_browser'. Found content (885 words).
+2025-12-03 06:34:39,489 - INFO - [BBC] Success with 'requests_browser'. Found content (445 words).
+2025-12-03 06:34:40,293 - INFO - Saved article: Handling of China spying case was ‘shambolic’, security committee concludes | Espionage | The Guardian from The Guardian
+2025-12-03 06:34:41,496 - INFO - Saved article: Zambian-American influencer Ethel Chisono Edwards sentenced to 18 months for hate speech from BBC
+2025-12-03 06:34:41,497 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/02/global-heating-and-other-human-activity-are-making-asias-floods-more-lethal
+2025-12-03 06:34:41,497 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:41,527 - INFO - [The Guardian] Success with 'requests_browser'. Found content (718 words).
+2025-12-03 06:34:42,796 - INFO - Saved article: Global heating and other human activity are making Asia’s floods more lethal | Extreme weather | The Guardian from The Guardian
+2025-12-03 06:34:42,891 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn41jge1990o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:34:43,072 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cjezwzw088jo?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:43,072 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:43,580 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/02/british-women-stranded-by-landslides-in-sri-lankan-mountains-running-out-of-food-and-water-daughter-says
+2025-12-03 06:34:43,580 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:43,601 - INFO - [The Guardian] Success with 'requests_browser'. Found content (643 words).
+2025-12-03 06:34:43,682 - INFO - [BBC] Success with 'requests_browser'. Found content (501 words).
+2025-12-03 06:34:45,073 - INFO - Saved article: British women stranded by landslides in Sri Lankan mountains running out of food and water, daughter says | Sri Lanka | The Guardian from The Guardian
+2025-12-03 06:34:46,514 - INFO - Saved article: Bulgaria ditches budget plan after tens of thousands join protests from BBC
+2025-12-03 06:34:46,517 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/live/2025/dec/03/australia-news-live-bruce-lehrmann-defamation-appeal-brittany-higgins-lisa-wilkinson-network-ten-senate-estimates-social-media-ban-esafety-commissioner-albanese-sussan-ley-labor-coalition-nsw-vic-qld-ntwnfb
+2025-12-03 06:34:46,517 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:46,884 - INFO - [The Guardian] Success with 'requests_browser'. Found content (2939 words).
+2025-12-03 06:34:48,363 - INFO - Saved article: Australia news live: Labor-led inquiry recommends FoI changes be passed as dissenting reports oppose ‘bad bill with no friends’ | Australia news | The Guardian from The Guardian
+2025-12-03 06:34:48,363 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cre3q9edqx8o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:48,363 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:48,386 - INFO - [BBC] Success with 'requests_browser'. Found content (415 words).
+2025-12-03 06:34:49,944 - INFO - Saved article: Pavarotti statue frozen knee-deep in ice rink strikes wrong note in Italy from BBC
+2025-12-03 06:34:49,944 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/03/australia-high-court-overturns-housing-policy-which-tripled-rent-in-some-remote-indigenous-communities
+2025-12-03 06:34:49,944 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:50,103 - INFO - [The Guardian] Success with 'requests_browser'. Found content (475 words).
+2025-12-03 06:34:51,564 - INFO - Saved article: High court overturns NT housing policy which tripled rent in some remote Indigenous communities | Indigenous Australians | The Guardian from The Guardian
+2025-12-03 06:34:51,564 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cewjg272dq9o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:51,564 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:51,589 - INFO - [BBC] Success with 'requests_browser'. Found content (582 words).
+2025-12-03 06:34:53,104 - INFO - Saved article: Alina Habba: Appeals court disqualifies ex-Trump lawyer as New Jersey prosecutor from BBC
+2025-12-03 06:34:53,104 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/02/australian-children-moving-to-new-social-app-lemon8-but-owner-expected-to-restrict-users-to-over-16s
+2025-12-03 06:34:53,104 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:53,709 - INFO - [The Guardian] Success with 'requests_browser'. Found content (951 words).
+2025-12-03 06:34:55,260 - INFO - Saved article: YouTube says it will comply with Australia’s under-16s social media ban, with Lemon8 to also restrict access | Social media ban | The Guardian from The Guardian
+2025-12-03 06:34:55,260 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c4g4enlp6kzo?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:55,260 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:55,289 - INFO - [BBC] Success with 'requests_browser'. Found content (908 words).
+2025-12-03 06:34:56,903 - INFO - Saved article: Indonesia floods death toll passes 600 from BBC
+2025-12-03 06:34:56,904 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/03/victoria-labor-allan-coercive-control-backflip-jess-wilson
+2025-12-03 06:34:56,904 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:57,074 - INFO - [The Guardian] Success with 'requests_browser'. Found content (530 words).
+2025-12-03 06:34:58,734 - INFO - Saved article: Victorian Labor to introduce stand-alone coercive control offence in backflip to match opposition policy | Victorian politics | The Guardian from The Guardian
+2025-12-03 06:34:58,734 - INFO - [BBC] Article: https://www.bbc.com/news/articles/ckg9204y4w5o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:34:58,734 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:34:58,771 - INFO - [BBC] Success with 'requests_browser'. Found content (682 words).
+2025-12-03 06:35:00,434 - INFO - Saved article: Anicet Ekane: Cameroon opposition firebrand dies in detention aged 74 from BBC
+2025-12-03 06:35:00,435 - INFO - [The Guardian] Article: https://www.theguardian.com/business/2025/dec/03/economy-crawls-back-into-growth-mode-thanks-to-data-centre-boom-and-household-spending-uptick
+2025-12-03 06:35:00,435 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:35:00,808 - INFO - [The Guardian] Success with 'requests_browser'. Found content (601 words).
+2025-12-03 06:35:02,722 - INFO - Saved article: Australian economy crawls back into growth mode thanks to datacentre boom and household spending uptick | Australian economy | The Guardian from The Guardian
+2025-12-03 06:35:02,723 - INFO - [BBC] Article: https://www.bbc.com/news/articles/czrk7g50e1po?at_medium=RSS&at_campaign=rss
+2025-12-03 06:35:02,723 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:35:02,756 - INFO - [BBC] Success with 'requests_browser'. Found content (1693 words).
+2025-12-03 06:35:04,520 - INFO - Saved article: WW1 toxic compound sprayed on Georgian protesters, BBC evidence suggests from BBC
+2025-12-03 06:35:05,115 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c058n10727po?at_medium=RSS&at_campaign=rss
+2025-12-03 06:35:05,116 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:35:05,142 - INFO - [BBC] Success with 'requests_browser'. Found content (610 words).
+2025-12-03 06:35:06,951 - INFO - Saved article: Cyclone Ditwah: Flood catastrophe awakens volunteerism in Sri Lanka from BBC
+2025-12-03 06:36:07,081 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us-streamers/why-did-twitch-suspend-rakai-again-irl-streamers-two-year-suspension-explained/articleshow/125734329.cms: HTTPConnectionPool(host='localhost', port=46445): Read timed out. (read timeout=120)
+2025-12-03 06:36:07,081 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us-streamers/why-did-twitch-suspend-rakai-again-irl-streamers-two-year-suspension-explained/articleshow/125734329.cms. Falling back to RSS description.
+2025-12-03 06:36:09,045 - INFO - Saved article: Why did Twitch suspend RaKai again? IRL streamer’s two-year suspension explained from Times of India
+2025-12-03 06:36:10,242 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/lacks-moral-characterindian-national-jailed-in-us-over-mediacare-fraud-siphoned-off-1-17-million/articleshow/125734035.cms
+2025-12-03 06:36:10,242 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:36:21,798 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/nagaland/cultural-performance-attract-thousands-of-tourists-at-hornbill-festival-in-nagaland/article70352270.ece: HTTPConnectionPool(host='localhost', port=50073): Read timed out. (read timeout=120)
+2025-12-03 06:36:21,798 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/nagaland/cultural-performance-attract-thousands-of-tourists-at-hornbill-festival-in-nagaland/article70352270.ece. Falling back to RSS description.
+2025-12-03 06:36:23,640 - INFO - Saved article: Cultural performance attract thousands of tourists at Hornbill Festival in Nagaland from The Hindu
+2025-12-03 06:36:24,554 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/rajasthan/soldier-dies-in-rajasthan-after-army-tank-sinks-in-indira-gandhi-canal/article70352196.ece
+2025-12-03 06:36:24,554 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:38:10,342 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/lacks-moral-characterindian-national-jailed-in-us-over-mediacare-fraud-siphoned-off-1-17-million/articleshow/125734035.cms: HTTPConnectionPool(host='localhost', port=46445): Read timed out. (read timeout=120)
+2025-12-03 06:38:10,342 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/lacks-moral-characterindian-national-jailed-in-us-over-mediacare-fraud-siphoned-off-1-17-million/articleshow/125734035.cms. Falling back to RSS description.
+2025-12-03 06:38:12,382 - INFO - Saved article: ‘Lacks moral character’:Indian national jailed in US over mediacare fraud; siphoned off $1.17 million from Times of India
+2025-12-03 06:38:13,369 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/i-will-be-naming-candace-owens-alleges-tpusa-leaders-betrayed-charlie-kirk-before-deadly-shooting-and-vows-to-show-evidence/articleshow/125728624.cms
+2025-12-03 06:38:13,369 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:38:24,606 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/rajasthan/soldier-dies-in-rajasthan-after-army-tank-sinks-in-indira-gandhi-canal/article70352196.ece: HTTPConnectionPool(host='localhost', port=50073): Read timed out. (read timeout=120)
+2025-12-03 06:38:24,606 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/rajasthan/soldier-dies-in-rajasthan-after-army-tank-sinks-in-indira-gandhi-canal/article70352196.ece. Falling back to RSS description.
+2025-12-03 06:38:26,573 - INFO - Saved article: Soldier dies in Rajasthan after Army tank sinks in Indira Gandhi canal from The Hindu
+2025-12-03 06:38:27,924 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/west-bengal/west-bengal-cm-mamata-banerjee-unveils-report-card-of-her-governments-performance-for-past-14-years/article70350010.ece
+2025-12-03 06:38:27,924 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:38:57,906 - CRITICAL - --- TIMEOUT: 2 scrape jobs did not complete in 300s. ---
+2025-12-03 06:38:57,906 - ERROR - A thread has timed out and will be abandoned.
+2025-12-03 06:38:57,906 - ERROR - A thread has timed out and will be abandoned.
+2025-12-03 06:38:57,906 - INFO - Shutting down thread pool (wait=False)...
+2025-12-03 06:38:57,906 - INFO - Scraped: 19 BBC, 20 The Guardian, 2 Timed_Out_Jobs articles. (Total saved: 39)
+2025-12-03 06:38:57,906 - INFO - --- Scraping job finished ---
+2025-12-03 06:38:57,906 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-03 06:38:57,906 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
