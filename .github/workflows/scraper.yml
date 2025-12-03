@@ -1,33 +1,41 @@
 name: Run News Scraper with logs
 
 on:
+  workflow_dispatch:
   # schedule:
-  # - cron: '*/30 * * * *'  # Example: Run every 30 minutes
-  workflow_dispatch:          # Manual trigger
+  # - cron: '*/30 * * * *'
 
-# Prevent multiple instances from running simultaneously
 concurrency:
   group: news-scraper
   cancel-in-progress: false
 
 jobs:
-  scrape_news:
+  # ====================================================================
+  # 1. SETUP JOB (Slow Phase - Runs only when dependencies change)
+  # ====================================================================
+  setup_and_cache:
     runs-on: ubuntu-latest
+    timeout-minutes: 5 # Short timeout, this should be fast once dependencies are cached.
+    
+    # We use a unique job name to cache the dependency setup environment.
+    # This job only needs to run if the code or requirements change.
+    outputs:
+      setup_cache_key: ${{ steps.install_deps.outputs.cache-primary-key }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           persist-credentials: false
-          fetch-depth: 0  # Fetch all history for proper git operations later
+          fetch-depth: 0
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          # CRITICAL: 'pip' cache is enabled by default here (using requirements.txt hash)
+          cache: 'pip' 
+          cache-key: ${{ runner.os }}-python-${{ hashFiles('**/requirements.txt') }}
 
-      # --- CACHE AI MODELS ---
-      # This step saves bandwidth by caching the large SentenceTransformer models.
       - name: Cache HuggingFace Models
         uses: actions/cache@v4
         with:
@@ -38,28 +46,56 @@ jobs:
 
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1
-        # Necessary for Selenium (Times of India, The Hindu)
-
+      
+      # Install dependencies and output the cache key
       - name: Install dependencies
+        id: install_deps
         run: |
           python -m pip install --upgrade pip
-          
-          # We use the standard pip install command now, relying on pip cache for speed.
-          
-          # Install CPU-only PyTorch (using specific index)
           pip install torch --index-url https://download.pytorch.org/whl/cpu
-          
-          # Install other required Python libraries
           pip install requests beautifulsoup4 trafilatura selenium sentence-transformers
+          
+          # This step explicitly defines the cache state after installation
+          echo "cache-primary-key=${{ runner.os }}-deps-$(date +%s)" >> $GITHUB_OUTPUT
+        
+  # ====================================================================
+  # 2. SCRAPE & COMMIT JOB (Fast Phase - Runs the core logic, relies on cached setup)
+  # This job is what you will re-run manually.
+  # ====================================================================
+  scrape_and_commit:
+    needs: setup_and_cache
+    runs-on: ubuntu-latest
+    timeout-minutes: 15 # Provides a safety net for the entire process
 
-      - name: Run scraper
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+          fetch-depth: 0
+
+      # Re-use the Python environment set up in the previous job's context
+      - name: Set up Python 3.10 (Restore dependencies)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          # Restore dependencies based on the cache key calculated in the previous job
+          cache: 'pip' 
+          cache-key: ${{ needs.setup_and_cache.outputs.setup_cache_key }}
+
+      - name: Restore HuggingFace Cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/huggingface
+          key: ${{ runner.os }}-huggingface-${{ hashFiles('**/requirements.txt') }}
+          
+      - name: Run scraper (Acquisition and Clustering)
+        run: |
+          # The Python environment is ready to go here!
+          python news_scraper_AI.py
         env:
           DISPLAY: :99
-          # Uncomment if you added the proxy secret
-          # PROXY_URL: ${{ secrets.PROXY_URL }}
-        run: |
-          # NOTE: Assuming the main script file is named 'news_scraper_AI.py'
-          python news_scraper_AI.py
 
       - name: Save logs with timestamp
         run: |
@@ -67,9 +103,8 @@ jobs:
           TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
           LOG_FILE="logs/scraper_${TIMESTAMP}_run${{ github.run_number }}.log"
           
-          # The script saves to news_scraper.log. We copy it to the logs/ folder.
           if [ -f news_scraper.log ]; then
-            cp news_scraper.log "$LOG_FILE"
+            mv news_scraper.log "$LOG_FILE"
             echo "Log saved as $LOG_FILE"
           else
             echo "No log file found to save"
@@ -79,32 +114,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_REF: ${{ github.ref }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
 
-          # Stage changes (db and logs)
           git add news_articles.db logs/
 
-          # Only proceed if there are changes
           if ! git diff --staged --quiet; then
             echo "Changes detected, committing..."
             git commit -m "Update database and logs [skip ci]"
             
-            # Pull latest changes with rebase strategy
             echo "Pulling latest changes from remote..."
             git pull --rebase origin main || {
               echo "Rebase conflict detected, resolving by keeping 'ours' for database/logs..."
-              
               git checkout --ours news_articles.db logs/
               git add news_articles.db logs/
-              
               git rebase --continue
             }
             
-            # Push changes with retry logic
             echo "Pushing changes..."
             MAX_RETRIES=3
             RETRY_COUNT=0
