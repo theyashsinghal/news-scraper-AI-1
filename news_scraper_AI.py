@@ -4,9 +4,7 @@
 # How many articles to get from each source (e.g., 20)
 MAX_ARTICLES_PER_SOURCE = 20
 #
-# --- CONCURRENCY SETTING (REDUCED FOR STABILITY) ---
-# How many articles from a single source should be fetched simultaneously.
-MAX_CONCURRENT_ARTICLES_PER_SOURCE = 2
+# NOTE: Article concurrency setting removed. Articles are processed sequentially.
 #
 # --- PROXY CONFIGURATION ---
 PROXY_SETTINGS = {
@@ -211,13 +209,14 @@ conn.commit()
 # ---------------------------------------------------------------
 
 # ==============================================================================
-# --- NEW: DECOUPLED CLUSTERING LOGIC (Run Single-Threaded at End) ---
+# --- FINAL CLUSTERING LOGIC (Decoupled, Single-Threaded) ---
 # ==============================================================================
 
 def finalize_clustering():
     """
-    Runs clustering logic on all articles in the last 24 hours that currently 
-    have a NULL or empty cluster_id. This is run outside of any thread pool.
+    Runs clustering logic on all articles in the last 24 hours. 
+    It ensures new articles are compared against each other and existing clusters 
+    to form consistent groups.
     """
     if semantic_model is None or util is None:
         logging.warning("AI Model not available. Skipping final clustering step.")
@@ -226,7 +225,7 @@ def finalize_clustering():
     logging.info("Starting single-threaded final clustering process...")
     
     with db_lock:
-        # 1. Fetch ALL recent articles (both clustered and unclustered)
+        # Fetch ALL articles (clustered and unclustered) from the last 24h
         cursor.execute('''
             SELECT id, title, summary, cluster_id 
             FROM news 
@@ -238,61 +237,90 @@ def finalize_clustering():
         logging.info("No recent articles found for clustering.")
         return
 
-    # 2. Separate articles to be processed
-    # Articles that already have a cluster_id are the reference set
-    # Articles that have a NULL cluster_id are the candidates for clustering
-    reference_articles = [a for a in all_articles if a[3]]
-    candidate_articles = [a for a in all_articles if not a[3]]
+    # 1. Prepare data structures: 
+    article_db_id_to_cluster_id = {row[0]: row[3] for row in all_articles if row[3]}
+    article_db_id_to_index = {row[0]: i for i, row in enumerate(all_articles)}
     
-    if not candidate_articles:
-        logging.info("No new articles require clustering.")
-        return
+    all_texts = [f"{row[1]}. {row[2]}" for row in all_articles]
+    all_db_ids = [row[0] for row in all_articles]
 
-    # 3. Prepare texts for embedding
-    # We compare candidates against themselves AND the reference set
-    reference_texts = [f"{row[1]}. {row[2]}" for row in reference_articles]
-    reference_ids = [row[3] for row in reference_articles] # Existing cluster IDs
-    
-    candidate_texts = [f"{row[1]}. {row[2]}" for row in candidate_articles]
-    candidate_db_ids = [row[0] for row in candidate_articles] # Primary DB IDs
-
-    logging.info(f"Clustering {len(candidate_articles)} new articles against {len(reference_articles)} existing articles...")
+    logging.info(f"Clustering {len(all_articles)} total articles...")
     
     try:
-        # 4. Generate Embeddings (Single-threaded, safe)
-        all_texts = reference_texts + candidate_texts
+        # 2. Generate Embeddings (Single-threaded, safe)
         all_embeddings = semantic_model.encode(all_texts, convert_to_tensor=True)
         
-        # Split back into reference and candidate sets
-        ref_embeddings = all_embeddings[:len(reference_texts)]
-        cand_embeddings = all_embeddings[len(reference_texts):]
-        
-        updates_needed = []
+        updates_needed = {}
         THRESHOLD = 0.70
 
-        # 5. Process Candidates
-        for i, cand_emb in enumerate(cand_embeddings):
-            new_cluster_id = str(uuid.uuid4()) # Default: new cluster
+        # 3. Iterate through all articles and find the best match for unclustered ones
+        for i, article in enumerate(all_articles):
+            db_id = article[0]
+            current_cluster_id = article[3]
             
-            # Compare candidate against the reference set
-            if ref_embeddings.numel() > 0:
-                cosine_scores = util.cos_sim(cand_emb, ref_embeddings)[0]
-                best_score = max(cosine_scores).item()
+            # Only process articles that haven't been clustered yet
+            if current_cluster_id is not None:
+                continue
+
+            candidate_emb = all_embeddings[i]
+            
+            # --- Perform Comparison against ALL other articles ---
+            cosine_scores = util.cos_sim(candidate_emb, all_embeddings)[0]
+            
+            best_score = -1.0
+            best_match_id = None
+
+            for j, score_tensor in enumerate(cosine_scores):
+                score = score_tensor.item()
+                match_id = all_db_ids[j]
+
+                # Skip self-comparison and already processed matches that have been updated in this loop
+                if db_id == match_id:
+                    continue
+
+                if score > best_score and score >= THRESHOLD:
+                    best_score = score
+                    best_match_id = match_id
+
+            # 4. Assign Cluster ID
+            if best_match_id is not None:
+                matched_article_cluster_id = article_db_id_to_cluster_id.get(best_match_id)
                 
-                if best_score >= THRESHOLD:
-                    best_idx = cosine_scores.argmax().item()
-                    new_cluster_id = reference_ids[best_idx]
-            
-            updates_needed.append((new_cluster_id, candidate_db_ids[i]))
-            
-        # 6. Apply Updates to DB
-        with db_lock:
-            for cluster_id, db_id in updates_needed:
-                cursor.execute(
-                    "UPDATE news SET cluster_id = ? WHERE id = ?", 
-                    (cluster_id, db_id)
-                )
-            conn.commit()
+                if matched_article_cluster_id:
+                    # Match found with an existing cluster or an article already assigned a cluster in this pass
+                    updates_needed[db_id] = matched_article_cluster_id
+                else:
+                    # Match found with another *new* article (create new cluster for both)
+                    assigned_cluster_id = updates_needed.get(best_match_id)
+                    
+                    if assigned_cluster_id:
+                        updates_needed[db_id] = assigned_cluster_id
+                    else:
+                        new_cluster_id = str(uuid.uuid4())
+                        updates_needed[db_id] = new_cluster_id
+                        
+                        # Assign to the matching article as well, if it's new
+                        if all_articles[article_db_id_to_index[best_match_id]][3] is None:
+                            updates_needed[best_match_id] = new_cluster_id
+                        
+                # Update the local cluster map to ensure future candidates check against this new cluster
+                article_db_id_to_cluster_id[db_id] = updates_needed[db_id]
+                
+            else:
+                # No match found, assign a new cluster ID
+                updates_needed[db_id] = str(uuid.uuid4())
+                article_db_id_to_cluster_id[db_id] = updates_needed[db_id]
+
+
+        # 5. Apply Updates to DB
+        if updates_needed:
+            with db_lock:
+                for db_id, cluster_id in updates_needed.items():
+                    cursor.execute(
+                        "UPDATE news SET cluster_id = ? WHERE id = ?", 
+                        (cluster_id, db_id)
+                    )
+                conn.commit()
         
         logging.info(f"Clustering complete. Assigned {len(updates_needed)} cluster IDs.")
 
@@ -300,7 +328,7 @@ def finalize_clustering():
         logging.error(f"Critical error during final clustering: {e}")
 
 # ==============================================================================
-# --- SAVE LOGIC (Removed AI, Simplified) ---
+# --- SAVE LOGIC (Unchanged - saves NULL cluster_id) ---
 # ==============================================================================
 
 def save_article(source, title, url, summary, image_url):
@@ -339,98 +367,18 @@ def save_article(source, title, url, summary, image_url):
         return False
 
 # ==============================================================================
-# --- ARTICLE-LEVEL PARALLEL PROCESSOR (Updated to call simple save) ---
-# ==============================================================================
-
-def process_single_article(item, source_config, session, selenium_driver, proxies_dict):
-    """
-    Handles the request, extraction, and save for one article. 
-    """
-    name = source_config['name']
-    
-    if not item.link: return (False, name)
-
-    article_url = item.link.text.strip()
-    rss_title = item.title.text if item.title else "Title not found"
-    
-    summary = None
-    raw_html = None
-    final_title = rss_title
-    image_url = "No image available"
-    strategies = source_config['article_strategies']
-    
-    for i, strategy in enumerate(strategies):
-        try:
-            logging.info(f"[{name}] Article: {article_url}. Trying '{strategy}'...")
-            
-            # --- STRATEGY ROUTER ---
-            if strategy.startswith('requests_'):
-                header_type = strategy.replace('requests_', '')
-                article_headers = get_headers(header_type)
-                article_headers['Referer'] = source_config['referer']
-                page_response = session.get(article_url, headers=article_headers, timeout=10, proxies=proxies_dict)
-                page_response.raise_for_status()
-                raw_html = page_response.text
-            
-            elif strategy == 'selenium_browser':
-                if not selenium_driver: raise Exception("Selenium driver not available.")
-                selenium_driver.get(article_url)
-                WebDriverWait(selenium_driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "p")))
-                raw_html = selenium_driver.page_source
-
-            # Extraction
-            temp_summary = trafilatura.extract(raw_html, include_comments=False, include_tables=False)
-            word_count = len(temp_summary.split()) if temp_summary else 0
-            
-            if word_count >= 80:
-                summary = temp_summary
-                soup = BeautifulSoup(raw_html, 'html.parser')
-                page_title = soup.find('title')
-                if page_title: final_title = page_title.text
-                og_image = soup.find('meta', property='og:image')
-                if og_image: image_url = og_image['content']
-                logging.info(f"[{name}] Success with '{strategy}'. ({word_count} words).")
-                break
-
-            else:
-                logging.warning(f"[{name}] FAILED with '{strategy}' (content too short: {word_count} words).")
-
-        except Exception as e:
-            logging.error(f"[{name}] Strategy '{strategy}' failed on {article_url}: {e}")
-            if strategy == 'selenium_browser' and selenium_driver: 
-                 selenium_driver.refresh()
-            time.sleep(random.uniform(0.5, 1.0))
-
-    # 5. Fallback Logic
-    if not summary:
-        logging.error(f"[{name}] All strategies failed. Falling back to RSS description.")
-        if item.description:
-            summary_soup = BeautifulSoup(item.description.text, 'html.parser')
-            summary = summary_soup.get_text().strip()
-        else:
-            summary = "No content available"
-
-    # 6. Save (Now calls the simplified save_article)
-    was_saved = save_article(name, final_title, article_url, summary, image_url)
-    time.sleep(random.uniform(0.5, 1.5))
-    
-    return (was_saved, name)
-
-
-# ==============================================================================
-# --- SOURCE-LEVEL PROCESSOR (Unchanged) ---
+# --- ARTICLE PROCESSING (Sequential Logic Integrated) ---
 # ==============================================================================
 
 def scrape_source(session, selenium_driver, source_config, proxies_dict):
     """
-    Scrapes one source. Performs the duplicate check at the RSS stage to prevent
-    submitting duplicates to the parallel executor.
+    Scrapes one source. Articles are processed sequentially within this dedicated thread.
     """
     name = source_config['name']
     rss_url = source_config['rss_url']
     saved_count = 0
     
-    logging.info(f"Starting scrape for {name} RSS feed. Article Concurrency: {MAX_CONCURRENT_ARTICLES_PER_SOURCE}")
+    logging.info(f"Starting scrape for {name} RSS feed (Sequential Article Processing)...")
     
     try:
         # 1. Get RSS Feed
@@ -441,15 +389,16 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
         soup = BeautifulSoup(response.content, 'xml')
         all_items = soup.find_all('item')[:MAX_ARTICLES_PER_SOURCE]
         
-        items_to_process = []
+        logging.info(f"[{name}] Found {len(all_items)} items. Starting sequential processing...")
         
-        # 2. CRITICAL PRE-CHECK: Filter out known duplicates here
-        logging.info(f"[{name}] Found {len(all_items)} items. Performing duplicate pre-check...")
+        # 2. Sequential Article Processing Loop
         for item in all_items:
+            
             if not item.link: continue
             article_url = item.link.text.strip()
+            rss_title = item.title.text if item.title else "Title not found"
             
-            # --- THREAD-SAFE CHECK ---
+            # --- CRITICAL PRE-CHECK (1): Filter out known duplicates here
             with db_lock:
                 cursor.execute("SELECT id FROM news WHERE url = ?", (article_url,))
                 if cursor.fetchone():
@@ -459,37 +408,70 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
             if source_config['article_url_contains'] and source_config['article_url_contains'] not in article_url:
                 logging.warning(f"[{name}] Skipping non-article link during pre-check: {article_url}")
                 continue
-
-            items_to_process.append(item)
             
-        logging.info(f"[{name}] {len(items_to_process)} unique articles remaining. Submitting to article-level executor.")
+            # --- ARTICLE SCRAPING LOGIC ---
+            summary = None
+            raw_html = None
+            final_title = rss_title
+            image_url = "No image available"
+            strategies = source_config['article_strategies']
+            
+            for i, strategy in enumerate(strategies):
+                try:
+                    logging.info(f"[{name}] Article: {article_url}. Trying '{strategy}'...")
+                    
+                    if strategy.startswith('requests_'):
+                        header_type = strategy.replace('requests_', '')
+                        article_headers = get_headers(header_type)
+                        article_headers['Referer'] = source_config['referer']
+                        page_response = session.get(article_url, headers=article_headers, timeout=10, proxies=proxies_dict)
+                        page_response.raise_for_status()
+                        raw_html = page_response.text
+                    
+                    elif strategy == 'selenium_browser':
+                        if not selenium_driver: raise Exception("Selenium driver not available.")
+                        selenium_driver.get(article_url)
+                        WebDriverWait(selenium_driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "p")))
+                        raw_html = selenium_driver.page_source
 
-        # 3. Use a local ThreadPoolExecutor for concurrent articles
-        local_executor = ThreadPoolExecutor(max_workers=MAX_CONCURRENT_ARTICLES_PER_SOURCE)
+                    # Extraction
+                    temp_summary = trafilatura.extract(raw_html, include_comments=False, include_tables=False)
+                    word_count = len(temp_summary.split()) if temp_summary else 0
+                    
+                    if word_count >= 80:
+                        summary = temp_summary
+                        soup = BeautifulSoup(raw_html, 'html.parser')
+                        page_title = soup.find('title')
+                        if page_title: final_title = page_title.text
+                        og_image = soup.find('meta', property='og:image')
+                        if og_image: image_url = og_image['content']
+                        logging.info(f"[{name}] Success with '{strategy}'. ({word_count} words).")
+                        break # Success
+                    else:
+                        logging.warning(f"[{name}] FAILED with '{strategy}' (content too short: {word_count} words).")
+
+                except Exception as e:
+                    logging.error(f"[{name}] Strategy '{strategy}' failed on {article_url}: {e}")
+                    if strategy == 'selenium_browser' and selenium_driver: 
+                         selenium_driver.refresh()
+                    time.sleep(random.uniform(0.5, 1.0))
+
+            # 5. Fallback Logic
+            if not summary:
+                logging.error(f"[{name}] All strategies failed. Falling back to RSS description.")
+                if item.description:
+                    summary_soup = BeautifulSoup(item.description.text, 'html.parser')
+                    summary = summary_soup.get_text().strip()
+                else:
+                    summary = "No content available"
+
+            # 6. Save (Sequential commit per article)
+            was_saved = save_article(name, final_title, article_url, summary, image_url)
+            if was_saved:
+                saved_count += 1
+            
+            time.sleep(random.uniform(0.5, 1.5)) # Politeness delay
         
-        futures = []
-        for item in items_to_process:
-            future = local_executor.submit(
-                process_single_article, 
-                item, 
-                source_config, 
-                session, 
-                selenium_driver, 
-                proxies_dict
-            )
-            futures.append(future)
-
-        # 4. Collect results as they complete
-        for future in as_completed(futures, timeout=300): 
-            try:
-                was_saved, _ = future.result()
-                if was_saved:
-                    saved_count += 1
-            except Exception as e:
-                logging.error(f"[{name}] Article thread failed: {e}")
-        
-        local_executor.shutdown() 
-
     except requests.RequestException as e:
         logging.error(f"Failed to fetch {name} RSS feed: {e}")
     except Exception as e:
@@ -498,7 +480,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
     return (name, saved_count)
 
 # ==============================================================================
-# --- MAIN EXECUTION AND CLEANUP (Added Final Clustering) ---
+# --- MAIN EXECUTION AND CLEANUP (Source-Level Parallelism) ---
 # ==============================================================================
 
 def scrape_source_wrapper(source, session, proxies_dict):
