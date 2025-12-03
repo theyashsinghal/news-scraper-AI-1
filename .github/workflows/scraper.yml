@@ -2,34 +2,34 @@ name: Run News Scraper with logs
 
 on:
   # schedule:
-  #   - cron: '*/30 * * * *'  # Run every 2 hours
-  workflow_dispatch:      # manual trigger
+  # - cron: '*/30 * * * *'  # Example: Run every 30 minutes
+  workflow_dispatch:          # Manual trigger
 
 # Prevent multiple instances from running simultaneously
 concurrency:
   group: news-scraper
-  cancel-in-progress: false  # Wait for previous run to complete
+  cancel-in-progress: false
 
 jobs:
   scrape_news:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
-          fetch-depth: 0  # Fetch all history to avoid rebase issues
+          fetch-depth: 0  # Fetch all history for proper git operations later
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          cache: 'pip' # Caches pip packages automatically
+          # CRITICAL: 'pip' cache is enabled by default here (using requirements.txt hash)
 
       # --- CACHE AI MODELS ---
+      # This step saves bandwidth by caching the large SentenceTransformer models.
       - name: Cache HuggingFace Models
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
           key: ${{ runner.os }}-huggingface-${{ hashFiles('**/requirements.txt') }}
@@ -38,19 +38,18 @@ jobs:
 
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1
+        # Necessary for Selenium (Times of India, The Hindu)
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           
-          # --- CRITICAL FIX: Install CPU-only PyTorch ---
-          # The default PyTorch installs 5GB+ of CUDA (GPU) drivers, which fills the disk.
-          # We force the CPU version (~200MB) here before installing sentence-transformers.
+          # We use the standard pip install command now, relying on pip cache for speed.
+          
+          # Install CPU-only PyTorch (using specific index)
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          
-          # Explicitly ensure these are present
+          # Install other required Python libraries
           pip install requests beautifulsoup4 trafilatura selenium sentence-transformers
 
       - name: Run scraper
@@ -59,8 +58,8 @@ jobs:
           # Uncomment if you added the proxy secret
           # PROXY_URL: ${{ secrets.PROXY_URL }}
         run: |
-          # Ensure your script file is named 'news_scraper_AI.py' in the repo
-          python news_scraper_AI.py
+          # NOTE: Assuming the main script file is named 'news_scraper.py'
+          python news_scraper.py
 
       - name: Save logs with timestamp
         run: |
@@ -68,6 +67,7 @@ jobs:
           TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
           LOG_FILE="logs/scraper_${TIMESTAMP}_run${{ github.run_number }}.log"
           
+          # The script saves to news_scraper.log. We copy it to the logs/ folder.
           if [ -f news_scraper.log ]; then
             cp news_scraper.log "$LOG_FILE"
             echo "Log saved as $LOG_FILE"
@@ -85,7 +85,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
 
-          # Stage changes
+          # Stage changes (db and logs)
           git add news_articles.db logs/
 
           # Only proceed if there are changes
@@ -96,11 +96,12 @@ jobs:
             # Pull latest changes with rebase strategy
             echo "Pulling latest changes from remote..."
             git pull --rebase origin main || {
-              echo "Rebase conflict detected, attempting to resolve..."
-              # In case of conflict, prefer our changes for db and logs
+              echo "Rebase conflict detected, resolving by keeping 'ours' for database/logs..."
+              
               git checkout --ours news_articles.db logs/
               git add news_articles.db logs/
-              git rebase --continue || echo "Manual intervention may be needed"
+              
+              git rebase --continue
             }
             
             # Push changes with retry logic
@@ -112,7 +113,7 @@ jobs:
               RETRY_COUNT=$((RETRY_COUNT+1))
               echo "Push failed, retry $RETRY_COUNT of $MAX_RETRIES..."
               sleep 2
-              git pull --rebase origin main
+              git pull --rebase origin main 
             done
             
             if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
