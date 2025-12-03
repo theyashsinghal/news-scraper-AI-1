@@ -1,20 +1,14 @@
 # ==============================================================================
 # --- GLOBAL USER SETTINGS ---
-#
-# How many articles to get from each source (e.g., 20)
+# (Settings section remains unchanged)
+# ==============================================================================
+
 MAX_ARTICLES_PER_SOURCE = 20
-#
-# --- NEW CONCURRENCY SETTING ---
-# How many articles from a single source should be fetched simultaneously.
 MAX_CONCURRENT_ARTICLES_PER_SOURCE = 5
-#
-# --- PROXY CONFIGURATION ---
-# 'proxy_url' should be in the format: http://username:password@proxy.example.com:8080
 PROXY_SETTINGS = {
     "use_proxies": False,
-    "proxy_url": None  # e.g., "http://user:pass@proxy.service.com:8080"
+    "proxy_url": None
 }
-# ==============================================================================
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -50,7 +44,6 @@ try:
     SELENIUM_AVAILABLE = True
 except ImportError:
     SELENIUM_AVAILABLE = False
-# ---------------------------
 
 # --- Configure logging ---
 logging.basicConfig(filename='news_scraper.log',
@@ -58,12 +51,14 @@ logging.basicConfig(filename='news_scraper.log',
                     level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
+# (create_robust_session, get_headers, create_selenium_driver, SOURCE_CONFIG, 
+# and DB SETUP remain as previously defined)
+
 # ==============================================================================
-# --- SESSION AND HEADER MANAGEMENT ---
+# --- SESSION AND HEADER MANAGEMENT --- (Re-included for completeness)
 # ==============================================================================
 
 def create_robust_session():
-    """Creates a requests.Session with automatic retries."""
     logging.info("Creating new robust session with 3 retries on 5xx/connection/read errors.")
     session = requests.Session()
     retry_strategy = Retry(
@@ -92,7 +87,6 @@ GOOGLEBOT_USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.goog
 FEEDFETCHER_USER_AGENT = 'Mozilla/5.0 (compatible; FeedFetcher-Google; +http://www.google.com/feedfetcher.html)'
 
 def get_headers(header_type):
-    """Returns a complete header dictionary for a given "persona"."""
     headers = BASE_HEADERS.copy()
     core_type = header_type.replace('requests_', '')
     if core_type == 'browser':
@@ -104,11 +98,10 @@ def get_headers(header_type):
     return headers
 
 # ==============================================================================
-# --- SELENIUM DRIVER SETUP ---
+# --- SELENIUM DRIVER SETUP --- (Re-included for completeness)
 # ==============================================================================
 
 def create_selenium_driver():
-    """Initializes and returns a headless Selenium Chrome WebDriver."""
     if not SELENIUM_AVAILABLE:
         logging.error("Cannot create Selenium driver, library not found.")
         return None
@@ -139,7 +132,7 @@ def create_selenium_driver():
         return None
 
 # ==============================================================================
-# --- SOURCE CONFIGURATION ---
+# --- SOURCE CONFIGURATION --- (Re-included for completeness)
 # ==============================================================================
 
 SOURCE_CONFIG = [
@@ -231,19 +224,19 @@ conn.commit()
 db_lock = threading.Lock()
 
 # ==============================================================================
-# --- AI DEDUPLICATION AND SAVE LOGIC ---
+# --- AI DEDUPLICATION AND SAVE LOGIC (CRITICAL SECTION REVISED) ---
 # ==============================================================================
 
 def get_cluster_id_for_article(new_title, new_summary):
     """
     Checks DB for semantically similar articles and returns an existing cluster_id
-    or a new one.
+    or a new one. (Logic inside this function assumes lock is NOT held)
     """
     if semantic_model is None or util is None:
         return str(uuid.uuid4())
 
     try:
-        # 1. Fetch recent articles (last 24h)
+        # NOTE: This section is kept outside the db_lock because it's slow.
         cursor.execute('''
             SELECT title, summary, cluster_id 
             FROM news 
@@ -251,21 +244,16 @@ def get_cluster_id_for_article(new_title, new_summary):
         ''')
         recent_articles = cursor.fetchall()
 
-        if not recent_articles:
-            return str(uuid.uuid4()) 
+        if not recent_articles: return str(uuid.uuid4()) 
 
-        # 2. Prepare data and convert to Embeddings
         existing_texts = [f"{row[0]}. {row[1]}" for row in recent_articles]
         existing_ids = [row[2] for row in recent_articles]
         new_text = f"{new_title}. {new_summary}"
 
         existing_embeddings = semantic_model.encode(existing_texts, convert_to_tensor=True)
         new_embedding = semantic_model.encode(new_text, convert_to_tensor=True)
-
-        # 3. Calculate Cosine Similarity
         cosine_scores = util.cos_sim(new_embedding, existing_embeddings)[0]
 
-        # 4. Find best match
         best_score = -1
         best_idx = -1
         for i, score in enumerate(cosine_scores):
@@ -273,9 +261,7 @@ def get_cluster_id_for_article(new_title, new_summary):
                 best_score = score
                 best_idx = i
 
-        # 5. Decision Threshold
         THRESHOLD = 0.70
-        
         if best_score >= THRESHOLD:
             logging.info(f"DEDUPLICATION: Found match (Score: {best_score:.2f}). Linking to Cluster ID: {existing_ids[best_idx]}")
             return existing_ids[best_idx]
@@ -289,10 +275,10 @@ def get_cluster_id_for_article(new_title, new_summary):
 
 def save_article(source, title, url, summary, image_url):
     """
-    Saves a single article to the SQLite database. Handles cleaning and locking.
+    Saves a single article to the SQLite database with a guaranteed final URL check.
     """
     try:
-        # --- ROBUST CLEANING ---
+        # --- ROBUST CLEANING (Outside lock) ---
         title = " ".join(title.replace('\n', ' ').replace('\r', ' ').split()).strip()
         if summary:
             summary_lines = [line.strip() for line in summary.splitlines() if line.strip()]
@@ -300,18 +286,20 @@ def save_article(source, title, url, summary, image_url):
         if not summary: summary = "No content available"
         if not image_url: image_url = "No image available"
         
-        # --- THREAD-SAFE BLOCK ---
+        # 1. AI STEP (outside lock): Calculate cluster ID. This is the slow part.
+        cluster_id = get_cluster_id_for_article(title, summary)
+
+        # 2. CRITICAL FINAL CHECK AND INSERT
+        # Acquire lock to perform the atomic check-then-insert.
         with db_lock:
-            # 1. Primary URL-based check (SKIP)
+            # RE-CHECK: If another thread inserted the URL while we were running AI/Scraping, 
+            # we must find it and avoid the insert.
             cursor.execute("SELECT id FROM news WHERE url = ?", (url,))
             if cursor.fetchone():
-                logging.info(f"Duplicate article skipped: {title} from {source}")
+                logging.warning(f"RACE CONDITION AVOIDED: Skipped insertion of {title} after AI check.")
                 return False
             
-            # 2. Get Cluster ID
-            cluster_id = get_cluster_id_for_article(title, summary)
-
-            # 3. Insert
+            # 3. INSERT is now safe
             cursor.execute('''
                 INSERT INTO news (cluster_id, source, title, url, summary, image_url, scraped_at) 
                 VALUES (?, ?, ?, ?, ?, ?, ?)
@@ -331,8 +319,8 @@ def save_article(source, title, url, summary, image_url):
 
 def process_single_article(item, source_config, session, selenium_driver, proxies_dict):
     """
-    Handles the full scraping life cycle (request, extraction, save) for one article.
-    Returns (True, name) if saved, or (False, name) if skipped/failed.
+    Handles the request, extraction, and save for one article. 
+    NOTE: The early duplicate check is now performed in scrape_source, not here.
     """
     name = source_config['name']
     
@@ -340,19 +328,6 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
 
     article_url = item.link.text.strip()
     rss_title = item.title.text if item.title else "Title not found"
-
-    # --- Early URL Check (Thread-safe) ---
-    with db_lock:
-        cursor.execute("SELECT id FROM news WHERE url = ?", (article_url,))
-        if cursor.fetchone():
-            logging.info(f"[{name}] (Parallel Skip) URL {article_url} already exists.")
-            return (False, name)
-    # -------------------------------------
-
-    # Check for URL filter
-    if source_config['article_url_contains'] and source_config['article_url_contains'] not in article_url:
-        logging.warning(f"[{name}] Skipping non-article link: {article_url}")
-        return (False, name)
     
     # --- Multi-Strategy Logic (Requests/Selenium/Fallback) ---
     summary = None
@@ -365,8 +340,8 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
         try:
             logging.info(f"[{name}] Article: {article_url}. Trying '{strategy}'...")
             
+            # --- STRATEGY ROUTER ---
             if strategy.startswith('requests_'):
-                # Handle Requests strategy
                 header_type = strategy.replace('requests_', '')
                 article_headers = get_headers(header_type)
                 article_headers['Referer'] = source_config['referer']
@@ -375,10 +350,8 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
                 raw_html = page_response.text
             
             elif strategy == 'selenium_browser':
-                # Handle Selenium strategy
                 if not selenium_driver: raise Exception("Selenium driver not available.")
                 selenium_driver.get(article_url)
-                # Use Explicit Wait instead of time.sleep()
                 WebDriverWait(selenium_driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "p")))
                 raw_html = selenium_driver.page_source
 
@@ -394,7 +367,7 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
                 og_image = soup.find('meta', property='og:image')
                 if og_image: image_url = og_image['content']
                 logging.info(f"[{name}] Success with '{strategy}'. ({word_count} words).")
-                break # Success!
+                break
 
             else:
                 logging.warning(f"[{name}] FAILED with '{strategy}' (content too short: {word_count} words).")
@@ -402,9 +375,8 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
         except Exception as e:
             logging.error(f"[{name}] Strategy '{strategy}' failed on {article_url}: {e}")
             if strategy == 'selenium_browser' and selenium_driver: 
-                 # Try to recover a potentially stuck driver
                  selenium_driver.refresh()
-            time.sleep(random.uniform(0.5, 1.0)) # Politeness delay between strategies
+            time.sleep(random.uniform(0.5, 1.0))
 
     # 5. Fallback Logic
     if not summary:
@@ -415,20 +387,21 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
         else:
             summary = "No content available"
 
-    # 6. Save (Final check and insertion)
+    # 6. Save (Uses the revised save_article with final RACE CONDITION check)
     was_saved = save_article(name, final_title, article_url, summary, image_url)
-    time.sleep(random.uniform(0.5, 1.5)) # Politeness delay
+    time.sleep(random.uniform(0.5, 1.5))
     
     return (was_saved, name)
 
 
 # ==============================================================================
-# --- SOURCE-LEVEL PROCESSOR ---
+# --- SOURCE-LEVEL PROCESSOR (MODIFIED FOR PRE-CHECK) ---
 # ==============================================================================
 
 def scrape_source(session, selenium_driver, source_config, proxies_dict):
     """
-    Scrapes one source, using a ThreadPoolExecutor for article-level parallelism.
+    Scrapes one source. Performs the duplicate check at the RSS stage to prevent
+    submitting duplicates to the parallel executor.
     """
     name = source_config['name']
     rss_url = source_config['rss_url']
@@ -443,28 +416,49 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
         response.raise_for_status() 
         
         soup = BeautifulSoup(response.content, 'xml')
-        items = soup.find_all('item')[:MAX_ARTICLES_PER_SOURCE]
-        logging.info(f"[{name}] Found {len(items)} items. Submitting to article-level executor.")
+        all_items = soup.find_all('item')[:MAX_ARTICLES_PER_SOURCE]
+        
+        items_to_process = []
+        
+        # 2. **CRITICAL PRE-CHECK**: Filter out known duplicates here
+        logging.info(f"[{name}] Found {len(all_items)} items. Performing duplicate pre-check...")
+        for item in all_items:
+            if not item.link: continue
+            article_url = item.link.text.strip()
+            
+            # --- THREAD-SAFE CHECK ---
+            with db_lock:
+                cursor.execute("SELECT id FROM news WHERE url = ?", (article_url,))
+                if cursor.fetchone():
+                    # Skip it, don't submit to the parallel queue
+                    # NOTE: Removed logging to avoid filling the log with skipped duplicates
+                    continue
+            
+            # Check for URL filter
+            if source_config['article_url_contains'] and source_config['article_url_contains'] not in article_url:
+                logging.warning(f"[{name}] Skipping non-article link during pre-check: {article_url}")
+                continue
 
-        # 2. Use a local ThreadPoolExecutor for concurrent articles within this source
+            items_to_process.append(item)
+            
+        logging.info(f"[{name}] {len(items_to_process)} unique articles remaining. Submitting to article-level executor.")
+
+        # 3. Use a local ThreadPoolExecutor for concurrent articles
         local_executor = ThreadPoolExecutor(max_workers=MAX_CONCURRENT_ARTICLES_PER_SOURCE)
         
         futures = []
-        for item in items:
-            # Submit the single article processor as a task
+        for item in items_to_process:
             future = local_executor.submit(
                 process_single_article, 
                 item, 
                 source_config, 
                 session, 
-                selenium_driver, # NOTE: This driver is shared/reused by all local threads
+                selenium_driver, 
                 proxies_dict
             )
             futures.append(future)
 
-        # 3. Collect results as they complete (up to the entire job timeout)
-        # Using a 300s timeout here to handle potential hangs within this source,
-        # although the global timeout in scrape_all() is the ultimate limit.
+        # 4. Collect results as they complete
         for future in as_completed(futures, timeout=300): 
             try:
                 was_saved, _ = future.result()
@@ -484,13 +478,10 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
 
 # ==============================================================================
 # --- MAIN EXECUTION AND CLEANUP ---
+# (Source-Level Parallelism logic remains unchanged)
 # ==============================================================================
 
 def scrape_source_wrapper(source, session, proxies_dict):
-    """
-    Wrapper for a single source job, handling Selenium driver initialization and cleanup.
-    This runs in a thread managed by the global executor.
-    """
     name = source.get('name', 'Unknown')
     driver = None
     needs_selenium = any('selenium' in s for s in source.get('article_strategies', []))
@@ -508,7 +499,6 @@ def scrape_source_wrapper(source, session, proxies_dict):
         return (name, 0)
     
     finally:
-        # Surgical Kill for the driver
         if driver:
             logging.info(f"[{name}] (Thread) Finished. Attempting to shut down its Selenium driver.")
             pid_to_kill = None
@@ -524,9 +514,6 @@ def scrape_source_wrapper(source, session, proxies_dict):
             
 
 def scrape_all():
-    """
-    Runs all scraping jobs defined in SOURCE_CONFIG in parallel (Source-Level).
-    """
     logging.info("--- Starting new scraping job (Source Parallel Mode) ---")
     session = create_robust_session()
     proxies_dict = None
@@ -536,8 +523,6 @@ def scrape_all():
     all_counts = {}
     total_saved = 0
     futures = []
-    
-    # Use global executor for Source-Level Parallelism
     executor = ThreadPoolExecutor(max_workers=len(SOURCE_CONFIG))
 
     try:
@@ -546,7 +531,6 @@ def scrape_all():
             futures.append(future)
 
         logging.info(f"Submitted {len(futures)} source jobs. Waiting up to 300s...")
-        
         done, not_done = wait(futures, timeout=300)
 
         for future in done:
@@ -593,7 +577,6 @@ def main():
             logging.info("--- Scraper service stopped and database connection closed. ---")
             print("Scraper stopped and database connection closed.")
         
-        # --- KILL SWITCH ---
         logging.info("--- Main thread finished. Forcing process exit to kill zombie threads. ---")
         os._exit(0)
 
