@@ -1,14 +1,20 @@
 # ==============================================================================
 # --- GLOBAL USER SETTINGS ---
-# (Settings section remains unchanged)
-# ==============================================================================
-
+#
+# How many articles to get from each source (e.g., 20)
 MAX_ARTICLES_PER_SOURCE = 20
-MAX_CONCURRENT_ARTICLES_PER_SOURCE = 5
+#
+# --- CONCURRENCY SETTING (FIXED FOR STABILITY) ---
+# How many articles from a single source should be fetched simultaneously.
+# Reduced to 2 to minimize memory pressure and risk of Segmentation Faults.
+MAX_CONCURRENT_ARTICLES_PER_SOURCE = 2
+#
+# --- PROXY CONFIGURATION ---
 PROXY_SETTINGS = {
     "use_proxies": False,
     "proxy_url": None
 }
+# ==============================================================================
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -37,13 +43,14 @@ except ImportError:
 try:
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options as ChromeOptions
-    from selenium.common.exceptions import WebDriverException, TimeoutException
     from selenium.webdriver.common.by import By
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.support import expected_conditions as EC
+    from selenium.common.exceptions import WebDriverException, TimeoutException
     SELENIUM_AVAILABLE = True
 except ImportError:
     SELENIUM_AVAILABLE = False
+# ---------------------------
 
 # --- Configure logging ---
 logging.basicConfig(filename='news_scraper.log',
@@ -51,11 +58,13 @@ logging.basicConfig(filename='news_scraper.log',
                     level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-# (create_robust_session, get_headers, create_selenium_driver, SOURCE_CONFIG, 
-# and DB SETUP remain as previously defined)
+# --- GLOBAL LOCKS ---
+db_lock = threading.Lock()
+# NEW: Dedicated lock for the AI model to prevent concurrent memory access/Seg Faults
+ai_lock = threading.Lock() 
 
 # ==============================================================================
-# --- SESSION AND HEADER MANAGEMENT --- (Re-included for completeness)
+# --- SESSION, HEADER, and SELENIUM SETUP (Unchanged) ---
 # ==============================================================================
 
 def create_robust_session():
@@ -83,23 +92,16 @@ BROWSER_USER_AGENTS = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0',
 ]
 
-GOOGLEBOT_USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
-FEEDFETCHER_USER_AGENT = 'Mozilla/5.0 (compatible; FeedFetcher-Google; +http://www.google.com/feedfetcher.html)'
-
 def get_headers(header_type):
     headers = BASE_HEADERS.copy()
     core_type = header_type.replace('requests_', '')
     if core_type == 'browser':
         headers['User-Agent'] = random.choice(BROWSER_USER_AGENTS)
     elif core_type == 'googlebot':
-        headers['User-Agent'] = GOOGLEBOT_USER_AGENT
+        headers['User-Agent'] = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
     elif core_type == 'feedfetcher':
-        headers = {'User-Agent': FEEDFETCHER_USER_AGENT}
+        headers = {'User-Agent': 'Mozilla/5.0 (compatible; FeedFetcher-Google; +http://www.google.com/feedfetcher.html)'}
     return headers
-
-# ==============================================================================
-# --- SELENIUM DRIVER SETUP --- (Re-included for completeness)
-# ==============================================================================
 
 def create_selenium_driver():
     if not SELENIUM_AVAILABLE:
@@ -124,15 +126,12 @@ def create_selenium_driver():
         driver.set_page_load_timeout(60)
         logging.info("Selenium driver initialized successfully.")
         return driver
-    except WebDriverException as e:
-        logging.critical(f"Failed to initialize Selenium driver. Error: {e}")
-        return None
     except Exception as e:
-        logging.critical(f"An unexpected error occurred during Selenium initialization: {e}")
+        logging.critical(f"Failed to initialize Selenium driver: {e}")
         return None
 
 # ==============================================================================
-# --- SOURCE CONFIGURATION --- (Re-included for completeness)
+# --- SOURCE CONFIGURATION (Unchanged) ---
 # ==============================================================================
 
 SOURCE_CONFIG = [
@@ -171,7 +170,7 @@ SOURCE_CONFIG = [
 ]
 
 # ==============================================================================
-# --- AI MODEL INITIALIZATION ---
+# --- AI/DB SETUP (Model Loading Unchanged) ---
 # ==============================================================================
 
 semantic_model = None
@@ -184,16 +183,11 @@ if SentenceTransformer is not None:
         logging.critical(f"Failed to load AI model: {e}. Clustering is disabled.")
         semantic_model = None
 
-# ==============================================================================
-# --- DATABASE SETUP ---
-# ==============================================================================
-
 db_path = 'news_articles.db'
 logging.info(f"Initializing database connection at: {db_path}")
 conn = sqlite3.connect(db_path, check_same_thread=False)
 cursor = conn.cursor()
 
-# Updated schema to include 'cluster_id'
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS news (
     id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -214,44 +208,45 @@ if 'cluster_id' not in columns:
     logging.info("Performing database migration: Adding 'cluster_id' column.")
     try:
         cursor.execute("ALTER TABLE news ADD COLUMN cluster_id TEXT")
-        logging.info("Migration successful.")
     except Exception as e:
         logging.error(f"Migration failed: {e}")
 conn.commit()
 # ---------------------------------------------------------------
 
-# --- Thread lock for database ---
-db_lock = threading.Lock()
-
 # ==============================================================================
-# --- AI DEDUPLICATION AND SAVE LOGIC (CRITICAL SECTION REVISED) ---
+# --- AI DEDUPLICATION AND SAVE LOGIC (AI LOCK INTEGRATED) ---
 # ==============================================================================
 
 def get_cluster_id_for_article(new_title, new_summary):
     """
-    Checks DB for semantically similar articles and returns an existing cluster_id
-    or a new one. (Logic inside this function assumes lock is NOT held)
+    Checks DB for semantically similar articles and returns a cluster_id.
+    Uses ai_lock to protect the SentenceTransformer model.
     """
     if semantic_model is None or util is None:
         return str(uuid.uuid4())
 
     try:
-        # NOTE: This section is kept outside the db_lock because it's slow.
-        cursor.execute('''
-            SELECT title, summary, cluster_id 
-            FROM news 
-            WHERE scraped_at >= datetime('now', '-1 day')
-        ''')
-        recent_articles = cursor.fetchall()
+        # Acquire AI lock to prevent parallel embedding calculation
+        with ai_lock:
+            # NOTE: DB select is fine outside the DB lock here as no write operation follows immediately
+            cursor.execute('''
+                SELECT title, summary, cluster_id 
+                FROM news 
+                WHERE scraped_at >= datetime('now', '-1 day')
+            ''')
+            recent_articles = cursor.fetchall()
 
-        if not recent_articles: return str(uuid.uuid4()) 
+            if not recent_articles: return str(uuid.uuid4()) 
 
-        existing_texts = [f"{row[0]}. {row[1]}" for row in recent_articles]
-        existing_ids = [row[2] for row in recent_articles]
-        new_text = f"{new_title}. {new_summary}"
+            existing_texts = [f"{row[0]}. {row[1]}" for row in recent_articles]
+            existing_ids = [row[2] for row in recent_articles]
+            new_text = f"{new_title}. {new_summary}"
 
-        existing_embeddings = semantic_model.encode(existing_texts, convert_to_tensor=True)
-        new_embedding = semantic_model.encode(new_text, convert_to_tensor=True)
+            # CRITICAL SECTION: AI Model Encoding
+            existing_embeddings = semantic_model.encode(existing_texts, convert_to_tensor=True)
+            new_embedding = semantic_model.encode(new_text, convert_to_tensor=True)
+        
+        # Release AI lock; calculation is safe
         cosine_scores = util.cos_sim(new_embedding, existing_embeddings)[0]
 
         best_score = -1
@@ -278,7 +273,7 @@ def save_article(source, title, url, summary, image_url):
     Saves a single article to the SQLite database with a guaranteed final URL check.
     """
     try:
-        # --- ROBUST CLEANING (Outside lock) ---
+        # --- ROBUST CLEANING ---
         title = " ".join(title.replace('\n', ' ').replace('\r', ' ').split()).strip()
         if summary:
             summary_lines = [line.strip() for line in summary.splitlines() if line.strip()]
@@ -286,14 +281,12 @@ def save_article(source, title, url, summary, image_url):
         if not summary: summary = "No content available"
         if not image_url: image_url = "No image available"
         
-        # 1. AI STEP (outside lock): Calculate cluster ID. This is the slow part.
+        # 1. AI STEP (outside db_lock): Calculate cluster ID.
         cluster_id = get_cluster_id_for_article(title, summary)
 
         # 2. CRITICAL FINAL CHECK AND INSERT
-        # Acquire lock to perform the atomic check-then-insert.
         with db_lock:
-            # RE-CHECK: If another thread inserted the URL while we were running AI/Scraping, 
-            # we must find it and avoid the insert.
+            # RE-CHECK: Catch race condition (cross-source or between filter/save)
             cursor.execute("SELECT id FROM news WHERE url = ?", (url,))
             if cursor.fetchone():
                 logging.warning(f"RACE CONDITION AVOIDED: Skipped insertion of {title} after AI check.")
@@ -320,7 +313,6 @@ def save_article(source, title, url, summary, image_url):
 def process_single_article(item, source_config, session, selenium_driver, proxies_dict):
     """
     Handles the request, extraction, and save for one article. 
-    NOTE: The early duplicate check is now performed in scrape_source, not here.
     """
     name = source_config['name']
     
@@ -329,7 +321,6 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
     article_url = item.link.text.strip()
     rss_title = item.title.text if item.title else "Title not found"
     
-    # --- Multi-Strategy Logic (Requests/Selenium/Fallback) ---
     summary = None
     raw_html = None
     final_title = rss_title
@@ -395,7 +386,7 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
 
 
 # ==============================================================================
-# --- SOURCE-LEVEL PROCESSOR (MODIFIED FOR PRE-CHECK) ---
+# --- SOURCE-LEVEL PROCESSOR (Pre-filter to prevent concurrent processing) ---
 # ==============================================================================
 
 def scrape_source(session, selenium_driver, source_config, proxies_dict):
@@ -420,7 +411,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
         
         items_to_process = []
         
-        # 2. **CRITICAL PRE-CHECK**: Filter out known duplicates here
+        # 2. CRITICAL PRE-CHECK: Filter out known duplicates here
         logging.info(f"[{name}] Found {len(all_items)} items. Performing duplicate pre-check...")
         for item in all_items:
             if not item.link: continue
@@ -430,9 +421,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
             with db_lock:
                 cursor.execute("SELECT id FROM news WHERE url = ?", (article_url,))
                 if cursor.fetchone():
-                    # Skip it, don't submit to the parallel queue
-                    # NOTE: Removed logging to avoid filling the log with skipped duplicates
-                    continue
+                    continue # Skip it, don't submit to the parallel queue
             
             # Check for URL filter
             if source_config['article_url_contains'] and source_config['article_url_contains'] not in article_url:
@@ -478,7 +467,6 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
 
 # ==============================================================================
 # --- MAIN EXECUTION AND CLEANUP ---
-# (Source-Level Parallelism logic remains unchanged)
 # ==============================================================================
 
 def scrape_source_wrapper(source, session, proxies_dict):
