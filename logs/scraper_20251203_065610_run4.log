@@ -1,0 +1,210 @@
+2025-12-03 06:52:59,305 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-03 06:52:59,306 - INFO - Use pytorch device_name: cpu
+2025-12-03 06:52:59,306 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-03 06:52:59,739 - INFO - AI Model loaded successfully.
+2025-12-03 06:52:59,739 - INFO - Initializing database connection at: news_articles.db
+2025-12-03 06:52:59,739 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-03 06:52:59,739 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-03 06:52:59,739 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-03 06:52:59,739 - INFO - Proxy is DISABLED.
+2025-12-03 06:52:59,740 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-03 06:52:59,740 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-03 06:52:59,741 - INFO - Initializing headless Selenium Chrome driver (using SeleniumManager)...
+2025-12-03 06:52:59,741 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-03 06:52:59,743 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-03 06:52:59,743 - INFO - Initializing headless Selenium Chrome driver (using SeleniumManager)...
+2025-12-03 06:52:59,743 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-03 06:52:59,823 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 20.
+2025-12-03 06:52:59,823 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/02/trump-somali-immigrants-minnesota already exists.
+2025-12-03 06:52:59,993 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/01/south-africans-court-alleged-recruitment-russia-war-ukraine already exists.
+2025-12-03 06:53:00,095 - INFO - Found 34 articles in BBC RSS feed. Processing up to 20.
+2025-12-03 06:53:00,282 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwyv0ex7v8ro?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:00,383 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2025/dec/01/global-health-hiv-aids-funding-cuts-infections-prevention already exists.
+2025-12-03 06:53:00,564 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c208x9v68w3o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:53:00,564 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:53:00,565 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/nov/30/african-leaders-push-for-recognition-of-colonial-crimes-and-reparations already exists.
+2025-12-03 06:53:00,761 - INFO - [BBC] Success with 'requests_browser'. Found content (714 words).
+2025-12-03 06:53:00,798 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/nov/28/jacob-zuma-daughter-resigns-claims-south-africans-tricked-fight-russia already exists.
+2025-12-03 06:53:03,736 - INFO - DEDUPLICATION: Found match (Score: 0.82). Linking to Cluster ID: f63c6b7e-f325-4cf5-84c0-6a0a353a0efe
+2025-12-03 06:53:03,956 - INFO - Saved article: Trump says he doesn't want Somalis in US as ICE plans operation from BBC
+2025-12-03 06:53:03,956 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/live/2025/dec/02/donald-trump-pete-hegseth-boat-venezuela-maduro-tennessee-us-politics-live-news-updates already exists.
+2025-12-03 06:53:04,221 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/02/trump-intervention-honduras-presidential-vote-count-stalls-nasry-asfura already exists.
+2025-12-03 06:53:04,514 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/02/pete-hegseth-franklin-the-turtle already exists.
+2025-12-03 06:53:04,750 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/02/monterrey-mexico-air-quality-industrial-pollution already exists.
+2025-12-03 06:53:05,043 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c9895x3039ro?at_medium=RSS&at_campaign=rss
+2025-12-03 06:53:05,043 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:53:05,044 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/02/st-lucia-election-prime-minister-philip-pierre-wins already exists.
+2025-12-03 06:53:05,072 - INFO - [BBC] Success with 'requests_browser'. Found content (943 words).
+2025-12-03 06:53:07,850 - INFO - Saved article: As lead changes in knife-edge Honduran election, will Trump fail to get his way? from BBC
+2025-12-03 06:53:07,850 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/03/search-for-malaysia-airline-flight-mh370-to-resume-over-11-years-after-plane-went-missing already exists.
+2025-12-03 06:53:08,101 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/02/uk-government-delays-china-super-embassy-january already exists.
+2025-12-03 06:53:08,299 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/03/uk-china-spying-case-collapse-security-committee-report already exists.
+2025-12-03 06:53:08,583 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/02/global-heating-and-other-human-activity-are-making-asias-floods-more-lethal already exists.
+2025-12-03 06:53:08,706 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/02/british-women-stranded-by-landslides-in-sri-lankan-mountains-running-out-of-food-and-water-daughter-says already exists.
+2025-12-03 06:53:08,838 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/live/2025/dec/03/australia-news-live-bruce-lehrmann-defamation-appeal-brittany-higgins-lisa-wilkinson-network-ten-senate-estimates-social-media-ban-esafety-commissioner-albanese-sussan-ley-labor-coalition-nsw-vic-qld-ntwnfb already exists.
+2025-12-03 06:53:09,034 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/03/australia-high-court-overturns-housing-policy-which-tripled-rent-in-some-remote-indigenous-communities already exists.
+2025-12-03 06:53:09,162 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cpq47derx2vo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:09,361 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/02/australian-children-moving-to-new-social-app-lemon8-but-owner-expected-to-restrict-users-to-over-16s already exists.
+2025-12-03 06:53:09,548 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cy7v077dm0po?at_medium=RSS&at_campaign=rss
+2025-12-03 06:53:09,548 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:53:09,549 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/03/victoria-labor-allan-coercive-control-backflip-jess-wilson already exists.
+2025-12-03 06:53:09,572 - INFO - [BBC] Success with 'requests_browser'. Found content (308 words).
+2025-12-03 06:53:11,285 - INFO - Selenium driver initialized successfully.
+2025-12-03 06:53:11,285 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-03 06:53:11,286 - INFO - Selenium driver initialized successfully.
+2025-12-03 06:53:11,286 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-03 06:53:11,388 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 20.
+2025-12-03 06:53:11,499 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 20.
+2025-12-03 06:53:12,614 - INFO - DEDUPLICATION: Found match (Score: 0.87). Linking to Cluster ID: 41b84a3d-78a7-492d-8b1f-523eb69dcea1
+2025-12-03 06:53:12,758 - INFO - Saved article: MH370: Search for long-missing Malaysia Airlines fight to resume from BBC
+2025-12-03 06:53:12,758 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2025/dec/03/economy-crawls-back-into-growth-mode-thanks-to-data-centre-boom-and-household-spending-uptick already exists.
+2025-12-03 06:53:12,913 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/saudi-arabia-approves-350-billion-budget-for-2026-focused-on-vision-2030-goalssaudi-arabia-approves-350-billion-budget-for-2026-focused-on-vision-2030-goals/articleshow/125735433.cms already exists.
+2025-12-03 06:53:13,207 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/govt-in-sc-agrees-to-return-pregnant-woman-child-deported-to-bangladesh-on-humanitarian-grounds/article70352282.ece
+2025-12-03 06:53:13,207 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:53:13,208 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/inhuman-agenda-sabrina-carpenter-slams-trump-admin-for-using-her-song-in-disgusting-video-white-house-responds/articleshow/125734612.cms already exists.
+2025-12-03 06:53:13,495 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0r95q9kv1go?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:13,748 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/null-and-void-trump-declares-all-biden-autopen-signed-documents-invalid-calls-them-unauthorized/articleshow/125731145.cms
+2025-12-03 06:53:13,748 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:53:13,749 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cedxyvx74p4o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:13,871 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c7vm754r80vo?at_medium=RSS&at_campaign=rss
+2025-12-03 06:53:13,871 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:53:13,903 - INFO - [BBC] Success with 'requests_browser'. Found content (224 words).
+2025-12-03 06:53:21,219 - INFO - [The Hindu] Page content loaded.
+2025-12-03 06:53:21,454 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (443 words).
+2025-12-03 06:53:23,223 - INFO - Saved article: New Zealand man charged for swallowing $19k Fabergé pendant from BBC
+2025-12-03 06:53:28,357 - INFO - Saved article: Govt in SC agrees to return pregnant woman, child deported to Bangladesh on 'humanitarian grounds' - The Hindu from The Hindu
+2025-12-03 06:53:28,357 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cp341gz24p5o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:53:28,357 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:53:28,384 - INFO - [BBC] Success with 'requests_browser'. Found content (660 words).
+2025-12-03 06:53:31,615 - INFO - DEDUPLICATION: Found match (Score: 0.90). Linking to Cluster ID: 0baf9eab-14fb-45c0-b309-ff8ee65b60a0
+2025-12-03 06:53:31,619 - INFO - Saved article: YouTube says it will be less safe for kids under Australia's social media ban from BBC
+2025-12-03 06:53:31,619 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/telangana-winter-december-2025-lowest-of-10c-recorded-in-adilabad/article70352402.ece
+2025-12-03 06:53:31,619 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:53:32,443 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn41jge1990o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:32,745 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q5n3x0jn9o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:32,773 - INFO - [The Hindu] Page content loaded.
+2025-12-03 06:53:32,883 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (129 words).
+2025-12-03 06:53:32,952 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c93n4nx5yqro?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:33,148 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce3wq2zznz1o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:37,333 - INFO - Saved article: Telangana Winter December 2025: Lowest of 10°C recorded in Adilabad - The Hindu from The Hindu
+2025-12-03 06:53:37,333 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce8ng18p7v3o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:37,469 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c33mz477p4po?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:37,676 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvgqnklqge7o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:37,852 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn41jge1990o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:38,146 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c058n10727po?at_medium=RSS&at_campaign=rss already exists.
+2025-12-03 06:53:38,347 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c1m8nm22785o?at_medium=RSS&at_campaign=rss
+2025-12-03 06:53:38,347 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:53:38,386 - INFO - [BBC] Success with 'requests_browser'. Found content (1165 words).
+2025-12-03 06:53:41,397 - INFO - Saved article: Guinea-Bissau's military takeover: Was the coup real or a 'sham'? from BBC
+2025-12-03 06:53:41,398 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/modi-trump-huglomacy-in-deep-freeze-says-congress-as-rubio-repeats-trumps-claims-of-brokering-india-pakistan-ceasefire/article70352291.ece already exists.
+2025-12-03 06:53:41,535 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/uttar-pradesh/cough-syrup-case-fourth-man-arrested-from-lucknow-for-illegal-storage-trade-of-banned-drug/article70352047.ece already exists.
+2025-12-03 06:53:41,678 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/nagaland/cultural-performance-attract-thousands-of-tourists-at-hornbill-festival-in-nagaland/article70352270.ece already exists.
+2025-12-03 06:53:41,844 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/rajasthan/soldier-dies-in-rajasthan-after-army-tank-sinks-in-indira-gandhi-canal/article70352196.ece already exists.
+2025-12-03 06:53:42,032 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cj69588eewyo?at_medium=RSS&at_campaign=rss
+2025-12-03 06:53:42,032 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-03 06:53:42,034 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/west-bengal/west-bengal-cm-mamata-banerjee-unveils-report-card-of-her-governments-performance-for-past-14-years/article70350010.ece already exists.
+2025-12-03 06:53:42,062 - INFO - [BBC] Success with 'requests_browser'. Found content (1209 words).
+2025-12-03 06:53:45,325 - INFO - Saved article: Israeli-Russian woman says Iraqi militants tortured her in captivity from BBC
+2025-12-03 06:53:45,325 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/international/cyclone-ditwah-sri-lanka-death-toll-india-field-hospital-medical-aid-updates-december-3-2025/article70352174.ece already exists.
+2025-12-03 06:53:45,605 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/artillery-regiments-valour-in-operation-sindoor-a-model-for-future-soldiers-lt-gen-adosh-kumar-to-agniveers/article70351988.ece already exists.
+2025-12-03 06:53:45,785 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/uttar-pradesh/students-security-staff-clash-at-ups-bhu-after-vehicle-hits-female-student/article70352197.ece already exists.
+2025-12-03 06:53:45,951 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/maharashtra/navi-mumbai-reports-499-child-kidnappings-in-11-months-41-still-missing/article70352159.ece already exists.
+2025-12-03 06:53:46,066 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/chennai/heavy-vehicles-not-to-be-permitted-on-thirumukkudal-bridge-in-kancheepuram-during-peak-hours/article70350188.ece already exists.
+2025-12-03 06:53:46,345 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/karnataka/bidar-gets-akka-cafe/article70349192.ece already exists.
+2025-12-03 06:53:46,620 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/international/putin-issues-stark-warning-to-europe-amid-ukraine-tensions/article70352171.ece already exists.
+2025-12-03 06:53:46,835 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/karnataka/nearly-40-companies-sign-up-for-jito-job-fair-in-belagavi/article70351888.ece already exists.
+2025-12-03 06:53:47,088 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/delhi-riots-2020-case-supreme-court-hearing-umar-khalid-sharjeel-imam-bail-plea-live-updates-december-3-2025/article70352097.ece already exists.
+2025-12-03 06:53:47,295 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/karnataka/german-delegation-applauds-ksrtcs-inclusive-mobility-innovations-in-bengaluru/article70348982.ece already exists.
+2025-12-03 06:53:47,433 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/kerala-local-body-polls-will-gold-scandal-kcm-shift-coalition-strains-redraw-pathanamthittas-electoral-map/article70345436.ece already exists.
+2025-12-03 06:53:47,712 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/parliament-winter-session-lok-sabha-rajya-sabha-day-3-highlights-december-3-2025/article70351973.ece already exists.
+2025-12-03 06:53:47,982 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/telangana/hectic-activity-on-for-ghmc-expansion/article70350092.ece already exists.
+2025-12-03 06:53:48,086 - INFO - [The Hindu] (Thread) Finished. Attempting to shut down its Selenium driver.
+2025-12-03 06:53:48,210 - INFO - [The Hindu] (Thread) driver.quit() successful.
+2025-12-03 06:53:59,694 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:53:59,913 - INFO - [Times of India] Success with 'selenium_browser'. Found content (321 words).
+2025-12-03 06:54:03,170 - INFO - Saved article: ‘Null and void’: Trump declares all Biden autopen-signed documents invalid; calls them ‘unauthorized’ - The Times of India from Times of India
+2025-12-03 06:54:04,466 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/lacks-moral-characterindian-national-jailed-in-us-over-mediacare-fraud-siphoned-off-1-17-million/articleshow/125734035.cms already exists.
+2025-12-03 06:54:04,733 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/ban-h-1b-visas-desi-maga-backer-nalin-haley-wants-corporates-to-hire-certain-number-of-americans-watch/articleshow/125732051.cms
+2025-12-03 06:54:04,733 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:54:05,497 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:54:05,657 - INFO - [Times of India] Success with 'selenium_browser'. Found content (456 words).
+2025-12-03 06:54:10,376 - INFO - Saved article: 'Ban H-1B visas': Desi MAGA backer Nalin Haley wants corporates to hire 'certain number of Americans' - watch - The Times of India from Times of India
+2025-12-03 06:54:11,795 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/why-did-twitch-suspend-rakai-again-irl-streamers-two-year-suspension-explained/articleshow/125734329.cms already exists.
+2025-12-03 06:54:12,014 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/i-will-be-naming-candace-owens-alleges-tpusa-leaders-betrayed-charlie-kirk-before-deadly-shooting-and-vows-to-show-evidence/articleshow/125728624.cms
+2025-12-03 06:54:12,014 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:54:13,882 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:54:14,027 - INFO - [Times of India] Success with 'selenium_browser'. Found content (407 words).
+2025-12-03 06:54:19,161 - INFO - Saved article: Candace Owens alleges TPUSA leaders betrayed Charlie Kirk before deadly shooting and vows to show evidence - The Times of India from Times of India
+2025-12-03 06:54:20,173 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/trump-maduro-spat-venezuela-to-continue-accepting-deported-migrants-move-despite-uss-airspace-closure-assertion/articleshow/125732625.cms
+2025-12-03 06:54:20,173 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:54:23,215 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:54:23,315 - INFO - [Times of India] Success with 'selenium_browser'. Found content (408 words).
+2025-12-03 06:54:28,101 - INFO - Saved article: Trump-Maduro spat: US flights deporting migrants to Venezuela to continue despite claims of airspace closure - The Times of India from Times of India
+2025-12-03 06:54:29,308 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/oregon-indian-man-charged-with-criminally-negligent-homicide-after-crash-kills-two-what-probe-revealed/articleshow/125732478.cms
+2025-12-03 06:54:29,308 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:54:31,795 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:54:31,951 - INFO - [Times of India] Success with 'selenium_browser'. Found content (392 words).
+2025-12-03 06:54:36,346 - INFO - Saved article: Oregon: Indian man charged with criminally negligent homicide after crash kills two — what probe revealed - The Times of India from Times of India
+2025-12-03 06:54:37,653 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/rest-of-world/13-year-old-pulled-the-trigger-chilling-details-of-public-execution-of-afghan-man-80000-watched/articleshow/125731855.cms
+2025-12-03 06:54:37,653 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:54:38,797 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:54:38,922 - INFO - [Times of India] Success with 'selenium_browser'. Found content (305 words).
+2025-12-03 06:54:43,792 - INFO - Saved article: '13-year-old pulled the trigger': Chilling details of public execution of Afghan man; '80,000 watched' - The Times of India from Times of India
+2025-12-03 06:54:45,112 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/meghan-markle-faces-backlash-as-perez-hilton-calls-her-turkey-clip-a-safety-hazard-and-names-her-salmonella-sussex/articleshow/125730524.cms
+2025-12-03 06:54:45,112 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:54:48,508 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:54:48,649 - INFO - [Times of India] Success with 'selenium_browser'. Found content (441 words).
+2025-12-03 06:54:53,773 - INFO - Saved article: Meghan Markle faces backlash as Perez Hilton calls her turkey clip a safety hazard and names her Salmonella Sussex - The Times of India from Times of India
+2025-12-03 06:54:55,014 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/subject-to-attack-trump-warns-any-country-trafficking-drugs-to-us-can-be-striked-names-colombia-bogota-hits-back/articleshow/125731104.cms
+2025-12-03 06:54:55,014 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:54:57,437 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:54:57,588 - INFO - [Times of India] Success with 'selenium_browser'. Found content (383 words).
+2025-12-03 06:55:02,268 - INFO - Saved article: ‘Subject to attack’: Trump warns any country trafficking drugs to US can be striked; names Colombia, Bogota hits back - The Times of India from Times of India
+2025-12-03 06:55:03,205 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/donalds-sleepy-joe-moment-gavin-newsom-shares-video-of-trump-sleeping-in-his-cabinet-meeting-watch/articleshow/125730929.cms
+2025-12-03 06:55:03,205 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:55:05,358 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:55:05,506 - INFO - [Times of India] Success with 'selenium_browser'. Found content (437 words).
+2025-12-03 06:55:09,854 - INFO - Saved article: Donald's 'sleepy Joe' moment: Trump struggles to stay awake at Cabinet meeting - watch - The Times of India from Times of India
+2025-12-03 06:55:11,294 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/etimes/trending/stonehenge-just-got-stranger-archaeologists-confirm-massive-man-made-ring-of-pits-underground/articleshow/125725186.cms
+2025-12-03 06:55:11,294 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:55:12,074 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:55:12,192 - INFO - [Times of India] Success with 'selenium_browser'. Found content (1134 words).
+2025-12-03 06:55:16,597 - INFO - Saved article: Stonehenge just got stranger: Archaeologists confirm massive man-made ring of pits underground | - The Times of India from Times of India
+2025-12-03 06:55:17,522 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/technology/tech-news/ai-nightmare-google-ceo-sundar-pichai-reveals-the-one-threat-that-keeps-him-awake-at-night/articleshow/125721392.cms
+2025-12-03 06:55:17,522 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:55:18,514 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:55:18,642 - INFO - [Times of India] Success with 'selenium_browser'. Found content (496 words).
+2025-12-03 06:55:23,187 - INFO - Saved article: ‘AI nightmare’: Google CEO Sundar Pichai reveals the one threat that keeps him awake at night | - The Times of India from Times of India
+2025-12-03 06:55:23,983 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/qtcinderella-reveals-full-host-and-performer-lineup-for-the-streamer-awards-2025/articleshow/125728131.cms
+2025-12-03 06:55:23,983 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:55:26,928 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:55:27,100 - INFO - [Times of India] Success with 'selenium_browser'. Found content (402 words).
+2025-12-03 06:55:33,086 - INFO - Saved article: QTCinderella reveals full host and performer lineup for the Streamer Awards 2025 - The Times of India from Times of India
+2025-12-03 06:55:33,838 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/maga-ally-pushes-to-end-dual-citizenship-not-realising-melania-and-barron-trump-would-be-caught-in-the-crossfire/articleshow/125727781.cms
+2025-12-03 06:55:33,838 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:55:36,415 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:55:36,554 - INFO - [Times of India] Success with 'selenium_browser'. Found content (399 words).
+2025-12-03 06:55:41,231 - INFO - Saved article: MAGA ally pushes to end dual citizenship, not realising Melania and Barron Trump would be caught in the crossfire - The Times of India from Times of India
+2025-12-03 06:55:42,405 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/europe/it-would-end-so-swiftly-there-would-be-no-one-left-putin-warns-europe-that-if-it-starts-a-war-russia-is-ready/articleshow/125728045.cms
+2025-12-03 06:55:42,405 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:55:43,885 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:55:44,050 - INFO - [Times of India] Success with 'selenium_browser'. Found content (306 words).
+2025-12-03 06:55:49,837 - INFO - DEDUPLICATION: Found match (Score: 0.74). Linking to Cluster ID: 4479574d-1256-4339-9319-383d71d5c956
+2025-12-03 06:55:49,839 - INFO - Saved article: ‘It would end so swiftly, there would be no one left’: Putin warns Europe that if it starts a war, Russia is ready - The Times of India from Times of India
+2025-12-03 06:55:50,676 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/hasan-piker-honored-with-trinity-college-dublins-gold-medal-of-honorary-patronage/articleshow/125727780.cms
+2025-12-03 06:55:50,676 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:55:53,003 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:55:53,163 - INFO - [Times of India] Success with 'selenium_browser'. Found content (393 words).
+2025-12-03 06:56:00,670 - INFO - Saved article: Hasan Piker honored with Trinity College Dublin's Gold Medal of Honorary Patronage - The Times of India from Times of India
+2025-12-03 06:56:01,746 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/etimes/trending/charlie-kirk-takes-the-no-1-spot-on-wikipedias-most-read-pages-heres-the-full-top-10/articleshow/125727423.cms
+2025-12-03 06:56:01,746 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-03 06:56:02,999 - INFO - [Times of India] Page content loaded.
+2025-12-03 06:56:03,162 - INFO - [Times of India] Success with 'selenium_browser'. Found content (391 words).
+2025-12-03 06:56:08,431 - INFO - Saved article: Charlie Kirk takes the No. 1 spot on Wikipedia’s most-read pages — here’s the full top 10 - The Times of India from Times of India
+2025-12-03 06:56:09,725 - INFO - [Times of India] (Thread) Finished. Attempting to shut down its Selenium driver.
+2025-12-03 06:56:10,025 - INFO - [Times of India] (Thread) driver.quit() successful.
+2025-12-03 06:56:10,025 - INFO - Shutting down thread pool (wait=False)...
+2025-12-03 06:56:10,025 - INFO - Scraped: 2 The Hindu, 7 BBC, 0 The Guardian, 16 Times of India articles. (Total saved: 25)
+2025-12-03 06:56:10,025 - INFO - --- Scraping job finished ---
+2025-12-03 06:56:10,031 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-03 06:56:10,031 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
