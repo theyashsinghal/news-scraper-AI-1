@@ -2,7 +2,7 @@
 # --- GLOBAL USER SETTINGS ---
 #
 # How many articles to get from each source (e.g., 20)
-MAX_ARTICLES_PER_SOURCE = 20
+MAX_ARTICLES_PER_SOURCE = 25
 #
 # NOTE: Article concurrency setting removed. Articles are processed sequentially.
 #
