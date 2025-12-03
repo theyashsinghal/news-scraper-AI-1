@@ -4,9 +4,8 @@
 # How many articles to get from each source (e.g., 20)
 MAX_ARTICLES_PER_SOURCE = 20
 #
-# --- CONCURRENCY SETTING (FIXED FOR STABILITY) ---
+# --- CONCURRENCY SETTING (REDUCED FOR STABILITY) ---
 # How many articles from a single source should be fetched simultaneously.
-# Reduced to 2 to minimize memory pressure and risk of Segmentation Faults.
 MAX_CONCURRENT_ARTICLES_PER_SOURCE = 2
 #
 # --- PROXY CONFIGURATION ---
@@ -33,6 +32,7 @@ import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed, wait
 import threading
 
+# NOTE: AI dependencies remain imported, but usage is restricted to single-thread functions
 try:
     from sentence_transformers import SentenceTransformer, util
 except ImportError:
@@ -60,8 +60,7 @@ logging.basicConfig(filename='news_scraper.log',
 
 # --- GLOBAL LOCKS ---
 db_lock = threading.Lock()
-# NEW: Dedicated lock for the AI model to prevent concurrent memory access/Seg Faults
-ai_lock = threading.Lock() 
+# Removed ai_lock as clustering is now decoupled and run sequentially.
 
 # ==============================================================================
 # --- SESSION, HEADER, and SELENIUM SETUP (Unchanged) ---
@@ -82,8 +81,6 @@ def create_robust_session():
 
 BASE_HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Accept-Encoding': 'gzip, deflate, br', 'DNT': '1', 'Upgrade-Insecure-Requests': '1',
 }
 
 BROWSER_USER_AGENTS = [
@@ -170,7 +167,7 @@ SOURCE_CONFIG = [
 ]
 
 # ==============================================================================
-# --- AI/DB SETUP (Model Loading Unchanged) ---
+# --- AI/DB SETUP and MIGRATION (Model Loading Unchanged) ---
 # ==============================================================================
 
 semantic_model = None
@@ -214,63 +211,101 @@ conn.commit()
 # ---------------------------------------------------------------
 
 # ==============================================================================
-# --- AI DEDUPLICATION AND SAVE LOGIC (AI LOCK INTEGRATED) ---
+# --- NEW: DECOUPLED CLUSTERING LOGIC (Run Single-Threaded at End) ---
 # ==============================================================================
 
-def get_cluster_id_for_article(new_title, new_summary):
+def finalize_clustering():
     """
-    Checks DB for semantically similar articles and returns a cluster_id.
-    Uses ai_lock to protect the SentenceTransformer model.
+    Runs clustering logic on all articles in the last 24 hours that currently 
+    have a NULL or empty cluster_id. This is run outside of any thread pool.
     """
     if semantic_model is None or util is None:
-        return str(uuid.uuid4())
+        logging.warning("AI Model not available. Skipping final clustering step.")
+        return
 
+    logging.info("Starting single-threaded final clustering process...")
+    
+    with db_lock:
+        # 1. Fetch ALL recent articles (both clustered and unclustered)
+        cursor.execute('''
+            SELECT id, title, summary, cluster_id 
+            FROM news 
+            WHERE scraped_at >= datetime('now', '-1 day')
+        ''')
+        all_articles = cursor.fetchall()
+
+    if not all_articles:
+        logging.info("No recent articles found for clustering.")
+        return
+
+    # 2. Separate articles to be processed
+    # Articles that already have a cluster_id are the reference set
+    # Articles that have a NULL cluster_id are the candidates for clustering
+    reference_articles = [a for a in all_articles if a[3]]
+    candidate_articles = [a for a in all_articles if not a[3]]
+    
+    if not candidate_articles:
+        logging.info("No new articles require clustering.")
+        return
+
+    # 3. Prepare texts for embedding
+    # We compare candidates against themselves AND the reference set
+    reference_texts = [f"{row[1]}. {row[2]}" for row in reference_articles]
+    reference_ids = [row[3] for row in reference_articles] # Existing cluster IDs
+    
+    candidate_texts = [f"{row[1]}. {row[2]}" for row in candidate_articles]
+    candidate_db_ids = [row[0] for row in candidate_articles] # Primary DB IDs
+
+    logging.info(f"Clustering {len(candidate_articles)} new articles against {len(reference_articles)} existing articles...")
+    
     try:
-        # Acquire AI lock to prevent parallel embedding calculation
-        with ai_lock:
-            # NOTE: DB select is fine outside the DB lock here as no write operation follows immediately
-            cursor.execute('''
-                SELECT title, summary, cluster_id 
-                FROM news 
-                WHERE scraped_at >= datetime('now', '-1 day')
-            ''')
-            recent_articles = cursor.fetchall()
-
-            if not recent_articles: return str(uuid.uuid4()) 
-
-            existing_texts = [f"{row[0]}. {row[1]}" for row in recent_articles]
-            existing_ids = [row[2] for row in recent_articles]
-            new_text = f"{new_title}. {new_summary}"
-
-            # CRITICAL SECTION: AI Model Encoding
-            existing_embeddings = semantic_model.encode(existing_texts, convert_to_tensor=True)
-            new_embedding = semantic_model.encode(new_text, convert_to_tensor=True)
+        # 4. Generate Embeddings (Single-threaded, safe)
+        all_texts = reference_texts + candidate_texts
+        all_embeddings = semantic_model.encode(all_texts, convert_to_tensor=True)
         
-        # Release AI lock; calculation is safe
-        cosine_scores = util.cos_sim(new_embedding, existing_embeddings)[0]
-
-        best_score = -1
-        best_idx = -1
-        for i, score in enumerate(cosine_scores):
-            if score > best_score:
-                best_score = score
-                best_idx = i
-
+        # Split back into reference and candidate sets
+        ref_embeddings = all_embeddings[:len(reference_texts)]
+        cand_embeddings = all_embeddings[len(reference_texts):]
+        
+        updates_needed = []
         THRESHOLD = 0.70
-        if best_score >= THRESHOLD:
-            logging.info(f"DEDUPLICATION: Found match (Score: {best_score:.2f}). Linking to Cluster ID: {existing_ids[best_idx]}")
-            return existing_ids[best_idx]
-        else:
-            return str(uuid.uuid4())
-            
-    except Exception as e:
-        logging.error(f"Error during AI clustering calculation: {e}")
-        return str(uuid.uuid4())
 
+        # 5. Process Candidates
+        for i, cand_emb in enumerate(cand_embeddings):
+            new_cluster_id = str(uuid.uuid4()) # Default: new cluster
+            
+            # Compare candidate against the reference set
+            if ref_embeddings.numel() > 0:
+                cosine_scores = util.cos_sim(cand_emb, ref_embeddings)[0]
+                best_score = max(cosine_scores).item()
+                
+                if best_score >= THRESHOLD:
+                    best_idx = cosine_scores.argmax().item()
+                    new_cluster_id = reference_ids[best_idx]
+            
+            updates_needed.append((new_cluster_id, candidate_db_ids[i]))
+            
+        # 6. Apply Updates to DB
+        with db_lock:
+            for cluster_id, db_id in updates_needed:
+                cursor.execute(
+                    "UPDATE news SET cluster_id = ? WHERE id = ?", 
+                    (cluster_id, db_id)
+                )
+            conn.commit()
+        
+        logging.info(f"Clustering complete. Assigned {len(updates_needed)} cluster IDs.")
+
+    except Exception as e:
+        logging.error(f"Critical error during final clustering: {e}")
+
+# ==============================================================================
+# --- SAVE LOGIC (Removed AI, Simplified) ---
+# ==============================================================================
 
 def save_article(source, title, url, summary, image_url):
     """
-    Saves a single article to the SQLite database with a guaranteed final URL check.
+    Saves a single article *without* calculating the cluster_id during the scrape.
     """
     try:
         # --- ROBUST CLEANING ---
@@ -281,22 +316,19 @@ def save_article(source, title, url, summary, image_url):
         if not summary: summary = "No content available"
         if not image_url: image_url = "No image available"
         
-        # 1. AI STEP (outside db_lock): Calculate cluster ID.
-        cluster_id = get_cluster_id_for_article(title, summary)
-
-        # 2. CRITICAL FINAL CHECK AND INSERT
+        # --- CRITICAL CHECK AND INSERT ---
         with db_lock:
-            # RE-CHECK: Catch race condition (cross-source or between filter/save)
+            # RE-CHECK: Catch race condition
             cursor.execute("SELECT id FROM news WHERE url = ?", (url,))
             if cursor.fetchone():
-                logging.warning(f"RACE CONDITION AVOIDED: Skipped insertion of {title} after AI check.")
+                logging.warning(f"RACE CONDITION AVOIDED: Skipped insertion of {title}.")
                 return False
             
-            # 3. INSERT is now safe
+            # Insert with NULL cluster_id for later processing
             cursor.execute('''
                 INSERT INTO news (cluster_id, source, title, url, summary, image_url, scraped_at) 
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            ''', (cluster_id, source, title, url, summary, image_url, datetime.now()))
+                VALUES (NULL, ?, ?, ?, ?, ?, ?)
+            ''', (source, title, url, summary, image_url, datetime.now()))
             conn.commit()
         
         logging.info(f"Saved article: {title} from {source}")
@@ -307,7 +339,7 @@ def save_article(source, title, url, summary, image_url):
         return False
 
 # ==============================================================================
-# --- ARTICLE-LEVEL PARALLEL PROCESSOR ---
+# --- ARTICLE-LEVEL PARALLEL PROCESSOR (Updated to call simple save) ---
 # ==============================================================================
 
 def process_single_article(item, source_config, session, selenium_driver, proxies_dict):
@@ -378,7 +410,7 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
         else:
             summary = "No content available"
 
-    # 6. Save (Uses the revised save_article with final RACE CONDITION check)
+    # 6. Save (Now calls the simplified save_article)
     was_saved = save_article(name, final_title, article_url, summary, image_url)
     time.sleep(random.uniform(0.5, 1.5))
     
@@ -386,7 +418,7 @@ def process_single_article(item, source_config, session, selenium_driver, proxie
 
 
 # ==============================================================================
-# --- SOURCE-LEVEL PROCESSOR (Pre-filter to prevent concurrent processing) ---
+# --- SOURCE-LEVEL PROCESSOR (Unchanged) ---
 # ==============================================================================
 
 def scrape_source(session, selenium_driver, source_config, proxies_dict):
@@ -421,7 +453,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
             with db_lock:
                 cursor.execute("SELECT id FROM news WHERE url = ?", (article_url,))
                 if cursor.fetchone():
-                    continue # Skip it, don't submit to the parallel queue
+                    continue # Skip it
             
             # Check for URL filter
             if source_config['article_url_contains'] and source_config['article_url_contains'] not in article_url:
@@ -466,7 +498,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
     return (name, saved_count)
 
 # ==============================================================================
-# --- MAIN EXECUTION AND CLEANUP ---
+# --- MAIN EXECUTION AND CLEANUP (Added Final Clustering) ---
 # ==============================================================================
 
 def scrape_source_wrapper(source, session, proxies_dict):
@@ -555,7 +587,12 @@ def main():
     try:
         logging.info("--- Scraper service started (CI Mode: Run Once) ---")
         print("Running single scrape for CI...")
+        
         scrape_all()
+        
+        # --- NEW STEP: Run AI Clustering SEQUENTIALLY after all scraping is done ---
+        finalize_clustering()
+        
         print("Scrape finished.")
     except Exception as e:
         logging.critical(f"A critical error occurred in the main function: {e}")
