@@ -25,6 +25,7 @@ from datetime import datetime
 import random 
 import os 
 import uuid 
+import re # --- NEW: Import regex for title cleanup
 
 # --- Imports for Parallelism and AI ---
 from concurrent.futures import ThreadPoolExecutor, as_completed, wait
@@ -209,14 +210,25 @@ conn.commit()
 # ---------------------------------------------------------------
 
 # ==============================================================================
-# --- FINAL CLUSTERING LOGIC (Decoupled, Single-Threaded) ---
+# --- FINAL CLUSTERING LOGIC (FIXED FOR TITLE CLEANUP) ---
 # ==============================================================================
+
+# Regex pattern to clean up titles by removing common separators and metadata/source names
+TITLE_CLEANUP_PATTERN = re.compile(r'\s*([|—–\-:.]\s*.*)$')
+
+def clean_title_for_clustering(title):
+    """Removes common source/category metadata from the end of a title."""
+    match = TITLE_CLEANUP_PATTERN.search(title)
+    if match:
+        # If the separator is found, return only the part before it
+        return title[:match.start()].strip()
+    return title.strip()
+
 
 def finalize_clustering():
     """
     Runs clustering logic on all articles in the last 24 hours. 
-    It ensures new articles are compared against each other and existing clusters 
-    to form consistent groups.
+    It now cleans titles before embedding for better accuracy.
     """
     if semantic_model is None or util is None:
         logging.warning("AI Model not available. Skipping final clustering step.")
@@ -241,7 +253,11 @@ def finalize_clustering():
     article_db_id_to_cluster_id = {row[0]: row[3] for row in all_articles if row[3]}
     article_db_id_to_index = {row[0]: i for i, row in enumerate(all_articles)}
     
-    all_texts = [f"{row[1]}. {row[2]}" for row in all_articles]
+    # NEW: Clean titles before combining with summary for embedding
+    all_texts = [
+        f"{clean_title_for_clustering(row[1])}. {row[2]}" 
+        for row in all_articles
+    ]
     all_db_ids = [row[0] for row in all_articles]
 
     logging.info(f"Clustering {len(all_articles)} total articles...")
