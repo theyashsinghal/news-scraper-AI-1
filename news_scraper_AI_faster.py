@@ -127,7 +127,7 @@ def create_selenium_driver():
             options.add_argument(f"--proxy-server={PROXY_SETTINGS['proxy_url']}")
 
         driver = webdriver.Chrome(options=options)
-        driver.set_page_load_timeout(15)
+        driver.set_page_load_timeout(20)
         logging.info("Selenium driver initialized successfully.")
         return driver
     except WebDriverException as e:
@@ -348,7 +348,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
     try:
         # 1. Get RSS Feed
         rss_headers = get_headers(source_config['rss_headers_type'])
-        response = session.get(rss_url, headers=rss_headers, timeout=15, proxies=proxies_dict)  
+        response = session.get(rss_url, headers=rss_headers, timeout=20, proxies=proxies_dict)  
         response.raise_for_status()
         
         soup = BeautifulSoup(response.content, 'xml')
@@ -408,7 +408,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
                             article_headers = get_headers(header_type)
                             article_headers['Referer'] = source_config['referer']
                             
-                            page_response = session.get(article_url, headers=article_headers, timeout=15, proxies=proxies_dict)
+                            page_response = session.get(article_url, headers=article_headers, timeout=20, proxies=proxies_dict)
                             page_response.raise_for_status()
                             raw_html = page_response.text
                         
@@ -770,7 +770,7 @@ def create_selenium_driver():
             options.add_argument(f"--proxy-server={PROXY_SETTINGS['proxy_url']}")
 
         driver = webdriver.Chrome(options=options)
-        driver.set_page_load_timeout(15)
+        driver.set_page_load_timeout(20)
         logging.info("Selenium driver initialized successfully.")
         return driver
     except WebDriverException as e:
@@ -991,7 +991,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
     try:
         # 1. Get RSS Feed
         rss_headers = get_headers(source_config['rss_headers_type'])
-        response = session.get(rss_url, headers=rss_headers, timeout=15, proxies=proxies_dict)  
+        response = session.get(rss_url, headers=rss_headers, timeout=20, proxies=proxies_dict)  
         response.raise_for_status()
         
         soup = BeautifulSoup(response.content, 'xml')
@@ -1051,7 +1051,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
                             article_headers = get_headers(header_type)
                             article_headers['Referer'] = source_config['referer']
                             
-                            page_response = session.get(article_url, headers=article_headers, timeout=15, proxies=proxies_dict)
+                            page_response = session.get(article_url, headers=article_headers, timeout=20, proxies=proxies_dict)
                             page_response.raise_for_status()
                             raw_html = page_response.text
                         
