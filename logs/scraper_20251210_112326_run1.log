@@ -1,0 +1,36 @@
+2025-12-10 11:18:25,357 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-10 11:18:25,357 - INFO - Use pytorch device_name: cpu
+2025-12-10 11:18:25,358 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-10 11:18:26,657 - INFO - AI Model loaded successfully.
+2025-12-10 11:18:26,657 - INFO - Initializing database connection at: news_articles.db
+2025-12-10 11:18:26,657 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-10 11:18:26,657 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-10 11:18:26,657 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-10 11:18:26,657 - INFO - Proxy is DISABLED.
+2025-12-10 11:18:26,658 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-10 11:18:26,659 - INFO - Initializing headless Selenium Chrome driver (using SeleniumManager)...
+2025-12-10 11:18:26,659 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-10 11:18:26,660 - INFO - Initializing headless Selenium Chrome driver (using SeleniumManager)...
+2025-12-10 11:18:26,660 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-10 11:18:26,777 - INFO - [BBC] Found 0 RSS URLs already present in the DB.
+2025-12-10 11:18:26,778 - INFO - [BBC] Proceeding to scrape 20 new articles.
+2025-12-10 11:18:26,876 - INFO - [The Guardian] Found 0 RSS URLs already present in the DB.
+2025-12-10 11:18:26,877 - INFO - [The Guardian] Proceeding to scrape 20 new articles.
+2025-12-10 11:18:26,985 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:18:27,162 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:18:27,327 - INFO - [The Guardian] Success with 'requests_browser'. Found content (408 words).
+2025-12-10 11:18:27,447 - INFO - [BBC] Success with 'requests_browser'. Found content (1443 words).
+2025-12-10 11:18:29,143 - INFO - Selenium driver initialized successfully.
+2025-12-10 11:18:29,143 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-10 11:18:29,144 - INFO - Selenium driver initialized successfully.
+2025-12-10 11:18:29,144 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-10 11:23:26,661 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2025-12-10 11:23:26,661 - ERROR - A thread has timed out and will be abandoned.
+2025-12-10 11:23:26,661 - ERROR - A thread has timed out and will be abandoned.
+2025-12-10 11:23:26,661 - ERROR - A thread has timed out and will be abandoned.
+2025-12-10 11:23:26,661 - ERROR - A thread has timed out and will be abandoned.
+2025-12-10 11:23:26,661 - INFO - Shutting down thread pool (wait=False)...
+2025-12-10 11:23:26,661 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2025-12-10 11:23:26,661 - INFO - --- Scraping job finished ---
+2025-12-10 11:23:26,661 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-10 11:23:26,661 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
