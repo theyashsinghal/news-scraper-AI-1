@@ -1,0 +1,722 @@
+2025-12-10 11:52:37,136 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-10 11:52:37,137 - INFO - Use pytorch device_name: cpu
+2025-12-10 11:52:37,137 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-10 11:52:38,374 - INFO - AI Model loaded successfully.
+2025-12-10 11:52:38,374 - INFO - Initializing database connection at: news_articles.db
+2025-12-10 11:52:38,374 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-10 11:52:38,374 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-10 11:52:38,374 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-10 11:52:38,374 - INFO - Proxy is DISABLED.
+2025-12-10 11:52:38,375 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-10 11:52:38,376 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-10 11:52:38,376 - INFO - Initializing headless Selenium Chrome driver (using SeleniumManager)...
+2025-12-10 11:52:38,376 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-10 11:52:38,377 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-10 11:52:38,377 - INFO - Initializing headless Selenium Chrome driver (using SeleniumManager)...
+2025-12-10 11:52:38,377 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-10 11:52:38,520 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 20.
+2025-12-10 11:52:38,521 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/09/drc-fighting-forces-200000-to-flee-just-days-after-washington-peace-deal
+2025-12-10 11:52:38,521 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:38,553 - INFO - Found 53 articles in BBC RSS feed. Processing up to 20.
+2025-12-10 11:52:38,554 - INFO - [BBC] Article: https://www.bbc.com/news/articles/ckgmy90z991o?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:38,554 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:38,688 - INFO - [The Guardian] Success with 'requests_browser'. Found content (408 words).
+2025-12-10 11:52:38,722 - INFO - Saved article: DRC fighting forces 200,000 to flee just days after Washington peace deal | Democratic Republic of the Congo | The Guardian from The Guardian
+2025-12-10 11:52:38,791 - INFO - [BBC] Success with 'requests_browser'. Found content (1443 words).
+2025-12-10 11:52:38,914 - INFO - Saved article: Sperm from donor with cancer-causing gene was used to conceive almost 200 children from BBC
+2025-12-10 11:52:39,316 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/09/colombian-mercenaries-sudan-sanctions
+2025-12-10 11:52:39,316 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:39,355 - INFO - [The Guardian] Success with 'requests_browser'. Found content (506 words).
+2025-12-10 11:52:39,504 - INFO - Saved article: US puts sanctions on network said to funnel Colombian mercenaries to Sudan | Sudan | The Guardian from The Guardian
+2025-12-10 11:52:39,885 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cn5l1474yv7o?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:39,885 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:39,937 - INFO - [BBC] Success with 'requests_browser'. Found content (1066 words).
+2025-12-10 11:52:40,115 - INFO - Saved article: Ukraine 'ready for elections' if partners guarantee security, Zelensky says from BBC
+2025-12-10 11:52:40,116 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/09/nigeria-troops-held-burkina-faso-emergency-landing
+2025-12-10 11:52:40,116 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:40,155 - INFO - [The Guardian] Success with 'requests_browser'. Found content (386 words).
+2025-12-10 11:52:40,377 - INFO - Saved article: Nigerian troops held in Burkina Faso after ‘unfriendly’ emergency landing | Nigeria | The Guardian from The Guardian
+2025-12-10 11:52:41,297 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cgl6gkd7pz6o?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:41,298 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:41,447 - INFO - [BBC] Success with 'requests_browser'. Found content (812 words).
+2025-12-10 11:52:41,688 - INFO - Saved article: Australia social media ban: Kids barred from apps as world-first policy kicks in from BBC
+2025-12-10 11:52:41,689 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/08/white-supremacist-notions-threaten-sovereignty-of-south-africa-ramaphosa
+2025-12-10 11:52:41,689 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:41,858 - INFO - [The Guardian] Success with 'requests_browser'. Found content (547 words).
+2025-12-10 11:52:42,272 - INFO - Saved article: False claims Afrikaners are persecuted threaten South Africa’s sovereignty, says president | South Africa | The Guardian from The Guardian
+2025-12-10 11:52:42,520 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c1dz0g2ykpeo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:42,520 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:42,565 - INFO - [BBC] Success with 'requests_browser'. Found content (729 words).
+2025-12-10 11:52:42,862 - INFO - Saved article: US could ask tourists for five-year social media history before entry from BBC
+2025-12-10 11:52:43,180 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/08/ancient-egyptian-pleasure-boat-found-archaeologists-alexandria-coast
+2025-12-10 11:52:43,180 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:43,326 - INFO - [The Guardian] Success with 'requests_browser'. Found content (765 words).
+2025-12-10 11:52:43,660 - INFO - Saved article: Ancient Egyptian pleasure boat found by archaeologists off Alexandria coast | Egypt | The Guardian from The Guardian
+2025-12-10 11:52:44,017 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cz7nrze7g8wo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:44,017 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:44,062 - INFO - [BBC] Success with 'requests_browser'. Found content (1096 words).
+2025-12-10 11:52:44,727 - INFO - Saved article: French far-right leader tells BBC he shares US warnings on Europe 'for most part' from BBC
+2025-12-10 11:52:44,728 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/10/venezuelan-nobel-peace-prize-winner-maria-corina-machado-not-attend-ceremony-oslo
+2025-12-10 11:52:44,728 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:44,770 - INFO - [The Guardian] Success with 'requests_browser'. Found content (886 words).
+2025-12-10 11:52:45,375 - INFO - Saved article: Venezuelan Nobel peace prize winner on way to Oslo but will miss ceremony | María Corina Machado | The Guardian from The Guardian
+2025-12-10 11:52:45,881 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cly59283d7ko?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:45,881 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:45,929 - INFO - [BBC] Success with 'requests_browser'. Found content (694 words).
+2025-12-10 11:52:46,355 - INFO - DEDUPLICATION: Found match (Score: 0.79). Linking to Cluster ID: e458f501-126c-416a-a2d5-da8bdb897e63
+2025-12-10 11:52:46,356 - INFO - Saved article: DR Congo fighting: M23 rebels advance Uvira despite Trump peace deal from BBC
+2025-12-10 11:52:46,643 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/live/2025/dec/09/hegseth-rubio-venezuela-trump-tariffs-pennsylvania-nvidia-china-us-politics-latest-news-updates
+2025-12-10 11:52:46,643 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:46,880 - INFO - [The Guardian] Success with 'requests_browser'. Found content (1276 words).
+2025-12-10 11:52:47,358 - INFO - Selenium driver initialized successfully.
+2025-12-10 11:52:47,358 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-10 11:52:47,360 - INFO - Selenium driver initialized successfully.
+2025-12-10 11:52:47,360 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-10 11:52:47,406 - INFO - Saved article: Trump speech on affordability ramps up bigotry and false statements – as it happened | US politics | The Guardian from The Guardian
+2025-12-10 11:52:47,520 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 20.
+2025-12-10 11:52:47,520 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/ttd-mired-in-the-5495-crore-angavastram-scandal/article70380020.ece
+2025-12-10 11:52:47,520 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:52:47,649 - INFO - [BBC] Article: https://www.bbc.com/news/articles/ckgl63lrpkmo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:47,649 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:47,695 - INFO - [BBC] Success with 'requests_browser'. Found content (942 words).
+2025-12-10 11:52:47,877 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 20.
+2025-12-10 11:52:48,221 - INFO - Saved article: Trump touts upbeat message on cost of living as Americans feel the pinch from BBC
+2025-12-10 11:52:48,221 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/worlds-most-popular-youtuber-mrbeast-names-the-best-platform-to-build-a-strong-creator-community/articleshow/125889255.cms
+2025-12-10 11:52:48,221 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:52:48,477 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/09/honduras-president-alleges-electoral-coup-under-way-amid-trump-interference
+2025-12-10 11:52:48,477 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:48,625 - INFO - [The Guardian] Success with 'requests_browser'. Found content (627 words).
+2025-12-10 11:52:49,576 - INFO - Saved article: Honduras president alleges ‘electoral coup’ under way amid Trump ‘interference’ | Honduras | The Guardian from The Guardian
+2025-12-10 11:52:49,577 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cqxq38028djo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:49,577 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:49,628 - INFO - [BBC] Success with 'requests_browser'. Found content (347 words).
+2025-12-10 11:52:51,274 - INFO - Saved article: South Korea protests Chinese and Russian warplanes in its airspace from BBC
+2025-12-10 11:52:51,274 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/09/nobel-peace-prize-maria-corina-machado-venezuela-oslo
+2025-12-10 11:52:51,275 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:51,495 - INFO - [The Guardian] Success with 'requests_browser'. Found content (746 words).
+2025-12-10 11:52:53,302 - INFO - DEDUPLICATION: Found match (Score: 0.88). Linking to Cluster ID: 69292eb3-af15-42e5-b95c-0545d347e4cd
+2025-12-10 11:52:53,317 - INFO - Saved article: Oslo appearance by Nobel peace prize winner María Corina Machado cancelled | Nobel peace prize | The Guardian from The Guardian
+2025-12-10 11:52:53,319 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c80x35dek82o?at_medium=RSS&at_campaign=rss
+2025-12-10 11:52:53,319 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:53,394 - INFO - [BBC] Success with 'requests_browser'. Found content (608 words).
+2025-12-10 11:52:55,875 - INFO - Saved article: Musk says Doge was 'somewhat successful' but he wouldn't do it again from BBC
+2025-12-10 11:52:55,876 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2025/dec/08/trump-mexico-tariffs-water-dispute
+2025-12-10 11:52:55,876 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:52:56,082 - INFO - [The Guardian] Success with 'requests_browser'. Found content (613 words).
+2025-12-10 11:53:00,413 - INFO - Saved article: ‘Very unfair’: Trump threatens extra 5% tariff on Mexico over water dispute | Trump tariffs | The Guardian from The Guardian
+2025-12-10 11:53:00,415 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cvg8m5lj2lzo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:00,415 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:00,592 - INFO - [BBC] Success with 'requests_browser'. Found content (571 words).
+2025-12-10 11:53:03,435 - INFO - Saved article: Brazil: Chaos breaks out in Congress during Jair Bolsonaro sentence vote from BBC
+2025-12-10 11:53:03,436 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/10/trump-says-end-hostilities-thailand-cambodia
+2025-12-10 11:53:03,438 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:03,634 - INFO - [The Guardian] Success with 'requests_browser'. Found content (427 words).
+2025-12-10 11:53:04,614 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/andhra-pradesh/ttd-mired-in-the-5495-crore-angavastram-scandal/article70380020.ece: Message: timeout: Timed out receiving message from renderer: 14.842
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5835169 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:53:04,614 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/andhra-pradesh/ttd-mired-in-the-5495-crore-angavastram-scandal/article70380020.ece. Falling back to RSS description.
+2025-12-10 11:53:04,871 - INFO - Saved article: Trump says he will make a call to end hostilities as Thailand and Cambodia ‘at it again’ | Thailand | The Guardian from The Guardian
+2025-12-10 11:53:04,871 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cx2pn5dxd0go?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:04,871 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:04,938 - INFO - [BBC] Success with 'requests_browser'. Found content (483 words).
+2025-12-10 11:53:05,587 - INFO - Saved article: TTD mired in the ₹54.95 crore ‘Angavastram’ scandal from The Hindu
+2025-12-10 11:53:06,367 - INFO - DEDUPLICATION: Found match (Score: 0.88). Linking to Cluster ID: 3ae3481c-60b6-4bef-abcc-b92281860407
+2025-12-10 11:53:06,368 - INFO - Saved article: Thailand-Cambodia border conflict: US calls for end to hostilities as clashes enter third day from BBC
+2025-12-10 11:53:06,369 - INFO - [The Guardian] Article: https://www.theguardian.com/stage/2025/dec/10/japan-releases-playwright-jeremy-o-harris-drug-arrest-ntwnfb
+2025-12-10 11:53:06,369 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:06,510 - INFO - [The Guardian] Success with 'requests_browser'. Found content (271 words).
+2025-12-10 11:53:07,348 - INFO - Saved article: Japan releases playwright Jeremy O Harris three weeks after arrest for alleged drug smuggling | Jeremy O Harris | The Guardian from The Guardian
+2025-12-10 11:53:07,349 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/goa/goa-nightclub-fire-luthras-fail-to-get-interim-relief-court-to-hear-transit-anticipatory-bail-plea-on-dec-11/article70380216.ece
+2025-12-10 11:53:07,349 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:07,349 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cwyx8yj410po?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:07,349 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:07,400 - INFO - [BBC] Success with 'requests_browser'. Found content (642 words).
+2025-12-10 11:53:08,387 - INFO - Saved article: Iain Douglas-Hamilton, pioneering elephant conservationist, dies aged 83 from BBC
+2025-12-10 11:53:08,387 - INFO - [The Guardian] Article: https://www.theguardian.com/technology/2025/dec/08/trump-nvidia-ai-chips-china
+2025-12-10 11:53:08,388 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:08,561 - INFO - [The Guardian] Success with 'requests_browser'. Found content (741 words).
+2025-12-10 11:53:09,591 - INFO - Saved article: Trump clears way for Nvidia to sell powerful AI chips to China | Nvidia | The Guardian from The Guardian
+2025-12-10 11:53:09,591 - INFO - [BBC] Article: https://www.bbc.com/news/articles/clydlwldkvko?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:09,592 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:09,635 - INFO - [BBC] Success with 'requests_browser'. Found content (805 words).
+2025-12-10 11:53:10,565 - INFO - Saved article: Trump criticises 'decaying' European countries and 'weak' leaders from BBC
+2025-12-10 11:53:10,565 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/09/fatal-thailand-cambodia-clashes-spread-along-contested-border-area
+2025-12-10 11:53:10,566 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:10,862 - WARNING - [Times of India] Page timed out (10s). No <p> tags found. Proceeding anyway.
+2025-12-10 11:53:10,987 - INFO - [The Guardian] Success with 'requests_browser'. Found content (504 words).
+2025-12-10 11:53:11,115 - INFO - [Times of India] Success with 'selenium_browser'. Found content (455 words).
+2025-12-10 11:53:12,017 - INFO - DEDUPLICATION: Found match (Score: 0.86). Linking to Cluster ID: 3ae3481c-60b6-4bef-abcc-b92281860407
+2025-12-10 11:53:12,019 - INFO - Saved article: Fatal Thailand-Cambodia clashes spread along contested border area | Thailand | The Guardian from The Guardian
+2025-12-10 11:53:12,933 - INFO - Saved article: World's most popular YouTuber MrBeast names the best platform to build a strong creator community - The Times of India from Times of India
+2025-12-10 11:53:12,934 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c208vd511ljo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:12,934 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:12,974 - INFO - [BBC] Success with 'requests_browser'. Found content (329 words).
+2025-12-10 11:53:13,004 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/09/australia-deporting-refugee-nauru-may-cause-imminent-preventable-death
+2025-12-10 11:53:13,005 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:13,189 - INFO - [The Guardian] Success with 'requests_browser'. Found content (681 words).
+2025-12-10 11:53:14,013 - INFO - DEDUPLICATION: Found match (Score: 0.88). Linking to Cluster ID: 69292eb3-af15-42e5-b95c-0545d347e4cd
+2025-12-10 11:53:14,015 - INFO - Saved article: Nobel officials unsure when Peace Prize winner will arrive for ceremony from BBC
+2025-12-10 11:53:15,109 - INFO - Saved article: Australia deporting refugee to Nauru may cause his ‘imminent’ and ‘preventable’ death, court hears | Nauru | The Guardian from The Guardian
+2025-12-10 11:53:15,110 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/dubai-ruler-names-egyptian-professor-abbas-el-gamal-the-winner-of-the-2025-great-arab-minds-award/articleshow/125889538.cms
+2025-12-10 11:53:15,110 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:15,110 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c773de38p2go?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:15,110 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:15,158 - INFO - [BBC] Success with 'requests_browser'. Found content (748 words).
+2025-12-10 11:53:16,602 - INFO - [Times of India] Page content loaded.
+2025-12-10 11:53:16,794 - INFO - Saved article: Congress ups pressure over boat strike video with threat to Hegseth's budget from BBC
+2025-12-10 11:53:16,795 - INFO - [The Guardian] Article: https://www.theguardian.com/music/2025/dec/10/king-gizzard-and-the-lizard-wizard-despair-at-ai-clone-appearing-on-spotify
+2025-12-10 11:53:16,795 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:16,827 - INFO - [Times of India] Success with 'selenium_browser'. Found content (662 words).
+2025-12-10 11:53:16,895 - INFO - [The Guardian] Success with 'requests_browser'. Found content (593 words).
+2025-12-10 11:53:18,632 - INFO - Saved article: Dubai Ruler names Egyptian professor Abbas El Gamal the winner of the 2025 Great Arab Minds Award | World News - The Times of India from Times of India
+2025-12-10 11:53:20,303 - INFO - Saved article: ‘We are truly doomed’: King Gizzard and the Lizard Wizard despair at AI clone appearing on Spotify | Music | The Guardian from The Guardian
+2025-12-10 11:53:20,304 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cx2e0n3p9vvo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:20,304 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:20,306 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/science/nasa-shows-how-air-travel-can-be-made-safer-for-future/articleshow/125888143.cms
+2025-12-10 11:53:20,306 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:20,381 - INFO - [BBC] Success with 'requests_browser'. Found content (366 words).
+2025-12-10 11:53:22,361 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/goa/goa-nightclub-fire-luthras-fail-to-get-interim-relief-court-to-hear-transit-anticipatory-bail-plea-on-dec-11/article70380216.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:53:22,361 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/goa/goa-nightclub-fire-luthras-fail-to-get-interim-relief-court-to-hear-transit-anticipatory-bail-plea-on-dec-11/article70380216.ece. Falling back to RSS description.
+2025-12-10 11:53:22,534 - INFO - Saved article: Man who grabbed Ariana Grande kicked out of Lady Gaga concert from BBC
+2025-12-10 11:53:22,534 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/10/deaths-after-deaths-after-deaths-indigenous-deaths-in-custody-reach-their-highest-level-since-1980
+2025-12-10 11:53:22,534 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:22,620 - INFO - [Times of India] Page content loaded.
+2025-12-10 11:53:22,629 - INFO - [The Guardian] Success with 'requests_browser'. Found content (763 words).
+2025-12-10 11:53:22,787 - INFO - [Times of India] Success with 'selenium_browser'. Found content (688 words).
+2025-12-10 11:53:24,301 - INFO - Saved article: Goa nightclub fire: Luthras fail to get interim relief, court to hear transit anticipatory bail plea on Dec. 11 from The Hindu
+2025-12-10 11:53:25,714 - INFO - Saved article: ‘Deaths, after deaths, after deaths’: Indigenous deaths in custody reach their highest level since 1980 | Deaths in custody | The Guardian from The Guardian
+2025-12-10 11:53:28,350 - INFO - Saved article: NASA shows how air travel can be made safer for future | - The Times of India from Times of India
+2025-12-10 11:53:28,350 - INFO - [BBC] Article: https://www.bbc.com/news/articles/crl95eg33k1o?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:28,350 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:28,351 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/mysuru-english-theatre-festival-from-december-12-to-14/article70379943.ece
+2025-12-10 11:53:28,351 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:28,352 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/10/how-the-world-media-covered-australias-under-16s-social-media-ban
+2025-12-10 11:53:28,352 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:28,506 - INFO - [BBC] Success with 'requests_browser'. Found content (662 words).
+2025-12-10 11:53:28,576 - INFO - [The Guardian] Success with 'requests_browser'. Found content (696 words).
+2025-12-10 11:53:29,939 - INFO - Saved article: EU investigates Google over AI-generated summaries in search results from BBC
+2025-12-10 11:53:31,245 - INFO - DEDUPLICATION: Found match (Score: 0.83). Linking to Cluster ID: 4433bf07-47eb-44ff-9137-0d669f86fb6f
+2025-12-10 11:53:31,246 - INFO - Saved article: ‘Grand social experiment’: Australia’s social media ban turns heads globally, with mixed results | Social media ban | The Guardian from The Guardian
+2025-12-10 11:53:31,246 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/saudi-arabia-updates-corporate-rules-to-identify-beneficial-owners-in-companies/articleshow/125888218.cms
+2025-12-10 11:53:31,247 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:31,247 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cdd5mn8yd2mo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:31,247 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:31,298 - INFO - [BBC] Success with 'requests_browser'. Found content (340 words).
+2025-12-10 11:53:33,294 - INFO - [Times of India] Page content loaded.
+2025-12-10 11:53:33,876 - INFO - [Times of India] Success with 'selenium_browser'. Found content (312 words).
+2025-12-10 11:53:33,997 - INFO - Saved article: French feminists outraged by Brigitte Macron's comment about activists from BBC
+2025-12-10 11:53:33,998 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/live/2025/dec/10/under-16s-social-media-ban-reaction-victoria-vce-atar-results-queensland-parliament-mcphillamys-goldmine-federal-court-hearing-anthony-albanese-labor-sussan-ley-coalition-migration-policy-ntwnfb
+2025-12-10 11:53:33,998 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:34,442 - INFO - [The Guardian] Success with 'requests_browser'. Found content (2446 words).
+2025-12-10 11:53:36,715 - INFO - Saved article: Saudi Arabia updates corporate rules to identify beneficial owners in companies | World News - The Times of India from Times of India
+2025-12-10 11:53:38,467 - INFO - Saved article: Online safety regulator says teens ‘will lose interest pretty quickly’ in social media – as it happened | Australia news | The Guardian from The Guardian
+2025-12-10 11:53:38,467 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cn8e2kvzen7o?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:38,467 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:38,468 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/science/nasa-astronaut-jonny-kim-returns-after-8-months-in-space-heres-what-he-brought-back-for-humanity/articleshow/125887672.cms
+2025-12-10 11:53:38,468 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:38,511 - INFO - [BBC] Success with 'requests_browser'. Found content (451 words).
+2025-12-10 11:53:39,915 - INFO - [Times of India] Page content loaded.
+2025-12-10 11:53:40,169 - INFO - [Times of India] Success with 'selenium_browser'. Found content (557 words).
+2025-12-10 11:53:41,059 - INFO - Saved article: Judge rules Ghislaine Maxwell grand jury records can be unsealed from BBC
+2025-12-10 11:53:41,061 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/10/hundreds-sharks-byron-bay-australia-feeding-frenzy
+2025-12-10 11:53:41,061 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:41,528 - INFO - [The Guardian] Success with 'requests_browser'. Found content (528 words).
+2025-12-10 11:53:43,400 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/karnataka/mysuru-english-theatre-festival-from-december-12-to-14/article70379943.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:53:43,401 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/karnataka/mysuru-english-theatre-festival-from-december-12-to-14/article70379943.ece. Falling back to RSS description.
+2025-12-10 11:53:44,221 - INFO - Saved article: NASA astronaut Jonny Kim returns after 8 months in space; here’s what he brought back for humanity | - The Times of India from Times of India
+2025-12-10 11:53:47,006 - INFO - Saved article: Hundreds of sharks filmed in bait fish feeding frenzy near Byron Bay | Australia news | The Guardian from The Guardian
+2025-12-10 11:53:47,006 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c39pr3d10wlo?at_medium=RSS&at_campaign=rss
+2025-12-10 11:53:47,006 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-10 11:53:47,104 - INFO - [BBC] Success with 'requests_browser'. Found content (549 words).
+2025-12-10 11:53:49,555 - INFO - Saved article: Mysuru English Theatre Festival from December 12 to 14 from The Hindu
+2025-12-10 11:53:49,555 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/uae-pledges-550-million-in-major-early-commitment-to-uns-2026-humanitarian-appeal/articleshow/125889604.cms
+2025-12-10 11:53:49,555 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:52,023 - INFO - [Times of India] Page content loaded.
+2025-12-10 11:53:52,160 - INFO - [Times of India] Success with 'selenium_browser'. Found content (360 words).
+2025-12-10 11:53:52,667 - INFO - Saved article: Lithuania declares emergency situation over risks from balloons from Belarus from BBC
+2025-12-10 11:53:52,668 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/maharashtra/maharashtra-averages-1369-dog-bites-every-day-over-last-six-years/article70380136.ece
+2025-12-10 11:53:52,668 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:55,870 - INFO - Saved article: UAE pledges $550 million in major early commitment to UN’s 2026 humanitarian appeal | World News - The Times of India from Times of India
+2025-12-10 11:53:56,805 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/rest-of-world/japan-quake-authorities-warn-of-earthquake-of-greater-magnitude-injured-toll-rises-to-51/articleshow/125888300.cms
+2025-12-10 11:53:56,805 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:53:58,069 - INFO - [Times of India] Page content loaded.
+2025-12-10 11:53:58,187 - INFO - [Times of India] Success with 'selenium_browser'. Found content (343 words).
+2025-12-10 11:54:00,556 - INFO - Saved article: Japan quake: Authorities warn of earthquake of 'greater magnitude'; injured toll rises to 51 - The Times of India from Times of India
+2025-12-10 11:54:01,571 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/china/political-manipulation-china-slams-uk-sanctions-on-cyber-firms-london-cites-hybrid-threat/articleshow/125888074.cms
+2025-12-10 11:54:01,571 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:54:07,676 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/maharashtra/maharashtra-averages-1369-dog-bites-every-day-over-last-six-years/article70380136.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:54:07,677 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/maharashtra/maharashtra-averages-1369-dog-bites-every-day-over-last-six-years/article70380136.ece. Falling back to RSS description.
+2025-12-10 11:54:09,490 - INFO - Saved article: Maharashtra averages 1,369 dog bites every day over last six years from The Hindu
+2025-12-10 11:54:10,796 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/coalition-government-likely-in-tamil-nadu-in-2026-says-dhinakaran/article70379916.ece
+2025-12-10 11:54:10,796 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:54:25,803 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/tamil-nadu/coalition-government-likely-in-tamil-nadu-in-2026-says-dhinakaran/article70379916.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:54:25,804 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/tamil-nadu/coalition-government-likely-in-tamil-nadu-in-2026-says-dhinakaran/article70379916.ece. Falling back to RSS description.
+2025-12-10 11:54:27,469 - INFO - Saved article: Coalition government likely in Tamil Nadu in 2026, says Dhinakaran from The Hindu
+2025-12-10 11:54:28,581 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/govt-reluctant-to-disclose-information-under-rti-alleges-tmc-mp/article70380003.ece
+2025-12-10 11:54:28,581 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:54:43,588 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/govt-reluctant-to-disclose-information-under-rti-alleges-tmc-mp/article70380003.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:54:43,588 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/govt-reluctant-to-disclose-information-under-rti-alleges-tmc-mp/article70380003.ece. Falling back to RSS description.
+2025-12-10 11:54:45,351 - INFO - Saved article: Govt reluctant to disclose information under RTI, alleges TMC MP from The Hindu
+2025-12-10 11:54:46,267 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/government-working-on-india-posts-business-process-reengineering-jyotiraditya-scindia/article70380088.ece
+2025-12-10 11:54:46,267 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:55:01,279 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/government-working-on-india-posts-business-process-reengineering-jyotiraditya-scindia/article70380088.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:55:01,279 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/government-working-on-india-posts-business-process-reengineering-jyotiraditya-scindia/article70380088.ece. Falling back to RSS description.
+2025-12-10 11:55:03,077 - INFO - Saved article: Government working on India Post's business process reengineering: Jyotiraditya Scindia from The Hindu
+2025-12-10 11:55:04,024 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/t-works-talent-taiwan-sign-pact-for-talent-exchange-skill-development-higher-education-partnership/article70379785.ece
+2025-12-10 11:55:04,024 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:55:19,035 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/telangana/t-works-talent-taiwan-sign-pact-for-talent-exchange-skill-development-higher-education-partnership/article70379785.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:55:19,035 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/telangana/t-works-talent-taiwan-sign-pact-for-talent-exchange-skill-development-higher-education-partnership/article70379785.ece. Falling back to RSS description.
+2025-12-10 11:55:20,986 - INFO - Saved article: T-Works, Talent Taiwan sign pact for talent exchange, skill development, higher-education partnership from The Hindu
+2025-12-10 11:55:21,680 - INFO - [The Hindu] Article: https://www.thehindu.com/business/Economy/free-trade-agreement-talks-with-oman-new-zealand-at-last-leg-piyush-goyal/article70379952.ece
+2025-12-10 11:55:21,680 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:55:36,688 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/business/Economy/free-trade-agreement-talks-with-oman-new-zealand-at-last-leg-piyush-goyal/article70379952.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:55:36,688 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/business/Economy/free-trade-agreement-talks-with-oman-new-zealand-at-last-leg-piyush-goyal/article70379952.ece. Falling back to RSS description.
+2025-12-10 11:55:38,690 - INFO - Saved article: Free Trade Agreement talks with Oman, New Zealand at last leg: Piyush Goyal from The Hindu
+2025-12-10 11:55:39,759 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/revealing-identity-of-rape-survivor-court-sends-youtuber-rahul-easwar-in-police-custody/article70380052.ece
+2025-12-10 11:55:39,759 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:55:54,770 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/kerala/revealing-identity-of-rape-survivor-court-sends-youtuber-rahul-easwar-in-police-custody/article70380052.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:55:54,770 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/kerala/revealing-identity-of-rape-survivor-court-sends-youtuber-rahul-easwar-in-police-custody/article70380052.ece. Falling back to RSS description.
+2025-12-10 11:55:56,944 - INFO - Saved article: Revealing identity of rape survivor: court sends YouTuber Rahul Easwar in police custody from The Hindu
+2025-12-10 11:55:57,552 - INFO - [The Hindu] Article: https://www.thehindu.com/videos/watch-note-of-harmony-on-the-debate-on-vande-mataram/article70380159.ece
+2025-12-10 11:55:57,553 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:56:01,652 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/china/political-manipulation-china-slams-uk-sanctions-on-cyber-firms-london-cites-hybrid-threat/articleshow/125888074.cms: HTTPConnectionPool(host='localhost', port=35829): Read timed out. (read timeout=120)
+2025-12-10 11:56:01,652 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/china/political-manipulation-china-slams-uk-sanctions-on-cyber-firms-london-cites-hybrid-threat/articleshow/125888074.cms. Falling back to RSS description.
+2025-12-10 11:56:03,538 - INFO - Saved article: ‘Political manipulation’: China slams UK sanctions on cyber firms; London cites ‘hybrid threat’ from Times of India
+2025-12-10 11:56:04,091 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/uae-traffic-alert-key-emirates-road-link-to-shut-from-dec-11/articleshow/125888586.cms
+2025-12-10 11:56:04,092 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:56:12,561 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/videos/watch-note-of-harmony-on-the-debate-on-vande-mataram/article70380159.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:56:12,561 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/videos/watch-note-of-harmony-on-the-debate-on-vande-mataram/article70380159.ece. Falling back to RSS description.
+2025-12-10 11:56:14,586 - INFO - Saved article: Watch: Note of harmony: On the debate on Vande Mataram: The Hindu Editorial from The Hindu
+2025-12-10 11:56:15,498 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/parliament-winter-session-opposition-walks-out-of-rajya-sabha-flagging-bjp-mps-unexplained-withdrawal-of-question/article70379992.ece
+2025-12-10 11:56:15,498 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:56:30,505 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/parliament-winter-session-opposition-walks-out-of-rajya-sabha-flagging-bjp-mps-unexplained-withdrawal-of-question/article70379992.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:56:30,505 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/parliament-winter-session-opposition-walks-out-of-rajya-sabha-flagging-bjp-mps-unexplained-withdrawal-of-question/article70379992.ece. Falling back to RSS description.
+2025-12-10 11:56:32,598 - INFO - Saved article: Opposition walks out in Rajya Sabha over BJP MP’s withdrawal of forensic question from The Hindu
+2025-12-10 11:56:33,464 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Delhi/hpz-token-scam-case-cbi-files-charge-sheet-against-two-chinese-nationals/article70380006.ece
+2025-12-10 11:56:33,464 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:56:48,472 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/cities/Delhi/hpz-token-scam-case-cbi-files-charge-sheet-against-two-chinese-nationals/article70380006.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:56:48,472 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/cities/Delhi/hpz-token-scam-case-cbi-files-charge-sheet-against-two-chinese-nationals/article70380006.ece. Falling back to RSS description.
+2025-12-10 11:56:50,666 - INFO - Saved article: HPZ token scam case: CBI files charge sheet against two Chinese nationals from The Hindu
+2025-12-10 11:56:51,301 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/bangalore/uber-passengers-can-now-book-namma-metro-tickets-on-app-in-bengaluru/article70379897.ece
+2025-12-10 11:56:51,301 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:57:06,309 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/cities/bangalore/uber-passengers-can-now-book-namma-metro-tickets-on-app-in-bengaluru/article70379897.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:57:06,309 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/cities/bangalore/uber-passengers-can-now-book-namma-metro-tickets-on-app-in-bengaluru/article70379897.ece. Falling back to RSS description.
+2025-12-10 11:57:08,538 - INFO - Saved article: Uber passengers in Bengaluru can now book Namma Metro tickets on app from The Hindu
+2025-12-10 11:57:10,002 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/stalin-rattled-by-aiadmk-bjp-alliance-says-palaniswami/article70379870.ece
+2025-12-10 11:57:10,002 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:57:25,010 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/tamil-nadu/stalin-rattled-by-aiadmk-bjp-alliance-says-palaniswami/article70379870.ece: Message: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=142.0.7444.175)
+Stacktrace:
+#0 0x55d7b5d474ca <unknown>
+#1 0x55d7b5795e4b <unknown>
+#2 0x55d7b577de14 <unknown>
+#3 0x55d7b577daf7 <unknown>
+#4 0x55d7b577b8ff <unknown>
+#5 0x55d7b577c27f <unknown>
+#6 0x55d7b578acb3 <unknown>
+#7 0x55d7b57a45f1 <unknown>
+#8 0x55d7b57aadfb <unknown>
+#9 0x55d7b577c9bd <unknown>
+#10 0x55d7b57a4399 <unknown>
+#11 0x55d7b5834cc7 <unknown>
+#12 0x55d7b57dac2a <unknown>
+#13 0x55d7b57db931 <unknown>
+#14 0x55d7b5d0dcf9 <unknown>
+#15 0x55d7b5d10cdc <unknown>
+#16 0x55d7b5cf6f79 <unknown>
+#17 0x55d7b5d118b5 <unknown>
+#18 0x55d7b5cde9c3 <unknown>
+#19 0x55d7b5d34228 <unknown>
+#20 0x55d7b5d34403 <unknown>
+#21 0x55d7b5d46463 <unknown>
+#22 0x7f27d2e9caa4 <unknown>
+#23 0x7f27d2f29c6c <unknown>
+
+2025-12-10 11:57:25,010 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/tamil-nadu/stalin-rattled-by-aiadmk-bjp-alliance-says-palaniswami/article70379870.ece. Falling back to RSS description.
+2025-12-10 11:57:27,200 - INFO - Saved article: Stalin rattled by AIADMK-BJP alliance, says Palaniswami from The Hindu
+2025-12-10 11:57:28,550 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/kohir-in-sangareddy-records-56c-cold-wave-alert-in-seven-telangana-districts-on-december-11/article70379782.ece
+2025-12-10 11:57:28,550 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-10 11:57:38,378 - CRITICAL - --- TIMEOUT: 2 scrape jobs did not complete in 300s. ---
+2025-12-10 11:57:38,378 - ERROR - A thread has timed out and will be abandoned.
+2025-12-10 11:57:38,378 - ERROR - A thread has timed out and will be abandoned.
+2025-12-10 11:57:38,378 - INFO - Shutting down thread pool (wait=False)...
+2025-12-10 11:57:38,378 - INFO - Scraped: 20 The Guardian, 20 BBC, 2 Timed_Out_Jobs articles. (Total saved: 40)
+2025-12-10 11:57:38,378 - INFO - --- Scraping job finished ---
+2025-12-10 11:57:38,378 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-10 11:57:38,378 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
