@@ -3,7 +3,7 @@
 #
 # How many articles to get from each source (e.g., 25)
 # This is a 'max' value. If a feed only has 20 articles, it will get 20.
-MAX_ARTICLES_PER_SOURCE = 20
+MAX_ARTICLES_PER_SOURCE = 30
 #
 # --- NEW: PROXY CONFIGURATION ---
 # Set 'use_proxies' to True to route all requests (Requests & Selenium)
