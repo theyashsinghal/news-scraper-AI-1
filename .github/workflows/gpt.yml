@@ -1,6 +1,8 @@
 name: gpt faster scraper
 
 on:
+  schedule:
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 concurrency:
