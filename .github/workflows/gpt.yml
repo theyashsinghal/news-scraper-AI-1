@@ -35,25 +35,29 @@ jobs:
             ${{ runner.os }}-huggingface-
 
       # -------------------------
-      # INSTALL CHROME + CHROMEDRIVER
+      # INSTALL CHROME + MATCHING CHROMEDRIVER
       # -------------------------
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v1
 
-      - name: Install matching ChromeDriver
+      - name: Install matching ChromeDriver (Chrome for Testing)
         run: |
           CHROME_VERSION=$(google-chrome --version | sed 's/[^0-9.]//g')
           echo "Detected Chrome version: $CHROME_VERSION"
-          DRIVER_URL="https://chromedriver.storage.googleapis.com/${CHROME_VERSION}/chromedriver_linux64.zip"
-          echo "Downloading ChromeDriver from $DRIVER_URL"
+
+          DRIVER_URL="https://edgedl.me.gvt1.com/edgedl/chrome-for-testing/${CHROME_VERSION}/linux64/chromedriver-linux64.zip"
+          echo "Downloading ChromeDriver from: $DRIVER_URL"
+
           wget -q $DRIVER_URL -O chromedriver.zip
           unzip chromedriver.zip
-          sudo mv chromedriver /usr/local/bin/chromedriver
+
+          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
           sudo chmod +x /usr/local/bin/chromedriver
-          echo "ChromeDriver installed."
+
+          echo "ChromeDriver installed successfully."
 
       # -------------------------
-      # START XVFB (REQUIRED FOR STABLE HEADLESS CHROME)
+      # START XVFB (IMPROVES STABILITY FOR HEADLESS CHROME)
       # -------------------------
       - name: Start Xvfb
         run: |
@@ -69,12 +73,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
 
-          # CPU-only pytorch to avoid disk explosion
           pip install torch --index-url https://download.pytorch.org/whl/cpu
 
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-          # Enforce presence
           pip install requests beautifulsoup4 trafilatura selenium sentence-transformers
 
       # -------------------------
