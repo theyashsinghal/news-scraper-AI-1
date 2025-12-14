@@ -1,0 +1,491 @@
+2025-12-14 17:43:03,719 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-14 17:43:03,719 - INFO - Use pytorch device_name: cpu
+2025-12-14 17:43:03,720 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-14 17:43:05,135 - INFO - AI Model loaded successfully.
+2025-12-14 17:43:05,135 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-14 17:43:05,135 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-14 17:43:05,135 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-14 17:43:05,135 - INFO - Proxy is DISABLED.
+2025-12-14 17:43:05,136 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-14 17:43:05,137 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-14 17:43:05,137 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-14 17:43:05,138 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-14 17:43:05,138 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-14 17:43:05,293 - INFO - Found 29 articles in BBC RSS feed. Processing up to 30.
+2025-12-14 17:43:05,295 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c62l00q1v88o?at_medium=RSS&at_campaign=rss
+2025-12-14 17:43:05,295 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-14 17:43:05,344 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-14 17:43:05,344 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/education/2025/dec/14/ghana-students-uk-universities-face-deportion-funding-crisis already exists.
+2025-12-14 17:43:05,480 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/science/2025/dec/15/little-foot-hominin-fossil-may-be-new-species-of-human-ancestor already exists.
+2025-12-14 17:43:05,506 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 77 words).
+2025-12-14 17:43:05,506 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c62l00q1v88o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2025-12-14 17:43:05,506 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Eyewitness captures moment man tackles and disarms Bondi shooter' from BBC has only 23 words (Min: 90).
+2025-12-14 17:43:05,608 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/drone-strike-on-un-facility-in-war-torn-sudan-leaves-six-peacekeepers-dead already exists.
+2025-12-14 17:43:05,802 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/us-accuses-rwanda-of-violating-peace-deal already exists.
+2025-12-14 17:43:05,948 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/12/trump-ends-temporary-legal-status-ethiopia already exists.
+2025-12-14 17:43:06,150 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/14/chile-presidential-election already exists.
+2025-12-14 17:43:06,355 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/venezuela-oil-exports-reportedly-fall-sharply-after-us-seizure-of-tanker-skipper already exists.
+2025-12-14 17:43:06,519 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckg9ll6jpl0o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:06,702 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/12/brazilian-judge-sanction-lifted-bolsonaro already exists.
+2025-12-14 17:43:06,982 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvg1r89m6g7o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:07,154 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/12/colombia-eln-guerrilla-rebels-trump already exists.
+2025-12-14 17:43:07,274 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2dz7r708dxo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:07,383 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/12/canada-liberals-government-majority-conservative-michael-ma already exists.
+2025-12-14 17:43:07,559 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2dklj3rxvo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:07,743 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/14/hong-kong-opposition-democratic-party-disbands-chinese-pressure already exists.
+2025-12-14 17:43:07,985 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/cy4xgxm2848o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:08,267 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/12/thailand-and-cambodia-agree-to-restart-ceasefire-brokered-by-us-says-trump already exists.
+2025-12-14 17:43:08,536 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9d9vpxjp2go?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:08,672 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/north-korea-troops-cleared-landmines-russia-kim-jong-un already exists.
+2025-12-14 17:43:08,805 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g66nll48do?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:08,934 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/12/indonesia-floods-extinction-level-rare-orangutan-tapanuli already exists.
+2025-12-14 17:43:09,117 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0l9954yr9ko?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:09,357 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/12/south-korea-exam-chief-quits-after-complaints-english-test-was-too-hard already exists.
+2025-12-14 17:43:09,508 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cd0kkyx3vvxo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:09,756 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/live/2025/dec/14/bondi-beach-shooting-live-updates-victims-terror-attack-jewish-festival-hanukah already exists.
+2025-12-14 17:43:09,978 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/crk777lj763o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:10,121 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/live/2025/dec/14/nsw-police-responding-to-reports-of-shooting-at-sydneys-bondi-beach-follow-latest already exists.
+2025-12-14 17:43:10,406 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5y2271q20lo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:10,667 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/14/police-advise-people-to-take-shelter-following-reports-of-active-shooter-at-bondi-beach already exists.
+2025-12-14 17:43:10,771 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4ge4q8gypzo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:10,907 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/14/timeline-bondi-beach-terror-attack-australia-mass-shooting-port-arthur
+2025-12-14 17:43:10,907 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-14 17:43:10,908 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cqlkk9qk7vyo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:11,068 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5yjj2epvlro?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:11,071 - WARNING - [The Guardian] FAILED with 'requests_browser' (content was too short: 63 words).
+2025-12-14 17:43:11,071 - ERROR - [The Guardian] All scrape strategies failed for https://www.theguardian.com/australia-news/2025/dec/14/timeline-bondi-beach-terror-attack-australia-mass-shooting-port-arthur. Falling back to RSS description.
+2025-12-14 17:43:11,071 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Timeline: Bondi beach terror attack becomes Australia’s worst mass shooting in three decades' from The Guardian has only 30 words (Min: 90).
+2025-12-14 17:43:11,319 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cly559exm87o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:11,469 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckg9l1j9wxno?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:11,598 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8dyy47qy82o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:11,808 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cj38rj0y6k5o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:11,934 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/news/2025/dec/14/security-stepped-up-uk-jewish-communities-bondi-beach-shooting already exists.
+2025-12-14 17:43:12,203 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4gk34k9k23o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:12,371 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/14/like-a-mini-louvre-two-generations-of-rothschilds-fight-over-treasure-trove-of-artworks already exists.
+2025-12-14 17:43:12,536 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2dp15zglxo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:12,653 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/belarus-releases-123-prisoners-including-opposition-leaders-after-us-lifts-sanctions already exists.
+2025-12-14 17:43:12,942 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czrkkm83znpo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:13,185 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/fashion/2025/dec/13/veja-ethical-paris-trainer-worn-a-listers-and-royalty already exists.
+2025-12-14 17:43:13,309 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c075mr3190mo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:13,511 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/law/2025/dec/13/europe-echr-rethink-moral-retreat-say-human-rights-experts already exists.
+2025-12-14 17:43:13,666 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q5pygel84o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:13,767 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/13/will-other-countries-follow-australia-social-media-ban-under-16s already exists.
+2025-12-14 17:43:13,918 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c8jw3841vk9o?at_medium=RSS&at_campaign=rss
+2025-12-14 17:43:13,918 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-14 17:43:13,919 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/israel-says-its-military-killed-hamas-commander-raed-saed-in-gaza-city-strike already exists.
+2025-12-14 17:43:14,031 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/new-israeli-barrier-slice-through-precious-west-bank-farmland already exists.
+2025-12-14 17:43:14,154 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/12/nobel-peace-prize-laureate-narges-mohammadi-arrested-iran already exists.
+2025-12-14 17:43:14,207 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 60 words).
+2025-12-14 17:43:14,208 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c8jw3841vk9o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2025-12-14 17:43:14,208 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'BBC captures celebrations as Belarus frees political prisoners' from BBC has only 18 words (Min: 90).
+2025-12-14 17:43:14,339 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/tv-and-radio/2025/dec/11/nemo-eurovision-winner-2024-hand-back-trophy-protest-israel-taking-part-2025 already exists.
+2025-12-14 17:43:14,620 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2025/dec/11/child-bride-spared-execution-iran-blood-money-goli-kouhkan already exists.
+2025-12-14 17:43:15,148 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/c80xx09k485o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:15,402 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/c9977k5jyr4o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:15,617 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c93ww718g2vo?at_medium=RSS&at_campaign=rss
+2025-12-14 17:43:15,617 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-14 17:43:16,388 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 86 words).
+2025-12-14 17:43:16,388 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c93ww718g2vo?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2025-12-14 17:43:16,388 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Six injured as house explodes in California' from BBC has only 17 words (Min: 90).
+2025-12-14 17:43:17,334 - INFO - Selenium driver initialized successfully.
+2025-12-14 17:43:17,334 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-14 17:43:17,335 - INFO - Selenium driver initialized successfully.
+2025-12-14 17:43:17,335 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-14 17:43:17,415 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/ce91de8x9p1o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-14 17:43:17,476 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-14 17:43:17,678 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-kings-freedom-fighters-didnt-get-due-recognition-earlier-vice-president/article70395779.ece
+2025-12-14 17:43:17,678 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:43:17,740 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-14 17:43:17,741 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/professor-says-brown-university-shooter-yelled-something-before-firing-on-students-he-came-in-the-doors-and/articleshow/125963455.cms
+2025-12-14 17:43:17,741 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:43:37,753 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/tamil-kings-freedom-fighters-didnt-get-due-recognition-earlier-vice-president/article70395779.ece: Message: timeout: Timed out receiving message from renderer: 19.865
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901f60 <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:43:37,753 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/tamil-kings-freedom-fighters-didnt-get-due-recognition-earlier-vice-president/article70395779.ece. Falling back to RSS description.
+2025-12-14 17:43:37,753 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Tamil kings, freedom fighters didn’t get due recognition earlier: Vice-President' from The Hindu has only 24 words (Min: 90).
+2025-12-14 17:43:37,812 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/professor-says-brown-university-shooter-yelled-something-before-firing-on-students-he-came-in-the-doors-and/articleshow/125963455.cms: Message: timeout: Timed out receiving message from renderer: 19.894
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x55a71fa9f19a <unknown>
+#1 0x55a71f51cc4b <unknown>
+#2 0x55a71f504cf3 <unknown>
+#3 0x55a71f5049d6 <unknown>
+#4 0x55a71f502897 <unknown>
+#5 0x55a71f5031af <unknown>
+#6 0x55a71f511970 <unknown>
+#7 0x55a71f52b017 <unknown>
+#8 0x55a71f5316cb <unknown>
+#9 0x55a71f5038d8 <unknown>
+#10 0x55a71f52adc3 <unknown>
+#11 0x55a71f5b9f60 <unknown>
+#12 0x55a71f560c42 <unknown>
+#13 0x55a71f5618f1 <unknown>
+#14 0x55a71fa67f39 <unknown>
+#15 0x55a71fa6ae7d <unknown>
+#16 0x55a71fa50c81 <unknown>
+#17 0x55a71fa6ba5b <unknown>
+#18 0x55a71fa37a50 <unknown>
+#19 0x55a71fa8caa8 <unknown>
+#20 0x55a71fa8cc79 <unknown>
+#21 0x55a71fa9e4f3 <unknown>
+#22 0x7f5ccda9caa4 <unknown>
+#23 0x7f5ccdb29c6c <unknown>
+
+2025-12-14 17:43:37,812 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/professor-says-brown-university-shooter-yelled-something-before-firing-on-students-he-came-in-the-doors-and/articleshow/125963455.cms. Falling back to RSS description.
+2025-12-14 17:43:37,812 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Professor says Brown University shooter ‘yelled something’ before firing on students: ‘He came in the doors and…’' from Times of India has only 3 words (Min: 90).
+2025-12-14 17:43:38,580 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/priyanka-gandhi-dares-bjp-to-contest-fair-election-on-ballot/article70396149.ece already exists.
+2025-12-14 17:43:38,865 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/madhya-pradesh/mp-minister-vijay-shah-stirs-a-fresh-furore-with-comments-on-ladli-behna-scheme/article70396372.ece already exists.
+2025-12-14 17:43:39,136 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/very-alarming-laura-loomer-slams-kash-patel-for-not-calling-sydneys-bondi-beach-attack-islamic-terrorism/articleshow/125963518.cms already exists.
+2025-12-14 17:43:39,238 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/jaishankar-meets-european-uk-egyptian-counterparts-at-uae-summit/article70395745.ece already exists.
+2025-12-14 17:43:39,465 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/if-you-have-a-womb-you-are-a-elon-musks-comments-on-womens-bodies-divide-the-internet/articleshow/125963036.cms already exists.
+2025-12-14 17:43:39,627 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/president-murmu-rejects-mercy-plea-of-man-convicted-for-rape-murder-of-two-year-old-in-maharashtra/article70395699.ece already exists.
+2025-12-14 17:43:39,888 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/bondi-beach-shooting-agencies-identify-one-gunman-what-we-know-so-far-naveed-akram/articleshow/125963089.cms already exists.
+2025-12-14 17:43:40,131 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/those-indulging-in-vote-chori-need-to-be-removed-from-power-says-congress-chief-kharge-at-delhi-rally/article70396335.ece already exists.
+2025-12-14 17:43:40,349 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/rest-of-world/bondi-beach-shooting-what-we-know-about-the-shooters-one-killed-another-critical/articleshow/125961748.cms
+2025-12-14 17:43:40,349 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:43:40,350 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/office-boy-falls-off-bike-run-over-by-college-bus/article70396215.ece already exists.
+2025-12-14 17:43:40,569 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/govt-plans-viksit-bharat-shiksha-adhishthan-in-overhaul-of-higher-education-regulatory-framework/article70395923.ece already exists.
+2025-12-14 17:43:40,670 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/karnataka/krishik-samaj-demands-upgradation-of-bidar-diploma-agricultural-college-into-degree-college/article70396295.ece already exists.
+2025-12-14 17:43:40,930 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/ap-likely-to-remain-in-grip-of-winter-chills-till-december-25/article70396332.ece
+2025-12-14 17:43:40,930 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:43:41,124 - INFO - [Times of India] Page content loaded.
+2025-12-14 17:43:41,517 - INFO - [Times of India] Success with 'selenium_browser'. Found content (297 words).
+2025-12-14 17:44:00,967 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/andhra-pradesh/ap-likely-to-remain-in-grip-of-winter-chills-till-december-25/article70396332.ece: Message: timeout: Timed out receiving message from renderer: 19.932
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901f60 <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:44:00,967 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/andhra-pradesh/ap-likely-to-remain-in-grip-of-winter-chills-till-december-25/article70396332.ece. Falling back to RSS description.
+2025-12-14 17:44:00,967 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'A.P. likely to remain in grip of winter chills till December 25' from The Hindu has only 3 words (Min: 90).
+2025-12-14 17:44:58,435 - INFO - DEDUPLICATION: Found match (Score: 0.92). Linking to Cluster ID: b1f403b7-fc3a-4108-a393-565558bb0d21
+2025-12-14 17:44:58,440 - INFO - Saved article: Bondi Beach shooting: What we know about the shooters - one killed, another critical - The Times of India from Times of India (297 words)
+2025-12-14 17:44:58,440 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/sit-records-chennithalas-statement-in-sabarimala-gold-theft-case/article70396444.ece
+2025-12-14 17:44:58,440 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:44:59,333 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/more-controversies-more-streams-alexis-wilkins-sees-surge-in-listeners-whenever-kash-patel-is-in-news/articleshow/125963093.cms already exists.
+2025-12-14 17:44:59,499 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/ishowspeeds-fiery-reaction-to-lionel-messi-in-india-takes-over-social-media-as-kolkata-turns-out-in-force/articleshow/125958887.cms already exists.
+2025-12-14 17:44:59,618 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/who-is-ahmed-al-ahmed-fruit-seller-who-disarmed-bondi-beach-shooter-with-bare-hands/articleshow/125962351.cms already exists.
+2025-12-14 17:44:59,908 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/i-have-seen-erika-kirk-in-real-life-and-fellow-church-goer-says-charlies-widow-dabs-her-eyes-whenever-/articleshow/125962431.cms already exists.
+2025-12-14 17:45:00,082 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/man-who-survived-october-7-hamas-attack-injured-in-bondi-beach-shooting-says-he-never-thought-hed-see-this-in-australia/articleshow/125961622.cms already exists.
+2025-12-14 17:45:00,190 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/person-of-interest-in-brown-university-shooting-arrested-at-a-hotel-13-hours-after-trump-posted-about-it-and-never-deleted/articleshow/125961854.cms already exists.
+2025-12-14 17:45:00,471 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/i-dont-know-brown-university-president-draws-flak-for-cluelessness-after-shooting-her-yearly-salary-is-3-1-million/articleshow/125961185.cms already exists.
+2025-12-14 17:45:00,723 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/brown-university-student-says-she-survived-second-campus-shooting-happening-to-me-all-over-again-/articleshow/125960875.cms already exists.
+2025-12-14 17:45:00,928 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/the-watchlist-end-your-week-with-the-ultimate-cozy-flick-the-holiday/articleshow/125960803.cms already exists.
+2025-12-14 17:45:01,055 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/how-rich-is-saudi-arabias-king-salman-bin-abdulaziz-al-saud-net-worth-in-2025/articleshow/125961000.cms already exists.
+2025-12-14 17:45:01,338 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/alarming-antisemitic-anti-indian-graffiti-found-inside-nyu-library-probe-under-way/articleshow/125960698.cms already exists.
+2025-12-14 17:45:01,621 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/sydney-shooting-bystander-tackles-gunman-at-bondi-beach-heroic-act-caught-on-camera/articleshow/125959905.cms already exists.
+2025-12-14 17:45:01,805 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/sydney-bondi-beach-shooting-israel-president-condemns-cruel-attack-on-jews-top-developments/articleshow/125960181.cms already exists.
+2025-12-14 17:45:01,929 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/dubai-ruler-sheikh-mohammed-awards-great-arab-minds-honour-to-palestinian-architect-suad-al-amri/articleshow/125960018.cms already exists.
+2025-12-14 17:45:02,120 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/mass-shooting-at-bondi-beach-australian-pm-anthony-albanese-calls-situation-distressing-multiple-casualties-reported/articleshow/125959885.cms already exists.
+2025-12-14 17:45:02,407 - INFO - [Times of India] (Thread) Finished. Attempting to shut down its Selenium driver.
+2025-12-14 17:45:02,683 - INFO - [Times of India] (Thread) driver.quit() successful.
+2025-12-14 17:45:18,459 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/kerala/sit-records-chennithalas-statement-in-sabarimala-gold-theft-case/article70396444.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901abe <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:45:18,459 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/kerala/sit-records-chennithalas-statement-in-sabarimala-gold-theft-case/article70396444.ece. Falling back to RSS description.
+2025-12-14 17:45:18,459 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'SIT records Chennithala’s statement in Sabarimala gold theft case' from The Hindu has only 33 words (Min: 90).
+2025-12-14 17:45:19,423 - INFO - [The Hindu] Article: https://www.thehindu.com/sci-tech/health/aiims-study-finds-no-link-between-covid-vaccination-and-sudden-deaths-in-young-adults/article70395676.ece
+2025-12-14 17:45:19,424 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:45:39,437 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/sci-tech/health/aiims-study-finds-no-link-between-covid-vaccination-and-sudden-deaths-in-young-adults/article70395676.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901abe <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:45:39,437 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/sci-tech/health/aiims-study-finds-no-link-between-covid-vaccination-and-sudden-deaths-in-young-adults/article70395676.ece. Falling back to RSS description.
+2025-12-14 17:45:39,437 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'AIIMS study finds no link between Covid vaccination and sudden deaths in young adults' from The Hindu has only 16 words (Min: 90).
+2025-12-14 17:45:40,190 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/apft-urges-government-to-announce-30-ir-for-state-employees-teachers/article70396352.ece
+2025-12-14 17:45:40,190 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:46:00,204 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/andhra-pradesh/apft-urges-government-to-announce-30-ir-for-state-employees-teachers/article70396352.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901abe <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:46:00,204 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/andhra-pradesh/apft-urges-government-to-announce-30-ir-for-state-employees-teachers/article70396352.ece. Falling back to RSS description.
+2025-12-14 17:46:00,204 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'APFT urges government to announce 30% IR for State employees, teachers' from The Hindu has only 3 words (Min: 90).
+2025-12-14 17:46:00,761 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/iffk-experienzia-marks-30-years-of-the-festival/article70396268.ece
+2025-12-14 17:46:00,762 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:46:20,779 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/kerala/iffk-experienzia-marks-30-years-of-the-festival/article70396268.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901abe <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:46:20,779 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/kerala/iffk-experienzia-marks-30-years-of-the-festival/article70396268.ece. Falling back to RSS description.
+2025-12-14 17:46:20,779 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'IFFK Experienzia marks 30 years of the festival' from The Hindu has only 3 words (Min: 90).
+2025-12-14 17:46:21,297 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/iffk-2025-fallout-of-a-dictatorship-might-be-invisible-in-society-at-first-but-over-time-they-become-visible-says-pablo-larrain/article70396087.ece
+2025-12-14 17:46:21,297 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:46:41,310 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/kerala/iffk-2025-fallout-of-a-dictatorship-might-be-invisible-in-society-at-first-but-over-time-they-become-visible-says-pablo-larrain/article70396087.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901abe <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:46:41,310 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/kerala/iffk-2025-fallout-of-a-dictatorship-might-be-invisible-in-society-at-first-but-over-time-they-become-visible-says-pablo-larrain/article70396087.ece. Falling back to RSS description.
+2025-12-14 17:46:41,310 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'IFFK 2025: fallout of a dictatorship might be invisible in society at first, but over time they become visible, says Pablo Larrain' from The Hindu has only 27 words (Min: 90).
+2025-12-14 17:46:42,625 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/directors-of-private-firm-booked-for-175-crore-real-estate-fraud-in-bengaluru/article70396243.ece
+2025-12-14 17:46:42,626 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:47:02,639 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/karnataka/directors-of-private-firm-booked-for-175-crore-real-estate-fraud-in-bengaluru/article70396243.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901abe <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:47:02,639 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/karnataka/directors-of-private-firm-booked-for-175-crore-real-estate-fraud-in-bengaluru/article70396243.ece. Falling back to RSS description.
+2025-12-14 17:47:02,639 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Directors of private firm booked for ₹17.5-crore real estate fraud in Bengaluru' from The Hindu has only 3 words (Min: 90).
+2025-12-14 17:47:03,753 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/la-nina-cold-dry-air-from-siberia-and-local-physics-contributed-to-karnatakas-winter-chill/article70396241.ece
+2025-12-14 17:47:03,753 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:47:23,771 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/karnataka/la-nina-cold-dry-air-from-siberia-and-local-physics-contributed-to-karnatakas-winter-chill/article70396241.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901abe <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:47:23,771 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/karnataka/la-nina-cold-dry-air-from-siberia-and-local-physics-contributed-to-karnatakas-winter-chill/article70396241.ece. Falling back to RSS description.
+2025-12-14 17:47:23,771 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'La Niña, cold dry air from Siberia and local physics contributed to Karnataka’s winter chill' from The Hindu has only 3 words (Min: 90).
+2025-12-14 17:47:24,864 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/congress-shows-total-dominance-in-phase-ii-gram-panchayat-polls-in-telangana/article70396299.ece
+2025-12-14 17:47:24,864 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:47:44,879 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/telangana/congress-shows-total-dominance-in-phase-ii-gram-panchayat-polls-in-telangana/article70396299.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x560300de719a <unknown>
+#1 0x560300864c4b <unknown>
+#2 0x56030084ccf3 <unknown>
+#3 0x56030084c9d6 <unknown>
+#4 0x56030084a897 <unknown>
+#5 0x56030084b1af <unknown>
+#6 0x560300859970 <unknown>
+#7 0x560300873017 <unknown>
+#8 0x5603008796cb <unknown>
+#9 0x56030084b8d8 <unknown>
+#10 0x560300872dc3 <unknown>
+#11 0x560300901abe <unknown>
+#12 0x5603008a8c42 <unknown>
+#13 0x5603008a98f1 <unknown>
+#14 0x560300daff39 <unknown>
+#15 0x560300db2e7d <unknown>
+#16 0x560300d98c81 <unknown>
+#17 0x560300db3a5b <unknown>
+#18 0x560300d7fa50 <unknown>
+#19 0x560300dd4aa8 <unknown>
+#20 0x560300dd4c79 <unknown>
+#21 0x560300de64f3 <unknown>
+#22 0x7f51a029caa4 <unknown>
+#23 0x7f51a0329c6c <unknown>
+
+2025-12-14 17:47:44,879 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/telangana/congress-shows-total-dominance-in-phase-ii-gram-panchayat-polls-in-telangana/article70396299.ece. Falling back to RSS description.
+2025-12-14 17:47:44,879 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Congress shows total dominance in phase-II Gram Panchayat polls in Telangana' from The Hindu has only 3 words (Min: 90).
+2025-12-14 17:47:45,792 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/assam/two-arrested-in-assam-over-death-of-21-workers-in-arunachal/article70395907.ece
+2025-12-14 17:47:45,792 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-14 17:48:05,139 - CRITICAL - --- TIMEOUT: 1 scrape jobs did not complete in 300s. ---
+2025-12-14 17:48:05,139 - ERROR - A thread has timed out and will be abandoned.
+2025-12-14 17:48:05,139 - INFO - Shutting down thread pool (wait=False)...
+2025-12-14 17:48:05,139 - INFO - Scraped: 0 The Guardian, 1 Times of India, 0 BBC, 1 Timed_Out_Jobs articles. (Total saved: 1)
+2025-12-14 17:48:05,139 - INFO - --- Scraping job finished ---
+2025-12-14 17:48:05,139 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-14 17:48:05,139 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
