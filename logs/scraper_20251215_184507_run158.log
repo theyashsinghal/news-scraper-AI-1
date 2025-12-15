@@ -1,0 +1,170 @@
+2025-12-15 18:40:05,622 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-15 18:40:05,623 - INFO - Use pytorch device_name: cpu
+2025-12-15 18:40:05,623 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-15 18:40:07,121 - INFO - AI Model loaded successfully.
+2025-12-15 18:40:07,121 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-15 18:40:07,121 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-15 18:40:07,121 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-15 18:40:07,122 - INFO - Proxy is DISABLED.
+2025-12-15 18:40:07,122 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-15 18:40:07,123 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-15 18:40:07,123 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-15 18:40:07,124 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-15 18:40:07,125 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-15 18:40:07,218 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-15 18:40:07,218 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/education/2025/dec/14/ghana-students-uk-universities-face-deportion-funding-crisis already exists.
+2025-12-15 18:40:07,272 - INFO - Found 36 articles in BBC RSS feed. Processing up to 30.
+2025-12-15 18:40:07,381 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8dy54e6ljqo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:40:07,541 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/science/2025/dec/15/little-foot-hominin-fossil-may-be-new-species-of-human-ancestor already exists.
+2025-12-15 18:40:07,687 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckgz15d5718o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:40:07,847 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/drone-strike-on-un-facility-in-war-torn-sudan-leaves-six-peacekeepers-dead already exists.
+2025-12-15 18:40:08,120 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cjrjq2v7l3po?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:40:08,244 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cp844kjj37vo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:40:08,340 - INFO - Selenium driver initialized successfully.
+2025-12-15 18:40:08,340 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-15 18:40:08,341 - INFO - Selenium driver initialized successfully.
+2025-12-15 18:40:08,342 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-15 18:40:08,376 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/us-accuses-rwanda-of-violating-peace-deal already exists.
+2025-12-15 18:40:08,459 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-15 18:40:08,571 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c2dz15556l1o?at_medium=RSS&at_campaign=rss
+2025-12-15 18:40:08,571 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-15 18:40:08,573 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/not-a-single-american-who-can-blow-a-whistle-row-over-california-hiring-300-h-1b-teachers-including-pe-staff/articleshow/125986955.cms
+2025-12-15 18:40:08,573 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-15 18:40:08,573 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/12/trump-ends-temporary-legal-status-ethiopia already exists.
+2025-12-15 18:40:08,676 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/15/trinidad-tobago-us-access-airports-venezuela-tensions-grow
+2025-12-15 18:40:08,677 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-15 18:40:08,869 - INFO - [BBC] Success with 'requests_browser'. Found content (563 words).
+2025-12-15 18:40:08,918 - INFO - [The Guardian] Success with 'requests_browser'. Found content (306 words).
+2025-12-15 18:40:09,284 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-15 18:40:28,617 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/not-a-single-american-who-can-blow-a-whistle-row-over-california-hiring-300-h-1b-teachers-including-pe-staff/articleshow/125986955.cms: Message: timeout: Timed out receiving message from renderer: 19.904
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x55fe2858519a <unknown>
+#1 0x55fe28002c4b <unknown>
+#2 0x55fe27feacf3 <unknown>
+#3 0x55fe27fea9d6 <unknown>
+#4 0x55fe27fe8897 <unknown>
+#5 0x55fe27fe91af <unknown>
+#6 0x55fe27ff7970 <unknown>
+#7 0x55fe28011017 <unknown>
+#8 0x55fe280176cb <unknown>
+#9 0x55fe27fe98d8 <unknown>
+#10 0x55fe28010dc3 <unknown>
+#11 0x55fe2809ff60 <unknown>
+#12 0x55fe28046c42 <unknown>
+#13 0x55fe280478f1 <unknown>
+#14 0x55fe2854df39 <unknown>
+#15 0x55fe28550e7d <unknown>
+#16 0x55fe28536c81 <unknown>
+#17 0x55fe28551a5b <unknown>
+#18 0x55fe2851da50 <unknown>
+#19 0x55fe28572aa8 <unknown>
+#20 0x55fe28572c79 <unknown>
+#21 0x55fe285844f3 <unknown>
+#22 0x7fec50c9caa4 <unknown>
+#23 0x7fec50d29c6c <unknown>
+
+2025-12-15 18:40:28,617 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/not-a-single-american-who-can-blow-a-whistle-row-over-california-hiring-300-h-1b-teachers-including-pe-staff/articleshow/125986955.cms. Falling back to RSS description.
+2025-12-15 18:40:28,617 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article '‘Not a single American who can blow a whistle…’: Row over California hiring 300 H-1B teachers, including PE staff' from Times of India has only 3 words (Min: 90).
+2025-12-15 18:41:13,749 - INFO - DEDUPLICATION: Found match (Score: 0.92). Linking to Cluster ID: da5e9a2e-07d1-4ac5-a7e9-002eabb1d833
+2025-12-15 18:41:13,752 - INFO - Saved article: Iran Nobel laureate taken to hospital after 'violent arrest' - family from BBC (563 words)
+2025-12-15 18:42:07,164 - INFO - Saved article: Trinidad and Tobago to give US access to its airports as Venezuela tensions grow | Trinidad and Tobago | The Guardian from The Guardian (306 words)
+2025-12-15 18:42:07,165 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/identify-land-for-navodaya-vidyalayas-sc-tells-tn/article70400184.ece
+2025-12-15 18:42:07,165 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-15 18:42:07,166 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/over-800-cameras-but-only-one-footage-of-shooter-from-behind-brown-university-shooter-still-at-large-after-30-hours/articleshow/125987869.cms
+2025-12-15 18:42:07,166 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-15 18:42:07,166 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cjwyzlly6eno?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:07,297 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cdxwg94v4veo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:07,547 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0kde07lvvro?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:07,848 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckg9ll6jpl0o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:08,113 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/15/maria-corina-machado-venezuela-norway already exists.
+2025-12-15 18:42:08,350 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/15/jose-antonio-kast-wins-election-chile-president already exists.
+2025-12-15 18:42:08,503 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvg1r89m6g7o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:08,624 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2dz7r708dxo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:08,907 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2dklj3rxvo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:09,159 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/14/jetblue-pilot-avoids-midair-collision-air-force-venezuela already exists.
+2025-12-15 18:42:09,413 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/14/chile-presidential-election already exists.
+2025-12-15 18:42:09,553 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/cy4xgxm2848o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:09,810 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9d9vpxjp2go?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:09,924 - INFO - [The Hindu] Page content loaded.
+2025-12-15 18:42:10,010 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (638 words).
+2025-12-15 18:42:10,071 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g66nll48do?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:10,269 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0l9954yr9ko?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:10,434 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cd0kkyx3vvxo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:10,554 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c20gl66r0wno?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:42:10,791 - INFO - [Times of India] Page content loaded.
+2025-12-15 18:42:11,459 - INFO - [Times of India] Success with 'selenium_browser'. Found content (368 words).
+2025-12-15 18:43:06,052 - INFO - Saved article: Identify land for Navodaya Vidyalayas, SC tells T.N. - The Hindu from The Hindu (638 words)
+2025-12-15 18:43:06,052 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/15/uk-condemns-hong-kongs-politically-motivated-targeting-of-jimmy-lai-after-conviction already exists.
+2025-12-15 18:43:06,263 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8655gn84ego?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:44:01,191 - INFO - DEDUPLICATION: Found match (Score: 0.83). Linking to Cluster ID: fa8fdce1-f141-42a9-8ff8-6dff434c2fa6
+2025-12-15 18:44:01,193 - INFO - Saved article: Over 800 cameras but only one footage of shooter from behind: Brown University shooter still at large after 30 hours - The Times of India from Times of India (368 words)
+2025-12-15 18:44:01,194 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/15/jimmy-lai-verdict-hong-kong-judges-national-security-charges already exists.
+2025-12-15 18:44:01,416 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/clyzzxggl7go?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:44:01,640 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Hyderabad/unesco-ambassador-vishal-sharma-visits-incois-backs-dedicated-ocean-observation-satellite/article70398899.ece
+2025-12-15 18:44:01,640 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-15 18:44:01,641 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2025/dec/15/jimmy-lai-verdict-hong-kong-court-national-security-charges-live already exists.
+2025-12-15 18:44:01,779 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckg9l1j9wxno?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:44:01,983 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/14/hong-kong-opposition-democratic-party-disbands-chinese-pressure already exists.
+2025-12-15 18:44:02,247 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q5309k1y5o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:44:02,532 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/rob-reiners-son-nick-arrested-on-suspicion-of-homicide-source-says-father-and-son-argued-at-party-before-deaths/articleshow/125986770.cms
+2025-12-15 18:44:02,533 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-15 18:44:02,534 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/12/thailand-and-cambodia-agree-to-restart-ceasefire-brokered-by-us-says-trump already exists.
+2025-12-15 18:44:02,814 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/15/australian-pm-rejects-netanyahu-linking-palestine-recognition-bondi-beach-attack already exists.
+2025-12-15 18:44:02,964 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/15/four-killed-after-minivan-crashes-into-a-tree-in-northern-victoria already exists.
+2025-12-15 18:44:03,188 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8dyy47qy82o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:44:03,435 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/15/pakistani-man-living-in-australia-describes-nightmare-of-being-labelled-as-bondi-attacker already exists.
+2025-12-15 18:44:03,594 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/15/bondi-beach-terror-attack-father-son-duo-alleged-behind-shooting-licensed-firearms-ntwnfb already exists.
+2025-12-15 18:44:03,727 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/15/sydneys-suburbs-have-a-frightening-concentration-of-gun-ownership-data-shows already exists.
+2025-12-15 18:44:03,938 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2025/dec/15/ukraine-us-russia-berlin-nato-eu-russian-funds-steve-witkoff-volodymyr-zelenskyy-vladimir-putin-europe-live-news already exists.
+2025-12-15 18:44:04,184 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cj38rj0y6k5o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:44:04,412 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4gk34k9k23o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:44:04,523 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/15/russia-ukraine-deal-security-guarantees-starmer
+2025-12-15 18:44:04,523 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-15 18:44:04,525 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2dp15zglxo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:44:04,691 - INFO - [The Guardian] Success with 'requests_browser'. Found content (572 words).
+2025-12-15 18:44:05,904 - INFO - [Times of India] Page content loaded.
+2025-12-15 18:44:06,347 - INFO - [Times of India] Success with 'selenium_browser'. Found content (385 words).
+2025-12-15 18:44:21,661 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/cities/Hyderabad/unesco-ambassador-vishal-sharma-visits-incois-backs-dedicated-ocean-observation-satellite/article70398899.ece: Message: timeout: Timed out receiving message from renderer: 19.650
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x55d3ce04519a <unknown>
+#1 0x55d3cdac2c4b <unknown>
+#2 0x55d3cdaaacf3 <unknown>
+#3 0x55d3cdaaa9d6 <unknown>
+#4 0x55d3cdaa8897 <unknown>
+#5 0x55d3cdaa91af <unknown>
+#6 0x55d3cdab7970 <unknown>
+#7 0x55d3cdad1017 <unknown>
+#8 0x55d3cdad76cb <unknown>
+#9 0x55d3cdaa98d8 <unknown>
+#10 0x55d3cdad0dc3 <unknown>
+#11 0x55d3cdb5ff60 <unknown>
+#12 0x55d3cdb06c42 <unknown>
+#13 0x55d3cdb078f1 <unknown>
+#14 0x55d3ce00df39 <unknown>
+#15 0x55d3ce010e7d <unknown>
+#16 0x55d3cdff6c81 <unknown>
+#17 0x55d3ce011a5b <unknown>
+#18 0x55d3cdfdda50 <unknown>
+#19 0x55d3ce032aa8 <unknown>
+#20 0x55d3ce032c79 <unknown>
+#21 0x55d3ce0444f3 <unknown>
+#22 0x7fbfe329caa4 <unknown>
+#23 0x7fbfe3329c6c <unknown>
+
+2025-12-15 18:44:21,661 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/cities/Hyderabad/unesco-ambassador-vishal-sharma-visits-incois-backs-dedicated-ocean-observation-satellite/article70398899.ece. Falling back to RSS description.
+2025-12-15 18:44:21,662 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'UNESCO Ambassador Vishal Sharma visits INCOIS, backs dedicated ocean observation satellite' from The Hindu has only 3 words (Min: 90).
+2025-12-15 18:45:05,698 - INFO - DEDUPLICATION: Found match (Score: 0.70). Linking to Cluster ID: 18108d07-c113-4781-9548-0b8269ce6750
+2025-12-15 18:45:05,701 - INFO - Saved article: Any Russia-Ukraine deal is doomed without security guarantees, says Starmer | Ukraine | The Guardian from The Guardian (572 words)
+2025-12-15 18:45:05,701 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czrkkm83znpo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-15 18:45:07,126 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2025-12-15 18:45:07,126 - ERROR - A thread has timed out and will be abandoned.
+2025-12-15 18:45:07,126 - ERROR - A thread has timed out and will be abandoned.
+2025-12-15 18:45:07,126 - ERROR - A thread has timed out and will be abandoned.
+2025-12-15 18:45:07,126 - ERROR - A thread has timed out and will be abandoned.
+2025-12-15 18:45:07,126 - INFO - Shutting down thread pool (wait=False)...
+2025-12-15 18:45:07,126 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2025-12-15 18:45:07,126 - INFO - --- Scraping job finished ---
+2025-12-15 18:45:07,127 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-15 18:45:07,127 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
