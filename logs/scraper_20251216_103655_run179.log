@@ -1,0 +1,105 @@
+2025-12-16 10:31:55,336 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-16 10:31:55,337 - INFO - Use pytorch device_name: cpu
+2025-12-16 10:31:55,337 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-16 10:31:55,911 - INFO - AI Model loaded successfully.
+2025-12-16 10:31:55,911 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-16 10:31:55,911 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-16 10:31:55,911 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-16 10:31:55,912 - INFO - Proxy is DISABLED.
+2025-12-16 10:31:55,912 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-16 10:31:55,913 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-16 10:31:55,913 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-16 10:31:55,914 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-16 10:31:55,915 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-16 10:31:56,122 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-16 10:31:56,122 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/south-africa-russia-men-tricked-fighting-ukraine already exists.
+2025-12-16 10:31:56,258 - INFO - Found 27 articles in BBC RSS feed. Processing up to 30.
+2025-12-16 10:31:56,350 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cx2341yx719o?at_medium=RSS&at_campaign=rss
+2025-12-16 10:31:56,350 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-16 10:31:56,351 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/libya-national-museum-reopens already exists.
+2025-12-16 10:31:56,502 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/education/2025/dec/14/ghana-students-uk-universities-face-deportion-funding-crisis already exists.
+2025-12-16 10:31:56,574 - INFO - [BBC] Success with 'requests_browser'. Found content (502 words).
+2025-12-16 10:32:01,746 - INFO - Selenium driver initialized successfully.
+2025-12-16 10:32:01,746 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-16 10:32:01,747 - INFO - Selenium driver initialized successfully.
+2025-12-16 10:32:01,747 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-16 10:32:01,902 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-16 10:32:01,907 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-16 10:32:49,602 - INFO - DEDUPLICATION: Found match (Score: 0.85). Linking to Cluster ID: 816799f1-8205-4182-b276-1d4ca4d7c41d
+2025-12-16 10:32:49,604 - INFO - Saved article: Hero couple tried to stop gunman before being killed in Bondi attack from BBC (502 words)
+2025-12-16 10:32:49,605 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/science/2025/dec/15/little-foot-hominin-fossil-may-be-new-species-of-human-ancestor already exists.
+2025-12-16 10:32:49,767 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/infopark-kochi-proposes-shifting-silverline-station-to-phase-3-to-free-up-frozen-land-under-phase-2/article70402398.ece
+2025-12-16 10:32:49,767 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-16 10:32:49,768 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/nri/middle-east-news/dubai-visa-rejected-heres-what-youre-doing-wrong/articleshow/126000250.cms
+2025-12-16 10:32:49,768 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-16 10:32:49,768 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/13/drone-strike-on-un-facility-in-war-torn-sudan-leaves-six-peacekeepers-dead already exists.
+2025-12-16 10:32:50,066 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/16/joesley-batista-brazil-luiz-inacio-lula-da-silva-trump
+2025-12-16 10:32:50,066 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-16 10:32:50,103 - INFO - [The Guardian] Success with 'requests_browser'. Found content (878 words).
+2025-12-16 10:32:54,209 - INFO - [The Hindu] Page content loaded.
+2025-12-16 10:32:54,376 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (394 words).
+2025-12-16 10:33:09,791 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/nri/middle-east-news/dubai-visa-rejected-heres-what-youre-doing-wrong/articleshow/126000250.cms: Message: timeout: Timed out receiving message from renderer: 19.866
+  (Session info: chrome=143.0.7499.40)
+Stacktrace:
+#0 0x55f24efbc19a <unknown>
+#1 0x55f24ea39c4b <unknown>
+#2 0x55f24ea21cf3 <unknown>
+#3 0x55f24ea219d6 <unknown>
+#4 0x55f24ea1f897 <unknown>
+#5 0x55f24ea201af <unknown>
+#6 0x55f24ea2e970 <unknown>
+#7 0x55f24ea48017 <unknown>
+#8 0x55f24ea4e6cb <unknown>
+#9 0x55f24ea208d8 <unknown>
+#10 0x55f24ea47dc3 <unknown>
+#11 0x55f24ead6f60 <unknown>
+#12 0x55f24ea7dc42 <unknown>
+#13 0x55f24ea7e8f1 <unknown>
+#14 0x55f24ef84f39 <unknown>
+#15 0x55f24ef87e7d <unknown>
+#16 0x55f24ef6dc81 <unknown>
+#17 0x55f24ef88a5b <unknown>
+#18 0x55f24ef54a50 <unknown>
+#19 0x55f24efa9aa8 <unknown>
+#20 0x55f24efa9c79 <unknown>
+#21 0x55f24efbb4f3 <unknown>
+#22 0x7f6f4dc9caa4 <unknown>
+#23 0x7f6f4dd29c6c <unknown>
+
+2025-12-16 10:33:09,791 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/nri/middle-east-news/dubai-visa-rejected-heres-what-youre-doing-wrong/articleshow/126000250.cms. Falling back to RSS description.
+2025-12-16 10:33:09,791 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Dubai visa rejected? Here’s what you’re doing wrong' from Times of India has only 54 words (Min: 90).
+2025-12-16 10:33:53,066 - INFO - Saved article: How a Brazilian meat tycoon accused of bribery and deforestation became a key player in regional diplomacy | Venezuela | The Guardian from The Guardian (878 words)
+2025-12-16 10:33:53,066 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckgz15d5718o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-16 10:34:48,749 - INFO - Saved article: Infopark Kochi proposes shifting SilverLine station to Phase 3 to free up frozen land under Phase 2 - The Hindu from The Hindu (394 words)
+2025-12-16 10:34:48,750 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/bondi-beach-attack-shooters-inspired-by-is-under-went-military-style-training-what-cops-revealed/articleshow/125997869.cms already exists.
+2025-12-16 10:34:48,984 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cde644367j0o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-16 10:34:49,142 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/15/us-military-strikes-vessels-pacific already exists.
+2025-12-16 10:34:49,374 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/europe/watch-russian-submarine-blows-up-as-ukraine-claims-underwater-drone-strike-first-such-attack/articleshow/125998225.cms
+2025-12-16 10:34:49,374 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-16 10:34:49,375 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c7413d9xvkeo?at_medium=RSS&at_campaign=rss
+2025-12-16 10:34:49,375 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-16 10:34:49,376 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/15/trinidad-tobago-us-access-airports-venezuela-tensions-grow already exists.
+2025-12-16 10:34:49,414 - INFO - [BBC] Success with 'requests_browser'. Found content (639 words).
+2025-12-16 10:34:51,363 - INFO - [Times of India] Page content loaded.
+2025-12-16 10:34:51,584 - INFO - [Times of India] Success with 'selenium_browser'. Found content (226 words).
+2025-12-16 10:35:47,842 - INFO - DEDUPLICATION: Found match (Score: 0.81). Linking to Cluster ID: 49d1e00e-b3a6-4f27-bc54-0485a2e220a0
+2025-12-16 10:35:47,844 - INFO - Saved article: Trump defends his criticism of killed Hollywood director Rob Reiner from BBC (639 words)
+2025-12-16 10:35:47,845 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/15/jose-antonio-kast-chile-election-analysis already exists.
+2025-12-16 10:35:48,121 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/bondi-beach-attack-gunmen-indian-visited-hyderabad-dec-16-2025/article70402458.ece
+2025-12-16 10:35:48,121 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-16 10:35:49,917 - INFO - [The Hindu] Page content loaded.
+2025-12-16 10:35:50,245 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (437 words).
+2025-12-16 10:36:47,007 - INFO - DEDUPLICATION: Found match (Score: 0.71). Linking to Cluster ID: 9b1c2d68-6c80-4801-a492-4995b857a4e0
+2025-12-16 10:36:47,009 - INFO - Saved article: Watch: Russian submarine blows up as Ukraine claims underwater drone strike; first such attack - The Times of India from Times of India (226 words)
+2025-12-16 10:36:47,009 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/15/maria-corina-machado-venezuela-norway already exists.
+2025-12-16 10:36:47,148 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c3e0wd7110vo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-16 10:36:55,916 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2025-12-16 10:36:55,916 - ERROR - A thread has timed out and will be abandoned.
+2025-12-16 10:36:55,916 - ERROR - A thread has timed out and will be abandoned.
+2025-12-16 10:36:55,916 - ERROR - A thread has timed out and will be abandoned.
+2025-12-16 10:36:55,916 - ERROR - A thread has timed out and will be abandoned.
+2025-12-16 10:36:55,916 - INFO - Shutting down thread pool (wait=False)...
+2025-12-16 10:36:55,916 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2025-12-16 10:36:55,916 - INFO - --- Scraping job finished ---
+2025-12-16 10:36:55,917 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-16 10:36:55,917 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
