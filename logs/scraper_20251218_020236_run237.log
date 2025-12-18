@@ -1,0 +1,87 @@
+2025-12-18 01:57:35,940 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-18 01:57:35,940 - INFO - Use pytorch device_name: cpu
+2025-12-18 01:57:35,940 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-18 01:57:36,402 - INFO - AI Model loaded successfully.
+2025-12-18 01:57:36,402 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-18 01:57:36,402 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-18 01:57:36,402 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-18 01:57:36,402 - INFO - Proxy is DISABLED.
+2025-12-18 01:57:36,402 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-18 01:57:36,403 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-18 01:57:36,404 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-18 01:57:36,405 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-18 01:57:36,405 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-18 01:57:36,523 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-18 01:57:36,523 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/five-key-moments-in-the-assault-on-the-rights-of-women-and-girls-in-2025 already exists.
+2025-12-18 01:57:36,562 - INFO - Found 32 articles in BBC RSS feed. Processing up to 30.
+2025-12-18 01:57:36,793 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx239pp7gl7o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 01:57:37,037 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/south-africa-russia-men-tricked-fighting-ukraine already exists.
+2025-12-18 01:57:37,227 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cn81dzj79glo?at_medium=RSS&at_campaign=rss
+2025-12-18 01:57:37,227 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 01:57:37,228 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/libya-national-museum-reopens already exists.
+2025-12-18 01:57:37,351 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 63 words).
+2025-12-18 01:57:37,351 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cn81dzj79glo?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2025-12-18 01:57:37,351 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Moment Nick Reiner is arrested after being seen in convenience store' from BBC has only 25 words (Min: 90).
+2025-12-18 01:57:37,470 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/education/2025/dec/14/ghana-students-uk-universities-face-deportion-funding-crisis already exists.
+2025-12-18 01:57:37,725 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/science/2025/dec/15/little-foot-hominin-fossil-may-be-new-species-of-human-ancestor already exists.
+2025-12-18 01:57:37,860 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/17/canada-population-drop-international-students already exists.
+2025-12-18 01:57:38,024 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/17/canada-polar-bear-adopts-new-cub already exists.
+2025-12-18 01:57:38,135 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/17/what-action-is-trump-taking-against-venezuela-oil-industry already exists.
+2025-12-18 01:57:38,275 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/17/british-baker-outrages-mexicans-with-attack-on-ugly-bread already exists.
+2025-12-18 01:57:38,397 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/16/trump-orders-blockade-oil-tankers-venezuela already exists.
+2025-12-18 01:57:38,694 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/18/china-to-raise-tax-condoms-boost-birth-rate
+2025-12-18 01:57:38,694 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 01:57:38,800 - INFO - [The Guardian] Success with 'requests_browser'. Found content (732 words).
+2025-12-18 01:57:38,814 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c9vjlj1ezpgo?at_medium=RSS&at_campaign=rss
+2025-12-18 01:57:38,819 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 01:57:39,091 - INFO - [BBC] Success with 'requests_browser'. Found content (1040 words).
+2025-12-18 01:57:47,305 - INFO - Selenium driver initialized successfully.
+2025-12-18 01:57:47,305 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-18 01:57:47,306 - INFO - Selenium driver initialized successfully.
+2025-12-18 01:57:47,306 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-18 01:57:47,430 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-18 01:57:47,502 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-18 01:58:30,978 - INFO - Saved article: China to hike tax on condoms in attempt to boost falling birth rate | China | The Guardian from The Guardian (732 words)
+2025-12-18 01:59:23,112 - INFO - DEDUPLICATION: Found match (Score: 0.87). Linking to Cluster ID: 46019211-7900-496d-8969-5e9d4d4e4e60
+2025-12-18 01:59:23,114 - INFO - Saved article: EU leaders face crunch decision on loaning Russia's frozen cash to Ukraine from BBC (1040 words)
+2025-12-18 01:59:23,115 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/made-me-look-crazy-wale-admits-viral-kai-cenat-bet-awards-moment-triggered-his-mental-health-struggles/articleshow/126048135.cms
+2025-12-18 01:59:23,115 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-18 01:59:23,116 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/chhattisgarh/congress-protests-in-chhattisgarh-against-misuse-of-investigating-agencies/article70408241.ece
+2025-12-18 01:59:23,116 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-18 01:59:23,117 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/17/bondi-terror-suspects-spent-whole-philippines-visit-in-city-and-rarely-left-hotel-staff-and-police-say already exists.
+2025-12-18 01:59:23,395 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/trump-urges-xi-jinping-to-free-hk-pro-democracy-media-tycoon-jimmy-lai already exists.
+2025-12-18 01:59:23,666 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2025/dec/15/uk-south-korea-sign-new-trade-deal-cars-food-drink-pharmaceutical-exports already exists.
+2025-12-18 01:59:23,854 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/15/china-uyghur-human-rights-ice already exists.
+2025-12-18 01:59:23,998 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/live/2025/dec/18/bondi-terror-attack-beach-shooting-live-updates-victims-terror-gunmen-naveed-akram-sajid-asio-antisemitism-anthony-albanese-ntwnfb already exists.
+2025-12-18 01:59:24,193 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cvgj0p5yl92o?at_medium=RSS&at_campaign=rss
+2025-12-18 01:59:24,193 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 01:59:24,196 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/18/anz-shareholders-reject-executive-pay-plan-for-second-year-in-a-row
+2025-12-18 01:59:24,196 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 01:59:24,225 - INFO - [BBC] Success with 'requests_browser'. Found content (535 words).
+2025-12-18 01:59:24,265 - INFO - [The Guardian] Success with 'requests_browser'. Found content (476 words).
+2025-12-18 01:59:30,008 - INFO - [The Hindu] Page content loaded.
+2025-12-18 01:59:30,484 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (327 words).
+2025-12-18 02:00:39,607 - INFO - DEDUPLICATION: Found match (Score: 0.76). Linking to Cluster ID: 2c1c2e1e-b0a2-4e0a-bbdb-939ab173c618
+2025-12-18 02:00:39,610 - INFO - Saved article: Dan Bongino stepping down as FBI deputy director from BBC (535 words)
+2025-12-18 02:01:23,214 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us-streamers/made-me-look-crazy-wale-admits-viral-kai-cenat-bet-awards-moment-triggered-his-mental-health-struggles/articleshow/126048135.cms: HTTPConnectionPool(host='localhost', port=49243): Read timed out. (read timeout=120)
+2025-12-18 02:01:23,214 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us-streamers/made-me-look-crazy-wale-admits-viral-kai-cenat-bet-awards-moment-triggered-his-mental-health-struggles/articleshow/126048135.cms. Falling back to RSS description.
+2025-12-18 02:01:23,214 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article '“Made me look crazy”: Wale admits viral Kai Cenat BET Awards moment triggered his mental health struggles' from Times of India has only 57 words (Min: 90).
+2025-12-18 02:01:37,064 - INFO - Saved article: ANZ shareholders reject executive pay plan for second year in a row | ANZ | The Guardian from The Guardian (476 words)
+2025-12-18 02:02:35,282 - INFO - Saved article: Congress protests in Chhattisgarh against ‘misuse of investigating agencies’ - The Hindu from The Hindu (327 words)
+2025-12-18 02:02:35,282 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2e6r10rdeo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 02:02:35,421 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/tim-pool-and-alison-neubauer-combined-net-worth-in-2025-timcast-podcast-income-youtube-revenue-endorsements-and-more/articleshow/126048288.cms
+2025-12-18 02:02:35,421 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-18 02:02:35,422 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/2025/dec/18/albanese-announces-new-laws-cracking-down-on-hate-speech-and-preachers-of-hate-after-bondi-beach-attack-ntwnfb
+2025-12-18 02:02:35,422 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 02:02:35,424 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1kpr0dg130o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 02:02:35,444 - INFO - [The Guardian] Success with 'requests_browser'. Found content (303 words).
+2025-12-18 02:02:36,406 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2025-12-18 02:02:36,406 - ERROR - A thread has timed out and will be abandoned.
+2025-12-18 02:02:36,406 - ERROR - A thread has timed out and will be abandoned.
+2025-12-18 02:02:36,406 - ERROR - A thread has timed out and will be abandoned.
+2025-12-18 02:02:36,407 - ERROR - A thread has timed out and will be abandoned.
+2025-12-18 02:02:36,407 - INFO - Shutting down thread pool (wait=False)...
+2025-12-18 02:02:36,407 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2025-12-18 02:02:36,407 - INFO - --- Scraping job finished ---
+2025-12-18 02:02:36,407 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-18 02:02:36,407 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
