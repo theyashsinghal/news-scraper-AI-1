@@ -1,0 +1,111 @@
+2025-12-18 14:29:19,481 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-18 14:29:19,482 - INFO - Use pytorch device_name: cpu
+2025-12-18 14:29:19,482 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-18 14:29:20,964 - INFO - AI Model loaded successfully.
+2025-12-18 14:29:20,964 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-18 14:29:20,964 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-18 14:29:20,964 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-18 14:29:20,964 - INFO - Proxy is DISABLED.
+2025-12-18 14:29:20,964 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-18 14:29:20,965 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-18 14:29:20,966 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-18 14:29:20,967 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-18 14:29:20,967 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-18 14:29:21,225 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-18 14:29:21,225 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2025/dec/18/morocco-genz212-protests-police-mass-arrests-beatings-detentions-rights already exists.
+2025-12-18 14:29:21,445 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/five-key-moments-in-the-assault-on-the-rights-of-women-and-girls-in-2025 already exists.
+2025-12-18 14:29:21,640 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/south-africa-russia-men-tricked-fighting-ukraine already exists.
+2025-12-18 14:29:21,694 - INFO - Found 27 articles in BBC RSS feed. Processing up to 30.
+2025-12-18 14:29:21,774 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9vjlj1ezpgo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:29:21,941 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/16/libya-national-museum-reopens already exists.
+2025-12-18 14:29:22,091 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2epv08xwz7o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:29:22,210 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/education/2025/dec/14/ghana-students-uk-universities-face-deportion-funding-crisis already exists.
+2025-12-18 14:29:22,345 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cd0krr3jrkjo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:29:22,451 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/18/brazilian-congress-passes-bill-cut-jair-bolsonaro-prison-term
+2025-12-18 14:29:22,451 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 14:29:22,452 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cgmneem1e89o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:29:22,619 - INFO - [The Guardian] Success with 'requests_browser'. Found content (432 words).
+2025-12-18 14:29:22,639 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8e9j84008jo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:29:27,326 - INFO - Selenium driver initialized successfully.
+2025-12-18 14:29:27,326 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-18 14:29:27,328 - INFO - Selenium driver initialized successfully.
+2025-12-18 14:29:27,328 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-18 14:29:27,665 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-18 14:29:28,469 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-18 14:30:10,700 - INFO - DEDUPLICATION: Found match (Score: 0.70). Linking to Cluster ID: 73742e50-6b95-4c3c-a0ff-999a84c56211
+2025-12-18 14:30:10,702 - INFO - Saved article: Brazilian congress passes bill to cut Jair Bolsonaro’s 27-year prison term | Jair Bolsonaro | The Guardian from The Guardian (432 words)
+2025-12-18 14:30:10,703 - INFO - [BBC] Article: https://www.bbc.com/news/articles/ce86j7n6d3do?at_medium=RSS&at_campaign=rss
+2025-12-18 14:30:10,703 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 14:30:10,704 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/aoc-says-she-would-stomp-jd-vance-in-2028-presidential-race-as-poll-shows-her-narrowly-ahead/articleshow/126059390.cms
+2025-12-18 14:30:10,704 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-18 14:30:10,705 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/work-honestly-and-take-decisions-with-courage-bhatti-advises-ais-officers/article70411909.ece
+2025-12-18 14:30:10,705 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-18 14:30:11,077 - INFO - [BBC] Success with 'requests_browser'. Found content (596 words).
+2025-12-18 14:30:17,195 - INFO - [The Hindu] Page content loaded.
+2025-12-18 14:30:18,377 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (331 words).
+2025-12-18 14:30:33,182 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/aoc-says-she-would-stomp-jd-vance-in-2028-presidential-race-as-poll-shows-her-narrowly-ahead/articleshow/126059390.cms: Message: timeout: Timed out receiving message from renderer: 19.772
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x55ac4f05d9aa <unknown>
+#1 0x55ac4ea922db <unknown>
+#2 0x55ac4ea7a37a <unknown>
+#3 0x55ac4ea7a05d <unknown>
+#4 0x55ac4ea77f20 <unknown>
+#5 0x55ac4ea7882f <unknown>
+#6 0x55ac4ea86ff0 <unknown>
+#7 0x55ac4eaa06a7 <unknown>
+#8 0x55ac4eaa6d5b <unknown>
+#9 0x55ac4ea78f58 <unknown>
+#10 0x55ac4eaa045a <unknown>
+#11 0x55ac4eb2f4b1 <unknown>
+#12 0x55ac4ead6112 <unknown>
+#13 0x55ac4ead6dc1 <unknown>
+#14 0x55ac4f026609 <unknown>
+#15 0x55ac4f02954d <unknown>
+#16 0x55ac4f00f331 <unknown>
+#17 0x55ac4f02a11b <unknown>
+#18 0x55ac4eff5ff0 <unknown>
+#19 0x55ac4f04ad98 <unknown>
+#20 0x55ac4f04af69 <unknown>
+#21 0x55ac4f05cd03 <unknown>
+#22 0x7fa3cee9caa4 <unknown>
+#23 0x7fa3cef29c6c <unknown>
+
+2025-12-18 14:30:33,182 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/aoc-says-she-would-stomp-jd-vance-in-2028-presidential-race-as-poll-shows-her-narrowly-ahead/articleshow/126059390.cms. Falling back to RSS description.
+2025-12-18 14:30:33,182 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'AOC says she would ‘stomp’ JD Vance in 2028 presidential race as poll shows her narrowly ahead' from Times of India has only 53 words (Min: 90).
+2025-12-18 14:31:20,877 - INFO - DEDUPLICATION: Found match (Score: 0.89). Linking to Cluster ID: 76b366b7-eeba-44f6-b47c-932dea97fe22
+2025-12-18 14:31:20,880 - INFO - Saved article: Peter Arnett, Pulitzer-winning war reporter, dies aged 91 from BBC (596 words)
+2025-12-18 14:31:20,880 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/18/canada-immigration-population-analysis already exists.
+2025-12-18 14:32:13,252 - INFO - Saved article: Work honestly and take decisions with courage, Bhatti advises AIS officers - The Hindu from The Hindu (331 words)
+2025-12-18 14:32:13,252 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/bill-clinton-took-epstein-ghislaine-to-moroccan-kings-2002-wedding-as-his-plus-twos-claims-report/articleshow/126059286.cms
+2025-12-18 14:32:13,253 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-18 14:32:13,253 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/17/military-strike-pacific-hegseth already exists.
+2025-12-18 14:32:13,410 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czxgrl4937yo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:32:13,643 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/17/canada-population-drop-international-students already exists.
+2025-12-18 14:32:13,935 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx239pp7gl7o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:32:14,194 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/stress-on-collective-responsibility-to-prevent-trafficking-in-women-and-children/article70411705.ece
+2025-12-18 14:32:14,195 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-18 14:32:14,195 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/17/canada-polar-bear-adopts-new-cub already exists.
+2025-12-18 14:32:14,222 - INFO - [Times of India] Page content loaded.
+2025-12-18 14:32:14,381 - INFO - [Times of India] Success with 'selenium_browser'. Found content (324 words).
+2025-12-18 14:32:14,414 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvgj0p5yl92o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:32:14,546 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c74xvp00wj3o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:32:14,681 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4gej5ezyypo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:32:14,954 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/18/us-announces-more-than-10bn-of-arms-sales-to-taiwan
+2025-12-18 14:32:14,954 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-18 14:32:15,314 - INFO - [The Guardian] Success with 'requests_browser'. Found content (635 words).
+2025-12-18 14:32:19,964 - INFO - [The Hindu] Page content loaded.
+2025-12-18 14:32:20,050 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (460 words).
+2025-12-18 14:33:13,637 - INFO - Saved article: Bill Clinton took Epstein, Ghislaine to Moroccan King's 2002 wedding as his plus twos, claims report - The Times of India from Times of India (324 words)
+2025-12-18 14:33:13,637 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c865exedy24o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-18 14:34:06,292 - INFO - Saved article: US announces more than $10bn of arms sales to Taiwan | Taiwan | The Guardian from The Guardian (635 words)
+2025-12-18 14:34:20,967 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2025-12-18 14:34:20,967 - ERROR - A thread has timed out and will be abandoned.
+2025-12-18 14:34:20,967 - ERROR - A thread has timed out and will be abandoned.
+2025-12-18 14:34:20,967 - ERROR - A thread has timed out and will be abandoned.
+2025-12-18 14:34:20,967 - ERROR - A thread has timed out and will be abandoned.
+2025-12-18 14:34:20,968 - INFO - Shutting down thread pool (wait=False)...
+2025-12-18 14:34:20,968 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2025-12-18 14:34:20,968 - INFO - --- Scraping job finished ---
+2025-12-18 14:34:20,968 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-18 14:34:20,968 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
