@@ -1,0 +1,107 @@
+2025-12-22 12:54:11,841 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-22 12:54:11,842 - INFO - Use pytorch device_name: cpu
+2025-12-22 12:54:11,842 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-22 12:54:13,268 - INFO - AI Model loaded successfully.
+2025-12-22 12:54:13,269 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-22 12:54:13,269 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-22 12:54:13,269 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-22 12:54:13,269 - INFO - Proxy is DISABLED.
+2025-12-22 12:54:13,269 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-22 12:54:13,270 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-22 12:54:13,271 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-22 12:54:13,272 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-22 12:54:13,272 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-22 12:54:13,375 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-22 12:54:13,376 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/22/freed-nigerian-schoolchildren-set-to-be-reunited-with-families
+2025-12-22 12:54:13,376 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-22 12:54:13,534 - INFO - [The Guardian] Success with 'requests_browser'. Found content (366 words).
+2025-12-22 12:54:13,752 - INFO - Found 29 articles in BBC RSS feed. Processing up to 30.
+2025-12-22 12:54:18,846 - INFO - Selenium driver initialized successfully.
+2025-12-22 12:54:18,847 - INFO - Selenium driver initialized successfully.
+2025-12-22 12:54:18,847 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-22 12:54:18,847 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-22 12:54:18,973 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-22 12:54:19,303 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-22 12:54:56,972 - INFO - DEDUPLICATION: Found match (Score: 0.91). Linking to Cluster ID: c29fa2fc-fcb3-4ab8-a9ed-39632c90835c
+2025-12-22 12:54:56,975 - INFO - Saved article: Freed Nigerian schoolchildren to be reunited with families | Nigeria | The Guardian from The Guardian (366 words)
+2025-12-22 12:54:56,975 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce86l95gx5po?at_medium=RSS&at_campaign=rss already exists.
+2025-12-22 12:54:57,202 - INFO - [The Hindu] Article: https://www.thehindu.com/business/Industry/expecting-bilateral-trade-with-new-zealand-to-double-in-five-years-with-fta-piyush-goyal/article70425818.ece
+2025-12-22 12:54:57,202 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-22 12:54:57,203 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/my-father-came-to-us-in-60s-i-was-born-in-dc-omar-fateh-hits-back-at-jd-vances-mayor-of-mogadishu-jibe/articleshow/126121734.cms
+2025-12-22 12:54:57,203 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-22 12:54:57,204 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8jwn9wznx1o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-22 12:54:57,369 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cdd5j9jdvy9o?at_medium=RSS&at_campaign=rss
+2025-12-22 12:54:57,370 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-22 12:54:57,667 - INFO - [BBC] Success with 'requests_browser'. Found content (661 words).
+2025-12-22 12:55:02,772 - INFO - [The Hindu] Page content loaded.
+2025-12-22 12:55:02,922 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (419 words).
+2025-12-22 12:55:17,230 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/my-father-came-to-us-in-60s-i-was-born-in-dc-omar-fateh-hits-back-at-jd-vances-mayor-of-mogadishu-jibe/articleshow/126121734.cms: Message: timeout: Timed out receiving message from renderer: 19.933
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x555bccf3e61a <unknown>
+#1 0x555bcc9bb20b <unknown>
+#2 0x555bcc9a32aa <unknown>
+#3 0x555bcc9a2f8d <unknown>
+#4 0x555bcc9a0e47 <unknown>
+#5 0x555bcc9a175f <unknown>
+#6 0x555bcc9aff20 <unknown>
+#7 0x555bcc9c95e7 <unknown>
+#8 0x555bcc9cfc9b <unknown>
+#9 0x555bcc9a1e88 <unknown>
+#10 0x555bcc9c9356 <unknown>
+#11 0x555bcca58580 <unknown>
+#12 0x555bcc9ff232 <unknown>
+#13 0x555bcc9ffee1 <unknown>
+#14 0x555bccf073f9 <unknown>
+#15 0x555bccf0a34d <unknown>
+#16 0x555bccef0122 <unknown>
+#17 0x555bccf0af2b <unknown>
+#18 0x555bcced6c30 <unknown>
+#19 0x555bccf2bd78 <unknown>
+#20 0x555bccf2bf4c <unknown>
+#21 0x555bccf3d973 <unknown>
+#22 0x7f7ac7a9caa4 <unknown>
+#23 0x7f7ac7b29c6c <unknown>
+
+2025-12-22 12:55:17,231 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/my-father-came-to-us-in-60s-i-was-born-in-dc-omar-fateh-hits-back-at-jd-vances-mayor-of-mogadishu-jibe/articleshow/126121734.cms. Falling back to RSS description.
+2025-12-22 12:55:17,231 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article '‘My father came to US in 60s, I was born in DC’: Omar Fateh hits back at JD Vance’s ‘mayor of Mogadishu’ jibe' from Times of India has only 3 words (Min: 90).
+2025-12-22 12:55:56,126 - INFO - DEDUPLICATION: Found match (Score: 0.80). Linking to Cluster ID: 8c110b7c-3d70-486d-9356-28d6487e274c
+2025-12-22 12:55:56,129 - INFO - Saved article: US lawmakers threaten Pam Bondi with contempt action over unreleased Epstein material from BBC (661 words)
+2025-12-22 12:55:56,129 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/21/more-kidnapped-schoolchildren-freed-in-nigeria already exists.
+2025-12-22 12:56:42,482 - INFO - DEDUPLICATION: Found match (Score: 0.85). Linking to Cluster ID: 341613e0-8db9-4a18-8aed-b46f382142c4
+2025-12-22 12:56:42,484 - INFO - Saved article: Expecting bilateral trade with New Zealand to double in five years with FTA: Piyush Goyal - The Hindu from The Hindu (419 words)
+2025-12-22 12:56:42,484 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/saudi-arabia-permits-private-schools-to-build-on-campus-student-residential-facilities/articleshow/126120268.cms already exists.
+2025-12-22 12:56:42,780 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/uk-news/2025/dec/21/manchester-museum-uncover-hidden-histories-africa-hub already exists.
+2025-12-22 12:56:43,032 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn5lnzlvqg2o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-22 12:56:43,304 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/uae-k-pop-icons-chung-ha-and-shinee-onew-to-perform-free-dubai-concert-next-month/articleshow/126119469.cms
+2025-12-22 12:56:43,304 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-22 12:56:43,305 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2025/dec/21/sweden-and-germany-slash-aid-budgets-to-focus-on-ukraine-and-defence-spending already exists.
+2025-12-22 12:56:43,498 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5ydej888n9o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-22 12:56:43,759 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/assam/assam-on-high-alert-fresh-unrest-in-bangladesh/article70425742.ece
+2025-12-22 12:56:43,759 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-22 12:56:43,760 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/21/gunmen-johannesburg-township-in-south-africas-second-mass-shooting-within-weeks already exists.
+2025-12-22 12:56:43,931 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/media/2025/dec/22/cbs-news-delays-60-minutes-segment-featuring-investigation-into-cecot-megaprison already exists.
+2025-12-22 12:56:44,207 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/22/man-jailed-1335-years-el-salvador-sentences-ms-13-gang-members already exists.
+2025-12-22 12:56:44,453 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/21/coast-guard-pursuing-oil-tanker-venezuela-coast already exists.
+2025-12-22 12:56:44,731 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cd74ldr2zryo?at_medium=RSS&at_campaign=rss
+2025-12-22 12:56:44,732 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-22 12:56:44,733 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/20/us-second-merchant-vessel-venezuela already exists.
+2025-12-22 12:56:44,905 - INFO - [BBC] Success with 'requests_browser'. Found content (524 words).
+2025-12-22 12:56:45,017 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/19/trump-venezuela-war already exists.
+2025-12-22 12:56:45,134 - INFO - [Times of India] Page content loaded.
+2025-12-22 12:56:46,674 - INFO - [Times of India] Success with 'selenium_browser'. Found content (447 words).
+2025-12-22 12:56:48,066 - INFO - [The Hindu] Page content loaded.
+2025-12-22 12:56:48,497 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (266 words).
+2025-12-22 12:57:39,980 - INFO - Saved article: Gold price climbs above $4,400 to hit record high from BBC (524 words)
+2025-12-22 12:57:39,980 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/22/jeju-air-crash-independent-inquiry-south-korea already exists.
+2025-12-22 12:58:31,693 - INFO - Saved article: UAE: K-pop icons Chung Ha and SHINee Onew to perform free Dubai concert next month | World News - The Times of India from Times of India (447 words)
+2025-12-22 12:59:13,273 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2025-12-22 12:59:13,273 - ERROR - A thread has timed out and will be abandoned.
+2025-12-22 12:59:13,273 - ERROR - A thread has timed out and will be abandoned.
+2025-12-22 12:59:13,273 - ERROR - A thread has timed out and will be abandoned.
+2025-12-22 12:59:13,273 - ERROR - A thread has timed out and will be abandoned.
+2025-12-22 12:59:13,273 - INFO - Shutting down thread pool (wait=False)...
+2025-12-22 12:59:13,273 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2025-12-22 12:59:13,273 - INFO - --- Scraping job finished ---
+2025-12-22 12:59:13,274 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-22 12:59:13,274 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
