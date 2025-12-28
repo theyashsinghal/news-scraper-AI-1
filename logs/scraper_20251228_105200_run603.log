@@ -1,0 +1,204 @@
+2025-12-28 10:46:59,295 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-28 10:46:59,296 - INFO - Use pytorch device_name: cpu
+2025-12-28 10:46:59,296 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-28 10:47:00,735 - INFO - AI Model loaded successfully.
+2025-12-28 10:47:00,736 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-28 10:47:00,736 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-28 10:47:00,736 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-28 10:47:00,736 - INFO - Proxy is DISABLED.
+2025-12-28 10:47:00,736 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-28 10:47:00,738 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-28 10:47:00,738 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-28 10:47:00,739 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-28 10:47:00,739 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-28 10:47:01,044 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-28 10:47:01,045 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/central-african-republic-goes-to-polls-as-president-seeks-third-term already exists.
+2025-12-28 10:47:01,170 - INFO - Found 41 articles in BBC RSS feed. Processing up to 30.
+2025-12-28 10:47:01,251 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c888rzkd0dzo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:01,385 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/27/guinea-junta-leader-mamady-doumbouya-frontrunner-president-election already exists.
+2025-12-28 10:47:01,590 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy7vly6gm76o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:01,847 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/israel-first-country-to-recognise-somaliland-sovereign-state already exists.
+2025-12-28 10:47:02,076 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cwyv4gwyxxwo?at_medium=RSS&at_campaign=rss
+2025-12-28 10:47:02,076 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-28 10:47:02,077 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/british-egyptian-activist-alaa-abd-el-fattah-arrives-in-uk-after-travel-ban-lifted already exists.
+2025-12-28 10:47:02,232 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 70 words).
+2025-12-28 10:47:02,233 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cwyv4gwyxxwo?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2025-12-28 10:47:02,233 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'BBC visits Myanmar polling station as civil war rages on' from BBC has only 24 words (Min: 90).
+2025-12-28 10:47:02,280 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/26/trump-supporters-nigeria-airstrikes already exists.
+2025-12-28 10:47:02,467 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/venezuela-political-prisoner-release already exists.
+2025-12-28 10:47:02,603 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/weather-tracker-deep-freeze-canada-us-records-warmest-christmas already exists.
+2025-12-28 10:47:02,862 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1dzvpg1341o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:03,052 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2025/dec/25/they-are-scared-of-us-now-how-one-tropical-forest-turned-the-tide-on-loggers already exists.
+2025-12-28 10:47:03,236 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cdj817m37rgo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:03,372 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/25/cape-froward-new-national-park-patagonia-chile already exists.
+2025-12-28 10:47:03,611 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cz7n4px7e41o?at_medium=RSS&at_campaign=rss
+2025-12-28 10:47:03,611 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-28 10:47:03,612 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/24/honduras-nasry-tito-asfura-declared-president-donald-trump-backed already exists.
+2025-12-28 10:47:03,658 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 86 words).
+2025-12-28 10:47:03,658 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cz7n4px7e41o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2025-12-28 10:47:03,658 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Snow-capped Mount Etna erupts as skiers glide down slopes' from BBC has only 19 words (Min: 90).
+2025-12-28 10:47:03,822 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/myanmar-is-going-to-the-polls-but-its-not-the-people-who-hold-the-power-its-china already exists.
+2025-12-28 10:47:03,937 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/27/thailand-and-cambodia-agree-immediate-ceasefire-after-weeks-of-deadly-border-clashes already exists.
+2025-12-28 10:47:04,066 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/former-malaysian-pm-najib-razak-found-guilty-of-abuse-of-power-in-latest-1mdb-trial already exists.
+2025-12-28 10:47:04,291 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/china-imposes-sanctions-on-us-defence-firms-over-taiwan-arms-deal already exists.
+2025-12-28 10:47:04,587 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/cambodia-accuses-thailand-of-launching-strikes-during-border-peace-talks already exists.
+2025-12-28 10:47:04,753 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/australian-cruise-ship-investigated-after-leaving-passenger-behind-runs-aground-off-png-with-120-people-on-board already exists.
+2025-12-28 10:47:05,052 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/28/minns-government-actively-considering-if-jewish-security-group-should-be-armed-after-bondi-attack-ntwnfb already exists.
+2025-12-28 10:47:05,242 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cd9z1k4g40jo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:05,427 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/28/queensland-braces-for-days-of-heavy-rain-as-bom-issues-flood-warnings-for-parts-of-state already exists.
+2025-12-28 10:47:05,531 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cz68q3p8xqxo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:05,740 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/28/man-charged-with-displaying-nazi-hate-symbol-after-showing-off-tattoos-at-nsw-beach-ntwnfb already exists.
+2025-12-28 10:47:06,012 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cpvd90k2zn4o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:06,197 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/28/man-arrested-after-woman-found-dead-at-sydney-home-and-another-man-critically-injured-from-stab-wounds-ntwnfb already exists.
+2025-12-28 10:47:06,375 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5y21xlxng2o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:06,549 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2025/dec/28/ukraine-war-live-russia-zelenskyy-trump-meeting-florida-kyiv-latest-news-updates already exists.
+2025-12-28 10:47:06,843 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c93wjn1y72vo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:06,880 - INFO - Selenium driver initialized successfully.
+2025-12-28 10:47:06,880 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-28 10:47:06,881 - INFO - Selenium driver initialized successfully.
+2025-12-28 10:47:06,881 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-28 10:47:07,081 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/film/2025/dec/28/brigitte-bardot-french-screen-legend-and-animal-rights-activist-dies already exists.
+2025-12-28 10:47:07,182 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-28 10:47:07,322 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cqxq59np394o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:07,549 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/kuwait-introduces-new-e-services-to-simplify-visa-and-residency-transfers-for-expats/articleshow/126214567.cms
+2025-12-28 10:47:07,549 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-28 10:47:07,550 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/27/zelenskyy-to-meet-european-leaders-and-trump-for-ukraine-peace-talks-amid-fresh-strikes-on-kyiv already exists.
+2025-12-28 10:47:07,750 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-28 10:47:07,762 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q5je8048xo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:08,017 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/kerala-bjp-councillor-and-former-dgp-r-sreelekha-demands-cpim-mla-vk-prasanth-to-vacate-office-mla-refuses/article70445856.ece
+2025-12-28 10:47:08,018 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-28 10:47:08,018 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/kosovo-goes-to-the-polls-in-snap-election-in-bid-to-end-political-crisis already exists.
+2025-12-28 10:47:08,257 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0je0l55zq3o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:08,525 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/germany-military-recruits-bundeswehr-new-rules-young-men already exists.
+2025-12-28 10:47:08,788 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cj69j8l918do?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:08,983 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/palestinian-man-kills-two-in-northern-israel-car-ramming-and-stabbing-attack-police-say already exists.
+2025-12-28 10:47:09,120 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/southern-separatists-on-rise-in-yemen-report-saudi-airstrikes-near-positions already exists.
+2025-12-28 10:47:09,366 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c157e9dddwwo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:09,642 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9d9znp22pyo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:09,914 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx25387dj8no?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:10,214 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/24/israel-condemned-approval-19-settlements-occupied-west-bank already exists.
+2025-12-28 10:47:10,416 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/24/israel-strikes-southern-lebanon-as-deadline-to-disarm-hezbollah-nears already exists.
+2025-12-28 10:47:10,573 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/23/libyas-army-chief-dies-in-plane-crash-in-turkey already exists.
+2025-12-28 10:47:10,797 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g417md05go?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:10,946 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/crk7y27vp1eo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:11,120 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c23ejnge95jo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:11,250 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c20p78kp8pgo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:11,420 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g6xgv1n41o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:11,610 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn987yqnee9o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:11,745 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy073xp2yj0o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:11,917 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwyxller1j5o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:12,062 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx276v1yvryo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:12,320 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cpwk9grv290o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:12,601 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce3wyplnev1o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:12,788 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c623rvzjjd2o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-28 10:47:27,564 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/middle-east/kuwait-introduces-new-e-services-to-simplify-visa-and-residency-transfers-for-expats/articleshow/126214567.cms: Message: timeout: Timed out receiving message from renderer: 19.939
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x564d950a161a <unknown>
+#1 0x564d94b1e20b <unknown>
+#2 0x564d94b062aa <unknown>
+#3 0x564d94b05f8d <unknown>
+#4 0x564d94b03e47 <unknown>
+#5 0x564d94b0475f <unknown>
+#6 0x564d94b12f20 <unknown>
+#7 0x564d94b2c5e7 <unknown>
+#8 0x564d94b32c9b <unknown>
+#9 0x564d94b04e88 <unknown>
+#10 0x564d94b2c356 <unknown>
+#11 0x564d94bbb580 <unknown>
+#12 0x564d94b62232 <unknown>
+#13 0x564d94b62ee1 <unknown>
+#14 0x564d9506a3f9 <unknown>
+#15 0x564d9506d34d <unknown>
+#16 0x564d95053122 <unknown>
+#17 0x564d9506df2b <unknown>
+#18 0x564d95039c30 <unknown>
+#19 0x564d9508ed78 <unknown>
+#20 0x564d9508ef4c <unknown>
+#21 0x564d950a0973 <unknown>
+#22 0x7f6e9229caa4 <unknown>
+#23 0x7f6e92329c6c <unknown>
+
+2025-12-28 10:47:27,565 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/middle-east/kuwait-introduces-new-e-services-to-simplify-visa-and-residency-transfers-for-expats/articleshow/126214567.cms. Falling back to RSS description.
+2025-12-28 10:47:27,565 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Kuwait introduces new e-services to simplify visa and residency transfers for expats' from Times of India has only 51 words (Min: 90).
+2025-12-28 10:47:28,962 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/uae-lottery-announces-dh30-million-draw-results-winning-numbers-released/articleshow/126214104.cms already exists.
+2025-12-28 10:47:29,163 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/watch-viral-video-italian-woman-surprises-dubai-delivery-agent-with-500-aed-christmas-tip/articleshow/126213813.cms already exists.
+2025-12-28 10:47:29,283 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/pakistan/was-advised-to-take-shelter-in-bunker-pakistan-president-asif-ali-zardaris-massive-op-sindoor-admission-watch/articleshow/126213594.cms
+2025-12-28 10:47:29,283 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-28 10:47:32,237 - INFO - [Times of India] Page content loaded.
+2025-12-28 10:47:32,441 - INFO - [Times of India] Success with 'selenium_browser'. Found content (361 words).
+2025-12-28 10:48:23,218 - INFO - Saved article: 'Was advised to take shelter in bunker': Pakistan President Asif Ali Zardari's big Op Sindoor admission - watch - The Times of India from Times of India (361 words)
+2025-12-28 10:48:24,158 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/science/with-days-left-on-baba-vangas-2025-alien-prediction-scientists-explain-what-first-contact-would-look-like/articleshow/126207752.cms
+2025-12-28 10:48:24,158 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-28 10:48:44,177 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/science/with-days-left-on-baba-vangas-2025-alien-prediction-scientists-explain-what-first-contact-would-look-like/articleshow/126207752.cms: Message: timeout: Timed out receiving message from renderer: 19.900
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x564d950a161a <unknown>
+#1 0x564d94b1e20b <unknown>
+#2 0x564d94b062aa <unknown>
+#3 0x564d94b05f8d <unknown>
+#4 0x564d94b03e47 <unknown>
+#5 0x564d94b0475f <unknown>
+#6 0x564d94b12f20 <unknown>
+#7 0x564d94b2c5e7 <unknown>
+#8 0x564d94b32c9b <unknown>
+#9 0x564d94b04e88 <unknown>
+#10 0x564d94b2c356 <unknown>
+#11 0x564d94bbb580 <unknown>
+#12 0x564d94b62232 <unknown>
+#13 0x564d94b62ee1 <unknown>
+#14 0x564d9506a3f9 <unknown>
+#15 0x564d9506d34d <unknown>
+#16 0x564d95053122 <unknown>
+#17 0x564d9506df2b <unknown>
+#18 0x564d95039c30 <unknown>
+#19 0x564d9508ed78 <unknown>
+#20 0x564d9508ef4c <unknown>
+#21 0x564d950a0973 <unknown>
+#22 0x7f6e9229caa4 <unknown>
+#23 0x7f6e92329c6c <unknown>
+
+2025-12-28 10:48:44,177 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/science/with-days-left-on-baba-vangas-2025-alien-prediction-scientists-explain-what-first-contact-would-look-like/articleshow/126207752.cms. Falling back to RSS description.
+2025-12-28 10:48:44,177 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'With days left on Baba Vanga’s 2025 alien prediction, scientists explain what first contact would look like' from Times of India has only 56 words (Min: 90).
+2025-12-28 10:48:44,803 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/flying-india-to-the-uae-two-new-airline-launch-could-make-tickets-cheaper/articleshow/126212860.cms
+2025-12-28 10:48:44,803 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-28 10:48:45,950 - INFO - [Times of India] Page content loaded.
+2025-12-28 10:48:46,076 - INFO - [Times of India] Success with 'selenium_browser'. Found content (850 words).
+2025-12-28 10:49:08,119 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/kerala/kerala-bjp-councillor-and-former-dgp-r-sreelekha-demands-cpim-mla-vk-prasanth-to-vacate-office-mla-refuses/article70445856.ece: HTTPConnectionPool(host='localhost', port=56413): Read timed out. (read timeout=120)
+2025-12-28 10:49:08,119 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/kerala/kerala-bjp-councillor-and-former-dgp-r-sreelekha-demands-cpim-mla-vk-prasanth-to-vacate-office-mla-refuses/article70445856.ece. Falling back to RSS description.
+2025-12-28 10:49:08,119 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Kerala BJP councillor and former DGP R. Sreelekha demands CPI(M) MLA V.K. Prasanth to vacate office, MLA refuses' from The Hindu has only 34 words (Min: 90).
+2025-12-28 10:49:40,735 - INFO - Saved article: Flying India to the UAE? Two new airline launch could make tickets cheaper | World News - The Times of India from Times of India (850 words)
+2025-12-28 10:49:40,735 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/kerala-cpim-uses-bengaluru-anti-muslim-demolition-drive-to-ideologically-equate-congress-with-sangh-parivar/article70445706.ece
+2025-12-28 10:49:40,735 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-28 10:49:41,865 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/what-will-change-in-the-uae-from-january-2026-new-rules-every-resident-must-know-to-avoid-fines/articleshow/126212645.cms already exists.
+2025-12-28 10:49:42,158 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/gas-line-explosion-rocks-california-video-shows-debris-clouds-filling-the-sky-residents-report-jet-like-roar/articleshow/126212539.cms already exists.
+2025-12-28 10:49:42,305 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/first-election-since-2021-coup-myanmar-is-voting-after-5-years-amid-civil-war-why-stakes-are-high/articleshow/126212479.cms already exists.
+2025-12-28 10:49:42,521 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/faze-clan-situation-explained-creator-exits-financial-disputes-and-new-group-rumors/articleshow/126208939.cms already exists.
+2025-12-28 10:49:42,652 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/influencer-melissa-mae-carlton-announces-heartbreaking-death-of-daughter-molly-after-losing-daughter-abigail/articleshow/126211062.cms already exists.
+2025-12-28 10:49:42,807 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/why-do-faze-clan-members-exit-adin-ross-explains-ownership-fight-and-rejected-20-percent-contracts/articleshow/126195698.cms already exists.
+2025-12-28 10:49:43,079 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/kai-cenat-confirms-split-with-gigi-alayah-as-emotional-post-signals-end-of-their-relationship/articleshow/126210989.cms already exists.
+2025-12-28 10:49:43,278 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/who-is-nick-shirley-youtuber-accused-of-exposing-minnesota-daycare-fraud-in-trending-investigation/articleshow/126211101.cms already exists.
+2025-12-28 10:49:43,555 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/new-york-to-require-warning-labels-on-tiktok-and-other-social-apps-over-youth-mental-health/articleshow/126209084.cms already exists.
+2025-12-28 10:49:43,803 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/clavicular-cybertruck-controversy-deepens-after-viral-livestream-clip-links-stalker-to-popular-instagram-influencer/articleshow/126211129.cms already exists.
+2025-12-28 10:49:43,994 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/very-high-verbal-iq-joe-rogan-links-nick-fuentes-internet-fame-to-a-possible-future-president-run/articleshow/126209110.cms already exists.
+2025-12-28 10:49:44,237 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/pokimane-clarifies-living-arrangement-with-ellum-amid-captain-puffy-allegations/articleshow/126209231.cms already exists.
+2025-12-28 10:49:44,401 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/what-really-happened-between-nick-fuentes-and-piers-morgan-joe-rogan-weighs-in-as-interview-controversy-explodes/articleshow/126211074.cms already exists.
+2025-12-28 10:49:44,691 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/i-did-not-feel-cared-for-emiru-says-twitch-failed-to-protect-her-after-assault-at-twitchcon-2025-vows-never-to-return/articleshow/126211176.cms
+2025-12-28 10:49:44,691 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-28 10:49:47,220 - INFO - [Times of India] Page content loaded.
+2025-12-28 10:49:47,388 - INFO - [Times of India] Success with 'selenium_browser'. Found content (408 words).
+2025-12-28 10:50:39,010 - INFO - Saved article: “I did not feel cared for": Emiru says Twitch failed to protect her after assault at TwitchCon 2025, vows never to return - The Times of India from Times of India (408 words)
+2025-12-28 10:50:39,583 - INFO - [Times of India] (Thread) Finished. Attempting to shut down its Selenium driver.
+2025-12-28 10:50:39,844 - INFO - [Times of India] (Thread) driver.quit() successful.
+2025-12-28 10:51:40,806 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/kerala/kerala-cpim-uses-bengaluru-anti-muslim-demolition-drive-to-ideologically-equate-congress-with-sangh-parivar/article70445706.ece: HTTPConnectionPool(host='localhost', port=56413): Read timed out. (read timeout=120)
+2025-12-28 10:51:40,806 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/kerala/kerala-cpim-uses-bengaluru-anti-muslim-demolition-drive-to-ideologically-equate-congress-with-sangh-parivar/article70445706.ece. Falling back to RSS description.
+2025-12-28 10:51:40,806 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Kerala CPI(M) uses Bengaluru “anti-Muslim” demolition drive to ideologically equate Congress with Sangh Parivar' from The Hindu has only 39 words (Min: 90).
+2025-12-28 10:51:41,952 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/scientists-seek-clarification-from-collector-regarding-issuance-of-noc-for-drilling-activities-in-krishna/article70445952.ece
+2025-12-28 10:51:41,952 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-28 10:52:00,739 - CRITICAL - --- TIMEOUT: 1 scrape jobs did not complete in 300s. ---
+2025-12-28 10:52:00,740 - ERROR - A thread has timed out and will be abandoned.
+2025-12-28 10:52:00,740 - INFO - Shutting down thread pool (wait=False)...
+2025-12-28 10:52:00,740 - INFO - Scraped: 0 BBC, 3 Times of India, 0 The Guardian, 1 Timed_Out_Jobs articles. (Total saved: 3)
+2025-12-28 10:52:00,740 - INFO - --- Scraping job finished ---
+2025-12-28 10:52:00,740 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-28 10:52:00,740 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
