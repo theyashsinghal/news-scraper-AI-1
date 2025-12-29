@@ -1,0 +1,73 @@
+2025-12-29 04:01:32,956 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-29 04:01:32,956 - INFO - Use pytorch device_name: cpu
+2025-12-29 04:01:32,956 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 04:01:33,502 - INFO - AI Model loaded successfully.
+2025-12-29 04:01:33,502 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-29 04:01:33,502 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-29 04:01:33,502 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-29 04:01:33,503 - INFO - Proxy is DISABLED.
+2025-12-29 04:01:33,503 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-29 04:01:33,504 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-29 04:01:33,504 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-29 04:01:33,505 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-29 04:01:33,506 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-29 04:01:33,632 - INFO - Found 30 articles in BBC RSS feed. Processing up to 30.
+2025-12-29 04:01:33,634 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c87l7xjp235o?at_medium=RSS&at_campaign=rss
+2025-12-29 04:01:33,634 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-29 04:01:33,684 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-29 04:01:33,684 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/central-african-republic-goes-to-polls-as-president-seeks-third-term already exists.
+2025-12-29 04:01:33,785 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/27/guinea-junta-leader-mamady-doumbouya-frontrunner-president-election already exists.
+2025-12-29 04:01:33,868 - INFO - [BBC] Success with 'requests_browser'. Found content (667 words).
+2025-12-29 04:01:41,208 - INFO - Selenium driver initialized successfully.
+2025-12-29 04:01:41,208 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-29 04:01:41,210 - INFO - Selenium driver initialized successfully.
+2025-12-29 04:01:41,210 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-29 04:01:41,342 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-29 04:01:41,775 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-29 04:02:18,371 - INFO - Saved article: China to hold military drills around Taiwan as warning to 'separatist forces' from BBC (667 words)
+2025-12-29 04:02:18,371 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/israel-first-country-to-recognise-somaliland-sovereign-state already exists.
+2025-12-29 04:02:18,474 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/chhattisgarh/ed-raid-chhattisgarh-bharatmala-project-december-29/article70448335.ece
+2025-12-29 04:02:18,474 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-29 04:02:18,475 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/rest-of-world/nuclear-readiness-north-korea-tests-2-long-range-cruise-missiles-kim-jong-un-calls-it-unlimited-sustained-development/articleshow/126222761.cms
+2025-12-29 04:02:18,475 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-29 04:02:18,476 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/british-egyptian-activist-alaa-abd-el-fattah-arrives-in-uk-after-travel-ban-lifted already exists.
+2025-12-29 04:02:18,635 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/26/trump-supporters-nigeria-airstrikes already exists.
+2025-12-29 04:02:18,769 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/29/brazil-ex-president-jair-bolsonaro-hiccups-treatment already exists.
+2025-12-29 04:02:18,916 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/venezuela-political-prisoner-release already exists.
+2025-12-29 04:02:19,107 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/weather-tracker-deep-freeze-canada-us-records-warmest-christmas already exists.
+2025-12-29 04:02:19,242 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2025/dec/25/they-are-scared-of-us-now-how-one-tropical-forest-turned-the-tide-on-loggers already exists.
+2025-12-29 04:02:19,463 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/25/cape-froward-new-national-park-patagonia-chile already exists.
+2025-12-29 04:02:19,659 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/29/china-live-fire-military-drills-around-taiwan
+2025-12-29 04:02:19,660 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-29 04:02:19,732 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cj4qp17e1lqo?at_medium=RSS&at_campaign=rss
+2025-12-29 04:02:19,733 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-29 04:02:19,792 - INFO - [The Guardian] Success with 'requests_browser'. Found content (572 words).
+2025-12-29 04:02:19,898 - INFO - [BBC] Success with 'requests_browser'. Found content (1961 words).
+2025-12-29 04:02:22,484 - INFO - [The Hindu] Page content loaded.
+2025-12-29 04:02:22,655 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (155 words).
+2025-12-29 04:02:33,569 - INFO - [Times of India] Page content loaded.
+2025-12-29 04:02:34,048 - INFO - [Times of India] Success with 'selenium_browser'. Found content (562 words).
+2025-12-29 04:03:18,616 - INFO - DEDUPLICATION: Found match (Score: 0.78). Linking to Cluster ID: 239863f2-5b8f-403e-a3ee-f5593c7def8e
+2025-12-29 04:03:18,619 - INFO - Saved article: China launches live-fire drills encircling Taiwan | Taiwan | The Guardian from The Guardian (572 words)
+2025-12-29 04:04:07,822 - INFO - Saved article: John Simpson: 'I've never seen a year as worrying as 2025' from BBC (1961 words)
+2025-12-29 04:04:57,522 - INFO - Saved article: Chhattisgarh: ED conducts raids in Bharatmala project land acquisition case - The Hindu from The Hindu (155 words)
+2025-12-29 04:05:51,005 - INFO - Saved article: Nuclear readiness: North Korea tests 2 long-range cruise missiles; Kim Jong Un calls it 'unlimited & sustained development' - The Times of India from Times of India (562 words)
+2025-12-29 04:05:51,005 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/myanmar-elections-voting-begins-under-junta-stranglehold-with-aung-san-suu-kyi-banned already exists.
+2025-12-29 04:05:51,222 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cx2328e70y7o?at_medium=RSS&at_campaign=rss
+2025-12-29 04:05:51,222 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-29 04:05:51,224 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tripura/protests-erupt-in-tripura-over-murder-of-student-angel-chakma-in-uttarakhand/article70448284.ece
+2025-12-29 04:05:51,224 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-29 04:05:51,224 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/myanmar-is-going-to-the-polls-but-its-not-the-people-who-hold-the-power-its-china already exists.
+2025-12-29 04:05:51,263 - INFO - [BBC] Success with 'requests_browser'. Found content (303 words).
+2025-12-29 04:05:58,937 - INFO - [The Hindu] Page content loaded.
+2025-12-29 04:05:59,018 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (358 words).
+2025-12-29 04:06:33,506 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2025-12-29 04:06:33,506 - ERROR - A thread has timed out and will be abandoned.
+2025-12-29 04:06:33,506 - ERROR - A thread has timed out and will be abandoned.
+2025-12-29 04:06:33,507 - ERROR - A thread has timed out and will be abandoned.
+2025-12-29 04:06:33,507 - ERROR - A thread has timed out and will be abandoned.
+2025-12-29 04:06:33,507 - INFO - Shutting down thread pool (wait=False)...
+2025-12-29 04:06:33,507 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2025-12-29 04:06:33,507 - INFO - --- Scraping job finished ---
+2025-12-29 04:06:33,507 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-29 04:06:33,507 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
