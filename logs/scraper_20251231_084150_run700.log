@@ -1,0 +1,108 @@
+2025-12-31 08:36:49,905 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2025-12-31 08:36:49,906 - INFO - Use pytorch device_name: cpu
+2025-12-31 08:36:49,906 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-31 08:36:50,417 - INFO - AI Model loaded successfully.
+2025-12-31 08:36:50,418 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2025-12-31 08:36:50,418 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2025-12-31 08:36:50,418 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2025-12-31 08:36:50,418 - INFO - Proxy is DISABLED.
+2025-12-31 08:36:50,418 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2025-12-31 08:36:50,419 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2025-12-31 08:36:50,420 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2025-12-31 08:36:50,421 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2025-12-31 08:36:50,421 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2025-12-31 08:36:50,639 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2025-12-31 08:36:50,639 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/31/guinea-junta-chief-mamady-doumbouya-elected-president-after-opposition-boycott
+2025-12-31 08:36:50,639 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-31 08:36:50,832 - INFO - [The Guardian] Success with 'requests_browser'. Found content (400 words).
+2025-12-31 08:36:51,011 - INFO - Found 39 articles in BBC RSS feed. Processing up to 30.
+2025-12-31 08:36:59,674 - INFO - Selenium driver initialized successfully.
+2025-12-31 08:36:59,674 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2025-12-31 08:36:59,676 - INFO - Selenium driver initialized successfully.
+2025-12-31 08:36:59,676 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2025-12-31 08:36:59,892 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2025-12-31 08:37:00,071 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2025-12-31 08:37:34,781 - INFO - DEDUPLICATION: Found match (Score: 0.81). Linking to Cluster ID: b8765d3a-2642-477f-a071-9741ed86f710
+2025-12-31 08:37:34,784 - INFO - Saved article: Guinea’s junta chief elected president after opposition boycott | Guinea | The Guardian from The Guardian (400 words)
+2025-12-31 08:37:34,784 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q4eg03eyzo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:37:34,921 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/syro-malabar-church-raises-objections-over-alleged-misrepresentation-of-the-last-supper-at-kochi-muziris-biennale/article70456243.ece
+2025-12-31 08:37:34,921 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-31 08:37:34,922 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/uae-dubai-civil-defence-unveils-new-logo-and-uniform/articleshow/126266580.cms
+2025-12-31 08:37:34,923 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-31 08:37:34,923 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c78v5dj3x39o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:37:35,153 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1evp7weyv2o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:37:35,307 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cr57nvrjrlno?at_medium=RSS&at_campaign=rss
+2025-12-31 08:37:35,307 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-31 08:37:35,914 - INFO - [BBC] Success with 'requests_browser'. Found content (569 words).
+2025-12-31 08:37:40,137 - INFO - [The Hindu] Page content loaded.
+2025-12-31 08:37:40,817 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (411 words).
+2025-12-31 08:37:54,948 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/middle-east/uae-dubai-civil-defence-unveils-new-logo-and-uniform/articleshow/126266580.cms: Message: timeout: Timed out receiving message from renderer: 19.673
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x557f3cb1f61a <unknown>
+#1 0x557f3c59c20b <unknown>
+#2 0x557f3c5842aa <unknown>
+#3 0x557f3c583f8d <unknown>
+#4 0x557f3c581e47 <unknown>
+#5 0x557f3c58275f <unknown>
+#6 0x557f3c590f20 <unknown>
+#7 0x557f3c5aa5e7 <unknown>
+#8 0x557f3c5b0c9b <unknown>
+#9 0x557f3c582e88 <unknown>
+#10 0x557f3c5aa356 <unknown>
+#11 0x557f3c639580 <unknown>
+#12 0x557f3c5e0232 <unknown>
+#13 0x557f3c5e0ee1 <unknown>
+#14 0x557f3cae83f9 <unknown>
+#15 0x557f3caeb34d <unknown>
+#16 0x557f3cad1122 <unknown>
+#17 0x557f3caebf2b <unknown>
+#18 0x557f3cab7c30 <unknown>
+#19 0x557f3cb0cd78 <unknown>
+#20 0x557f3cb0cf4c <unknown>
+#21 0x557f3cb1e973 <unknown>
+#22 0x7fa09169caa4 <unknown>
+#23 0x7fa091729c6c <unknown>
+
+2025-12-31 08:37:54,948 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/middle-east/uae-dubai-civil-defence-unveils-new-logo-and-uniform/articleshow/126266580.cms. Falling back to RSS description.
+2025-12-31 08:37:54,948 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'UAE: Dubai Civil Defence unveils new logo and uniform' from Times of India has only 61 words (Min: 90).
+2025-12-31 08:38:30,134 - INFO - Saved article: Jimmy Lai: Jailed Hong Kong tycoon's 'teeth rotting and fingernails falling off' from BBC (569 words)
+2025-12-31 08:38:30,134 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/30/saudi-arabia-uae-tension-future-yemen-boiling-point already exists.
+2025-12-31 08:39:16,447 - INFO - Saved article: Syro-Malabar Church raises objections over alleged misrepresentation of ‘The Last Supper’ at Kochi Muziris Biennale - The Hindu from The Hindu (411 words)
+2025-12-31 08:39:16,448 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/saudi-arabia-introduces-four-tier-excise-tax-on-sweetened-beverages-based-on-sugar-content-from-january-1-2026/articleshow/126264512.cms
+2025-12-31 08:39:16,448 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-31 08:39:16,448 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/sport/2025/dec/29/anthony-joshua-injured-car-crash-nigeria already exists.
+2025-12-31 08:39:16,676 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c338ne3relzo?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:39:16,878 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/29/more-than-3000-migrants-died-spain-figure-down already exists.
+2025-12-31 08:39:17,027 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/central-african-republic-goes-to-polls-as-president-seeks-third-term already exists.
+2025-12-31 08:39:17,138 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/zomato-swiggy-offer-increased-payout-to-gig-workers-amid-strike-call-by-unions-on-new-years-eve/article70456286.ece
+2025-12-31 08:39:17,138 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn9zl309dz8o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:39:17,138 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2025-12-31 08:39:17,256 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/30/military-drone-strike-venezuela-trump-maduro already exists.
+2025-12-31 08:39:17,507 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c74wjqvpkj0o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:39:17,802 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/29/brazil-ex-president-jair-bolsonaro-hiccups-treatment already exists.
+2025-12-31 08:39:17,938 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4grzz60kp3o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:39:18,183 - INFO - [BBC] Early skip: URL https://www.bbc.com/sport/cricket/articles/c3013de0g88o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:39:18,296 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/29/mexico-train-derailment-oaxaca already exists.
+2025-12-31 08:39:18,304 - INFO - [Times of India] Page content loaded.
+2025-12-31 08:39:18,450 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/29/trump-venezuela-facility-strike already exists.
+2025-12-31 08:39:18,546 - INFO - [Times of India] Success with 'selenium_browser'. Found content (584 words).
+2025-12-31 08:39:18,608 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/venezuela-political-prisoner-release already exists.
+2025-12-31 08:39:18,890 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2025/dec/31/female-lawmakers-in-japan-lobby-for-more-toilets-in-parliament
+2025-12-31 08:39:18,890 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2025-12-31 08:39:18,992 - INFO - [The Guardian] Success with 'requests_browser'. Found content (447 words).
+2025-12-31 08:39:20,101 - INFO - [The Hindu] Page content loaded.
+2025-12-31 08:39:21,799 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (547 words).
+2025-12-31 08:40:16,464 - INFO - Saved article: Saudi Arabia introduces four-tier excise tax on sweetened beverages based on sugar content from January 1, 2026 | World News - The Times of India from Times of India (584 words)
+2025-12-31 08:40:16,464 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwyw56687z3o?at_medium=RSS&at_campaign=rss already exists.
+2025-12-31 08:41:06,342 - INFO - Saved article: Female lawmakers in Japan lobby for more toilets in parliament | Japan | The Guardian from The Guardian (447 words)
+2025-12-31 08:41:50,421 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2025-12-31 08:41:50,421 - ERROR - A thread has timed out and will be abandoned.
+2025-12-31 08:41:50,421 - ERROR - A thread has timed out and will be abandoned.
+2025-12-31 08:41:50,421 - ERROR - A thread has timed out and will be abandoned.
+2025-12-31 08:41:50,422 - ERROR - A thread has timed out and will be abandoned.
+2025-12-31 08:41:50,422 - INFO - Shutting down thread pool (wait=False)...
+2025-12-31 08:41:50,422 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2025-12-31 08:41:50,422 - INFO - --- Scraping job finished ---
+2025-12-31 08:41:50,422 - INFO - --- Scraper service stopped and database connection closed. ---
+2025-12-31 08:41:50,422 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
