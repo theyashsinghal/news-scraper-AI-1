@@ -1,0 +1,152 @@
+2026-01-01 08:36:17,856 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-01 08:36:17,856 - INFO - Use pytorch device_name: cpu
+2026-01-01 08:36:17,856 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-01 08:36:18,402 - INFO - AI Model loaded successfully.
+2026-01-01 08:36:18,402 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-01 08:36:18,402 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-01 08:36:18,402 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-01 08:36:18,402 - INFO - Proxy is DISABLED.
+2026-01-01 08:36:18,402 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-01 08:36:18,404 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-01 08:36:18,404 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-01 08:36:18,405 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-01 08:36:18,405 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-01 08:36:18,592 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-01 08:36:18,593 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/guinea-junta-chief-mamady-doumbouya-elected-president-after-opposition-boycott already exists.
+2026-01-01 08:36:18,762 - INFO - Found 30 articles in BBC RSS feed. Processing up to 30.
+2026-01-01 08:36:18,821 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cddg7100ym2o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:36:19,122 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/30/saudi-arabia-uae-tension-future-yemen-boiling-point already exists.
+2026-01-01 08:36:19,363 - INFO - [BBC] Article: https://www.bbc.com/news/videos/czdqp29gz51o?at_medium=RSS&at_campaign=rss
+2026-01-01 08:36:19,363 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-01 08:36:19,364 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/sport/2025/dec/29/anthony-joshua-injured-car-crash-nigeria already exists.
+2026-01-01 08:36:19,513 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/29/more-than-3000-migrants-died-spain-figure-down already exists.
+2026-01-01 08:36:19,726 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/28/central-african-republic-goes-to-polls-as-president-seeks-third-term already exists.
+2026-01-01 08:36:19,860 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 67 words).
+2026-01-01 08:36:19,860 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/czdqp29gz51o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-01 08:36:19,860 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'What are Russians hoping for in 2026, asks Steve Rosenberg' from BBC has only 19 words (Min: 90).
+2026-01-01 08:36:19,924 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/30/military-drone-strike-venezuela-trump-maduro already exists.
+2026-01-01 08:36:20,046 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/29/brazil-ex-president-jair-bolsonaro-hiccups-treatment already exists.
+2026-01-01 08:36:20,342 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/29/mexico-train-derailment-oaxaca already exists.
+2026-01-01 08:36:20,449 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2025/dec/29/trump-venezuela-facility-strike already exists.
+2026-01-01 08:36:20,632 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czxpk7r8w9yo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:36:20,743 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/26/venezuela-political-prisoner-release already exists.
+2026-01-01 08:36:20,921 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2d7g8krj2po?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:36:21,194 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/music/2026/jan/01/newjeans-member-danielle-sued-for-millions-after-bitter-feud-with-k-pop-record-label already exists.
+2026-01-01 08:36:21,416 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c4glvg5yrlyo?at_medium=RSS&at_campaign=rss
+2026-01-01 08:36:21,417 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-01 08:36:21,418 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/xi-jinping-vows-reunification-china-taiwan-new-years-eve-speech already exists.
+2026-01-01 08:36:21,470 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 65 words).
+2026-01-01 08:36:21,470 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c4glvg5yrlyo?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-01 08:36:21,470 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Zohran Mamdani sworn in as first Muslim New York City Mayor' from BBC has only 17 words (Min: 90).
+2026-01-01 08:36:21,574 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2025/dec/31/china-forecast-to-have-sold-one-in-every-10-new-cars-in-uk-in-2025 already exists.
+2026-01-01 08:36:21,806 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/female-lawmakers-in-japan-lobby-for-more-toilets-in-parliament already exists.
+2026-01-01 08:36:21,990 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/31/australia-says-deeply-concerning-destabilising-chinese-exercises-near-taiwan-risk-inflaming-regional-tension already exists.
+2026-01-01 08:36:22,274 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/01/woman-dies-after-being-swept-into-ocean-from-sydney-beach-in-early-hours-of-new-years-day already exists.
+2026-01-01 08:36:22,528 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/01/perth-teenager-charged-after-allegedly-throwing-firecracker-that-sparked-new-years-eve-bushfire already exists.
+2026-01-01 08:36:22,769 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/01/australian-reportedly-killed-fighting-with-ukrainian-forces-against-russia-ntwnfb already exists.
+2026-01-01 08:36:23,044 - INFO - [BBC] Article: https://www.bbc.com/news/videos/ckgkn1xexnno?at_medium=RSS&at_campaign=rss
+2026-01-01 08:36:23,044 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-01 08:36:23,045 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/31/australian-beef-industry-extremely-disappointed-after-china-hits-imports-with-55-tariff already exists.
+2026-01-01 08:36:23,100 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 70 words).
+2026-01-01 08:36:23,100 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/ckgkn1xexnno?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-01 08:36:23,100 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Historic Amsterdam church engulfed by fire on New Year's Eve' from BBC has only 17 words (Min: 90).
+2026-01-01 08:36:23,342 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2025/dec/31/sydney-new-years-eve-sees-more-sombre-tone-fireworks-follow-minutes-silence-bondi-ntwnfb already exists.
+2026-01-01 08:36:23,587 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/01/several-dead-and-injured-in-explosion-swiss-ski-resort-town-crans-montana-police-say already exists.
+2026-01-01 08:36:23,802 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/finnish-police-seize-vessel-suspected-damaging-underwater-cable already exists.
+2026-01-01 08:36:23,912 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2025/dec/31/eurostar-restarts-channel-tunnel-full-service-but-disruption-risk already exists.
+2026-01-01 08:36:24,144 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/artanddesign/2025/dec/31/picasso-portrait-charity-auction-alzheimers already exists.
+2026-01-01 08:36:24,399 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5yvdw77j04o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:36:24,541 - INFO - Selenium driver initialized successfully.
+2026-01-01 08:36:24,541 - INFO - Selenium driver initialized successfully.
+2026-01-01 08:36:24,541 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-01 08:36:24,541 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-01 08:36:24,659 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/dublin-temple-bar-renaissance-not-hen-party-hellscape already exists.
+2026-01-01 08:36:24,690 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-01 08:36:24,838 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/crlere3x28lo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:36:24,939 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/something-very-special-live-jesus-portrait-auctioned-at-trumps-mar-a-lago-new-year-bash-why-it-stood-out/articleshow/126283250.cms
+2026-01-01 08:36:24,939 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-01 08:36:24,940 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/01/israel-allowing-traders-to-bring-into-gaza-dual-use-items-barred-from-aid-organisations
+2026-01-01 08:36:24,940 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-01 08:36:24,942 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn8jlm07nz4o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:36:24,980 - INFO - [The Guardian] Success with 'requests_browser'. Found content (1565 words).
+2026-01-01 08:36:25,577 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-01 08:36:34,855 - INFO - [Times of India] Page content loaded.
+2026-01-01 08:36:35,510 - INFO - [Times of India] Success with 'selenium_browser'. Found content (510 words).
+2026-01-01 08:37:18,855 - INFO - Saved article: Israel allowing traders to bring into Gaza ‘dual-use’ items barred from aid organisations | Gaza | The Guardian from The Guardian (1565 words)
+2026-01-01 08:37:18,855 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/clye3xz52e5o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:37:18,968 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Hyderabad/dense-fog-blankets-hyderabad-on-new-year-morning-imd-explains-why/article70459687.ece
+2026-01-01 08:37:18,968 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-01 08:37:23,334 - INFO - [The Hindu] Page content loaded.
+2026-01-01 08:37:23,508 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (190 words).
+2026-01-01 08:38:09,843 - INFO - Saved article: 'Something very special': Live Jesus portrait auctioned at Trump's Mar-a-Lago New Year bash — why it stood out - The Times of India from Times of India (510 words)
+2026-01-01 08:38:09,843 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/crrnlw4rxeyo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:38:10,044 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/we-want-the-mullahs-gone-economic-crisis-sparks-biggest-protests-in-iran-since-2022 already exists.
+2026-01-01 08:38:58,050 - INFO - Saved article: Dense fog blankets Hyderabad on New Year morning; IMD explains why - The Hindu from The Hindu (190 words)
+2026-01-01 08:38:58,050 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn9zl309dz8o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:38:58,286 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/politics/2025/dec/31/emily-thornberry-government-accused-failures-abd-el-fattah-case already exists.
+2026-01-01 08:38:58,486 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/europe/impossible-to-intercept-russia-releases-video-showing-deployment-of-nuclear-capable-oreshnik-missiles-in-belarus-watch/articleshow/126283897.cms
+2026-01-01 08:38:58,486 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-01 08:38:58,486 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1evp7weyv2o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:38:58,618 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/30/iran-protesters-demands-widespread-dissent-currency-living-standards already exists.
+2026-01-01 08:38:58,888 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c62040np372o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:38:59,014 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/30/saudi-arabia-bombs-yemen-over-weapons-shipment-alleged-uae already exists.
+2026-01-01 08:38:59,252 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cr57nvrjrlno?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:38:59,453 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Tiruchirapalli/gatekeeper-deployed-at-level-crossing-between-pudukottai-and-tirumayam-attacked-one-arrested/article70459656.ece
+2026-01-01 08:38:59,453 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-01 08:38:59,453 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5yvdjxeqv6o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:38:59,737 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q4eg03eyzo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:38:59,895 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cgrdjx1d1vjo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:39:00,084 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c74wjqvpkj0o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:39:00,185 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c338ne3relzo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:39:00,357 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce8gd0qvyrpo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:39:00,360 - INFO - [Times of India] Page content loaded.
+2026-01-01 08:39:00,850 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4gweww8rjro?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:39:00,876 - INFO - [Times of India] Success with 'selenium_browser'. Found content (534 words).
+2026-01-01 08:39:01,046 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c050j896q2do?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:39:01,298 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c78v5dj3x39o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:39:01,512 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwywv4ndwqxo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:39:05,308 - INFO - [The Hindu] Page content loaded.
+2026-01-01 08:39:05,642 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (225 words).
+2026-01-01 08:39:52,412 - INFO - DEDUPLICATION: Found match (Score: 0.83). Linking to Cluster ID: 7a5806a1-ed57-4a7e-a3e8-2b40b63fafef
+2026-01-01 08:39:52,415 - INFO - Saved article: ‘Impossible to intercept’: Russia releases video showing deployment of nuclear-capable Oreshnik missiles in Belarus- Watch | World News - The Times of India from Times of India (534 words)
+2026-01-01 08:39:52,415 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2dz5403e29o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-01 08:40:39,799 - INFO - DEDUPLICATION: Found match (Score: 0.77). Linking to Cluster ID: 68a16632-ad01-45c2-acdf-6e8594f9d02d
+2026-01-01 08:40:39,803 - INFO - Saved article: Gatekeeper deployed at level crossing between Pudukottai and Tirumayam attacked, one arrested - The Hindu from The Hindu (225 words)
+2026-01-01 08:40:39,803 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cd6wyll5338o?at_medium=RSS&at_campaign=rss
+2026-01-01 08:40:39,803 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-01 08:40:39,805 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/massive-protests-in-iran-widespread-shutdowns-govt-building-attacked-10-key-points/articleshow/126281765.cms already exists.
+2026-01-01 08:40:39,872 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 65 words).
+2026-01-01 08:40:39,872 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cd6wyll5338o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-01 08:40:39,872 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Fireworks, drums and light shows: How the world is welcoming 2026' from BBC has only 14 words (Min: 90).
+2026-01-01 08:40:39,985 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/meet-the-first-babies-of-2026-uae-welcomes-the-new-year-with-tiny-stars-born-at-midnight/articleshow/126283236.cms already exists.
+2026-01-01 08:40:40,202 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/ukraine-drone-plot-against-putin-us-intelligence-rejects-russian-claim-what-the-cia-says/articleshow/126282399.cms already exists.
+2026-01-01 08:40:40,388 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/uae-announces-petrol-and-diesel-prices-for-january-2026/articleshow/126282610.cms already exists.
+2026-01-01 08:40:40,570 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/is-hasanabi-serious-about-quitting-twitch-streaming-in-2026-his-latest-rant-suggests-mounting-frustration/articleshow/126280890.cms already exists.
+2026-01-01 08:40:40,855 - INFO - [BBC] Article: https://www.bbc.com/news/videos/ckgkn1xexnno?at_medium=RSS&at_campaign=rss
+2026-01-01 08:40:40,855 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-01 08:40:40,856 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/lokpal-scraps-controversial-tender-to-buy-seven-bmw-cars/article70459765.ece
+2026-01-01 08:40:40,856 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-01 08:40:40,857 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/one-step-ahead-of-my-haters-candace-owens-stirs-buzz-with-viral-video-referencing-charlie-kirk-and-erika-kirk/articleshow/126280843.cms already exists.
+2026-01-01 08:40:40,942 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 70 words).
+2026-01-01 08:40:40,942 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/ckgkn1xexnno?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-01 08:40:40,942 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Historic Amsterdam church engulfed by fire on New Year's Eve' from BBC has only 17 words (Min: 90).
+2026-01-01 08:40:41,100 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/what-is-youtuber-nick-shirley-exposing-minnesota-daycare-fund-fraud-claims-raise-somalia-group-controversy-and-federal-investigation/articleshow/126280768.cms
+2026-01-01 08:40:41,100 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-01 08:40:42,337 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c8xdw7j2v2go?at_medium=RSS&at_campaign=rss
+2026-01-01 08:40:42,337 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-01 08:40:42,423 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 55 words).
+2026-01-01 08:40:42,423 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c8xdw7j2v2go?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-01 08:40:42,423 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Stunning celestial events that lit up the skies in 2025' from BBC has only 16 words (Min: 90).
+2026-01-01 08:40:43,181 - INFO - [The Hindu] Page content loaded.
+2026-01-01 08:40:43,296 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (352 words).
+2026-01-01 08:40:49,097 - INFO - [Times of India] Page content loaded.
+2026-01-01 08:40:49,434 - INFO - [Times of India] Success with 'selenium_browser'. Found content (465 words).
+2026-01-01 08:41:18,406 - CRITICAL - --- TIMEOUT: 3 scrape jobs did not complete in 300s. ---
+2026-01-01 08:41:18,406 - ERROR - A thread has timed out and will be abandoned.
+2026-01-01 08:41:18,406 - ERROR - A thread has timed out and will be abandoned.
+2026-01-01 08:41:18,406 - ERROR - A thread has timed out and will be abandoned.
+2026-01-01 08:41:18,407 - INFO - Shutting down thread pool (wait=False)...
+2026-01-01 08:41:18,407 - INFO - Scraped: 1 The Guardian, 3 Timed_Out_Jobs articles. (Total saved: 1)
+2026-01-01 08:41:18,408 - INFO - --- Scraping job finished ---
+2026-01-01 08:41:18,408 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-01 08:41:18,408 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
