@@ -1,0 +1,236 @@
+2026-01-04 15:25:31,477 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-04 15:25:31,478 - INFO - Use pytorch device_name: cpu
+2026-01-04 15:25:31,478 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 15:25:33,072 - INFO - AI Model loaded successfully.
+2026-01-04 15:25:33,072 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-04 15:25:33,072 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-04 15:25:33,072 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-04 15:25:33,072 - INFO - Proxy is DISABLED.
+2026-01-04 15:25:33,073 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-04 15:25:33,074 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-04 15:25:33,074 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-04 15:25:33,075 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-04 15:25:33,075 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-04 15:25:33,221 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-04 15:25:33,221 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/02/anthony-joshuas-driver-charged-with-dangerous-driving-after-fatal-crash-in-nigeria already exists.
+2026-01-04 15:25:33,516 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/science/2026/jan/01/cremation-pyre-in-africa-thought-to-be-worlds-oldest-containing-adult-remains already exists.
+2026-01-04 15:25:33,577 - INFO - Found 25 articles in BBC RSS feed. Processing up to 30.
+2026-01-04 15:25:33,727 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c5y45nyz124o?at_medium=RSS&at_campaign=rss
+2026-01-04 15:25:33,727 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-04 15:25:33,728 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/01/us-aid-cuts-conditions-un-humanitarian-pledge-ocha already exists.
+2026-01-04 15:25:34,006 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/guinea-junta-chief-mamady-doumbouya-elected-president-after-opposition-boycott already exists.
+2026-01-04 15:25:34,069 - INFO - [BBC] Success with 'requests_browser'. Found content (1478 words).
+2026-01-04 15:25:38,650 - INFO - Selenium driver initialized successfully.
+2026-01-04 15:25:38,651 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-04 15:25:38,654 - INFO - Selenium driver initialized successfully.
+2026-01-04 15:25:38,654 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-04 15:25:39,001 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-04 15:25:41,748 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-04 15:26:04,142 - INFO - DEDUPLICATION: Found match (Score: 0.76). Linking to Cluster ID: 9a5e444c-5b8b-480a-8481-42b48981765b
+2026-01-04 15:26:04,146 - INFO - Saved article: Trump's Maduro raid could set precedent for authoritarian powers across globe from BBC (1478 words)
+2026-01-04 15:26:04,146 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/30/saudi-arabia-uae-tension-future-yemen-boiling-point already exists.
+2026-01-04 15:26:04,396 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/exact-opposite-us-secretary-of-war-hegseth-contrasts-venezuela-mission-with-2003-iraq-war-calls-move-well-orchestrated/articleshow/126336262.cms
+2026-01-04 15:26:04,396 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:26:04,397 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/ultra-luxury-hotel-at-kia-rfp-issued-for-conducting-feasibility-study/article70471157.ece
+2026-01-04 15:26:04,397 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:26:04,397 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2026/jan/04/nicolas-maduro-jailed-us-attack-venezuela-donald-trump-reaction-latest-news-updates-live already exists.
+2026-01-04 15:26:04,693 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/04/trump-new-focus-venezuelan-oil-war-on-drugs
+2026-01-04 15:26:04,693 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-04 15:26:04,735 - INFO - [The Guardian] Success with 'requests_browser'. Found content (903 words).
+2026-01-04 15:26:18,868 - INFO - [The Hindu] Page content loaded.
+2026-01-04 15:26:19,122 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (316 words).
+2026-01-04 15:26:24,427 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/exact-opposite-us-secretary-of-war-hegseth-contrasts-venezuela-mission-with-2003-iraq-war-calls-move-well-orchestrated/articleshow/126336262.cms: Message: timeout: Timed out receiving message from renderer: 19.865
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x5555fc17b61a <unknown>
+#1 0x5555fbbf820b <unknown>
+#2 0x5555fbbe02aa <unknown>
+#3 0x5555fbbdff8d <unknown>
+#4 0x5555fbbdde47 <unknown>
+#5 0x5555fbbde75f <unknown>
+#6 0x5555fbbecf20 <unknown>
+#7 0x5555fbc065e7 <unknown>
+#8 0x5555fbc0cc9b <unknown>
+#9 0x5555fbbdee88 <unknown>
+#10 0x5555fbc06356 <unknown>
+#11 0x5555fbc95580 <unknown>
+#12 0x5555fbc3c232 <unknown>
+#13 0x5555fbc3cee1 <unknown>
+#14 0x5555fc1443f9 <unknown>
+#15 0x5555fc14734d <unknown>
+#16 0x5555fc12d122 <unknown>
+#17 0x5555fc147f2b <unknown>
+#18 0x5555fc113c30 <unknown>
+#19 0x5555fc168d78 <unknown>
+#20 0x5555fc168f4c <unknown>
+#21 0x5555fc17a973 <unknown>
+#22 0x7fb1c829caa4 <unknown>
+#23 0x7fb1c8329c6c <unknown>
+
+2026-01-04 15:26:24,427 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/exact-opposite-us-secretary-of-war-hegseth-contrasts-venezuela-mission-with-2003-iraq-war-calls-move-well-orchestrated/articleshow/126336262.cms. Falling back to RSS description.
+2026-01-04 15:26:24,427 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article ''Exact opposite': US Secretary of War Hegseth contrasts Venezuela mission with 2003 Iraq war; calls move 'well orchestrated'' from Times of India has only 55 words (Min: 90).
+2026-01-04 15:26:45,611 - INFO - DEDUPLICATION: Found match (Score: 0.83). Linking to Cluster ID: 9a5e444c-5b8b-480a-8481-42b48981765b
+2026-01-04 15:26:45,614 - INFO - Saved article: Trump’s new focus on Venezuelan oil reinforces claim action was never about ‘war on drugs’ | Venezuela | The Guardian from The Guardian (903 words)
+2026-01-04 15:26:45,614 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cdred61epg4o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:27:19,051 - INFO - Saved article: Ultra-luxury hotel at KIA; RFP issued for conducting feasibility study - The Hindu from The Hindu (316 words)
+2026-01-04 15:27:19,051 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/this-you-kamala-harris-2019-post-goes-viral-as-former-vp-condemns-trumps-actions-in-venezuela-says-seen-this-movie-before/articleshow/126335896.cms
+2026-01-04 15:27:19,051 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:27:19,052 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c86vq753nwpo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:27:19,324 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/04/delcy-rodriguez-tightrope-venezuela-interim-leader already exists.
+2026-01-04 15:27:19,592 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/03/why-trump-us-attacked-caracas-captured-venezuela-president-nicolas-maduro already exists.
+2026-01-04 15:27:19,824 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c3vel0xvlvgo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:27:19,953 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/04/canada-us-health-institutions-information already exists.
+2026-01-04 15:27:20,194 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/vacb-recommends-cbi-investigation-against-opposition-leader-vd-satheesan-for-fcra-violation/article70471471.ece
+2026-01-04 15:27:20,194 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:27:20,195 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cgezjlzwz1do?at_medium=RSS&at_campaign=rss
+2026-01-04 15:27:20,195 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-04 15:27:20,200 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/03/north-korea-has-fired-ballistic-missile-towards-the-sea-of-japan already exists.
+2026-01-04 15:27:20,239 - INFO - [BBC] Success with 'requests_browser'. Found content (559 words).
+2026-01-04 15:27:20,478 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/02/kim-jong-un-daughter-ju-ae-north-korean-ruler-speculation already exists.
+2026-01-04 15:27:20,610 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/music/2026/jan/01/newjeans-member-danielle-sued-for-millions-after-bitter-feud-with-k-pop-record-label already exists.
+2026-01-04 15:27:39,066 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/this-you-kamala-harris-2019-post-goes-viral-as-former-vp-condemns-trumps-actions-in-venezuela-says-seen-this-movie-before/articleshow/126335896.cms: Message: timeout: Timed out receiving message from renderer: 19.862
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x5555fc17b61a <unknown>
+#1 0x5555fbbf820b <unknown>
+#2 0x5555fbbe02aa <unknown>
+#3 0x5555fbbdff8d <unknown>
+#4 0x5555fbbdde47 <unknown>
+#5 0x5555fbbde75f <unknown>
+#6 0x5555fbbecf20 <unknown>
+#7 0x5555fbc065e7 <unknown>
+#8 0x5555fbc0cc9b <unknown>
+#9 0x5555fbbdee88 <unknown>
+#10 0x5555fbc06356 <unknown>
+#11 0x5555fbc95580 <unknown>
+#12 0x5555fbc3c232 <unknown>
+#13 0x5555fbc3cee1 <unknown>
+#14 0x5555fc1443f9 <unknown>
+#15 0x5555fc14734d <unknown>
+#16 0x5555fc12d122 <unknown>
+#17 0x5555fc147f2b <unknown>
+#18 0x5555fc113c30 <unknown>
+#19 0x5555fc168d78 <unknown>
+#20 0x5555fc168f4c <unknown>
+#21 0x5555fc17a973 <unknown>
+#22 0x7fb1c829caa4 <unknown>
+#23 0x7fb1c8329c6c <unknown>
+
+2026-01-04 15:27:39,066 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/this-you-kamala-harris-2019-post-goes-viral-as-former-vp-condemns-trumps-actions-in-venezuela-says-seen-this-movie-before/articleshow/126335896.cms. Falling back to RSS description.
+2026-01-04 15:27:39,066 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article ''This you?': Kamala Harris' 2019 post goes viral as former VP condemns Trump's actions in Venezuela, says 'seen this movie before'' from Times of India has only 3 words (Min: 90).
+2026-01-04 15:27:40,219 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/kerala/vacb-recommends-cbi-investigation-against-opposition-leader-vd-satheesan-for-fcra-violation/article70471471.ece: Message: timeout: Timed out receiving message from renderer: 19.918
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x557d5c0e861a <unknown>
+#1 0x557d5bb6520b <unknown>
+#2 0x557d5bb4d2aa <unknown>
+#3 0x557d5bb4cf8d <unknown>
+#4 0x557d5bb4ae47 <unknown>
+#5 0x557d5bb4b75f <unknown>
+#6 0x557d5bb59f20 <unknown>
+#7 0x557d5bb735e7 <unknown>
+#8 0x557d5bb79c9b <unknown>
+#9 0x557d5bb4be88 <unknown>
+#10 0x557d5bb73356 <unknown>
+#11 0x557d5bc02580 <unknown>
+#12 0x557d5bba9232 <unknown>
+#13 0x557d5bba9ee1 <unknown>
+#14 0x557d5c0b13f9 <unknown>
+#15 0x557d5c0b434d <unknown>
+#16 0x557d5c09a122 <unknown>
+#17 0x557d5c0b4f2b <unknown>
+#18 0x557d5c080c30 <unknown>
+#19 0x557d5c0d5d78 <unknown>
+#20 0x557d5c0d5f4c <unknown>
+#21 0x557d5c0e7973 <unknown>
+#22 0x7f045a09caa4 <unknown>
+#23 0x7f045a129c6c <unknown>
+
+2026-01-04 15:27:40,219 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/kerala/vacb-recommends-cbi-investigation-against-opposition-leader-vd-satheesan-for-fcra-violation/article70471471.ece. Falling back to RSS description.
+2026-01-04 15:27:40,220 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'VACB recommends CBI investigation against Opposition Leader V.D. Satheesan for FCRA violation' from The Hindu has only 37 words (Min: 90).
+2026-01-04 15:27:56,658 - INFO - Saved article: Greece: Thousands stranded across Europe as air space disrupted from BBC (559 words)
+2026-01-04 15:27:56,658 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/xi-jinping-vows-reunification-china-taiwan-new-years-eve-speech already exists.
+2026-01-04 15:27:56,780 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/etimes/trending/did-jack-ryan-see-this-coming-social-media-draws-series-parallels-with-us-strikes-on-venezuela-heres-the-reality/articleshow/126335502.cms
+2026-01-04 15:27:56,780 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:27:56,781 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/congress-turning-ballari-into-republic-of-bharath-reddy-says-joshi/article70471115.ece
+2026-01-04 15:27:56,781 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2025/dec/31/china-forecast-to-have-sold-one-in-every-10-new-cars-in-uk-in-2025 already exists.
+2026-01-04 15:27:56,781 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:27:57,075 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/04/police-call-off-seperate-searches-for-missing-teen-boy-and-another-man-off-two-sydney-beaches already exists.
+2026-01-04 15:27:57,277 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/04/crowd-roars-in-standing-ovation-for-bondi-hero-ahmed-al-ahmed-at-sold-out-ashes-test-in-sydney-ntwnfb already exists.
+2026-01-04 15:27:57,561 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0lxprn290xo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:27:57,760 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/04/more-than-60-prominent-sportspeople-call-for-federal-royal-commission-after-bondi-attack-ntwnfb already exists.
+2026-01-04 15:27:57,789 - INFO - [Times of India] Page content loaded.
+2026-01-04 15:27:57,929 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/04/albanese-calls-for-peaceful-democratic-transition-of-power-in-venezuela-after-us-capture-of-nicolas-maduro already exists.
+2026-01-04 15:27:57,962 - INFO - [Times of India] Success with 'selenium_browser'. Found content (276 words).
+2026-01-04 15:27:58,215 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czx1rpxzyx9o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:27:58,345 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g4vypvqvxo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:27:58,465 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5y2r0yvj25o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:28:00,970 - INFO - [The Hindu] Page content loaded.
+2026-01-04 15:28:01,400 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (516 words).
+2026-01-04 15:28:34,129 - INFO - Saved article: Did Jack Ryan see this coming? Social media draws series parallels with US strikes on Venezuela — here’s the reality - The Times of India from Times of India (276 words)
+2026-01-04 15:28:34,129 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/04/missing-worker-found-dead-after-roof-collapse-deep-underground-at-queensland-coalmine-ntwnfb already exists.
+2026-01-04 15:28:34,361 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2057md3gvro?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:29:07,607 - INFO - DEDUPLICATION: Found match (Score: 0.78). Linking to Cluster ID: 83a88fe0-e1ae-4a87-aa99-2fc29e134975
+2026-01-04 15:29:07,610 - INFO - Saved article: Congress turning Ballari into ‘republic’ of Bharath Reddy, says Joshi - The Hindu from The Hindu (516 words)
+2026-01-04 15:29:07,610 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/politics/2026/jan/04/starmer-says-closer-ties-eu-single-market-preferable-customs-union already exists.
+2026-01-04 15:29:07,823 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1m7l8keyexo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:29:08,098 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/sai-baba-fan-bus-driver-10-remarkable-and-strange-facts-about-nicolas-maduro/articleshow/126335529.cms already exists.
+2026-01-04 15:29:08,366 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/media/2026/jan/04/belgium-bart-de-wever-cat-maximus-textoris-pulcher-social-media-instagram already exists.
+2026-01-04 15:29:08,562 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/crmlz7r0zrxo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:29:08,787 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/etimes/trending/us-government-releases-list-of-unusual-objects-surgically-removed-from-peoples-rectums-in-2025/articleshow/126327229.cms
+2026-01-04 15:29:08,787 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:29:08,788 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/04/leading-uk-far-right-activist-russian-nationalist-event-mark-collett already exists.
+2026-01-04 15:29:09,011 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/asian-waterbird-census-to-be-conducted-in-12-water-bodies-in-kakinada-konaseema-districts/article70471431.ece
+2026-01-04 15:29:09,011 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:29:09,012 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q4dg1kn8vo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:29:09,260 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/04/it-has-hit-us-very-hard-grief-stricken-crans-montana-residents-on-how-their-world-has-changed-forever already exists.
+2026-01-04 15:29:09,500 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/04/difficult-to-live-hungarian-krasznahorkai-writers-bemoan-hostile-environment already exists.
+2026-01-04 15:29:09,758 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/03/british-and-french-aircraft-attack-underground-isis-weapons-store-in-syria already exists.
+2026-01-04 15:29:09,822 - INFO - [The Hindu] Page content loaded.
+2026-01-04 15:29:09,869 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (110 words).
+2026-01-04 15:29:09,982 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/03/no-future-for-us-disaffected-iranians-say-its-now-or-never-to-topple-regime already exists.
+2026-01-04 15:29:10,128 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/03/tents-supplied-to-displaced-palestinians-inadequate-for-gaza-winter already exists.
+2026-01-04 15:29:10,306 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c93n4nx5yqro?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:29:10,576 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cj0e36p74v1o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:29:10,866 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cqxq32zzq8eo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:29:36,543 - WARNING - [Times of India] Page timed out (10s). Proceeding anyway.
+2026-01-04 15:29:36,785 - INFO - [Times of India] Success with 'selenium_browser'. Found content (509 words).
+2026-01-04 15:29:47,250 - INFO - Saved article: Asian Waterbird Census to be conducted in Kakinada, Konaseema districts - The Hindu from The Hindu (110 words)
+2026-01-04 15:29:47,250 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/02/saudi-warplanes-kill-uae-backed-yemeni-separatists already exists.
+2026-01-04 15:29:47,491 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce8edj7y5z9o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:30:22,410 - INFO - Saved article: US government releases list of unusual objects surgically removed from people's rectums in 2025 | - The Times of India from Times of India (509 words)
+2026-01-04 15:30:22,410 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/media/2026/jan/02/bbc-settles-with-7-october-survivors-for-filming-home-without-permission already exists.
+2026-01-04 15:30:22,569 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/cly308pn4r8o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:30:22,789 - INFO - [The Hindu] Article: https://www.thehindu.com/shorts/watch-stalin-your-dream-to-make-your-son-cm-wont-work-amit-shah/article70471494.ece
+2026-01-04 15:30:22,789 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:30:22,790 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c5y2xqgjd7eo?at_medium=RSS&at_campaign=rss
+2026-01-04 15:30:22,790 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-04 15:30:22,850 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 50 words).
+2026-01-04 15:30:22,850 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c5y2xqgjd7eo?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-04 15:30:22,850 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: 'I'm so happy' - Venezuelans in the US react to Maduro's capture' from BBC has only 19 words (Min: 90).
+2026-01-04 15:30:23,122 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/we-will-work-on-a-new-husband-donald-trump-jrs-ex-kimberly-guilfoyle-creates-a-ripple-in-greece-visits-nightclub-at-1-30am/articleshow/126335392.cms
+2026-01-04 15:30:23,122 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-04 15:30:23,578 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/c368px35ly8o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:30:23,788 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c20zgq02jp0o?at_medium=RSS&at_campaign=rss
+2026-01-04 15:30:23,789 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-04 15:30:23,857 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 59 words).
+2026-01-04 15:30:23,857 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c20zgq02jp0o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-04 15:30:23,857 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Explosions and smoke at La Guaira port' from BBC has only 11 words (Min: 90).
+2026-01-04 15:30:24,748 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c9vxnn419mro?at_medium=RSS&at_campaign=rss
+2026-01-04 15:30:24,748 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-04 15:30:24,814 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 87 words).
+2026-01-04 15:30:24,814 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c9vxnn419mro?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-04 15:30:24,814 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Over 100 firefighters on the scene of Denver blaze' from BBC has only 17 words (Min: 90).
+2026-01-04 15:30:25,434 - INFO - [Times of India] Page content loaded.
+2026-01-04 15:30:25,600 - INFO - [Times of India] Success with 'selenium_browser'. Found content (444 words).
+2026-01-04 15:30:25,608 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/cj6wew4958eo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:30:25,897 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/czjg9ge7vdeo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-04 15:30:33,076 - CRITICAL - --- TIMEOUT: 3 scrape jobs did not complete in 300s. ---
+2026-01-04 15:30:33,076 - ERROR - A thread has timed out and will be abandoned.
+2026-01-04 15:30:33,076 - ERROR - A thread has timed out and will be abandoned.
+2026-01-04 15:30:33,076 - ERROR - A thread has timed out and will be abandoned.
+2026-01-04 15:30:33,076 - INFO - Shutting down thread pool (wait=False)...
+2026-01-04 15:30:33,076 - INFO - Scraped: 1 The Guardian, 3 Timed_Out_Jobs articles. (Total saved: 1)
+2026-01-04 15:30:33,076 - INFO - --- Scraping job finished ---
+2026-01-04 15:30:33,076 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-04 15:30:33,077 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
