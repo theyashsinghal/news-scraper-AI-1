@@ -1,0 +1,93 @@
+2026-01-08 04:44:04,788 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-08 04:44:04,789 - INFO - Use pytorch device_name: cpu
+2026-01-08 04:44:04,789 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-08 04:44:05,701 - INFO - AI Model loaded successfully.
+2026-01-08 04:44:05,701 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-08 04:44:05,701 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-08 04:44:05,701 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-08 04:44:05,701 - INFO - Proxy is DISABLED.
+2026-01-08 04:44:05,702 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-08 04:44:05,703 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-08 04:44:05,703 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-08 04:44:05,705 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-08 04:44:05,705 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-08 04:44:05,875 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-08 04:44:05,876 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/02/anthony-joshuas-driver-charged-with-dangerous-driving-after-fatal-crash-in-nigeria already exists.
+2026-01-08 04:44:06,012 - INFO - Found 30 articles in BBC RSS feed. Processing up to 30.
+2026-01-08 04:44:06,114 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0jvnl4j1n4o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-08 04:44:06,292 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/science/2026/jan/01/cremation-pyre-in-africa-thought-to-be-worlds-oldest-containing-adult-remains already exists.
+2026-01-08 04:44:06,580 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5y2v8ngl14o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-08 04:44:06,792 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/01/us-aid-cuts-conditions-un-humanitarian-pledge-ocha already exists.
+2026-01-08 04:44:07,066 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c98py70npj9o?at_medium=RSS&at_campaign=rss
+2026-01-08 04:44:07,066 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-08 04:44:07,067 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/guinea-junta-chief-mamady-doumbouya-elected-president-after-opposition-boycott already exists.
+2026-01-08 04:44:07,171 - INFO - [BBC] Success with 'requests_browser'. Found content (465 words).
+2026-01-08 04:44:07,209 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/30/saudi-arabia-uae-tension-future-yemen-boiling-point already exists.
+2026-01-08 04:44:11,820 - INFO - Selenium driver initialized successfully.
+2026-01-08 04:44:11,820 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-08 04:44:11,822 - INFO - Selenium driver initialized successfully.
+2026-01-08 04:44:11,822 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-08 04:44:11,938 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-08 04:44:12,088 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-08 04:44:52,896 - INFO - DEDUPLICATION: Found match (Score: 0.79). Linking to Cluster ID: 9a5e444c-5b8b-480a-8481-42b48981765b
+2026-01-08 04:44:52,898 - INFO - Saved article: Trump to meet Colombian president at White House in 'near future' from BBC (465 words)
+2026-01-08 04:44:52,899 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/08/venezuela-oil-deal-rodriguez-trump-vance-claims-us-control
+2026-01-08 04:44:52,899 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-08 04:44:52,901 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/appreciate-his-call-and-tone-colombia-president-explains-to-donald-trump-drug-situation-plan-to-meet-in-future/articleshow/126405482.cms
+2026-01-08 04:44:52,901 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-08 04:44:52,902 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/rdpr-department-considering-singapore-technology-to-ensure-water-quality-in-karnataka/article70483222.ece
+2026-01-08 04:44:52,902 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-08 04:44:52,943 - INFO - [The Guardian] Success with 'requests_browser'. Found content (537 words).
+2026-01-08 04:44:56,384 - INFO - [The Hindu] Page content loaded.
+2026-01-08 04:44:56,695 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (108 words).
+2026-01-08 04:45:58,506 - INFO - DEDUPLICATION: Found match (Score: 0.85). Linking to Cluster ID: 9a5e444c-5b8b-480a-8481-42b48981765b
+2026-01-08 04:45:58,510 - INFO - Saved article: Venezuela open to oil deal, says Rodríguez, as Vance claims US ‘controls’ country’s resources | Venezuela | The Guardian from The Guardian (537 words)
+2026-01-08 04:45:58,510 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cly39pgmvrzo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-08 04:46:46,189 - INFO - Saved article: Karnataka considering Singapore technology to ensure water quality - The Hindu from The Hindu (108 words)
+2026-01-08 04:46:46,190 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvgx8w4pgk0o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-08 04:46:46,374 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/live/2026/jan/07/donald-trump-venezuela-greenland-oil-childcare-us-politics-live already exists.
+2026-01-08 04:46:46,502 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cgk8jv4r8nmo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-08 04:46:46,614 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/07/russia-submarine-escort-shadow-fleet-tanker-us-sanctions already exists.
+2026-01-08 04:46:46,854 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0ke5lx6kyno?at_medium=RSS&at_campaign=rss already exists.
+2026-01-08 04:46:47,049 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/07/trump-maduro-diosdado-cabello already exists.
+2026-01-08 04:46:47,304 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cy4q898dkwxo?at_medium=RSS&at_campaign=rss
+2026-01-08 04:46:47,304 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-08 04:46:47,305 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/07/us-venezuela-south-america-mineral-wealth-rare-earths-oil already exists.
+2026-01-08 04:46:47,332 - INFO - [BBC] Success with 'requests_browser'. Found content (485 words).
+2026-01-08 04:46:47,587 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/maharashtra/12-suspended-congress-councillors-in-ambarnath-join-bjp/article70485076.ece
+2026-01-08 04:46:47,587 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-08 04:46:51,055 - INFO - [The Hindu] Page content loaded.
+2026-01-08 04:46:51,421 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (486 words).
+2026-01-08 04:46:53,002 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/appreciate-his-call-and-tone-colombia-president-explains-to-donald-trump-drug-situation-plan-to-meet-in-future/articleshow/126405482.cms: HTTPConnectionPool(host='localhost', port=57833): Read timed out. (read timeout=120)
+2026-01-08 04:46:53,003 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/appreciate-his-call-and-tone-colombia-president-explains-to-donald-trump-drug-situation-plan-to-meet-in-future/articleshow/126405482.cms. Falling back to RSS description.
+2026-01-08 04:46:53,003 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article ''Appreciate his call and tone': Colombia President 'explains' to Donald Trump drug 'situation'; plan to meet in future' from Times of India has only 3 words (Min: 90).
+2026-01-08 04:47:39,183 - INFO - DEDUPLICATION: Found match (Score: 0.90). Linking to Cluster ID: 0cdf354f-cd88-4b8c-abea-fa0884008c95
+2026-01-08 04:47:39,187 - INFO - Saved article: Heatwave hits Australia as officials warn of 'catastrophic' fire risk from BBC (485 words)
+2026-01-08 04:47:39,187 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/alleged-scam-kingpin-chen-zhi-extradited-china-cambodia-arrest already exists.
+2026-01-08 04:48:29,618 - INFO - DEDUPLICATION: Found match (Score: 0.73). Linking to Cluster ID: 8ccf6e9d-91d9-4723-b833-a9ddd9c176c5
+2026-01-08 04:48:29,622 - INFO - Saved article: 12 suspended Congress councillors in Ambarnath join BJP - The Hindu from The Hindu (486 words)
+2026-01-08 04:48:29,622 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/caught-on-cam-us-immigration-officer-shoots-woman-at-point-blank-range-in-minneapolis-how-it-unfolded/articleshow/126405288.cms already exists.
+2026-01-08 04:48:29,905 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/06/papua-new-guinea-internet-starlink-shut-down already exists.
+2026-01-08 04:48:30,081 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c86v3y45pyyo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-08 04:48:30,342 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/from-global-climate-treaty-to-united-nations-university-donald-trump-withdraws-us-from-66-organisations-check-full-list/articleshow/126405156.cms already exists.
+2026-01-08 04:48:30,539 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/06/what-us-action-in-venezuela-means-for-taiwan already exists.
+2026-01-08 04:48:30,700 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9dv5zdl7ydo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-08 04:48:30,861 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/candace-owens-raises-new-questions-about-charlie-kirk-after-revealing-a-never-before-seen-image-with-no-visible-blood/articleshow/126402110.cms already exists.
+2026-01-08 04:48:31,038 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/05/venezuela-trump-attack-china-interests-analysis already exists.
+2026-01-08 04:48:31,146 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cy59kxl2xwzo?at_medium=RSS&at_campaign=rss
+2026-01-08 04:48:31,146 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-08 04:48:31,147 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/west-bengal/domicile-certificates-not-valid-for-sir-hearings-in-bengal-official/article70485034.ece already exists.
+2026-01-08 04:48:31,178 - INFO - [BBC] Success with 'requests_browser'. Found content (469 words).
+2026-01-08 04:48:31,292 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/is-the-daily-wire-using-candace-owens-past-to-stay-relevant-podcaster-melissa-witte-blasts-the-network-as-a-sad-psycho-ex/articleshow/126404360.cms
+2026-01-08 04:48:31,292 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-08 04:48:31,293 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/05/giant-bluefin-tuna-sold-record-amount-tokyo-auction-kiyoshi-kimura already exists.
+2026-01-08 04:49:05,705 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-08 04:49:05,705 - ERROR - A thread has timed out and will be abandoned.
+2026-01-08 04:49:05,705 - ERROR - A thread has timed out and will be abandoned.
+2026-01-08 04:49:05,705 - ERROR - A thread has timed out and will be abandoned.
+2026-01-08 04:49:05,705 - ERROR - A thread has timed out and will be abandoned.
+2026-01-08 04:49:05,705 - INFO - Shutting down thread pool (wait=False)...
+2026-01-08 04:49:05,706 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-08 04:49:05,706 - INFO - --- Scraping job finished ---
+2026-01-08 04:49:05,706 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-08 04:49:05,706 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
