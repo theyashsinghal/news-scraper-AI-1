@@ -1,0 +1,103 @@
+2026-01-09 04:45:51,406 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-09 04:45:51,407 - INFO - Use pytorch device_name: cpu
+2026-01-09 04:45:51,407 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-09 04:45:52,617 - INFO - AI Model loaded successfully.
+2026-01-09 04:45:52,618 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-09 04:45:52,618 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-09 04:45:52,618 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-09 04:45:52,618 - INFO - Proxy is DISABLED.
+2026-01-09 04:45:52,618 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-09 04:45:52,619 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-09 04:45:52,620 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-09 04:45:52,621 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-09 04:45:52,621 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-09 04:45:52,908 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-09 04:45:52,908 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/questions-targeting-impact-us-airstrikes-in-nigeria already exists.
+2026-01-09 04:45:53,071 - INFO - Found 33 articles in BBC RSS feed. Processing up to 30.
+2026-01-09 04:45:53,122 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cg7y0579lp8o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 04:45:53,251 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/02/anthony-joshuas-driver-charged-with-dangerous-driving-after-fatal-crash-in-nigeria already exists.
+2026-01-09 04:45:53,465 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c78e9vmn7dgo?at_medium=RSS&at_campaign=rss
+2026-01-09 04:45:53,465 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-09 04:45:53,466 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/science/2026/jan/01/cremation-pyre-in-africa-thought-to-be-worlds-oldest-containing-adult-remains already exists.
+2026-01-09 04:45:53,637 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/01/us-aid-cuts-conditions-un-humanitarian-pledge-ocha already exists.
+2026-01-09 04:45:53,704 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 84 words).
+2026-01-09 04:45:53,704 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c78e9vmn7dgo?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-09 04:45:53,704 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Buildings in Tehran set on fire as demonstrations spread across Iran' from BBC has only 15 words (Min: 90).
+2026-01-09 04:45:53,930 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2025/dec/31/guinea-junta-chief-mamady-doumbouya-elected-president-after-opposition-boycott already exists.
+2026-01-09 04:45:54,034 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/venezuela-to-release-important-number-of-detainees already exists.
+2026-01-09 04:45:54,163 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/brazil-president-lula-vetoes-bill-jair-bolsonaro-prison-sentence already exists.
+2026-01-09 04:45:54,447 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c99knmrx71go?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 04:45:54,638 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/venezuela-oil-deal-rodriguez-trump-vance-claims-us-control already exists.
+2026-01-09 04:45:54,856 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c0mkwl2g499o?at_medium=RSS&at_campaign=rss
+2026-01-09 04:45:54,857 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-09 04:45:54,858 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2026/jan/08/shadow-fleet-ships-sanctioned-oil-reflagged-russia-lloyds-list-analysis already exists.
+2026-01-09 04:45:54,913 - INFO - [BBC] Success with 'requests_browser'. Found content (562 words).
+2026-01-09 04:46:07,387 - INFO - Selenium driver initialized successfully.
+2026-01-09 04:46:07,387 - INFO - Selenium driver initialized successfully.
+2026-01-09 04:46:07,387 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-09 04:46:07,388 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-09 04:46:07,588 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-09 04:46:07,795 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-09 04:46:39,539 - INFO - DEDUPLICATION: Found match (Score: 0.87). Linking to Cluster ID: 8c521534-c079-4100-a24c-d1fafa0145e8
+2026-01-09 04:46:39,543 - INFO - Saved article: Venezuelan government begins releasing political prisoners from BBC (562 words)
+2026-01-09 04:46:39,543 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/08/venezuela-protester-arrested already exists.
+2026-01-09 04:46:39,819 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/malayalam-language-bill-2025-what-it-proposes-and-why-it-has-triggered-opposition-outside-kerala-explained/article70486875.ece
+2026-01-09 04:46:39,819 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-09 04:46:39,820 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/etimes/trending/will-jesus-return-by-2026-prediction-markets-are-taking-real-money-bets-on-the-second-coming/articleshow/126425750.cms
+2026-01-09 04:46:39,820 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-09 04:46:39,820 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/alleged-scam-kingpin-chen-zhi-extradited-china-cambodia-arrest already exists.
+2026-01-09 04:46:40,010 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/06/papua-new-guinea-internet-starlink-shut-down already exists.
+2026-01-09 04:46:40,184 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/06/what-us-action-in-venezuela-means-for-taiwan already exists.
+2026-01-09 04:46:40,484 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2lgjd51v95o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 04:46:40,651 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/05/venezuela-trump-attack-china-interests-analysis already exists.
+2026-01-09 04:46:40,818 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cp80ln97py5o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 04:46:40,982 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/05/giant-bluefin-tuna-sold-record-amount-tokyo-auction-kiyoshi-kimura already exists.
+2026-01-09 04:46:41,189 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c5y2v2p3nl8o?at_medium=RSS&at_campaign=rss
+2026-01-09 04:46:41,189 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-09 04:46:41,190 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/live/2026/jan/09/australia-news-live-victoria-catastrophic-bushfire-fire-ban-heatwave-tropical-cyclone-floods-royal-commission-antisemitism-bondi-anthony-albanese-ntwnfb already exists.
+2026-01-09 04:46:41,249 - INFO - [BBC] Success with 'requests_browser'. Found content (1286 words).
+2026-01-09 04:46:46,904 - INFO - [The Hindu] Page content loaded.
+2026-01-09 04:46:47,228 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (649 words).
+2026-01-09 04:47:39,941 - INFO - Saved article: Somalia's Siad Barre: Kenyan pilot tells BBC of his secret mission to fly his body from Nigeria from BBC (1286 words)
+2026-01-09 04:47:39,941 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/09/victoria-police-revokes-powers-to-allow-warrantless-pat-downs-across-inner-melbourne already exists.
+2026-01-09 04:48:28,286 - INFO - DEDUPLICATION: Found match (Score: 0.70). Linking to Cluster ID: 8f7e3b1a-06fe-4360-ab15-09c8dd8cb832
+2026-01-09 04:48:28,288 - INFO - Saved article: Malayalam Language Bill, 2025: What it proposes and why it has triggered opposition outside Kerala | Explained - The Hindu from The Hindu (649 words)
+2026-01-09 04:48:28,288 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/09/luxury-yachts-sydney-harbour-fire-mosman already exists.
+2026-01-09 04:48:28,484 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckgl8jgdxypo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 04:48:28,758 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/09/ten-properties-in-ruffy-destroyed-including-firefighters-home-as-fire-hits-victorian-town-like-a-bomb already exists.
+2026-01-09 04:48:28,880 - INFO - [BBC] Early skip: URL https://www.bbc.com/sport/tennis/articles/cx2gr00ndmyo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 04:48:29,030 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/09/heatwave-engulfs-south-eastern-states-as-victoria-faces-catastrophic-bushfire-conditions-not-seen-since-black-summer already exists.
+2026-01-09 04:48:29,199 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c78e99pzr25o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 04:48:29,496 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/uk-news/2026/jan/08/two-oil-tankers-us-sanctions-english-channel-russia already exists.
+2026-01-09 04:48:29,724 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cevnxz24rldo?at_medium=RSS&at_campaign=rss
+2026-01-09 04:48:29,724 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-09 04:48:29,725 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/french-farmers-paris-protest-eu-mercosur-trade-deal already exists.
+2026-01-09 04:48:29,768 - INFO - [BBC] Success with 'requests_browser'. Found content (517 words).
+2026-01-09 04:48:29,992 - INFO - [The Hindu] Article: https://www.thehindu.com/entertainment/movies/studio-green-rushes-to-madras-high-court-to-get-karthi-starrer-vaa-vaathiyar-released/article70489335.ece
+2026-01-09 04:48:29,992 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-09 04:48:33,851 - INFO - [The Hindu] Page content loaded.
+2026-01-09 04:48:34,037 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (379 words).
+2026-01-09 04:48:54,407 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/etimes/trending/will-jesus-return-by-2026-prediction-markets-are-taking-real-money-bets-on-the-second-coming/articleshow/126425750.cms: HTTPConnectionPool(host='localhost', port=37763): Read timed out. (read timeout=120)
+2026-01-09 04:48:54,407 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/etimes/trending/will-jesus-return-by-2026-prediction-markets-are-taking-real-money-bets-on-the-second-coming/articleshow/126425750.cms. Falling back to RSS description.
+2026-01-09 04:48:54,407 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Will Jesus return by 2026? Prediction markets are taking real money bets on the Second Coming!' from Times of India has only 59 words (Min: 90).
+2026-01-09 04:49:20,795 - INFO - DEDUPLICATION: Found match (Score: 0.87). Linking to Cluster ID: 0cdf354f-cd88-4b8c-abea-fa0884008c95
+2026-01-09 04:49:20,798 - INFO - Saved article: Australia fires: Victoria told to brace for 'property loss or worse' from BBC (517 words)
+2026-01-09 04:49:20,798 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/runaway-sheep-storm-german-supermarket already exists.
+2026-01-09 04:50:08,548 - INFO - Saved article: Studio Green rushes to Madras High Court to get Karthi-starrer Vaa Vaathiyar released - The Hindu from The Hindu (379 words)
+2026-01-09 04:50:08,549 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/business/international-business/trump-tariff-trial-what-happens-if-us-duties-are-struck-down-traders-worried-for-150-billion-refunds-possibility/articleshow/126426102.cms
+2026-01-09 04:50:08,549 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-09 04:50:08,549 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/08/french-german-presidents-macron-steinmeier-condemn-us-foreign-policy-trump already exists.
+2026-01-09 04:50:08,736 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c17zqz5pprwo?at_medium=RSS&at_campaign=rss
+2026-01-09 04:50:08,736 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-09 04:50:08,737 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/08/masses-of-toxic-litter-pours-from-rhine-into-north-sea-each-year-research-finds already exists.
+2026-01-09 04:50:08,777 - INFO - [BBC] Success with 'requests_browser'. Found content (215 words).
+2026-01-09 04:50:52,622 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-09 04:50:52,622 - ERROR - A thread has timed out and will be abandoned.
+2026-01-09 04:50:52,622 - ERROR - A thread has timed out and will be abandoned.
+2026-01-09 04:50:52,622 - ERROR - A thread has timed out and will be abandoned.
+2026-01-09 04:50:52,622 - ERROR - A thread has timed out and will be abandoned.
+2026-01-09 04:50:52,622 - INFO - Shutting down thread pool (wait=False)...
+2026-01-09 04:50:52,622 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-09 04:50:52,622 - INFO - --- Scraping job finished ---
+2026-01-09 04:50:52,622 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-09 04:50:52,623 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
