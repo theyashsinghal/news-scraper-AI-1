@@ -1,0 +1,94 @@
+2026-01-09 21:27:43,881 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-09 21:27:43,881 - INFO - Use pytorch device_name: cpu
+2026-01-09 21:27:43,882 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-09 21:27:45,112 - INFO - AI Model loaded successfully.
+2026-01-09 21:27:45,113 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-09 21:27:45,113 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-09 21:27:45,113 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-09 21:27:45,113 - INFO - Proxy is DISABLED.
+2026-01-09 21:27:45,113 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-09 21:27:45,114 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-09 21:27:45,115 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-09 21:27:45,115 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-09 21:27:45,116 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-09 21:27:45,213 - INFO - Found 33 articles in BBC RSS feed. Processing up to 30.
+2026-01-09 21:27:45,215 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cg7y0579lp8o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:27:45,252 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-09 21:27:45,436 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/09/the-gambia-female-genital-mutilation-fgm-supreme-court-case-overturn-ban already exists.
+2026-01-09 21:27:45,631 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/questions-targeting-impact-us-airstrikes-in-nigeria already exists.
+2026-01-09 21:27:45,734 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cz7yv4524gqo?at_medium=RSS&at_campaign=rss
+2026-01-09 21:27:45,734 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-09 21:27:45,736 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/02/anthony-joshuas-driver-charged-with-dangerous-driving-after-fatal-crash-in-nigeria already exists.
+2026-01-09 21:27:45,946 - INFO - Selenium driver initialized successfully.
+2026-01-09 21:27:45,946 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-09 21:27:45,949 - INFO - Selenium driver initialized successfully.
+2026-01-09 21:27:45,949 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-09 21:27:45,967 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/science/2026/jan/01/cremation-pyre-in-africa-thought-to-be-worlds-oldest-containing-adult-remains already exists.
+2026-01-09 21:27:46,063 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-09 21:27:46,074 - INFO - [BBC] Success with 'requests_browser'. Found content (499 words).
+2026-01-09 21:27:46,115 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-09 21:27:46,232 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/zohran-mamdanis-note-to-umar-khalid-draws-criticism-from-mea/article70492430.ece
+2026-01-09 21:27:46,232 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-09 21:27:51,123 - INFO - [The Hindu] Page content loaded.
+2026-01-09 21:27:51,236 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (199 words).
+2026-01-09 21:28:39,850 - INFO - DEDUPLICATION: Found match (Score: 0.81). Linking to Cluster ID: 45d20321-796d-4ffd-b612-092dc6be2551
+2026-01-09 21:28:39,854 - INFO - Saved article: Video filmed by ICE agent who shot Minneapolis woman emerges from BBC (499 words)
+2026-01-09 21:28:39,855 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/embarrassingly-obvious-h-1b-spouses-sue-us-over-ending-automatic-work-permit-extensions/articleshow/126443276.cms
+2026-01-09 21:28:39,855 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-09 21:28:39,855 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/01/us-aid-cuts-conditions-un-humanitarian-pledge-ocha already exists.
+2026-01-09 21:28:56,726 - INFO - [Times of India] Page content loaded.
+2026-01-09 21:28:57,284 - INFO - [Times of India] Success with 'selenium_browser'. Found content (354 words).
+2026-01-09 21:29:34,288 - INFO - Saved article: Zohran Mamdani’s note to Umar Khalid draws criticism from MEA - The Hindu from The Hindu (199 words)
+2026-01-09 21:29:34,288 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/09/trump-venezuela-leadership-meeting-opposition-machado already exists.
+2026-01-09 21:29:34,555 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g0mq520zeo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:23,305 - INFO - Saved article: 'Embarrassingly obvious': H-1B spouses sue US over ending automatic work permit extensions - The Times of India from Times of India (354 words)
+2026-01-09 21:30:23,305 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/09/eu-states-back-controversial-mercosur-deal-with-latin-american-countries already exists.
+2026-01-09 21:30:23,518 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwygjvkvpgro?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:23,725 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/kannur-mayor-outlines-comprehensive-development-plan-for-all-56-divisions/article70491743.ece
+2026-01-09 21:30:23,725 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-09 21:30:23,726 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/09/us-venezuela-oil-tanker-seizure already exists.
+2026-01-09 21:30:24,000 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c17zqz5pprwo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:24,220 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/venezuela-to-release-important-number-of-detainees already exists.
+2026-01-09 21:30:24,381 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/etimes/trending/denied-job-over-travel-wheelchair-user-went-on-to-visit-55-countries-across-7-continents/articleshow/126443032.cms
+2026-01-09 21:30:24,381 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-09 21:30:24,382 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cgqe9kv9xxvo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:24,528 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cdxj28xd542o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:24,822 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/brazil-president-lula-vetoes-bill-jair-bolsonaro-prison-sentence already exists.
+2026-01-09 21:30:24,994 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c99kn52nx9do?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:25,151 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8d04zp8m26o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:25,416 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/08/alleged-scam-kingpin-chen-zhi-extradited-china-cambodia-arrest already exists.
+2026-01-09 21:30:25,712 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/06/papua-new-guinea-internet-starlink-shut-down already exists.
+2026-01-09 21:30:25,993 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cly3vl3yp2do?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:26,112 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0mkwl2g499o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:26,396 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/06/what-us-action-in-venezuela-means-for-taiwan already exists.
+2026-01-09 21:30:26,508 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c99knmrx71go?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:26,771 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ceqzj49gny4o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:26,994 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cje1vjpwje4o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:27,291 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4gvp5gyd7xo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:27,467 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/05/venezuela-trump-attack-china-interests-analysis already exists.
+2026-01-09 21:30:27,606 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/05/giant-bluefin-tuna-sold-record-amount-tokyo-auction-kiyoshi-kimura already exists.
+2026-01-09 21:30:27,624 - INFO - [Times of India] Page content loaded.
+2026-01-09 21:30:27,747 - INFO - [The Guardian] Article: https://www.theguardian.com/australia-news/live/2026/jan/10/australia-heatwave-updates-sydney-temperature-victorian-fires-bushfire-latest
+2026-01-09 21:30:27,747 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-09 21:30:27,749 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2lgjd51v95o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:27,892 - INFO - [BBC] Early skip: URL https://www.bbc.com/sport/tennis/articles/cz9vn0vk7djo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:28,025 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cp80ln97py5o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:28,144 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckgl8jgdxypo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:30:28,187 - INFO - [The Guardian] Success with 'requests_browser'. Found content (736 words).
+2026-01-09 21:30:29,583 - INFO - [The Hindu] Page content loaded.
+2026-01-09 21:30:29,780 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (296 words).
+2026-01-09 21:30:32,929 - INFO - [Times of India] Success with 'selenium_browser'. Found content (899 words).
+2026-01-09 21:31:21,185 - INFO - DEDUPLICATION: Found match (Score: 0.82). Linking to Cluster ID: 0cdf354f-cd88-4b8c-abea-fa0884008c95
+2026-01-09 21:31:21,187 - INFO - Saved article: Australia heatwave live updates: Victorian fire threat ‘very dangerous and difficult’, premier says; temperatures to reach 43C in Sydney | Bushfires | The Guardian from The Guardian (736 words)
+2026-01-09 21:31:21,187 - INFO - [BBC] Early skip: URL https://www.bbc.com/sport/football/articles/c07xzzn3j39o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-09 21:32:12,998 - INFO - Saved article: Kannur Mayor outlines comprehensive development plan for all 56 divisions - The Hindu from The Hindu (296 words)
+2026-01-09 21:32:45,116 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-09 21:32:45,116 - ERROR - A thread has timed out and will be abandoned.
+2026-01-09 21:32:45,116 - ERROR - A thread has timed out and will be abandoned.
+2026-01-09 21:32:45,116 - ERROR - A thread has timed out and will be abandoned.
+2026-01-09 21:32:45,116 - ERROR - A thread has timed out and will be abandoned.
+2026-01-09 21:32:45,116 - INFO - Shutting down thread pool (wait=False)...
+2026-01-09 21:32:45,116 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-09 21:32:45,116 - INFO - --- Scraping job finished ---
+2026-01-09 21:32:45,117 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-09 21:32:45,117 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
