@@ -1,0 +1,99 @@
+2026-01-16 06:42:26,062 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-16 06:42:26,063 - INFO - Use pytorch device_name: cpu
+2026-01-16 06:42:26,063 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-16 06:42:26,603 - INFO - AI Model loaded successfully.
+2026-01-16 06:42:26,604 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-16 06:42:26,604 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-16 06:42:26,604 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-16 06:42:26,604 - INFO - Proxy is DISABLED.
+2026-01-16 06:42:26,604 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-16 06:42:26,605 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-16 06:42:26,606 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-16 06:42:26,607 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-16 06:42:26,607 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-16 06:42:26,839 - INFO - Found 36 articles in BBC RSS feed. Processing up to 30.
+2026-01-16 06:42:26,841 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2w94wp4p1o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-16 06:42:26,869 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-16 06:42:26,978 - INFO - [The Guardian] Article: https://www.theguardian.com/global-development/2026/jan/16/cloth-wraps-treated-with-insecticide-cut-malaria-cases-in-babies
+2026-01-16 06:42:26,978 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 06:42:26,980 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cy4qdpxp78po?at_medium=RSS&at_campaign=rss
+2026-01-16 06:42:26,980 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 06:42:27,013 - INFO - [The Guardian] Success with 'requests_browser'. Found content (760 words).
+2026-01-16 06:42:27,383 - INFO - [BBC] Success with 'requests_browser'. Found content (543 words).
+2026-01-16 06:42:33,405 - INFO - Selenium driver initialized successfully.
+2026-01-16 06:42:33,405 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-16 06:42:33,407 - INFO - Selenium driver initialized successfully.
+2026-01-16 06:42:33,407 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-16 06:42:33,567 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-16 06:42:33,620 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-16 06:43:08,866 - INFO - Saved article: Cloth wraps treated with ‘dirt cheap’ insecticide cut malaria cases in babies | Global health | The Guardian from The Guardian (760 words)
+2026-01-16 06:43:50,439 - INFO - DEDUPLICATION: Found match (Score: 0.88). Linking to Cluster ID: 4555ff83-e954-4329-a2eb-8339d68b7213
+2026-01-16 06:43:50,442 - INFO - Saved article: S Korea's ex-president Yoon to be jailed for five years over martial law bid from BBC (543 words)
+2026-01-16 06:43:50,442 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/uae-revises-school-age-cut-off-for-2026-admissions-what-changes-for-upcoming-sessions/articleshow/126558518.cms
+2026-01-16 06:43:50,443 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-16 06:43:50,443 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/millet-dishes-take-centre-stage-at-traditional-food-revival-competition-in-madikeri/article70513496.ece
+2026-01-16 06:43:50,443 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-16 06:43:50,445 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/16/nigeria-call-overhaul-healthcare-sector-death-bestselling-author-toddler
+2026-01-16 06:43:50,445 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 06:43:50,485 - INFO - [The Guardian] Success with 'requests_browser'. Found content (770 words).
+2026-01-16 06:43:55,632 - INFO - [The Hindu] Page content loaded.
+2026-01-16 06:43:56,607 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (316 words).
+2026-01-16 06:44:10,467 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/middle-east/uae-revises-school-age-cut-off-for-2026-admissions-what-changes-for-upcoming-sessions/articleshow/126558518.cms: Message: timeout: Timed out receiving message from renderer: 19.841
+  (Session info: chrome=143.0.7499.192)
+Stacktrace:
+#0 0x55b49aa6240a <unknown>
+#1 0x55b49a49676b <unknown>
+#2 0x55b49a47e80a <unknown>
+#3 0x55b49a47e4ed <unknown>
+#4 0x55b49a47c3a7 <unknown>
+#5 0x55b49a47ccbf <unknown>
+#6 0x55b49a48b480 <unknown>
+#7 0x55b49a4a4b47 <unknown>
+#8 0x55b49a4ab1fb <unknown>
+#9 0x55b49a47d3e8 <unknown>
+#10 0x55b49a4a48f8 <unknown>
+#11 0x55b49a533ad8 <unknown>
+#12 0x55b49a4da7b2 <unknown>
+#13 0x55b49a4db461 <unknown>
+#14 0x55b49aa2adf9 <unknown>
+#15 0x55b49aa2dd5d <unknown>
+#16 0x55b49aa13b41 <unknown>
+#17 0x55b49aa2e93b <unknown>
+#18 0x55b49a9fa870 <unknown>
+#19 0x55b49aa4f828 <unknown>
+#20 0x55b49aa4f9fc <unknown>
+#21 0x55b49aa61763 <unknown>
+#22 0x7f9efc49caa4 <unknown>
+#23 0x7f9efc529c6c <unknown>
+
+2026-01-16 06:44:10,468 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/middle-east/uae-revises-school-age-cut-off-for-2026-admissions-what-changes-for-upcoming-sessions/articleshow/126558518.cms. Falling back to RSS description.
+2026-01-16 06:44:10,468 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'UAE revises school age cut-off for 2026 admissions - what changes for upcoming sessions' from Times of India has only 58 words (Min: 90).
+2026-01-16 06:44:46,275 - INFO - DEDUPLICATION: Found match (Score: 0.77). Linking to Cluster ID: 3f1660e2-dbc2-409d-abde-b701c9e9a180
+2026-01-16 06:44:46,277 - INFO - Saved article: Death of Chimamanda Ngozi Adichie’s son prompts calls for overhaul of Nigeria’s healthcare sector | Nigeria | The Guardian from The Guardian (770 words)
+2026-01-16 06:44:46,278 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c0q4l3g183jo?at_medium=RSS&at_campaign=rss
+2026-01-16 06:44:46,278 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 06:44:46,518 - INFO - [BBC] Success with 'requests_browser'. Found content (794 words).
+2026-01-16 06:45:31,060 - INFO - Saved article: Millet dishes take centre-stage at traditional food revival competition in Madikeri - The Hindu from The Hindu (316 words)
+2026-01-16 06:45:31,060 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/only-two-gulf-countries-announce-public-holiday-for-isra-wal-miraj-find-out-which-ones/articleshow/126557874.cms
+2026-01-16 06:45:31,061 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-16 06:45:37,723 - INFO - [Times of India] Page content loaded.
+2026-01-16 06:45:38,018 - INFO - [Times of India] Success with 'selenium_browser'. Found content (279 words).
+2026-01-16 06:46:20,239 - INFO - Saved article: Cuba counts cost of alliance after 32 troops killed in Venezuela from BBC (794 words)
+2026-01-16 06:46:20,239 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/15/hepatitis-b-vaccines-study-africa-cancel already exists.
+2026-01-16 06:46:20,535 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/anger-retaliation-vendetta-dominates-in-india-forgiveness-absent-gopalkrishna-gandhi/article70513497.ece
+2026-01-16 06:46:20,535 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-16 06:46:23,354 - INFO - [The Hindu] Page content loaded.
+2026-01-16 06:46:23,454 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (591 words).
+2026-01-16 06:47:11,329 - INFO - Saved article: Only two Gulf countries announce public holiday for Isra Wal Miraj – Find out which ones | World News - The Times of India from Times of India (279 words)
+2026-01-16 06:47:11,330 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/15/uganda-vote-election-yoweri-museveni-bobi-wine already exists.
+2026-01-16 06:47:11,446 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g5md1n1yxo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-16 06:47:26,607 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-16 06:47:26,608 - ERROR - A thread has timed out and will be abandoned.
+2026-01-16 06:47:26,608 - ERROR - A thread has timed out and will be abandoned.
+2026-01-16 06:47:26,608 - ERROR - A thread has timed out and will be abandoned.
+2026-01-16 06:47:26,608 - ERROR - A thread has timed out and will be abandoned.
+2026-01-16 06:47:26,608 - INFO - Shutting down thread pool (wait=False)...
+2026-01-16 06:47:26,608 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-16 06:47:26,608 - INFO - --- Scraping job finished ---
+2026-01-16 06:47:26,608 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-16 06:47:26,608 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
