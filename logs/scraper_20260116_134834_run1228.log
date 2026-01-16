@@ -1,0 +1,93 @@
+2026-01-16 13:42:41,715 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-16 13:42:41,715 - INFO - Use pytorch device_name: cpu
+2026-01-16 13:42:41,715 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-16 13:42:54,591 - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: cccd659f-231b-4c62-9a3e-d26c25e01531)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/./README.md
+2026-01-16 13:42:54,591 - WARNING - Retrying in 1s [Retry 1/5].
+2026-01-16 13:43:22,858 - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: adc18e3e-3f1a-4fab-a0dd-029904dfcf27)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2026-01-16 13:43:22,858 - WARNING - Retrying in 1s [Retry 1/5].
+2026-01-16 13:43:34,514 - INFO - AI Model loaded successfully.
+2026-01-16 13:43:34,514 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-16 13:43:34,514 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-16 13:43:34,514 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-16 13:43:34,514 - INFO - Proxy is DISABLED.
+2026-01-16 13:43:34,514 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-16 13:43:34,516 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-16 13:43:34,516 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-16 13:43:34,517 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-16 13:43:34,517 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-16 13:43:34,627 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-16 13:43:34,628 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/uganda-election-early-results-show-museveni-in-lead-as-violence-reported already exists.
+2026-01-16 13:43:34,653 - INFO - Found 26 articles in BBC RSS feed. Processing up to 30.
+2026-01-16 13:43:34,826 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy59pvkqvl5o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-16 13:43:35,125 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/16/weather-tracer-extreme-rainfall-inundates-south-africa-mozambique-flood-warning already exists.
+2026-01-16 13:43:35,333 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cj3vlgrl4r2o?at_medium=RSS&at_campaign=rss
+2026-01-16 13:43:35,333 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 13:43:35,334 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/16/cloth-wraps-treated-with-insecticide-cut-malaria-cases-in-babies already exists.
+2026-01-16 13:43:35,465 - INFO - [BBC] Success with 'requests_browser'. Found content (764 words).
+2026-01-16 13:43:41,082 - INFO - Selenium driver initialized successfully.
+2026-01-16 13:43:41,082 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-16 13:43:41,084 - INFO - Selenium driver initialized successfully.
+2026-01-16 13:43:41,084 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-16 13:43:41,219 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-16 13:43:41,351 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-16 13:44:18,206 - INFO - DEDUPLICATION: Found match (Score: 0.72). Linking to Cluster ID: 36df5af5-ce04-4aae-b52a-2db24af3144a
+2026-01-16 13:44:18,209 - INFO - Saved article: 'I was hit in the face by pellets': Iranians on border describe violence and more protestsand violence during blackout from BBC (764 words)
+2026-01-16 13:44:18,209 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/nigeria-call-overhaul-healthcare-sector-death-bestselling-author-toddler already exists.
+2026-01-16 13:44:18,466 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/maharashtra/maharashtra-civic-polls-people-voted-for-mahayuti-as-they-wanted-development-honesty-says-cm-fadnavis/article70515162.ece
+2026-01-16 13:44:18,466 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-16 13:44:18,467 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/watch-dramatic-video-shows-idf-black-hawk-crashing-after-harness-tore-mid-lift-no-injuries-reported/articleshow/126564233.cms
+2026-01-16 13:44:18,467 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-16 13:44:18,468 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/15/hepatitis-b-vaccines-study-africa-cancel already exists.
+2026-01-16 13:44:18,618 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/16/brazil-jair-bolsonaro-reduce-sentence-reading-books
+2026-01-16 13:44:18,618 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 13:44:18,750 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c9qpy952xvno?at_medium=RSS&at_campaign=rss
+2026-01-16 13:44:18,750 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 13:44:18,805 - INFO - [BBC] Success with 'requests_browser'. Found content (604 words).
+2026-01-16 13:44:18,850 - INFO - [The Guardian] Success with 'requests_browser'. Found content (406 words).
+2026-01-16 13:44:25,348 - INFO - [The Hindu] Page content loaded.
+2026-01-16 13:44:26,596 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (236 words).
+2026-01-16 13:45:23,309 - INFO - DEDUPLICATION: Found match (Score: 0.85). Linking to Cluster ID: bf0205a7-951f-4f85-ab61-186c5a3dd4f7
+2026-01-16 13:45:23,311 - INFO - Saved article: US Congress members visit Denmark as Trump's pressure on Greenland rises from BBC (604 words)
+2026-01-16 13:46:11,609 - INFO - Saved article: Brazil’s Bolsonaro finds novel way to reduce 27-year sentence: reading books | Jair Bolsonaro | The Guardian from The Guardian (406 words)
+2026-01-16 13:46:18,568 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/middle-east/watch-dramatic-video-shows-idf-black-hawk-crashing-after-harness-tore-mid-lift-no-injuries-reported/articleshow/126564233.cms: HTTPConnectionPool(host='localhost', port=43265): Read timed out. (read timeout=120)
+2026-01-16 13:46:18,568 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/middle-east/watch-dramatic-video-shows-idf-black-hawk-crashing-after-harness-tore-mid-lift-no-injuries-reported/articleshow/126564233.cms. Falling back to RSS description.
+2026-01-16 13:46:18,568 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Dramatic video shows IDF Black Hawk crashing after harness tore mid-lift; no injuries reported' from Times of India has only 49 words (Min: 90).
+2026-01-16 13:47:01,077 - INFO - DEDUPLICATION: Found match (Score: 0.78). Linking to Cluster ID: 0e2b5d4a-24b5-43f7-9f07-5c74b7f1f1f4
+2026-01-16 13:47:01,084 - INFO - Saved article: Maharashtra civic polls: People voted for Mahayuti as they wanted development, honesty, says CM Fadnavis - The Hindu from The Hindu (236 words)
+2026-01-16 13:47:01,084 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy4qdpxp78po?at_medium=RSS&at_campaign=rss already exists.
+2026-01-16 13:47:01,196 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/china-canada-partnership-new-global-realities-carney-xi-jinping already exists.
+2026-01-16 13:47:01,341 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/youre-a-left-wing-hack-karoline-leavitt-loses-cool-when-reporter-asks-about-fatal-ice-shooting-that-killed-renee-good-in-minneapolis/articleshow/126563377.cms
+2026-01-16 13:47:01,341 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-16 13:47:01,342 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cvgjn5yyeljo?at_medium=RSS&at_campaign=rss
+2026-01-16 13:47:01,342 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 13:47:01,343 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/julio-iglesias-denies-sexual-abuse-claims-of-two-former-female-employees already exists.
+2026-01-16 13:47:01,373 - INFO - [BBC] Success with 'requests_browser'. Found content (754 words).
+2026-01-16 13:47:48,761 - INFO - DEDUPLICATION: Found match (Score: 0.83). Linking to Cluster ID: 9a5e444c-5b8b-480a-8481-42b48981765b
+2026-01-16 13:47:48,764 - INFO - Saved article: CIA director had two-hour meeting with new Venezuelan leader in Caracas from BBC (754 words)
+2026-01-16 13:47:48,764 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/live/2026/jan/15/us-politics-latest-news-updates-donald-trump-venezuela-maria-corina-machado already exists.
+2026-01-16 13:47:48,878 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/artanddesign/2026/jan/15/antonio-paucar-andes-peru-wins-artes-mundi-prize-wales already exists.
+2026-01-16 13:47:49,157 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/sufficient-fertilizer-stock-available-to-meet-requirement-says-markfed-chairman/article70513350.ece
+2026-01-16 13:47:49,157 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-16 13:47:49,158 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/south-korea-sentences-ex-president-yoon-suk-yeol-five-years-first-martial-law-verdict already exists.
+2026-01-16 13:47:49,307 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/15/us-taiwan-tariff-deal already exists.
+2026-01-16 13:47:49,553 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/14/thailand-train-crane-accident-deaths already exists.
+2026-01-16 13:47:49,787 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c78vzye1l2no?at_medium=RSS&at_campaign=rss already exists.
+2026-01-16 13:47:50,057 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/14/china-reports-record-trillion-dollar-trade-surplus-despite-trump-tariffs already exists.
+2026-01-16 13:47:50,242 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9qpx2qqeq7o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-16 13:47:50,496 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cj9rvkde0xxo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-16 13:47:50,782 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cx2xpz559neo?at_medium=RSS&at_campaign=rss
+2026-01-16 13:47:50,782 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-16 13:47:50,784 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/13/south-korean-prosecutors-demand-death-penalty-for-former-president-yoon-suk-yeol already exists.
+2026-01-16 13:47:50,835 - INFO - [BBC] Success with 'requests_browser'. Found content (446 words).
+2026-01-16 13:47:54,127 - INFO - [The Hindu] Page content loaded.
+2026-01-16 13:47:54,267 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (226 words).
+2026-01-16 13:48:34,518 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-16 13:48:34,518 - ERROR - A thread has timed out and will be abandoned.
+2026-01-16 13:48:34,518 - ERROR - A thread has timed out and will be abandoned.
+2026-01-16 13:48:34,518 - ERROR - A thread has timed out and will be abandoned.
+2026-01-16 13:48:34,518 - ERROR - A thread has timed out and will be abandoned.
+2026-01-16 13:48:34,518 - INFO - Shutting down thread pool (wait=False)...
+2026-01-16 13:48:34,518 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-16 13:48:34,518 - INFO - --- Scraping job finished ---
+2026-01-16 13:48:34,518 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-16 13:48:34,519 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
