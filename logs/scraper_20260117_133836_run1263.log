@@ -1,0 +1,109 @@
+2026-01-17 13:33:35,737 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-17 13:33:35,737 - INFO - Use pytorch device_name: cpu
+2026-01-17 13:33:35,737 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-17 13:33:36,628 - INFO - AI Model loaded successfully.
+2026-01-17 13:33:36,628 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-17 13:33:36,628 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-17 13:33:36,628 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-17 13:33:36,628 - INFO - Proxy is DISABLED.
+2026-01-17 13:33:36,629 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-17 13:33:36,630 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-17 13:33:36,630 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-17 13:33:36,631 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-17 13:33:36,631 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-17 13:33:36,800 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-17 13:33:36,801 - INFO - [The Guardian] Article: https://www.theguardian.com/uk-news/2026/jan/17/afcon-little-morocco-london-confidence-high
+2026-01-17 13:33:36,801 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-17 13:33:37,061 - INFO - [The Guardian] Success with 'requests_browser'. Found content (686 words).
+2026-01-17 13:33:37,313 - INFO - Found 37 articles in BBC RSS feed. Processing up to 30.
+2026-01-17 13:33:51,171 - INFO - Selenium driver initialized successfully.
+2026-01-17 13:33:51,171 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-17 13:33:51,173 - INFO - Selenium driver initialized successfully.
+2026-01-17 13:33:51,173 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-17 13:33:51,366 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-17 13:33:51,447 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-17 13:34:19,330 - INFO - Saved article: Confidence runs high in London’s Little Morocco as Afcon glory beckons | London | The Guardian from The Guardian (686 words)
+2026-01-17 13:34:19,331 - INFO - [BBC] Article: https://www.bbc.com/news/articles/ckglee733wno?at_medium=RSS&at_campaign=rss
+2026-01-17 13:34:19,331 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-17 13:34:19,332 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/no-one-is-safe-under-congress-rule-says-bjp/article70518714.ece
+2026-01-17 13:34:19,332 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-17 13:34:19,333 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/what-is-anktiva-saudi-arabia-approves-new-lung-cancer-therapy-first-in-world/articleshow/126611774.cms
+2026-01-17 13:34:19,333 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-17 13:34:19,702 - INFO - [BBC] Success with 'requests_browser'. Found content (308 words).
+2026-01-17 13:34:27,681 - INFO - [The Hindu] Page content loaded.
+2026-01-17 13:34:28,119 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (523 words).
+2026-01-17 13:35:30,766 - INFO - DEDUPLICATION: Found match (Score: 0.86). Linking to Cluster ID: 504fdc6c-61ce-4cca-aed7-b831525faa4c
+2026-01-17 13:35:30,769 - INFO - Saved article: Iran's supreme leader blames US for protests from BBC (308 words)
+2026-01-17 13:35:30,769 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/17/twin-baby-mountain-gorilla-virunga-drc-survival-conservation-aoe already exists.
+2026-01-17 13:36:17,595 - INFO - Saved article: No one is safe under Congress rule, says BJP - The Hindu from The Hindu (523 words)
+2026-01-17 13:36:17,595 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/uganda-election-early-results-show-museveni-in-lead-as-violence-reported already exists.
+2026-01-17 13:36:17,890 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c07xv92vrz2o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:36:18,094 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/15/hepatitis-b-vaccines-study-africa-cancel already exists.
+2026-01-17 13:36:18,231 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czx1wgvpr1zo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:36:18,426 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/16/weather-tracer-extreme-rainfall-inundates-south-africa-mozambique-flood-warning already exists.
+2026-01-17 13:36:18,606 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c2lgxxrxd52o?at_medium=RSS&at_campaign=rss
+2026-01-17 13:36:18,607 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-17 13:36:18,608 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/16/trump-administration-mistake-college-student-detained already exists.
+2026-01-17 13:36:18,650 - INFO - [BBC] Success with 'requests_browser'. Found content (388 words).
+2026-01-17 13:36:19,433 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/middle-east/what-is-anktiva-saudi-arabia-approves-new-lung-cancer-therapy-first-in-world/articleshow/126611774.cms: HTTPConnectionPool(host='localhost', port=53969): Read timed out. (read timeout=120)
+2026-01-17 13:36:19,433 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/middle-east/what-is-anktiva-saudi-arabia-approves-new-lung-cancer-therapy-first-in-world/articleshow/126611774.cms. Falling back to RSS description.
+2026-01-17 13:36:19,433 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'What is Anktiva? Saudi Arabia approves new lung cancer therapy first in world' from Times of India has only 60 words (Min: 90).
+2026-01-17 13:37:05,736 - INFO - DEDUPLICATION: Found match (Score: 0.91). Linking to Cluster ID: d013b903-6a83-4c6f-a118-0320ef9f7e11
+2026-01-17 13:37:05,741 - INFO - Saved article: Uganda election result: Yoweri Museveni beats Bobi Wine to win a seventh term from BBC (388 words)
+2026-01-17 13:37:05,741 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/cia-chief-visits-maduro-successor-as-machado-vows-to-become-venezuelas-president already exists.
+2026-01-17 13:37:05,973 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/telangana-wants-cwc-halting-appraisal-of-pnlp-pre-feasibility-report-for-attending-january-30-meeting/article70518643.ece
+2026-01-17 13:37:05,974 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-17 13:37:05,974 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/our-son-was-forced-to-end-life-parents-of-indian-medical-student-vaibhav-duggal-accuse-texas-tech-university-of-bias/articleshow/126614722.cms already exists.
+2026-01-17 13:37:06,236 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/brazil-jair-bolsonaro-reduce-sentence-reading-books already exists.
+2026-01-17 13:37:06,529 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/china-canada-partnership-new-global-realities-carney-xi-jinping already exists.
+2026-01-17 13:37:06,741 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/julio-iglesias-denies-sexual-abuse-claims-of-two-former-female-employees already exists.
+2026-01-17 13:37:06,883 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/etimes/trending/pure-comedy-us-president-donald-trumps-viral-video-leaves-internet-in-splits-as-he-takes-nobel-medal-forgets-laureate-mara-corina-machados-name/articleshow/126612332.cms
+2026-01-17 13:37:06,883 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-17 13:37:06,884 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/south-korea-sentences-ex-president-yoon-suk-yeol-five-years-first-martial-law-verdict already exists.
+2026-01-17 13:37:06,991 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/15/us-taiwan-tariff-deal already exists.
+2026-01-17 13:37:07,143 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/14/thailand-train-crane-accident-deaths already exists.
+2026-01-17 13:37:07,370 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/14/china-reports-record-trillion-dollar-trade-surplus-despite-trump-tariffs already exists.
+2026-01-17 13:37:07,485 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c74vdgkw1kzo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:07,620 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce3k279e53eo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:07,842 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czejwl2z80lo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:08,067 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/13/south-korean-prosecutors-demand-death-penalty-for-former-president-yoon-suk-yeol already exists.
+2026-01-17 13:37:08,322 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/sport/2026/jan/17/damien-martyn-declares-im-back-after-leaving-hospital-following-meningitis already exists.
+2026-01-17 13:37:08,461 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9qpy952xvno?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:08,639 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/clyn0ek5rdpo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:08,746 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/17/filipino-migrant-workers-death-in-nsw-referred-to-federal-police already exists.
+2026-01-17 13:37:08,875 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cpv70mek448o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:08,878 - INFO - [The Hindu] Page content loaded.
+2026-01-17 13:37:09,045 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (405 words).
+2026-01-17 13:37:09,245 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/16/warnings-for-flash-floods-on-victorias-surf-coast-were-not-issued-late-authorities-say already exists.
+2026-01-17 13:37:09,429 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/16/police-shoot-dead-man-armed-with-bow-and-arrow-in-new-south-wales already exists.
+2026-01-17 13:37:55,280 - INFO - Saved article: Telangana wants CWC halting appraisal of PNLP pre-feasibility report for attending January 30 meeting - The Hindu from The Hindu (405 words)
+2026-01-17 13:37:55,281 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cm24k6kk1rko?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:55,458 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/live/2026/jan/16/hate-speech-legislation-political-reaction-anthony-albanese-labor-sussan-ley-coalition-greens-adelaide-festival-writers-week-backlash-sydney-protest-ban-ntwnfb already exists.
+2026-01-17 13:37:55,633 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cz7y14ypg2qo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:55,918 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2026/jan/17/hands-off-greenland-protests-denmark-us-donald-trump-europe-latest-news-updates already exists.
+2026-01-17 13:37:56,072 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvgjn5yyeljo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:56,238 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/17/greenland-crisis-europe-needs-trump-but-it-also-needs-to-stand-up-to-him already exists.
+2026-01-17 13:37:56,432 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy59pvkqvl5o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:56,561 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/farmer-commits-suicide-in-attappady/article70518706.ece
+2026-01-17 13:37:56,561 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-17 13:37:56,562 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/society/2026/jan/16/study-debunks-trump-claim-paracetamol-causes-autism-pregnancy already exists.
+2026-01-17 13:37:56,737 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/technology/2026/jan/16/partly-ai-generated-folk-pop-hit-barred-from-swedens-official-charts already exists.
+2026-01-17 13:37:56,877 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1wz8vyq54xo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:57,158 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8x95nk72k2o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:57,426 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/trump-greenland-envoy-us-denmark already exists.
+2026-01-17 13:37:57,568 - INFO - [The Hindu] Page content loaded.
+2026-01-17 13:37:57,660 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy4qdpxp78po?at_medium=RSS&at_campaign=rss already exists.
+2026-01-17 13:37:57,663 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (214 words).
+2026-01-17 13:37:57,879 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/17/senior-iranian-cleric-calls-for-protester-executions-in-defiance-of-trump-claims
+2026-01-17 13:37:57,879 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-17 13:37:58,226 - INFO - [The Guardian] Success with 'requests_browser'. Found content (529 words).
+2026-01-17 13:38:36,632 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-17 13:38:36,632 - ERROR - A thread has timed out and will be abandoned.
+2026-01-17 13:38:36,632 - ERROR - A thread has timed out and will be abandoned.
+2026-01-17 13:38:36,632 - ERROR - A thread has timed out and will be abandoned.
+2026-01-17 13:38:36,632 - ERROR - A thread has timed out and will be abandoned.
+2026-01-17 13:38:36,632 - INFO - Shutting down thread pool (wait=False)...
+2026-01-17 13:38:36,632 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-17 13:38:36,632 - INFO - --- Scraping job finished ---
+2026-01-17 13:38:36,632 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-17 13:38:36,633 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
