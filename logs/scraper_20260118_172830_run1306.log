@@ -1,0 +1,170 @@
+2026-01-18 17:23:29,262 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-18 17:23:29,263 - INFO - Use pytorch device_name: cpu
+2026-01-18 17:23:29,263 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-18 17:23:30,026 - INFO - AI Model loaded successfully.
+2026-01-18 17:23:30,027 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-18 17:23:30,027 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-18 17:23:30,027 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-18 17:23:30,027 - INFO - Proxy is DISABLED.
+2026-01-18 17:23:30,027 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-18 17:23:30,028 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-18 17:23:30,029 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-18 17:23:30,030 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-18 17:23:30,031 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-18 17:23:30,234 - INFO - Found 38 articles in BBC RSS feed. Processing up to 30.
+2026-01-18 17:23:30,235 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cg5gegrdq3go?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:23:30,259 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-18 17:23:30,396 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/17/yoweri-museveni-wins-ugandan-election-as-opponent-condemns-fake-result already exists.
+2026-01-18 17:23:30,657 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx20n55yxrlo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:23:30,868 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/uk-news/2026/jan/17/afcon-little-morocco-london-confidence-high already exists.
+2026-01-18 17:23:31,011 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cz7ypw4rjrzo?at_medium=RSS&at_campaign=rss
+2026-01-18 17:23:31,011 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-18 17:23:31,012 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/17/twin-baby-mountain-gorilla-virunga-drc-survival-conservation-aoe already exists.
+2026-01-18 17:23:31,216 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/uganda-election-early-results-show-museveni-in-lead-as-violence-reported already exists.
+2026-01-18 17:23:31,300 - INFO - [BBC] Success with 'requests_browser'. Found content (262 words).
+2026-01-18 17:23:35,914 - INFO - Selenium driver initialized successfully.
+2026-01-18 17:23:35,914 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-18 17:23:35,916 - INFO - Selenium driver initialized successfully.
+2026-01-18 17:23:35,916 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-18 17:23:36,043 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-18 17:23:36,130 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-18 17:24:00,182 - INFO - DEDUPLICATION: Found match (Score: 0.90). Linking to Cluster ID: 8d4ad562-5fa4-42e6-8fa0-016ab163d342
+2026-01-18 17:24:00,185 - INFO - Saved article: Deadly Chile fires trigger state of catastrophe in Ñuble and Biobío regions from BBC (262 words)
+2026-01-18 17:24:00,185 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/15/hepatitis-b-vaccines-study-africa-cancel already exists.
+2026-01-18 17:24:00,376 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/chile-wildfire-at-least-15-killed-in-south-state-of-emergency-declared/articleshow/126650666.cms already exists.
+2026-01-18 17:24:00,643 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/bjp-takes-a-dig-at-karnataka-deputy-chief-minister-for-skipping-wef/article70522800.ece
+2026-01-18 17:24:00,644 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:24:00,644 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/16/trump-administration-mistake-college-student-detained already exists.
+2026-01-18 17:24:00,770 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/pakistan/middle-east-trump-invited-pm-shehbaz-sharif-to-join-gaza-board-of-peace-says-pakistan/articleshow/126644879.cms already exists.
+2026-01-18 17:24:01,058 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/cia-chief-visits-maduro-successor-as-machado-vows-to-become-venezuelas-president already exists.
+2026-01-18 17:24:01,347 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/watch-andrew-tate-nick-fuentes-and-others-caught-dancing-to-heil-hitler-netizens-shout-sinister/articleshow/126648049.cms
+2026-01-18 17:24:01,347 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:24:01,347 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/brazil-jair-bolsonaro-reduce-sentence-reading-books already exists.
+2026-01-18 17:24:01,506 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/china-canada-partnership-new-global-realities-carney-xi-jinping already exists.
+2026-01-18 17:24:01,709 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/julio-iglesias-denies-sexual-abuse-claims-of-two-former-female-employees already exists.
+2026-01-18 17:24:01,948 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c74v0pxg2nvo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:02,120 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/chinese-mega-embassy-london-british-spies-mi5-analysis already exists.
+2026-01-18 17:24:02,361 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/south-korea-sentences-ex-president-yoon-suk-yeol-five-years-first-martial-law-verdict already exists.
+2026-01-18 17:24:02,466 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cly148lvyevo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:02,680 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c150pg5dvp2o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:02,940 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c620nq38y6po?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:03,230 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c3r1v7gqdp8o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:03,420 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/15/us-taiwan-tariff-deal already exists.
+2026-01-18 17:24:03,716 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/14/thailand-train-crane-accident-deaths already exists.
+2026-01-18 17:24:03,998 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/14/china-reports-record-trillion-dollar-trade-surplus-despite-trump-tariffs already exists.
+2026-01-18 17:24:04,242 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/18/peter-malinauskas-adelaide-writers-week-letter-randa-abdel-fattah-ntwnfb already exists.
+2026-01-18 17:24:04,453 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/18/boy-fighting-for-life-after-being-bitten-by-shark-at-nielsen-park-in-sydneys-east already exists.
+2026-01-18 17:24:04,627 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/18/disappointed-jewish-leaders-call-for-compromise-on-hate-speech-laws-after-labor-backdown-on-bill-ntwnfb already exists.
+2026-01-18 17:24:04,729 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czejykzg77po?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:04,897 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5y5le7yl7po?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:05,006 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/live/2026/jan/18/australia-news-live-weather-sydney-nsw-storms-sunday-politics-ntwnfb already exists.
+2026-01-18 17:24:05,221 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/sport/2026/jan/17/damien-martyn-declares-im-back-after-leaving-hospital-following-meningitis already exists.
+2026-01-18 17:24:05,433 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2026/jan/18/greenland-eu-donald-trump-tariffs-keir-starmer-europe-live-latest-updates already exists.
+2026-01-18 17:24:05,688 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2lgxxrxd52o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:05,828 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckglee733wno?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:06,077 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/europe-diplomats-crisis-talks-trump-tariffs-greenland already exists.
+2026-01-18 17:24:06,283 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c74vdgkw1kzo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:06,509 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czejwl2z80lo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:06,740 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/clyn0ek5rdpo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:06,932 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2026/jan/18/world-stock-markets-brace-for-turbulence-after-trumps-latest-tariff-shock already exists.
+2026-01-18 17:24:07,121 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/portugal-election-votes-tight-presidential-race-far-right-runoff already exists.
+2026-01-18 17:24:07,307 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2026/jan/18/trump-tariff-threats-economic-uncertainty-analysis already exists.
+2026-01-18 17:24:07,507 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/israel-far-right-ministers-reject-us-backed-postwar-gaza-panel already exists.
+2026-01-18 17:24:07,683 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/syrian-army-surges-into-kurdish-held-towns-in-betrayal-shattering-hopes-of-accord already exists.
+2026-01-18 17:24:07,840 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cnvg70v1z0ro?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:08,057 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cpv70mek448o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:08,311 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cz7y14ypg2qo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:08,589 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvgjn5yyeljo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:08,848 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy59pvkqvl5o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:09,100 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/why-protesters-iran-feel-betrayed-donald-trump already exists.
+2026-01-18 17:24:09,213 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/17/israel-objects-to-white-houses-pick-of-leaders-for-board-of-peace already exists.
+2026-01-18 17:24:09,386 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1wz8vyq54xo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:09,633 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c8x95nk72k2o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:09,786 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/17/child-mortality-crisis-continues-in-gaza-with-more-than-100-killed-since-ceasefire already exists.
+2026-01-18 17:24:10,036 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2gjdx241wo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:10,301 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c78vw30p1d2o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:10,576 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/crmlvym2e3eo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:10,704 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx20qj1pwrwo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:10,959 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c07xvv9r422o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:11,113 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9vx7kn33elo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:11,416 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cm24k6kk1rko?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:11,555 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c62nzxqw45eo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-18 17:24:18,037 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:24:18,154 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (267 words).
+2026-01-18 17:24:52,264 - INFO - DEDUPLICATION: Found match (Score: 0.77). Linking to Cluster ID: 9ae3f583-08c1-4730-9111-48197858d870
+2026-01-18 17:24:52,267 - INFO - Saved article: BJP takes a dig at Karnataka Deputy Chief Minister for skipping WEF - The Hindu from The Hindu (267 words)
+2026-01-18 17:24:53,022 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/aiadmk-to-honour-anti-hindi-agitation-martyrs-on-jan-25/article70522256.ece
+2026-01-18 17:24:53,022 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:24:54,342 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:24:54,436 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (105 words).
+2026-01-18 17:25:26,369 - INFO - Saved article: AIADMK to honour anti-Hindi agitation martyrs on Jan. 25 - The Hindu from The Hindu (105 words)
+2026-01-18 17:25:27,352 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/bjp-forms-panel-to-draft-manifesto-for-2026-election/article70522629.ece
+2026-01-18 17:25:27,353 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:25:28,101 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:25:28,179 - WARNING - [The Hindu] FAILED with 'selenium_browser' (content was too short: 81 words).
+2026-01-18 17:25:28,179 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/tamil-nadu/bjp-forms-panel-to-draft-manifesto-for-2026-election/article70522629.ece. Falling back to RSS description.
+2026-01-18 17:25:28,179 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'BJP forms panel to draft manifesto for 2026 election' from The Hindu has only 3 words (Min: 90).
+2026-01-18 17:25:29,102 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/ashok-alleges-2500-crore-bribery-racket-in-excise-department-seeks-minister-rb-thimmapurs-resignation/article70522319.ece
+2026-01-18 17:25:29,102 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:25:29,821 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:25:29,883 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (416 words).
+2026-01-18 17:26:01,404 - INFO - DEDUPLICATION: Found match (Score: 0.75). Linking to Cluster ID: 59c0c056-438b-4f29-9504-2f0802a78305
+2026-01-18 17:26:01,407 - INFO - Saved article: Ashok alleges ₹2,500-crore bribery racket in Excise Department; seeks Minister R.B. Thimmapur’s resignation - The Hindu from The Hindu (416 words)
+2026-01-18 17:26:01,434 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/watch-andrew-tate-nick-fuentes-and-others-caught-dancing-to-heil-hitler-netizens-shout-sinister/articleshow/126648049.cms: HTTPConnectionPool(host='localhost', port=49711): Read timed out. (read timeout=120)
+2026-01-18 17:26:01,434 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/watch-andrew-tate-nick-fuentes-and-others-caught-dancing-to-heil-hitler-netizens-shout-sinister/articleshow/126648049.cms. Falling back to RSS description.
+2026-01-18 17:26:01,434 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Andrew Tate, Nick Fuentes and others caught dancing to 'Heil Hitler', netizens shout 'sinister'' from Times of India has only 58 words (Min: 90).
+2026-01-18 17:26:02,444 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/india-invited-to-sit-on-trumps-board-of-peace-for-gaza/article70523013.ece
+2026-01-18 17:26:02,444 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:26:02,689 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/rest-of-world/australia-is-not-your-dumping-ground-queensland-man-shames-third-world-man-for-throwing-garbage-in-bush-in-viral-video/articleshow/126647623.cms
+2026-01-18 17:26:02,690 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:26:03,219 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:26:03,274 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (522 words).
+2026-01-18 17:26:36,982 - INFO - DEDUPLICATION: Found match (Score: 0.82). Linking to Cluster ID: f073bd85-f175-46a5-9d62-56dbccf524e5
+2026-01-18 17:26:36,986 - INFO - Saved article: India invited to sit on Trump’s Board of Peace for Gaza - The Hindu from The Hindu (522 words)
+2026-01-18 17:26:38,010 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/technician-at-government-hospital-dies-by-suicide/article70522942.ece
+2026-01-18 17:26:38,010 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:26:39,018 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:26:39,189 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (106 words).
+2026-01-18 17:27:11,900 - INFO - Saved article: Technician at government hospital dies by suicide - The Hindu from The Hindu (106 words)
+2026-01-18 17:27:12,586 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/customs-seize-exotic-animals-smuggled-from-bangkok-at-bengaluru-airport/article70522935.ece
+2026-01-18 17:27:12,586 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:27:13,409 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:27:13,448 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (321 words).
+2026-01-18 17:27:46,143 - INFO - Saved article: Customs seize exotic animals smuggled from Bangkok at Bengaluru airport - The Hindu from The Hindu (321 words)
+2026-01-18 17:27:47,571 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/rahul-gandhi-to-inaugurate-maha-panchayat-in-kochi/article70522916.ece
+2026-01-18 17:27:47,571 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:27:48,372 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:27:48,444 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (130 words).
+2026-01-18 17:28:02,793 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/rest-of-world/australia-is-not-your-dumping-ground-queensland-man-shames-third-world-man-for-throwing-garbage-in-bush-in-viral-video/articleshow/126647623.cms: HTTPConnectionPool(host='localhost', port=49711): Read timed out. (read timeout=120)
+2026-01-18 17:28:02,793 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/rest-of-world/australia-is-not-your-dumping-ground-queensland-man-shames-third-world-man-for-throwing-garbage-in-bush-in-viral-video/articleshow/126647623.cms. Falling back to RSS description.
+2026-01-18 17:28:02,793 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article '‘Australia is not your dumping ground’: Queensland man shames person throwing garbage in viral video' from Times of India has only 3 words (Min: 90).
+2026-01-18 17:28:21,169 - INFO - Saved article: Rahul Gandhi to inaugurate Maha Panchayat in Kochi - The Hindu from The Hindu (130 words)
+2026-01-18 17:28:21,169 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/indian-motel-operators-kosha-and-tarun-sharma-arrested-in-drug-and-sex-trafficking-case-profiting-from-human-suffering/articleshow/126644547.cms
+2026-01-18 17:28:21,169 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:28:22,453 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/kadra-sub-inspector-suspended/article70522822.ece
+2026-01-18 17:28:22,453 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:28:23,533 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:28:23,625 - WARNING - [The Hindu] FAILED with 'selenium_browser' (content was too short: 84 words).
+2026-01-18 17:28:23,625 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/karnataka/kadra-sub-inspector-suspended/article70522822.ece. Falling back to RSS description.
+2026-01-18 17:28:23,625 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Kadra Sub-Inspector suspended' from The Hindu has only 3 words (Min: 90).
+2026-01-18 17:28:24,216 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/lalbagh-flower-show-draws-over-68000-visitors-on-sunday/article70522901.ece
+2026-01-18 17:28:24,217 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:28:25,211 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:28:25,327 - WARNING - [The Hindu] FAILED with 'selenium_browser' (content was too short: 89 words).
+2026-01-18 17:28:25,327 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/karnataka/lalbagh-flower-show-draws-over-68000-visitors-on-sunday/article70522901.ece. Falling back to RSS description.
+2026-01-18 17:28:25,327 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Lalbagh flower show draws over 68,000 visitors on Sunday' from The Hindu has only 3 words (Min: 90).
+2026-01-18 17:28:26,529 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/bss-gurukulam-bags-best-school-trophy-at-arts-fest/article70523038.ece already exists.
+2026-01-18 17:28:26,810 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/government-plans-art-institutions-to-train-students-says-sivankutty/article70523016.ece already exists.
+2026-01-18 17:28:26,990 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/winds-ground-balloons-then-give-way-dramatic-finale-as-hyderabad-hot-air-balloon-festival-ends-on-a-high/article70522468.ece already exists.
+2026-01-18 17:28:27,211 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/cyber-fraudsters-dupe-kochi-residents-of-90-crore-in-2025/article70522884.ece
+2026-01-18 17:28:27,211 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-18 17:28:27,957 - INFO - [The Hindu] Page content loaded.
+2026-01-18 17:28:28,033 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (478 words).
+2026-01-18 17:28:30,031 - CRITICAL - --- TIMEOUT: 2 scrape jobs did not complete in 300s. ---
+2026-01-18 17:28:30,031 - ERROR - A thread has timed out and will be abandoned.
+2026-01-18 17:28:30,031 - ERROR - A thread has timed out and will be abandoned.
+2026-01-18 17:28:30,031 - INFO - Shutting down thread pool (wait=False)...
+2026-01-18 17:28:30,031 - INFO - Scraped: 1 BBC, 0 The Guardian, 2 Timed_Out_Jobs articles. (Total saved: 1)
+2026-01-18 17:28:30,032 - INFO - --- Scraping job finished ---
+2026-01-18 17:28:30,032 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-18 17:28:30,032 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
