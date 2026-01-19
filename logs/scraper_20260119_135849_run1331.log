@@ -1,0 +1,147 @@
+2026-01-19 13:53:48,294 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-19 13:53:48,294 - INFO - Use pytorch device_name: cpu
+2026-01-19 13:53:48,294 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-19 13:53:49,049 - INFO - AI Model loaded successfully.
+2026-01-19 13:53:49,049 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-19 13:53:49,049 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-19 13:53:49,049 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-19 13:53:49,049 - INFO - Proxy is DISABLED.
+2026-01-19 13:53:49,050 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-19 13:53:49,051 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-19 13:53:49,051 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-19 13:53:49,052 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-19 13:53:49,053 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-19 13:53:49,204 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-19 13:53:49,204 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/19/brazen-political-influence-rich-laid-bare-wealth-billionaires-inequality-poverty-instability-oxfam already exists.
+2026-01-19 13:53:49,319 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/ugandas-president-calls-opponents-terrorists-in-victory-speech already exists.
+2026-01-19 13:53:49,363 - INFO - Found 25 articles in BBC RSS feed. Processing up to 30.
+2026-01-19 13:53:49,548 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cedw6ylpynyo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-19 13:53:49,849 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/17/yoweri-museveni-wins-ugandan-election-as-opponent-condemns-fake-result already exists.
+2026-01-19 13:53:49,888 - INFO - Selenium driver initialized successfully.
+2026-01-19 13:53:49,889 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-19 13:53:49,890 - INFO - Selenium driver initialized successfully.
+2026-01-19 13:53:49,890 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-19 13:53:49,974 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-19 13:53:50,086 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c23r1rx5vp7o?at_medium=RSS&at_campaign=rss
+2026-01-19 13:53:50,087 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-19 13:53:50,088 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/double-agent-for-israel-pennsylvania-governor-josh-shapiro-drops-bombshell-about-kamala-harris-campaign/articleshow/126685264.cms
+2026-01-19 13:53:50,088 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-19 13:53:50,093 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/uk-news/2026/jan/17/afcon-little-morocco-london-confidence-high already exists.
+2026-01-19 13:53:50,103 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-19 13:53:50,229 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/17/twin-baby-mountain-gorilla-virunga-drc-survival-conservation-aoe already exists.
+2026-01-19 13:53:50,337 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 81 words).
+2026-01-19 13:53:50,337 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c23r1rx5vp7o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-19 13:53:50,337 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Spain train crash survivors describe 'absolutely terrifying' scene' from BBC has only 14 words (Min: 90).
+2026-01-19 13:53:50,345 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/kerala-tourism-to-open-all-india-photo-exhibition-lenscape-kerala-on-january-20/article70525669.ece
+2026-01-19 13:53:50,345 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-19 13:53:50,346 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/19/guatemala-state-of-emergency-police-officers-killed-prison-gang-violence
+2026-01-19 13:53:50,346 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-19 13:53:50,378 - INFO - [The Guardian] Success with 'requests_browser'. Found content (498 words).
+2026-01-19 13:53:55,183 - INFO - [The Hindu] Page content loaded.
+2026-01-19 13:53:55,336 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (281 words).
+2026-01-19 13:54:10,138 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/double-agent-for-israel-pennsylvania-governor-josh-shapiro-drops-bombshell-about-kamala-harris-campaign/articleshow/126685264.cms: Message: timeout: Timed out receiving message from renderer: 19.940
+  (Session info: chrome=143.0.7499.192)
+Stacktrace:
+#0 0x55940997340a <unknown>
+#1 0x5594093a776b <unknown>
+#2 0x55940938f80a <unknown>
+#3 0x55940938f4ed <unknown>
+#4 0x55940938d3a7 <unknown>
+#5 0x55940938dcbf <unknown>
+#6 0x55940939c480 <unknown>
+#7 0x5594093b5b47 <unknown>
+#8 0x5594093bc1fb <unknown>
+#9 0x55940938e3e8 <unknown>
+#10 0x5594093b58f8 <unknown>
+#11 0x559409444ad8 <unknown>
+#12 0x5594093eb7b2 <unknown>
+#13 0x5594093ec461 <unknown>
+#14 0x55940993bdf9 <unknown>
+#15 0x55940993ed5d <unknown>
+#16 0x559409924b41 <unknown>
+#17 0x55940993f93b <unknown>
+#18 0x55940990b870 <unknown>
+#19 0x559409960828 <unknown>
+#20 0x5594099609fc <unknown>
+#21 0x559409972763 <unknown>
+#22 0x7f9f0c69caa4 <unknown>
+#23 0x7f9f0c729c6c <unknown>
+
+2026-01-19 13:54:10,139 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/double-agent-for-israel-pennsylvania-governor-josh-shapiro-drops-bombshell-about-kamala-harris-campaign/articleshow/126685264.cms. Falling back to RSS description.
+2026-01-19 13:54:10,139 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article ''Double agent for Israel': Pennsylvania governor Josh Shapiro drops bombshell about Kamala Harris campaign' from Times of India has only 70 words (Min: 90).
+2026-01-19 13:54:51,078 - INFO - Saved article: Guatemala declares state of emergency after eight police officers killed in prison gang violence | Guatemala | The Guardian from The Guardian (498 words)
+2026-01-19 13:54:51,079 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g0zx0llpzo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-19 13:55:40,979 - INFO - Saved article: Kerala Tourism to open all-India photo exhibition ‘Lenscape Kerala’ on January 20 - The Hindu from The Hindu (281 words)
+2026-01-19 13:55:40,979 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/saudi-arabia-directs-imams-to-use-friday-sermons-to-promote-marriage-pushback-against-deviant-narratives/articleshow/126679769.cms
+2026-01-19 13:55:40,979 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-19 13:55:40,980 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0r47ey0d1vo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-19 13:55:41,121 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/chile-president-declares-state-of-catastrophe-as-wildfires-kill already exists.
+2026-01-19 13:55:41,393 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy7mev35x2lo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-19 13:55:41,659 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/16/trump-administration-mistake-college-student-detained already exists.
+2026-01-19 13:55:41,834 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/cia-chief-visits-maduro-successor-as-machado-vows-to-become-venezuelas-president already exists.
+2026-01-19 13:55:42,120 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1dk0x0v6pdo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-19 13:55:42,297 - INFO - [Times of India] Page content loaded.
+2026-01-19 13:55:42,400 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c79r7v7qr53o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-19 13:55:42,460 - INFO - [Times of India] Success with 'selenium_browser'. Found content (608 words).
+2026-01-19 13:55:42,636 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/16/brazil-jair-bolsonaro-reduce-sentence-reading-books already exists.
+2026-01-19 13:55:42,834 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/nimhans-type-healthcare-facility-to-come-up-in-mysuru/article70525763.ece
+2026-01-19 13:55:42,836 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-19 13:56:02,863 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/karnataka/nimhans-type-healthcare-facility-to-come-up-in-mysuru/article70525763.ece: Message: timeout: Timed out receiving message from renderer: 18.698
+  (Session info: chrome=143.0.7499.192)
+Stacktrace:
+#0 0x5624e2b8e40a <unknown>
+#1 0x5624e25c276b <unknown>
+#2 0x5624e25aa80a <unknown>
+#3 0x5624e25aa4ed <unknown>
+#4 0x5624e25a83a7 <unknown>
+#5 0x5624e25a8cbf <unknown>
+#6 0x5624e25b7480 <unknown>
+#7 0x5624e25d0b47 <unknown>
+#8 0x5624e25d71fb <unknown>
+#9 0x5624e25a93e8 <unknown>
+#10 0x5624e25d08f8 <unknown>
+#11 0x5624e265fad8 <unknown>
+#12 0x5624e26067b2 <unknown>
+#13 0x5624e2607461 <unknown>
+#14 0x5624e2b56df9 <unknown>
+#15 0x5624e2b59d5d <unknown>
+#16 0x5624e2b3fb41 <unknown>
+#17 0x5624e2b5a93b <unknown>
+#18 0x5624e2b26870 <unknown>
+#19 0x5624e2b7b828 <unknown>
+#20 0x5624e2b7b9fc <unknown>
+#21 0x5624e2b8d763 <unknown>
+#22 0x7fc34b89caa4 <unknown>
+#23 0x7fc34b929c6c <unknown>
+
+2026-01-19 13:56:02,863 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/karnataka/nimhans-type-healthcare-facility-to-come-up-in-mysuru/article70525763.ece. Falling back to RSS description.
+2026-01-19 13:56:02,863 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'NIMHANS-type healthcare facility to come up in Mysuru' from The Hindu has only 29 words (Min: 90).
+2026-01-19 13:56:35,981 - INFO - Saved article: Saudi Arabia directs imams to use Friday sermons to promote marriage, pushback against 'deviant' narratives - The Times of India from Times of India (608 words)
+2026-01-19 13:56:35,981 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c62nen4n971o?at_medium=RSS&at_campaign=rss
+2026-01-19 13:56:35,981 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-19 13:56:35,982 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/19/china-population-falls-again-birthrate-record-low already exists.
+2026-01-19 13:56:36,016 - INFO - [BBC] Success with 'requests_browser'. Found content (208 words).
+2026-01-19 13:56:36,153 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/prashad-scheme-atop-chamundi-hills-mysuru-grahakara-parishat-reiterates-its-opposition/article70525399.ece
+2026-01-19 13:56:36,153 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-19 13:56:43,058 - INFO - [The Hindu] Page content loaded.
+2026-01-19 13:56:43,167 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (390 words).
+2026-01-19 13:57:31,534 - INFO - DEDUPLICATION: Found match (Score: 0.75). Linking to Cluster ID: 3a8b3be0-1eb9-4e16-8518-5dd131355718
+2026-01-19 13:57:31,537 - INFO - Saved article: Mozambique floods: South Africa sends rescue team after politician is swept away by floodwaters from BBC (208 words)
+2026-01-19 13:57:31,537 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/19/japan-snap-election-sanae-takaichi-ldp already exists.
+2026-01-19 13:57:31,805 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/fans-believe-kristy-scott-may-have-hinted-at-her-divorce-in-a-tiktok-posted-weeks-before-the-filing/articleshow/126669245.cms
+2026-01-19 13:57:31,805 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-19 13:57:34,184 - INFO - [Times of India] Page content loaded.
+2026-01-19 13:57:34,471 - INFO - [Times of India] Success with 'selenium_browser'. Found content (405 words).
+2026-01-19 13:58:27,536 - INFO - Saved article: PRASHAD scheme atop Chamundi Hills: Mysuru Grahakara Parishat reiterates its opposition - The Hindu from The Hindu (390 words)
+2026-01-19 13:58:27,536 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/19/chinas-economy-hit-growth-goal-last-year-despite-trump-trade-war-and-property-crisis already exists.
+2026-01-19 13:58:27,755 - INFO - [BBC] Early skip: URL https://www.bbc.com/sport/football/articles/c70ljednyl6o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-19 13:58:49,053 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-19 13:58:49,053 - ERROR - A thread has timed out and will be abandoned.
+2026-01-19 13:58:49,053 - ERROR - A thread has timed out and will be abandoned.
+2026-01-19 13:58:49,053 - ERROR - A thread has timed out and will be abandoned.
+2026-01-19 13:58:49,053 - ERROR - A thread has timed out and will be abandoned.
+2026-01-19 13:58:49,053 - INFO - Shutting down thread pool (wait=False)...
+2026-01-19 13:58:49,053 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-19 13:58:49,053 - INFO - --- Scraping job finished ---
+2026-01-19 13:58:49,054 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-19 13:58:49,054 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
