@@ -1,0 +1,92 @@
+2026-01-20 13:02:04,792 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-20 13:02:04,792 - INFO - Use pytorch device_name: cpu
+2026-01-20 13:02:04,792 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-20 13:02:05,955 - INFO - AI Model loaded successfully.
+2026-01-20 13:02:05,955 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-20 13:02:05,955 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-20 13:02:05,956 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-20 13:02:05,956 - INFO - Proxy is DISABLED.
+2026-01-20 13:02:05,956 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-20 13:02:05,957 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-20 13:02:05,958 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-20 13:02:05,959 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-20 13:02:05,959 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-20 13:02:06,051 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-20 13:02:06,052 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/19/brazen-political-influence-rich-laid-bare-wealth-billionaires-inequality-poverty-instability-oxfam already exists.
+2026-01-20 13:02:06,249 - INFO - Found 34 articles in BBC RSS feed. Processing up to 30.
+2026-01-20 13:02:06,281 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g5345ylk0o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-20 13:02:06,540 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/ugandas-president-calls-opponents-terrorists-in-victory-speech already exists.
+2026-01-20 13:02:06,838 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0lx7j1lrwro?at_medium=RSS&at_campaign=rss already exists.
+2026-01-20 13:02:07,060 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/17/yoweri-museveni-wins-ugandan-election-as-opponent-condemns-fake-result already exists.
+2026-01-20 13:02:07,199 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cvgpr95npplo?at_medium=RSS&at_campaign=rss
+2026-01-20 13:02:07,199 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-20 13:02:07,201 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/uk-news/2026/jan/17/afcon-little-morocco-london-confidence-high already exists.
+2026-01-20 13:02:07,356 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 57 words).
+2026-01-20 13:02:07,356 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cvgpr95npplo?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-01-20 13:02:07,356 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Ros Atkins on...President Trump's year in numbers' from BBC has only 24 words (Min: 90).
+2026-01-20 13:02:07,385 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/17/twin-baby-mountain-gorilla-virunga-drc-survival-conservation-aoe already exists.
+2026-01-20 13:02:07,551 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/20/colombia-ex-paramilitary-leader-salvatore-mancuso-jailed-crimes-against-indigenous-groups
+2026-01-20 13:02:07,551 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-20 13:02:07,573 - INFO - [The Guardian] Success with 'requests_browser'. Found content (428 words).
+2026-01-20 13:02:12,627 - INFO - Selenium driver initialized successfully.
+2026-01-20 13:02:12,628 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-20 13:02:12,631 - INFO - Selenium driver initialized successfully.
+2026-01-20 13:02:12,631 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-20 13:02:12,881 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-20 13:02:12,898 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-20 13:02:49,517 - INFO - Saved article: Colombian ex-paramilitary leader jailed for crimes against Indigenous groups | Colombia | The Guardian from The Guardian (428 words)
+2026-01-20 13:02:49,518 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c5y2qjy9l4yo?at_medium=RSS&at_campaign=rss
+2026-01-20 13:02:49,518 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-20 13:02:49,519 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/rest-of-world/justin-trudeau-appears-in-davos-with-katy-perry-speaks-on-trump-canada-greenland/articleshow/126800355.cms
+2026-01-20 13:02:49,519 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-20 13:02:49,520 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/telangana-to-register-firs-at-home-or-place-of-victims-choice-applicable-for-seven-crime-categories/article70529345.ece
+2026-01-20 13:02:49,520 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-20 13:02:49,568 - INFO - [BBC] Success with 'requests_browser'. Found content (639 words).
+2026-01-20 13:02:55,885 - INFO - [The Hindu] Page content loaded.
+2026-01-20 13:02:56,379 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (459 words).
+2026-01-20 13:03:48,000 - INFO - DEDUPLICATION: Found match (Score: 0.82). Linking to Cluster ID: 9d8d42dc-f420-43e7-baef-c61aa2e491cb
+2026-01-20 13:03:48,030 - INFO - Saved article: Spain train crash continues as investigators probe 'gap' in rail from BBC (639 words)
+2026-01-20 13:03:48,030 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/20/trial-peru-amazon-quinto-inuma-alvarado-indigenous-leader already exists.
+2026-01-20 13:04:34,596 - INFO - Saved article: Telangana to register FIRs at home or place of victims’ choice; applicable in seven crime categories - The Hindu from The Hindu (459 words)
+2026-01-20 13:04:34,596 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/19/guatemala-state-of-emergency-police-officers-killed-prison-gang-violence already exists.
+2026-01-20 13:04:34,807 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cjrz0j9p5jqo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-20 13:04:35,071 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/chile-president-declares-state-of-catastrophe-as-wildfires-kill already exists.
+2026-01-20 13:04:35,231 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cqxy3523nq2o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-20 13:04:35,457 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c17zpvkddpzo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-20 13:04:35,649 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/16/trump-administration-mistake-college-student-detained already exists.
+2026-01-20 13:04:35,822 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cew8jxze027o?at_medium=RSS&at_campaign=rss
+2026-01-20 13:04:35,822 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-20 13:04:35,823 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/governors-policy-address-legislative-procedures-for-nativity-card-in-final-stages/article70529285.ece
+2026-01-20 13:04:35,824 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-20 13:04:35,825 - INFO - [The Guardian] Article: https://www.theguardian.com/uk-news/2026/jan/20/china-mega-embassy-approved-london
+2026-01-20 13:04:35,825 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-20 13:04:35,873 - INFO - [BBC] Success with 'requests_browser'. Found content (353 words).
+2026-01-20 13:04:36,144 - INFO - [The Guardian] Success with 'requests_browser'. Found content (659 words).
+2026-01-20 13:04:39,897 - INFO - [The Hindu] Page content loaded.
+2026-01-20 13:04:40,186 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (301 words).
+2026-01-20 13:04:49,621 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/rest-of-world/justin-trudeau-appears-in-davos-with-katy-perry-speaks-on-trump-canada-greenland/articleshow/126800355.cms: HTTPConnectionPool(host='localhost', port=51119): Read timed out. (read timeout=120)
+2026-01-20 13:04:49,621 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/rest-of-world/justin-trudeau-appears-in-davos-with-katy-perry-speaks-on-trump-canada-greenland/articleshow/126800355.cms. Falling back to RSS description.
+2026-01-20 13:04:49,621 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Justin Trudeau appears in Davos with Katy Perry; speaks on Trump, Canada, Greenland' from Times of India has only 3 words (Min: 90).
+2026-01-20 13:05:24,285 - INFO - Saved article: Anthony Joshua's driver appears in court after Nigeria crash that killed two from BBC (353 words)
+2026-01-20 13:06:10,455 - INFO - DEDUPLICATION: Found match (Score: 0.85). Linking to Cluster ID: c34f339a-ce17-4912-b858-1258e9820197
+2026-01-20 13:06:10,457 - INFO - Saved article: UK government approves Chinese ‘mega embassy’ in London | London | The Guardian from The Guardian (659 words)
+2026-01-20 13:06:55,882 - INFO - Saved article: Governor’s policy address: legislative procedures for ‘Nativity Card’ in final stages - The Hindu from The Hindu (301 words)
+2026-01-20 13:06:55,883 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/legal-work-made-simple-dubai-police-launches-digital-platform-for-lawyers/articleshow/126793805.cms
+2026-01-20 13:06:55,883 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-20 13:06:55,884 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c394pk4p707o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-20 13:06:56,057 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/20/kim-jong-un-fires-vice-premier-yang-sung-ho-goat-ox-cart
+2026-01-20 13:06:56,058 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-20 13:06:56,059 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c5yvqx22dyvo?at_medium=RSS&at_campaign=rss
+2026-01-20 13:06:56,059 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-20 13:06:56,107 - INFO - [The Guardian] Success with 'requests_browser'. Found content (545 words).
+2026-01-20 13:06:56,153 - INFO - [BBC] Success with 'requests_browser'. Found content (460 words).
+2026-01-20 13:07:05,959 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-20 13:07:05,959 - ERROR - A thread has timed out and will be abandoned.
+2026-01-20 13:07:05,960 - ERROR - A thread has timed out and will be abandoned.
+2026-01-20 13:07:05,960 - ERROR - A thread has timed out and will be abandoned.
+2026-01-20 13:07:05,960 - ERROR - A thread has timed out and will be abandoned.
+2026-01-20 13:07:05,960 - INFO - Shutting down thread pool (wait=False)...
+2026-01-20 13:07:05,960 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-20 13:07:05,960 - INFO - --- Scraping job finished ---
+2026-01-20 13:07:05,960 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-20 13:07:05,960 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
