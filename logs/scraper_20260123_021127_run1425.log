@@ -1,0 +1,141 @@
+2026-01-23 02:06:25,826 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-23 02:06:25,826 - INFO - Use pytorch device_name: cpu
+2026-01-23 02:06:25,826 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-23 02:06:27,041 - INFO - AI Model loaded successfully.
+2026-01-23 02:06:27,041 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-23 02:06:27,041 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-23 02:06:27,041 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-23 02:06:27,041 - INFO - Proxy is DISABLED.
+2026-01-23 02:06:27,042 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-23 02:06:27,043 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-23 02:06:27,043 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-23 02:06:27,044 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-23 02:06:27,045 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-23 02:06:27,144 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-23 02:06:27,144 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/22/actionaid-rethink-child-sponsorship-decolonise-funding already exists.
+2026-01-23 02:06:27,286 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/20/us-diplomats-urged-to-remind-african-leaders-of-us-generosity-despite-usaid-closing already exists.
+2026-01-23 02:06:27,290 - INFO - Found 37 articles in BBC RSS feed. Processing up to 30.
+2026-01-23 02:06:27,409 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g44r22j5jo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-23 02:06:27,587 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/19/brazen-political-influence-rich-laid-bare-wealth-billionaires-inequality-poverty-instability-oxfam already exists.
+2026-01-23 02:06:27,765 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cn8jj228g2vo?at_medium=RSS&at_campaign=rss
+2026-01-23 02:06:27,765 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-23 02:06:27,766 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/ugandas-president-calls-opponents-terrorists-in-victory-speech already exists.
+2026-01-23 02:06:28,027 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/17/yoweri-museveni-wins-ugandan-election-as-opponent-condemns-fake-result already exists.
+2026-01-23 02:06:28,222 - INFO - [BBC] Success with 'requests_browser'. Found content (1594 words).
+2026-01-23 02:06:28,233 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2026/jan/22/house-war-powers-resolution-trump-military-venezuela
+2026-01-23 02:06:28,233 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-23 02:06:28,292 - INFO - [The Guardian] Success with 'requests_browser'. Found content (588 words).
+2026-01-23 02:06:34,331 - INFO - Selenium driver initialized successfully.
+2026-01-23 02:06:34,332 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-23 02:06:34,333 - INFO - Selenium driver initialized successfully.
+2026-01-23 02:06:34,333 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-23 02:06:34,443 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-23 02:06:34,746 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-23 02:07:10,787 - INFO - DEDUPLICATION: Found match (Score: 0.73). Linking to Cluster ID: f073bd85-f175-46a5-9d62-56dbccf524e5
+2026-01-23 02:07:10,790 - INFO - Saved article: Board of Peace: Could Trump's bid to become peacemaker-in-chief sideline the struggling UN? from BBC (1594 words)
+2026-01-23 02:07:52,975 - INFO - Saved article: House rejects resolution that would bar Trump from sending troops to Venezuela | House of Representatives | The Guardian from The Guardian (588 words)
+2026-01-23 02:07:52,975 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/the-human-cost-behind-every-delivery/article70539430.ece
+2026-01-23 02:07:52,975 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-23 02:07:52,976 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/she-sues-people-candace-owens-takes-aim-at-nicola-peltz-while-discussing-brooklyn-beckhams-allegations/articleshow/127208586.cms
+2026-01-23 02:07:52,976 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-23 02:07:52,977 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cp3zzv40422o?at_medium=RSS&at_campaign=rss
+2026-01-23 02:07:52,977 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-23 02:07:53,025 - INFO - [BBC] Success with 'requests_browser'. Found content (1187 words).
+2026-01-23 02:08:08,110 - INFO - [Times of India] Page content loaded.
+2026-01-23 02:08:08,807 - INFO - [Times of India] Success with 'selenium_browser'. Found content (405 words).
+2026-01-23 02:08:13,042 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/andhra-pradesh/the-human-cost-behind-every-delivery/article70539430.ece: Message: timeout: Timed out receiving message from renderer: 19.801
+  (Session info: chrome=144.0.7559.59)
+Stacktrace:
+#0 0x5642f51f7afa <unknown>
+#1 0x5642f4c1160f <unknown>
+#2 0x5642f4bf8d11 <unknown>
+#3 0x5642f4bf8936 <unknown>
+#4 0x5642f4bf644b <unknown>
+#5 0x5642f4bf6dcf <unknown>
+#6 0x5642f4c062e0 <unknown>
+#7 0x5642f4c202b7 <unknown>
+#8 0x5642f4c274bb <unknown>
+#9 0x5642f4bf7539 <unknown>
+#10 0x5642f4c2004c <unknown>
+#11 0x5642f4caf9a3 <unknown>
+#12 0x5642f4c58842 <unknown>
+#13 0x5642f4c59631 <unknown>
+#14 0x5642f51bd689 <unknown>
+#15 0x5642f51c0581 <unknown>
+#16 0x5642f51a9ca9 <unknown>
+#17 0x5642f51c113e <unknown>
+#18 0x5642f51903a0 <unknown>
+#19 0x5642f51e4fc8 <unknown>
+#20 0x5642f51e519b <unknown>
+#21 0x5642f51f6e68 <unknown>
+#22 0x7f1268e9caa4 <unknown>
+#23 0x7f1268f29c6c <unknown>
+
+2026-01-23 02:08:13,042 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/andhra-pradesh/the-human-cost-behind-every-delivery/article70539430.ece. Falling back to RSS description.
+2026-01-23 02:08:13,042 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'The human cost behind every delivery' from The Hindu has only 59 words (Min: 90).
+2026-01-23 02:08:52,334 - INFO - Saved article: Oscars: Eight surprise takeaways from the nominations from BBC (1187 words)
+2026-01-23 02:08:52,334 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/22/carney-says-canada-must-be-a-beacon-to-a-world-thats-at-sea already exists.
+2026-01-23 02:09:38,866 - INFO - Saved article: “She sues people”: Candace Owens takes aim at Nicola Peltz while discussing Brooklyn Beckham’s allegations - The Times of India from Times of India (405 words)
+2026-01-23 02:09:38,866 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Kochi/44-years-on-closed-dye-factorys-contaminating-colours-still-remain-underground-in-kochi/article70538979.ece
+2026-01-23 02:09:38,866 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-23 02:09:38,867 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/22/trump-board-peace-davos-un already exists.
+2026-01-23 02:09:39,068 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwyrrqwxpz7o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-23 02:09:39,318 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/22/canada-pilot-airline-tickets already exists.
+2026-01-23 02:09:39,566 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy7mmpljze7o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-23 02:09:39,741 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/22/canada-marineland-aquarium-whales-us already exists.
+2026-01-23 02:09:40,012 - INFO - [BBC] Article: https://www.bbc.com/news/articles/czr444j671vo?at_medium=RSS&at_campaign=rss
+2026-01-23 02:09:40,012 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-23 02:09:40,013 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/ishowspeed-responds-to-criticism-over-skipping-creator-collaborations-during-africa-tour/articleshow/127195145.cms
+2026-01-23 02:09:40,013 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-23 02:09:40,015 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/two-confirmed-dead-and-more-presumed-buried-after-landslides-hit-house-and-campground-in-new-zealand already exists.
+2026-01-23 02:09:40,068 - INFO - [BBC] Success with 'requests_browser'. Found content (859 words).
+2026-01-23 02:09:46,800 - INFO - [Times of India] Page content loaded.
+2026-01-23 02:09:47,136 - INFO - [Times of India] Success with 'selenium_browser'. Found content (424 words).
+2026-01-23 02:09:58,888 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/cities/Kochi/44-years-on-closed-dye-factorys-contaminating-colours-still-remain-underground-in-kochi/article70538979.ece: Message: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=144.0.7559.59)
+Stacktrace:
+#0 0x5642f51f7afa <unknown>
+#1 0x5642f4c1160f <unknown>
+#2 0x5642f4bf8d11 <unknown>
+#3 0x5642f4bf8936 <unknown>
+#4 0x5642f4bf644b <unknown>
+#5 0x5642f4bf6dcf <unknown>
+#6 0x5642f4c062e0 <unknown>
+#7 0x5642f4c202b7 <unknown>
+#8 0x5642f4c274bb <unknown>
+#9 0x5642f4bf7539 <unknown>
+#10 0x5642f4c2004c <unknown>
+#11 0x5642f4caf4ed <unknown>
+#12 0x5642f4c58842 <unknown>
+#13 0x5642f4c59631 <unknown>
+#14 0x5642f51bd689 <unknown>
+#15 0x5642f51c0581 <unknown>
+#16 0x5642f51a9ca9 <unknown>
+#17 0x5642f51c113e <unknown>
+#18 0x5642f51903a0 <unknown>
+#19 0x5642f51e4fc8 <unknown>
+#20 0x5642f51e519b <unknown>
+#21 0x5642f51f6e68 <unknown>
+#22 0x7f1268e9caa4 <unknown>
+#23 0x7f1268f29c6c <unknown>
+
+2026-01-23 02:09:58,888 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/cities/Kochi/44-years-on-closed-dye-factorys-contaminating-colours-still-remain-underground-in-kochi/article70538979.ece. Falling back to RSS description.
+2026-01-23 02:09:58,888 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article '44 years on, closed dye factory’s contaminating colours still remain underground in Kochi' from The Hindu has only 15 words (Min: 90).
+2026-01-23 02:10:32,956 - INFO - Saved article: Trump sparks anger with claim Nato troops avoided Afghanistan front line from BBC (859 words)
+2026-01-23 02:10:32,957 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/jan/23/japan-pauses-kashiwazaki-kariwa-worlds-largest-nuclear-power-plant
+2026-01-23 02:10:32,957 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-23 02:10:33,142 - INFO - [The Guardian] Success with 'requests_browser'. Found content (405 words).
+2026-01-23 02:11:19,819 - INFO - DEDUPLICATION: Found match (Score: 0.72). Linking to Cluster ID: 564837a9-b604-4b56-8245-77b0c7e0ce02
+2026-01-23 02:11:19,822 - INFO - Saved article: iShowSpeed responds to criticism over skipping creator collaborations during Africa tour - The Times of India from Times of India (424 words)
+2026-01-23 02:11:19,822 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/hesaraghatta-grassland-is-the-grass-greener-with-the-new-tag/article70515504.ece
+2026-01-23 02:11:19,823 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-23 02:11:27,046 - CRITICAL - --- TIMEOUT: 4 scrape jobs did not complete in 300s. ---
+2026-01-23 02:11:27,046 - ERROR - A thread has timed out and will be abandoned.
+2026-01-23 02:11:27,046 - ERROR - A thread has timed out and will be abandoned.
+2026-01-23 02:11:27,046 - ERROR - A thread has timed out and will be abandoned.
+2026-01-23 02:11:27,046 - ERROR - A thread has timed out and will be abandoned.
+2026-01-23 02:11:27,046 - INFO - Shutting down thread pool (wait=False)...
+2026-01-23 02:11:27,046 - INFO - Scraped: 4 Timed_Out_Jobs articles. (Total saved: 0)
+2026-01-23 02:11:27,046 - INFO - --- Scraping job finished ---
+2026-01-23 02:11:27,046 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-23 02:11:27,046 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
