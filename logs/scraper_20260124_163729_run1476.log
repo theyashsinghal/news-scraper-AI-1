@@ -1,0 +1,217 @@
+2026-01-24 16:32:28,383 - INFO - Loading AI Semantic Model (all-MiniLM-L6-v2)...
+2026-01-24 16:32:28,383 - INFO - Use pytorch device_name: cpu
+2026-01-24 16:32:28,384 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-24 16:32:29,785 - INFO - AI Model loaded successfully.
+2026-01-24 16:32:29,785 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-01-24 16:32:29,785 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-01-24 16:32:29,785 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-01-24 16:32:29,785 - INFO - Proxy is DISABLED.
+2026-01-24 16:32:29,785 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-01-24 16:32:29,787 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-01-24 16:32:29,787 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-01-24 16:32:29,788 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-01-24 16:32:29,788 - INFO - Submitted 4 jobs to thread pool. Waiting up to 300s for completion...
+2026-01-24 16:32:29,998 - INFO - Found 45 articles in The Guardian RSS feed. Processing up to 30.
+2026-01-24 16:32:29,998 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/guinea-bissau-hepatitis-b-vaccine-study already exists.
+2026-01-24 16:32:30,116 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/22/actionaid-rethink-child-sponsorship-decolonise-funding already exists.
+2026-01-24 16:32:30,244 - INFO - Found 38 articles in BBC RSS feed. Processing up to 30.
+2026-01-24 16:32:30,284 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cy4qww3w72lo?at_medium=RSS&at_campaign=rss
+2026-01-24 16:32:30,284 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-24 16:32:30,285 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/20/us-diplomats-urged-to-remind-african-leaders-of-us-generosity-despite-usaid-closing already exists.
+2026-01-24 16:32:30,433 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/jan/19/brazen-political-influence-rich-laid-bare-wealth-billionaires-inequality-poverty-instability-oxfam already exists.
+2026-01-24 16:32:30,452 - INFO - Selenium driver initialized successfully.
+2026-01-24 16:32:30,452 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-01-24 16:32:30,454 - INFO - Selenium driver initialized successfully.
+2026-01-24 16:32:30,454 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-01-24 16:32:30,586 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/18/ugandas-president-calls-opponents-terrorists-in-victory-speech already exists.
+2026-01-24 16:32:30,640 - INFO - Found 100 articles in The Hindu RSS feed. Processing up to 30.
+2026-01-24 16:32:30,641 - INFO - Found 20 articles in Times of India RSS feed. Processing up to 30.
+2026-01-24 16:32:30,656 - INFO - [BBC] Success with 'requests_browser'. Found content (587 words).
+2026-01-24 16:32:30,696 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Hyderabad/five-feared-trapped-as-fire-engulfs-furniture-store-in-nampally-eyewitnesses-recall-horror/article70547271.ece
+2026-01-24 16:32:30,696 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:32:30,697 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/kash-patel-prioritised-jet-skiing-football-over-top-secret-meetings-fbi-boss-hates-office-settings-claims-source/articleshow/127406222.cms
+2026-01-24 16:32:30,697 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:32:34,212 - INFO - [The Hindu] Page content loaded.
+2026-01-24 16:32:34,486 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (646 words).
+2026-01-24 16:33:03,107 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/kash-patel-prioritised-jet-skiing-football-over-top-secret-meetings-fbi-boss-hates-office-settings-claims-source/articleshow/127406222.cms: Message: timeout: Timed out receiving message from renderer: 19.914
+  (Session info: chrome=144.0.7559.59)
+Stacktrace:
+#0 0x564372a3cafa <unknown>
+#1 0x56437245660f <unknown>
+#2 0x56437243dd11 <unknown>
+#3 0x56437243d936 <unknown>
+#4 0x56437243b44b <unknown>
+#5 0x56437243bdcf <unknown>
+#6 0x56437244b2e0 <unknown>
+#7 0x5643724652b7 <unknown>
+#8 0x56437246c4bb <unknown>
+#9 0x56437243c539 <unknown>
+#10 0x56437246504c <unknown>
+#11 0x5643724f49a3 <unknown>
+#12 0x56437249d842 <unknown>
+#13 0x56437249e631 <unknown>
+#14 0x564372a02689 <unknown>
+#15 0x564372a05581 <unknown>
+#16 0x5643729eeca9 <unknown>
+#17 0x564372a0613e <unknown>
+#18 0x5643729d53a0 <unknown>
+#19 0x564372a29fc8 <unknown>
+#20 0x564372a2a19b <unknown>
+#21 0x564372a3be68 <unknown>
+#22 0x7f04bb29caa4 <unknown>
+#23 0x7f04bb329c6c <unknown>
+
+2026-01-24 16:33:03,108 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/kash-patel-prioritised-jet-skiing-football-over-top-secret-meetings-fbi-boss-hates-office-settings-claims-source/articleshow/127406222.cms. Falling back to RSS description.
+2026-01-24 16:33:03,108 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Kash Patel prioritised jet skiing, football over top secret meetings; FBI boss hates 'office settings'' from Times of India has only 3 words (Min: 90).
+2026-01-24 16:33:23,514 - INFO - DEDUPLICATION: Found match (Score: 0.80). Linking to Cluster ID: 0a616299-a881-4632-aeea-7f8d1e6bf197
+2026-01-24 16:33:23,516 - INFO - Saved article: Trump threatens Canada with 100% tariff over China trade talks from BBC (587 words)
+2026-01-24 16:33:23,517 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/24/trump-canada-tariff-threat-venezuela-oil already exists.
+2026-01-24 16:33:53,095 - INFO - DEDUPLICATION: Found match (Score: 0.80). Linking to Cluster ID: 341a3b80-c512-4331-b58f-b8ae67208bd8
+2026-01-24 16:33:53,097 - INFO - Saved article: Five feared trapped as fire engulfs furniture store in Nampally; eyewitnesses recall horror - The Hindu from The Hindu (646 words)
+2026-01-24 16:33:53,098 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/40-increase-in-tech-professionals-moving-from-us-to-india-amid-h-1b-row-linkedin-data-shows/articleshow/127402038.cms
+2026-01-24 16:33:53,098 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:33:53,099 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/spanish-prosecutors-drop-julio-iglesias-complaint already exists.
+2026-01-24 16:33:53,228 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwyr6p30054o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:33:53,429 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/ryan-wedding-arrested already exists.
+2026-01-24 16:33:53,668 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c338jpk8r1vo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:33:53,839 - INFO - [Times of India] Page content loaded.
+2026-01-24 16:33:53,923 - INFO - [Times of India] Success with 'selenium_browser'. Found content (327 words).
+2026-01-24 16:33:53,969 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/venezuela-leaked-video-delcy-rodriguez-maduro already exists.
+2026-01-24 16:33:54,217 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/sir-rollout-in-remaining-states-soon-cec-gyanesh-kumar/article70547320.ece
+2026-01-24 16:33:54,217 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:33:54,218 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c701kr5zqdqo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:33:54,378 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cj9r8ezym3ro?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:33:54,547 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0r44l05q52o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:33:54,706 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c8rm135lnneo?at_medium=RSS&at_campaign=rss
+2026-01-24 16:33:54,706 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-01-24 16:33:54,895 - INFO - [BBC] Success with 'requests_browser'. Found content (318 words).
+2026-01-24 16:34:01,304 - INFO - [The Hindu] Page content loaded.
+2026-01-24 16:34:01,469 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (325 words).
+2026-01-24 16:34:30,203 - INFO - DEDUPLICATION: Found match (Score: 0.73). Linking to Cluster ID: d9954d71-b673-4ff8-bd05-1ec7ce64cc5d
+2026-01-24 16:34:30,204 - INFO - Saved article: 40% increase in tech professionals moving from US to India amid H-1B row, LinkedIn data shows - The Times of India from Times of India (327 words)
+2026-01-24 16:34:30,204 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/22/trump-withdraws-invitation-canada already exists.
+2026-01-24 16:35:01,305 - INFO - Saved article: Climber delays rope-free skyscraper ascent over rain from BBC (318 words)
+2026-01-24 16:35:30,777 - INFO - DEDUPLICATION: Found match (Score: 0.72). Linking to Cluster ID: 4af993a5-840c-4688-a46d-bb1eb09c2755
+2026-01-24 16:35:30,779 - INFO - Saved article: SIR rollout in remaining States soon: CEC Gyanesh Kumar - The Hindu from The Hindu (325 words)
+2026-01-24 16:35:30,779 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/24/north-korea-pentagon-to-reduce-role-deterrence already exists.
+2026-01-24 16:35:30,993 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/europe/italian-pm-meloni-says-trump-deserves-nobel-peace-prize-but-sets-ukraine-condition-watch/articleshow/127400673.cms already exists.
+2026-01-24 16:35:31,239 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2k98ql703no?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:31,420 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/24/new-zealand-landslide-rescue-efforts-called-off-for-at-least-six-people-buried-in-disaster already exists.
+2026-01-24 16:35:31,636 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/autopsy-of-canadian-teen-found-on-australian-beach-points-to-drowning-dingo-bites-likely-after-death/articleshow/127395343.cms already exists.
+2026-01-24 16:35:31,798 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c050vnl7p10o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:32,083 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/r-day-celebrations-37-contingents-to-take-part-in-the-parade-traffic-diversions-announced/article70545695.ece
+2026-01-24 16:35:32,083 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:35:32,084 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/jan/23/tapanuli-orangutans-floods-indonesia-government-mining-extraction-companies-aoe already exists.
+2026-01-24 16:35:32,253 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/who-is-tracee-mergen-fbi-agent-resigned-after-seeking-probe-into-fatal-ice-shooting-in-minneapolis/articleshow/127400307.cms already exists.
+2026-01-24 16:35:32,496 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c78ejd0xmp0o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:32,677 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/two-confirmed-dead-and-more-presumed-buried-after-landslides-hit-house-and-campground-in-new-zealand already exists.
+2026-01-24 16:35:32,885 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/travel-to-us-obtain-birth-certificate-return-to-china-author-says-beijing-is-weaponising-american-citizenship-through-manchurian-generation/articleshow/127395557.cms already exists.
+2026-01-24 16:35:33,028 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1dk67g4q91o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:33,221 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c87r53y4dx0o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:33,335 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/the-biggest-lie-ever-adin-ross-turns-casual-livestream-moment-into-viral-hygiene-debate/articleshow/127370854.cms already exists.
+2026-01-24 16:35:33,606 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/if-an-h-1b-holder-is-working-remotely-journalist-who-claimed-to-expose-visa-fraud-in-texas-responds-to-employees-working-from-home/articleshow/127394760.cms already exists.
+2026-01-24 16:35:33,756 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/you-always-hate-on-them-ddg-slams-haters-criticizing-kai-cenat-for-stepping-into-the-fashion-world/articleshow/127359282.cms already exists.
+2026-01-24 16:35:34,015 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/japan-pauses-kashiwazaki-kariwa-worlds-largest-nuclear-power-plant already exists.
+2026-01-24 16:35:34,287 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/music/2026/jan/24/olivia-dean-man-i-need-triple-j-hottest-100-winner-australia already exists.
+2026-01-24 16:35:34,560 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/jan/24/unfathomable-australian-veterans-disgusted-by-trumps-claim-allied-troops-stayed-a-little-back-from-frontline already exists.
+2026-01-24 16:35:34,732 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/clym2l7d75eo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:34,836 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/100-million-theft-suspect-in-largest-jewelry-heist-in-us-history-deported-avoids-trial/articleshow/127385646.cms already exists.
+2026-01-24 16:35:35,117 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/24/nico-antic-12-dies-in-hospital-after-being-attacked-by-a-shark-in-sydney already exists.
+2026-01-24 16:35:35,243 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvgnj7v2rr5o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:35,486 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/indian-national-killed-in-us-over-family-dispute-how-a-call-from-12-year-old-in-closet-saved-three-children/articleshow/127388827.cms already exists.
+2026-01-24 16:35:35,703 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/24/lake-cargelligo-julian-ingram-search-widens-nsw-police-ntwnfb already exists.
+2026-01-24 16:35:35,924 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy8ylqx0zw4o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:36,092 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/etimes/trending/can-extreme-winter-really-cause-trees-to-explode-the-science-behind-the-viral-phenomenon/articleshow/127380324.cms already exists.
+2026-01-24 16:35:36,351 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/jan/23/the-capsicum-paradox-new-australian-supermarket-pricing-a-massive-transparency-fail-for-customers already exists.
+2026-01-24 16:35:36,571 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cj0nd8z1z59o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:36,784 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/uae-emirates-cancels-multiple-dubaius-flights-due-to-winter-storm-fern/articleshow/127382351.cms already exists.
+2026-01-24 16:35:37,047 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/24/russia-launches-deadly-strikes-on-kyiv-and-kharkiv-ahead-of-day-two-of-peace-talks already exists.
+2026-01-24 16:35:37,333 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c3edde1pwx8o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:37,449 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/europe/russia-launches-370-drones-21-missiles-ukraine-says-strikes-hit-negotiation-table/articleshow/127381032.cms already exists.
+2026-01-24 16:35:37,682 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/24/a-lot-of-fear-the-families-bearing-brunt-of-swedens-immigration-crackdown already exists.
+2026-01-24 16:35:37,893 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9dvvzzpwylo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:38,054 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/next-stop-parenthood-saudi-arabia-records-first-ever-birth-on-the-riyadh-metro-network/articleshow/127376105.cms already exists.
+2026-01-24 16:35:38,258 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2026/jan/24/ukraine-russia-war-us-talks-uae-europe-live-latest-news-updates already exists.
+2026-01-24 16:35:38,403 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cp822g353y6o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:38,696 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/penguins-in-greenland-the-story-behind-the-viral-nihilist-penguin-meme/articleshow/127367596.cms already exists.
+2026-01-24 16:35:38,866 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/24/repatriate-the-gold-german-economists-advise-withdrawal-from-us-vaults already exists.
+2026-01-24 16:35:38,969 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0err023g5lo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:39,199 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/what-is-ejari-in-dubai-why-expats-can-face-rental-trouble-and-legal-visa-issues-without-it/articleshow/127372648.cms already exists.
+2026-01-24 16:35:39,466 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/spain-train-collision-investigators-examine-rail-damage-theory already exists.
+2026-01-24 16:35:39,641 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cj3v2mlvzdvo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:39,939 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/why-thousands-of-onions-appeared-on-brighton-beach-after-storm-goretti/articleshow/127300510.cms already exists.
+2026-01-24 16:35:40,070 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/24/syria-kurdish-military-extend-ceasefire-war already exists.
+2026-01-24 16:35:40,277 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0keelnyrvro?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:40,449 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/early-american-settlers-may-have-come-from-japan-study/articleshow/127301808.cms already exists.
+2026-01-24 16:35:40,578 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/trump-says-us-armada-heading-middle-east-iran-death-toll already exists.
+2026-01-24 16:35:40,822 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cd9eeyz933jo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:41,030 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/egypts-lost-golden-city-resurfaces-after-3400-years-and-its-rewriting-history/articleshow/127371110.cms already exists.
+2026-01-24 16:35:41,324 - INFO - [Times of India] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-01-24 16:35:41,324 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/uae-funds-gaza-community already exists.
+2026-01-24 16:35:41,501 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c9vx0p77pn8o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:41,531 - INFO - [Times of India] (Thread) driver.quit() successful.
+2026-01-24 16:35:41,726 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/23/spanish-court-drops-pegasus-spyware-case-again-israel-spain-nso already exists.
+2026-01-24 16:35:41,871 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c3r117w55q4o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:42,154 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/jan/22/trump-kushner-gaza-blueprint-rafah already exists.
+2026-01-24 16:35:42,354 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cly9230yw15o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:42,577 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn422q1py95o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:42,753 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2yy4n1vlgo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:42,987 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn8jj228g2vo?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:43,250 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cp3zzv40422o?at_medium=RSS&at_campaign=rss already exists.
+2026-01-24 16:35:52,092 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/karnataka/r-day-celebrations-37-contingents-to-take-part-in-the-parade-traffic-diversions-announced/article70545695.ece: Message: timeout: Timed out receiving message from renderer: 19.849
+  (Session info: chrome=144.0.7559.59)
+Stacktrace:
+#0 0x55b885626afa <unknown>
+#1 0x55b88504060f <unknown>
+#2 0x55b885027d11 <unknown>
+#3 0x55b885027936 <unknown>
+#4 0x55b88502544b <unknown>
+#5 0x55b885025dcf <unknown>
+#6 0x55b8850352e0 <unknown>
+#7 0x55b88504f2b7 <unknown>
+#8 0x55b8850564bb <unknown>
+#9 0x55b885026539 <unknown>
+#10 0x55b88504f04c <unknown>
+#11 0x55b8850de9a3 <unknown>
+#12 0x55b885087842 <unknown>
+#13 0x55b885088631 <unknown>
+#14 0x55b8855ec689 <unknown>
+#15 0x55b8855ef581 <unknown>
+#16 0x55b8855d8ca9 <unknown>
+#17 0x55b8855f013e <unknown>
+#18 0x55b8855bf3a0 <unknown>
+#19 0x55b885613fc8 <unknown>
+#20 0x55b88561419b <unknown>
+#21 0x55b885625e68 <unknown>
+#22 0x7f89c2a9caa4 <unknown>
+#23 0x7f89c2b29c6c <unknown>
+
+2026-01-24 16:35:52,092 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/karnataka/r-day-celebrations-37-contingents-to-take-part-in-the-parade-traffic-diversions-announced/article70545695.ece. Falling back to RSS description.
+2026-01-24 16:35:52,092 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'R-Day celebrations: 37 contingents to take part in the parade; traffic diversions announced' from The Hindu has only 24 words (Min: 90).
+2026-01-24 16:35:52,989 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/passengers-at-railway-stations-at-risk-as-stray-dog-menace-escalates/article70547106.ece
+2026-01-24 16:35:52,990 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:35:53,543 - INFO - [The Hindu] Page content loaded.
+2026-01-24 16:35:53,578 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (449 words).
+2026-01-24 16:36:22,406 - INFO - Saved article: Passengers at railway stations at risk as stray dog menace escalates - The Hindu from The Hindu (449 words)
+2026-01-24 16:36:23,071 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/west-bengal/nipah-scare-rt-pcr-tests-conducted-on-bats-at-kolkata-zoo/article70546975.ece
+2026-01-24 16:36:23,071 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:36:23,908 - INFO - [The Hindu] Page content loaded.
+2026-01-24 16:36:23,957 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (428 words).
+2026-01-24 16:36:52,528 - INFO - Saved article: Nipah scare: RT-PCR tests conducted on bats at Kolkata zoo - The Hindu from The Hindu (428 words)
+2026-01-24 16:36:53,566 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/sec-fixes-march-30-for-publication-of-final-gba-voters-list/article70547052.ece
+2026-01-24 16:36:53,566 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:36:58,327 - INFO - [The Hindu] Page content loaded.
+2026-01-24 16:36:58,406 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (240 words).
+2026-01-24 16:37:26,481 - INFO - DEDUPLICATION: Found match (Score: 0.77). Linking to Cluster ID: eb1aab6b-eb80-4aac-aea2-8012bf44fa84
+2026-01-24 16:37:26,483 - INFO - Saved article: SEC fixes March 30 for publication of final GBA voters list - The Hindu from The Hindu (240 words)
+2026-01-24 16:37:27,243 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/early-identification-of-mental-health-problems-important/article70547066.ece
+2026-01-24 16:37:27,243 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-01-24 16:37:27,818 - INFO - [The Hindu] Page content loaded.
+2026-01-24 16:37:27,855 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (471 words).
+2026-01-24 16:37:29,789 - CRITICAL - --- TIMEOUT: 1 scrape jobs did not complete in 300s. ---
+2026-01-24 16:37:29,789 - ERROR - A thread has timed out and will be abandoned.
+2026-01-24 16:37:29,789 - INFO - Shutting down thread pool (wait=False)...
+2026-01-24 16:37:29,789 - INFO - Scraped: 1 Times of India, 0 The Guardian, 2 BBC, 1 Timed_Out_Jobs articles. (Total saved: 3)
+2026-01-24 16:37:29,789 - INFO - --- Scraping job finished ---
+2026-01-24 16:37:29,790 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-01-24 16:37:29,790 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
