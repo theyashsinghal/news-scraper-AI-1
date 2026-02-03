@@ -230,12 +230,12 @@ def get_cluster_id_for_article(new_title, new_summary):
         return str(uuid.uuid4())
 
     try:
-        # --- MODIFIED: Reverted to 1-day memory check ---
-        # Fetch recent articles (last 1 day)
+        # --- MODIFIED: Reverted to 21-day memory check ---
+        # Fetch recent articles (last 21 day)
         cursor.execute('''
             SELECT title, summary, cluster_id 
             FROM news 
-            WHERE scraped_at >= datetime('now', '-1 day')
+            WHERE scraped_at >= datetime('now', '-21 day')
         ''')
         # ------------------------------------------------
         recent_articles = cursor.fetchall()
