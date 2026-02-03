@@ -230,7 +230,7 @@ def get_cluster_id_for_article(new_title, new_summary):
         return str(uuid.uuid4())
 
     try:
-        # Fetch recent articles (last 24h)
+        # Fetch recent articles (last 7 day)
         cursor.execute('''
             SELECT title, summary, cluster_id 
             FROM news 
@@ -275,17 +275,16 @@ def get_cluster_id_for_article(new_title, new_summary):
 def save_article(source, title, url, summary, image_url):
     """
     Saves a single article to the database. 
-    INCLUDES: The strict 90-word minimum length check.
+    INCLUDES: Smart Paragraph Preservation & 90-word minimum check.
     """
     
     # --- STEP 0: STRICT GLOBAL WORD COUNT CHECK ---
-    # Calculates word count on the final summary (whether full article or RSS fallback)
+    # We use simple whitespace splitting to count words, 
+    # which works for both flat text and text with newlines.
     if not summary:
         final_word_count = 0
     else:
-        # Robustly calculate word count after initial cleanup
-        cleaned_summary = " ".join(summary.replace('\n', ' ').replace('\r', ' ').split()).strip()
-        final_word_count = len(cleaned_summary.split())
+        final_word_count = len(summary.split())
 
     MIN_SUMMARY_WORDS = 90
     if final_word_count < MIN_SUMMARY_WORDS:
@@ -294,13 +293,26 @@ def save_article(source, title, url, summary, image_url):
     # ---------------------------------------------
     
     try:
-        # --- MORE ROBUST CLEANING (already performed partial cleanup for word count) ---
-        title = " ".join(title.replace('\n', ' ').replace('\r', ' ').split()).strip()
-        summary = cleaned_summary # Use the cleaned summary from above
+        # --- SMART CLEANING: PRESERVE STRUCTURE ---
+        # 1. Clean Title: Titles should generally be one line, so we flatten them.
+        title = " ".join(title.split()).strip()
+
+        # 2. Clean Summary: Preserve Paragraphs (\n)
+        if summary:
+            # Split the text into lines based on existing newlines
+            lines = summary.splitlines()
+            
+            # Clean each line individually to remove extra spaces *inside* the sentence
+            # but keep the line itself valid.
+            cleaned_lines = [" ".join(line.split()) for line in lines]
+            
+            # Join the lines back together with DOUBLE newlines to create clear paragraphs.
+            # We filter out empty lines to avoid huge gaps.
+            summary = "\n\n".join([line for line in cleaned_lines if line])
+        # ------------------------------------------
         
         if not image_url:
             image_url = "No image available"
-        # ----------------------------
 
         # --- THREAD-SAFE BLOCK ---
         with db_lock:
@@ -641,6 +653,4 @@ def main():
         os._exit(0)
 
 if __name__ == '__main__':
-    main()# ==============================================================================
-
     main()
