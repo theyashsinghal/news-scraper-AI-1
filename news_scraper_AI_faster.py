@@ -4,7 +4,7 @@
 # How many articles to get from each source (e.g., 5)
 # This is a 'quota'. The script will keep scanning the feed until it saves
 # this many NEW articles (or runs out of items).
-MAX_ARTICLES_PER_SOURCE = 5
+MAX_ARTICLES_PER_SOURCE = 20
 #
 # --- NEW: PROXY CONFIGURATION ---
 # Set 'use_proxies' to True to route all requests (Requests & Selenium)
@@ -604,7 +604,7 @@ def scrape_all():
         logging.info(f"Submitted {len(futures)} jobs to thread pool. Waiting up to 300s for completion...")
         
         # 2. Wait for jobs to complete, with a 5-minute (300s) timeout
-        done, not_done = wait(futures, timeout=600)
+        done, not_done = wait(futures, timeout=300)
 
         # 3. Process completed jobs
         for future in done:
