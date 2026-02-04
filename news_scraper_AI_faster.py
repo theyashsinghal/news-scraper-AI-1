@@ -1,8 +1,9 @@
 # ==============================================================================
 # --- GLOBAL USER SETTINGS ---
 #
-# How many articles to get from each source (e.g., 25)
-# This is a 'max' value. If a feed only has 20 articles, it will get 20.
+# How many articles to get from each source (e.g., 5)
+# This is a 'quota'. The script will keep scanning the feed until it saves
+# this many NEW articles (or runs out of items).
 MAX_ARTICLES_PER_SOURCE = 5
 #
 # --- NEW: PROXY CONFIGURATION ---
@@ -367,20 +368,20 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
         
         soup = BeautifulSoup(response.content, 'xml')
         items = soup.find_all('item')
-        logging.info(f"Found {len(items)} articles in {name} RSS feed. Processing up to {MAX_ARTICLES_PER_SOURCE}.")
+        logging.info(f"Found {len(items)} articles in {name} RSS feed. Processing until {MAX_ARTICLES_PER_SOURCE} new articles are saved.")
 
-# 2. Process each article
-        # UPDATED: Loop through ALL items, not just the first 20
+        # 2. Process each article
+        # UPDATED: Loop through ALL items, not just the first set
         for item in items:
             
-        # UPDATED: Stop processing if we have already saved 20 new articles
-        if len(articles_saved_list) >= MAX_ARTICLES_PER_SOURCE:
-             logging.info(f"[{name}] Target reached: Successfully saved {MAX_ARTICLES_PER_SOURCE} new articles.")
-              break
+            # UPDATED: Stop processing if we have successfully saved our target quota (5)
+            if len(articles_saved_list) >= MAX_ARTICLES_PER_SOURCE:
+                 logging.info(f"[{name}] Target reached: Successfully saved {MAX_ARTICLES_PER_SOURCE} new articles.")
+                 break
 
-          article_url = None
-          rss_title = "Title not found"
-          rss_description = None
+            article_url = None
+            rss_title = "Title not found"
+            rss_description = None
 
             try:
                 if not item.link:
@@ -398,7 +399,8 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
                     cursor.execute("SELECT id FROM news WHERE url = ?", (article_url,))
                     if cursor.fetchone():
                         logging.info(f"[{name}] Early skip: URL {article_url} already exists.")
-                        time.sleep(random.uniform(0.1, 0.3))
+                        # Small sleep to prevent CPU spiking on long lists of duplicates
+                        time.sleep(random.uniform(0.01, 0.05))
                         continue
                 # -------------------------
 
