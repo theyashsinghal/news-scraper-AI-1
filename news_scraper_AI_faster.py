@@ -236,7 +236,7 @@ def get_cluster_id_for_article(new_title, new_summary):
         cursor.execute('''
             SELECT title, summary, cluster_id 
             FROM news 
-            WHERE scraped_at >= datetime('now', '-21 day')
+            WHERE scraped_at >= datetime('now', '-15 day')
         ''')
         # ------------------------------------------------
         recent_articles = cursor.fetchall()
@@ -599,7 +599,7 @@ def scrape_all():
         logging.info(f"Submitted {len(futures)} jobs to thread pool. Waiting up to 300s for completion...")
         
         # 2. Wait for jobs to complete, with a 5-minute (300s) timeout
-        done, not_done = wait(futures, timeout=300)
+        done, not_done = wait(futures, timeout=600)
 
         # 3. Process completed jobs
         for future in done:
