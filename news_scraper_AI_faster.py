@@ -180,8 +180,9 @@ SOURCE_CONFIG = [
 semantic_model = None
 if SentenceTransformer is not None:
     try:
-        logging.info("Loading AI Semantic Model (all-MiniLM-L6-v2)...")
-        semantic_model = SentenceTransformer('all-MiniLM-L6-v2')
+        # CHANGED: Switched to L4 model as requested
+        logging.info("Loading AI Semantic Model (all-MiniLM-L4-v2)...")
+        semantic_model = SentenceTransformer('all-MiniLM-L4-v2')
         logging.info("AI Model loaded successfully.")
     except Exception as e:
         logging.critical(f"Failed to load AI model: {e}. Clustering is disabled.")
@@ -244,10 +245,14 @@ def get_cluster_id_for_article(new_title, new_summary):
         if not recent_articles:
             return str(uuid.uuid4())
 
-        # Prepare data and convert to Embeddings
-        existing_texts = [f"{row[0]}. {row[1]}" for row in recent_articles]
-        existing_ids = [row[2] for row in recent_articles]
-        new_text = f"{new_title}. {new_summary}"
+        # CHANGED: Truncate to approx 350 words.
+        # 350 words is roughly 2000-2200 characters. Using 2000 as a safe, fast limit.
+        limit_chars = 2000
+
+        # Prepare data and convert to Embeddings with truncation
+        existing_texts = [f"{row[0]}. {row[1][:limit_chars]}" for row in recent_articles]
+        # Same for the new text
+        new_text = f"{new_title}. {new_summary[:limit_chars]}"
 
         existing_embeddings = semantic_model.encode(existing_texts, convert_to_tensor=True)
         new_embedding = semantic_model.encode(new_text, convert_to_tensor=True)
@@ -400,7 +405,7 @@ def scrape_source(session, selenium_driver, source_config, proxies_dict):
                     if cursor.fetchone():
                         logging.info(f"[{name}] Early skip: URL {article_url} already exists.")
                         # Small sleep to prevent CPU spiking on long lists of duplicates
-                        time.sleep(random.uniform(0.01, 0.05))
+                        time.sleep(0.001)
                         continue
                 # -------------------------
 
