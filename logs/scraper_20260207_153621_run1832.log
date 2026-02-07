@@ -1,0 +1,756 @@
+2026-02-07 15:32:44,351 - INFO - Loading AI Semantic Model (all-MiniLM-L4-v2)...
+2026-02-07 15:32:44,352 - INFO - Use pytorch device_name: cpu
+2026-02-07 15:32:44,352 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L4-v2
+2026-02-07 15:32:44,466 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L4-v2/resolve/main/modules.json "HTTP/1.1 401 Unauthorized"
+2026-02-07 15:32:44,466 - WARNING - No sentence-transformers model found with name sentence-transformers/all-MiniLM-L4-v2. Creating a new one with mean pooling.
+2026-02-07 15:32:44,539 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L4-v2/resolve/main/adapter_config.json "HTTP/1.1 401 Unauthorized"
+2026-02-07 15:32:44,539 - CRITICAL - Failed to load AI model: sentence-transformers/all-MiniLM-L4-v2 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`. Clustering is disabled.
+2026-02-07 15:32:44,540 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-02-07 15:32:44,540 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-02-07 15:32:44,540 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-02-07 15:32:44,540 - INFO - Proxy is DISABLED.
+2026-02-07 15:32:44,540 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-02-07 15:32:44,541 - INFO - [Economic Times] (Thread) requires Selenium. Initializing driver...
+2026-02-07 15:32:44,541 - INFO - [Al Jazeera] (Thread) requires Selenium. Initializing driver...
+2026-02-07 15:32:44,543 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-02-07 15:32:44,544 - INFO - Starting scrape for TechCrunch RSS feed: https://techcrunch.com/feed/
+2026-02-07 15:32:44,546 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-02-07 15:32:44,547 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-02-07 15:32:44,549 - INFO - Submitted 7 jobs to thread pool. Waiting up to 300s for completion...
+2026-02-07 15:32:44,630 - INFO - Found 28 articles in BBC RSS feed. Processing until 20 new articles are saved.
+2026-02-07 15:32:44,631 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cd0y0y9z231o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,632 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce8r8y78g10o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,634 - INFO - [BBC] Early skip: URL https://www.bbc.com/sport/articles/czejep5z51wo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,635 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckgl53zll3jo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,637 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q4q7w237yo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,638 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cz6y62nzjxxo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,640 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cq5y5w2z344o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,642 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2e1e7nlegko?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,643 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4glgz2l83vo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,645 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c3686nzexp3o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,646 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cg7y7gz2835o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,648 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy4g3rne4n7o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,649 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c70l0wzww50o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,652 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czx1xl98qkpo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,653 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwy8yw98l2xo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,656 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cd0y0ld39y0o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,657 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c86vz6v07d3o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,659 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cd0y18g8g7ro?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,660 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cvgnq9rwyqno?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,664 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/c0kekn3zmr0o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,665 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cp873z18028o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,667 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1dkd3llw1lo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,668 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c62rexy9y3no?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:44,670 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cj4l415y4dno?at_medium=RSS&at_campaign=rss
+2026-02-07 15:32:44,670 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-07 15:32:44,791 - INFO - Found 45 articles in The Guardian RSS feed. Processing until 20 new articles are saved.
+2026-02-07 15:32:44,792 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/feb/07/businesses-close-protest-malawi-tax-changes-electronic-invoicing-system already exists.
+2026-02-07 15:32:44,793 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/feb/06/weather-tracker-storm-leonardo-europe-portugal-spain-northern-africa already exists.
+2026-02-07 15:32:44,795 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/05/nigeria-sends-troops-to-villages-attacked-by-jihadist-fighters already exists.
+2026-02-07 15:32:44,796 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/04/gunmen-west-nigeria-attack-red-cross already exists.
+2026-02-07 15:32:44,797 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/04/uganda-opposition-leader-bobi-wine-in-hiding-muhoozi-kainerugaba-feud already exists.
+2026-02-07 15:32:44,799 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/feb/07/bermuda-snail-thought-to-be-extinct-now-thrives-after-a-decades-effort already exists.
+2026-02-07 15:32:44,800 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/07/china-overturns-death-sentence-of-canadian-robert-lloyd-schellenberg-in-sign-of-diplomatic-thaw already exists.
+2026-02-07 15:32:44,802 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/06/trump-proclamation-us-imports-argentine-beef already exists.
+2026-02-07 15:32:44,803 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/06/canada-and-france-open-greenland-consulates-in-show-of-denmark-support already exists.
+2026-02-07 15:32:44,805 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/05/trump-cuba-us-talks already exists.
+2026-02-07 15:32:44,806 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/06/wellington-sewage-leak-sea-new-zealand already exists.
+2026-02-07 15:32:44,809 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/06/deaths-japan-record-breaking-snow-winter already exists.
+2026-02-07 15:32:44,810 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/06/sana-mania-grips-japan-as-ultra-conservative-takaichi-expected-to-secure-election-landslide already exists.
+2026-02-07 15:32:44,812 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/05/xi-jinping-donald-trump-phone-call-china-us-taiwan-relationship already exists.
+2026-02-07 15:32:44,813 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/05/china-green-energy-sector-investment-growth already exists.
+2026-02-07 15:32:44,815 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/07/cyclone-intensifies-as-towns-in-north-west-wa-brace-for-winds-flooding already exists.
+2026-02-07 15:32:44,818 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/07/us-social-media-personality-sur-ronster-fined-after-swarm-of-ebike-riders-converges-on-sydney-harbour-bridge already exists.
+2026-02-07 15:32:44,819 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/07/chris-minns-restrict-protest-nsw-police-isaac-herzog-israel-president-visit already exists.
+2026-02-07 15:32:44,822 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/07/take-them-away-crush-them-australia-faces-an-ebike-surge-that-some-say-poses-a-health-emergency already exists.
+2026-02-07 15:32:44,823 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/07/three-dead-after-light-plane-crashes-into-ocean-off-south-australian-beach already exists.
+2026-02-07 15:32:44,829 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/feb/07/volodymyr-zelenskyy-us-june-deadline-ukraine-russia-peace-deal
+2026-02-07 15:32:44,829 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-07 15:32:44,948 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 81 words).
+2026-02-07 15:32:44,949 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cj4l415y4dno?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-02-07 15:32:44,949 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'At the scene of deadly Pakistan mosque explosion ' from BBC has only 21 words (Min: 90).
+2026-02-07 15:32:44,998 - INFO - [The Guardian] Success with 'requests_browser'. Found content (326 words).
+2026-02-07 15:32:45,055 - INFO - Saved article: Zelenskyy says US has set June deadline for Ukraine-Russia peace deal | Ukraine | The Guardian from The Guardian (326 words)
+2026-02-07 15:32:45,599 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/cqxyx2pl1pzo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:45,601 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/c4gvg772vv6o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:45,602 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/c2d7den70j1o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-07 15:32:45,603 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c78e2g00llko?at_medium=RSS&at_campaign=rss
+2026-02-07 15:32:45,604 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-07 15:32:45,666 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/feb/07/brexit-farm-products-sales-eu already exists.
+2026-02-07 15:32:45,668 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/artanddesign/2026/feb/07/ai-analysis-van-eyck-paintings-turin-philadelphia already exists.
+2026-02-07 15:32:45,674 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/07/uk-threatens-to-seize-russia-linked-shadow-fleet-tanker-in-escalatory-move already exists.
+2026-02-07 15:32:45,676 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/07/portugal-polls-antonio-jose-seguro-rivals-unite-to-keep-out-far-right already exists.
+2026-02-07 15:32:45,679 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/07/bbc-persian-journalists-say-iran-monitoring-them-targeting-families already exists.
+2026-02-07 15:32:45,682 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/06/us-iran-talks-oman-nuclear-programme already exists.
+2026-02-07 15:32:45,684 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/06/benghazi-attack-arrest-pam-bondi already exists.
+2026-02-07 15:32:45,685 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2026/feb/06/us-iran-nuclear-talks-oman-live-updates already exists.
+2026-02-07 15:32:45,692 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/uk-news/2026/feb/06/andrew-vouched-for-epstein-on-state-visit-to-uae-with-queen already exists.
+2026-02-07 15:32:45,733 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/07/one-person-dead-from-nipah-virus-in-bangladesh-who-says already exists.
+2026-02-07 15:32:45,735 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/06/bombing-explosion-shia-mosque-pakistan-islamabad already exists.
+2026-02-07 15:32:45,737 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 87 words).
+2026-02-07 15:32:45,737 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c78e2g00llko?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-02-07 15:32:45,737 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: The US and Russia's nuclear treaty is dead. What comes next?' from BBC has only 22 words (Min: 90).
+2026-02-07 15:32:45,737 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/01/pakistan-targets-balochistan-separatists-after-unprecedented-assaults already exists.
+2026-02-07 15:32:45,739 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/01/inside-myanmar-armed-resistance-junta-coup-photo-essay already exists.
+2026-02-07 15:32:45,740 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/sport/2026/jan/30/breakdown-in-cricket-relations-with-bangladesh-rings-alarm-bells-for-indias-olympic-bid already exists.
+2026-02-07 15:32:45,741 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/politics/live/2026/feb/07/keir-starmer-labour-leader-peter-mandelson-latest-news-uk-politics-updates-epstein already exists.
+2026-02-07 15:32:45,742 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/politics/2026/feb/07/reform-run-kent-council-accused-of-fabricating-40m-net-zero-savings already exists.
+2026-02-07 15:32:45,744 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/feb/07/starmer-accused-of-hypocrisy-over-sharp-cuts-to-world-food-programme already exists.
+2026-02-07 15:32:45,745 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/politics/2026/feb/07/lib-dems-chris-rennard-suspended-investigation-sexual-harassment-allegations already exists.
+2026-02-07 15:32:45,746 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/money/2026/feb/07/monzo-natwest-hsbc-refunds-fraud-scam-fos-ombudsman already exists.
+2026-02-07 15:32:45,747 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/07/congress-lead-pipe-funding already exists.
+2026-02-07 15:32:45,748 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/07/epstein-files-global-conspiracy already exists.
+2026-02-07 15:32:45,750 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/07/trump-darin-smith-wyoming-january-6 already exists.
+2026-02-07 15:32:45,751 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2026/feb/07/trump-rising-home-prices-affordability-crisis already exists.
+2026-02-07 15:32:45,752 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/07/florida-driving-tests-english already exists.
+2026-02-07 15:32:46,386 - INFO - Found 0 articles in TechCrunch RSS feed. Processing until 20 new articles are saved.
+2026-02-07 15:32:46,888 - INFO - Selenium driver initialized successfully.
+2026-02-07 15:32:46,888 - INFO - Selenium driver initialized successfully.
+2026-02-07 15:32:46,888 - INFO - Selenium driver initialized successfully.
+2026-02-07 15:32:46,888 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-02-07 15:32:46,889 - INFO - Selenium driver initialized successfully.
+2026-02-07 15:32:46,889 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-02-07 15:32:46,889 - INFO - Starting scrape for Al Jazeera RSS feed: https://www.aljazeera.com/xml/rss/all.xml
+2026-02-07 15:32:46,890 - INFO - Starting scrape for Economic Times RSS feed: https://economictimes.indiatimes.com/rssfeedsdefault.cms
+2026-02-07 15:32:46,968 - INFO - Found 20 articles in Times of India RSS feed. Processing until 20 new articles are saved.
+2026-02-07 15:32:46,969 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/ishowspeed-announces-streaming-break-after-youtube-income-drops-to-800k-a-month/articleshow/128037684.cms
+2026-02-07 15:32:46,969 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:32:47,041 - INFO - Found 76 articles in Economic Times RSS feed. Processing until 20 new articles are saved.
+2026-02-07 15:32:47,042 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/markets/stocks/news/nifty-holds-uptrend-after-volatile-week-but-faces-consolidation-near-highs/articleshow/128031403.cms already exists.
+2026-02-07 15:32:47,046 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/markets/stocks/earnings/sbi-q3-results-profit-jumps-24-yoy-to-rs-21028-crore-nii-rises-9/articleshow/128025957.cms already exists.
+2026-02-07 15:32:47,048 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/markets/stocks/news/vijay-kedia-portfolio-check-7-stocks-slide-up-to-50-2-big-winners-shine-plus-2-fresh-picks/slideshow/128025246.cms already exists.
+2026-02-07 15:32:47,051 - INFO - Found 100 articles in The Hindu RSS feed. Processing until 20 new articles are saved.
+2026-02-07 15:32:47,051 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/markets/expert-view/fo-talk-nifty-crosses-100-dma-but-consolidation-looms-sudeep-shah-highlights-2-rally-triggers/articleshow/128025395.cms already exists.
+2026-02-07 15:32:47,052 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/si-suspended-on-bribery-charges-in-tirupattur/article70604503.ece
+2026-02-07 15:32:47,052 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:32:47,053 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/markets/ipos/fpos/alphabet-backed-aye-finance-raises-rs-454-crore-from-anchor-investors-ahead-of-ipo-goldman-sachs-key-investor/articleshow/128025309.cms already exists.
+2026-02-07 15:32:47,054 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/markets/stocks/news/vijay-kedia-portfolio-check-7-stocks-slide-up-to-50-2-big-winners-shine-plus-2-fresh-picks/portfolio-snapshot/slideshow/128025246.cms already exists.
+2026-02-07 15:32:47,069 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/economy/finance/india-must-boost-capital-markets-so-indians-grow-with-economy-larry-fink-chief-executive-blackrock/articleshow/127918099.cms
+2026-02-07 15:32:47,074 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:32:47,088 - INFO - Found 25 articles in Al Jazeera RSS feed. Processing until 20 new articles are saved.
+2026-02-07 15:32:47,088 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/sports/2026/2/7/carrick-extends-winning-run-as-man-united-beat-10-man-tottenham-2-0?traffic_source=rss
+2026-02-07 15:32:47,089 - INFO - [Al Jazeera] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:32:47,166 - INFO - [Al Jazeera] Success with 'requests_browser'. Found content (718 words).
+2026-02-07 15:32:47,325 - INFO - Saved article: Carrick extends winning run as Man United beat 10-man Tottenham 2-0 | Football News | Al Jazeera from Al Jazeera (718 words)
+2026-02-07 15:32:47,372 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:32:47,372 - ERROR - empty HTML tree: None
+2026-02-07 15:32:47,372 - WARNING - discarding data: None
+2026-02-07 15:32:47,372 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:32:48,022 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/news/2026/2/7/spain-portugal-brace-for-new-storm-after-floods-kill-2-displace-11000?traffic_source=rss already exists.
+2026-02-07 15:32:48,024 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/israel-killed-international-law-in-gaza-official-tells-al-jazeera?traffic_source=rss
+2026-02-07 15:32:48,024 - INFO - [Al Jazeera] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:32:48,079 - WARNING - [Al Jazeera] FAILED with 'requests_browser' (content was too short: 65 words).
+2026-02-07 15:32:48,229 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/economy/finance/india-must-boost-capital-markets-so-indians-grow-with-economy-larry-fink-chief-executive-blackrock/articleshow/127918099.cms
+2026-02-07 15:32:48,229 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:32:48,796 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/israel-killed-international-law-in-gaza-official-tells-al-jazeera?traffic_source=rss
+2026-02-07 15:32:48,796 - INFO - [Al Jazeera] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:32:52,499 - INFO - [Al Jazeera] Page content loaded.
+2026-02-07 15:32:52,961 - WARNING - [Al Jazeera] FAILED with 'selenium_browser' (content was too short: 65 words).
+2026-02-07 15:32:52,961 - ERROR - [Al Jazeera] All scrape strategies failed for https://www.aljazeera.com/video/newsfeed/2026/2/7/israel-killed-international-law-in-gaza-official-tells-al-jazeera?traffic_source=rss. Falling back to RSS description.
+2026-02-07 15:32:52,961 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article '‘Israel killed international law in Gaza’, official tells Al Jazeera' from Al Jazeera has only 15 words (Min: 90).
+2026-02-07 15:32:54,392 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/iranians-react-to-positive-us-iran-talks-in-oman?traffic_source=rss
+2026-02-07 15:32:54,393 - INFO - [Al Jazeera] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:32:54,576 - WARNING - [Al Jazeera] FAILED with 'requests_browser' (content was too short: 51 words).
+2026-02-07 15:32:55,264 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:32:55,340 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/iranians-react-to-positive-us-iran-talks-in-oman?traffic_source=rss
+2026-02-07 15:32:55,340 - INFO - [Al Jazeera] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:32:55,709 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (268 words).
+2026-02-07 15:32:56,069 - INFO - Saved article: SI suspended on bribery charges in Tirupattur - The Hindu from The Hindu (268 words)
+2026-02-07 15:32:57,284 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/resonance-educational-institutions-launches-new-campus-in-kurnool/article70604622.ece
+2026-02-07 15:32:57,284 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:01,825 - INFO - [Al Jazeera] Page content loaded.
+2026-02-07 15:33:02,070 - WARNING - [Al Jazeera] FAILED with 'selenium_browser' (content was too short: 55 words).
+2026-02-07 15:33:02,070 - ERROR - [Al Jazeera] All scrape strategies failed for https://www.aljazeera.com/video/newsfeed/2026/2/7/iranians-react-to-positive-us-iran-talks-in-oman?traffic_source=rss. Falling back to RSS description.
+2026-02-07 15:33:02,071 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Iranians react to ‘positive’ US-Iran talks in Oman' from Al Jazeera has only 18 words (Min: 90).
+2026-02-07 15:33:03,488 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/news/2026/2/7/us-transfers-isil-detainees-to-iraq-as-northeast-syria-base-draws-down?traffic_source=rss already exists.
+2026-02-07 15:33:03,490 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/sports/2026/2/7/liverpool-vs-manchester-city-premier-league-team-news-start?traffic_source=rss already exists.
+2026-02-07 15:33:03,491 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/news/2026/2/7/us-has-given-ukraine-and-russia-june-deadline-to-end-war-zelenskyy?traffic_source=rss already exists.
+2026-02-07 15:33:03,493 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/video/101-east/2026/2/7/dinosaurs-for-sale-is-the-global-fossil-market-harming-science?traffic_source=rss already exists.
+2026-02-07 15:33:03,494 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/news/2026/2/7/deadly-islamabad-bombing-sharpens-focus-on-cross-border-attacks-in-pakistan?traffic_source=rss already exists.
+2026-02-07 15:33:03,497 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/chairman-of-al-jazeera-board-highlights-new-reality-in-the-middle-east?traffic_source=rss
+2026-02-07 15:33:03,497 - INFO - [Al Jazeera] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:33:03,620 - WARNING - [Al Jazeera] FAILED with 'requests_browser' (content was too short: 75 words).
+2026-02-07 15:33:04,381 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/chairman-of-al-jazeera-board-highlights-new-reality-in-the-middle-east?traffic_source=rss
+2026-02-07 15:33:04,381 - INFO - [Al Jazeera] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:06,184 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:06,464 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (286 words).
+2026-02-07 15:33:06,746 - INFO - Saved article: Resonance Educational Institutions launches new campus in Kurnool - The Hindu from The Hindu (286 words)
+2026-02-07 15:33:07,050 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us-streamers/ishowspeed-announces-streaming-break-after-youtube-income-drops-to-800k-a-month/articleshow/128037684.cms: Message: timeout: Timed out receiving message from renderer: 19.640
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+#0 0x560c7b7f1a4a <unknown>
+#1 0x560c7b20a6a2 <unknown>
+#2 0x560c7b1f1d87 <unknown>
+#3 0x560c7b1f1996 <unknown>
+#4 0x560c7b1ef4a1 <unknown>
+#5 0x560c7b1efe2f <unknown>
+#6 0x560c7b1ff360 <unknown>
+#7 0x560c7b219357 <unknown>
+#8 0x560c7b22056b <unknown>
+#9 0x560c7b1f0599 <unknown>
+#10 0x560c7b2190ec <unknown>
+#11 0x560c7b2a8b68 <unknown>
+#12 0x560c7b2518b2 <unknown>
+#13 0x560c7b2526a1 <unknown>
+#14 0x560c7b7b78a9 <unknown>
+#15 0x560c7b7ba7b1 <unknown>
+#16 0x560c7b7a3ea9 <unknown>
+#17 0x560c7b7bb36e <unknown>
+#18 0x560c7b78a410 <unknown>
+#19 0x560c7b7df0c8 <unknown>
+#20 0x560c7b7df29b <unknown>
+#21 0x560c7b7f0db8 <unknown>
+#22 0x7fba52a9caa4 <unknown>
+#23 0x7fba52b29c6c <unknown>
+
+2026-02-07 15:33:07,050 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us-streamers/ishowspeed-announces-streaming-break-after-youtube-income-drops-to-800k-a-month/articleshow/128037684.cms. Falling back to RSS description.
+2026-02-07 15:33:07,050 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'IShowSpeed announces streaming break after YouTube income drops to $800K a month' from Times of India has only 56 words (Min: 90).
+2026-02-07 15:33:07,420 - INFO - [Al Jazeera] Page content loaded.
+2026-02-07 15:33:07,595 - WARNING - [Al Jazeera] FAILED with 'selenium_browser' (content was too short: 79 words).
+2026-02-07 15:33:07,596 - ERROR - [Al Jazeera] All scrape strategies failed for https://www.aljazeera.com/video/newsfeed/2026/2/7/chairman-of-al-jazeera-board-highlights-new-reality-in-the-middle-east?traffic_source=rss. Falling back to RSS description.
+2026-02-07 15:33:07,596 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Chairman of Al Jazeera board highlights ‘new reality’ in the Middle East' from Al Jazeera has only 23 words (Min: 90).
+2026-02-07 15:33:07,762 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/centre-has-significantly-increased-allocations-for-kerala-in-union-budget-nitin-nabin/article70604446.ece
+2026-02-07 15:33:07,762 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:08,121 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/could-mrbeasts-100-million-gamble-transform-east-carolina-into-college-footballs-next-powerhouse/articleshow/128014909.cms
+2026-02-07 15:33:08,121 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:08,168 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/news/2026/2/7/israels-gaza-genocide-risks-global-order-leaders-warn-at-al-jazeera-forum?traffic_source=rss already exists.
+2026-02-07 15:33:08,171 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/sports/2026/2/7/ashraf-leads-pakistan-to-nervy-win-over-netherlands-as-t20-world-cup-begins?traffic_source=rss already exists.
+2026-02-07 15:33:08,173 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/sports/liveblog/2026/2/7/live-india-vs-united-states-t20-world-cup?traffic_source=rss already exists.
+2026-02-07 15:33:08,175 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/sports/liveblog/2026/2/7/live-manchester-united-vs-tottenham-hotspur-premier-league?traffic_source=rss already exists.
+2026-02-07 15:33:08,177 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/what-you-need-to-know-about-portugals-presidential-run-off?traffic_source=rss
+2026-02-07 15:33:08,178 - INFO - [Al Jazeera] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:33:08,293 - WARNING - [Al Jazeera] FAILED with 'requests_browser' (content was too short: 65 words).
+2026-02-07 15:33:08,957 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/what-you-need-to-know-about-portugals-presidential-run-off?traffic_source=rss
+2026-02-07 15:33:08,957 - INFO - [Al Jazeera] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:12,753 - INFO - [Al Jazeera] Page content loaded.
+2026-02-07 15:33:12,919 - WARNING - [Al Jazeera] FAILED with 'selenium_browser' (content was too short: 69 words).
+2026-02-07 15:33:12,920 - ERROR - [Al Jazeera] All scrape strategies failed for https://www.aljazeera.com/video/newsfeed/2026/2/7/what-you-need-to-know-about-portugals-presidential-run-off?traffic_source=rss. Falling back to RSS description.
+2026-02-07 15:33:12,920 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'What you need to know about Portugal’s presidential run-off' from Al Jazeera has only 15 words (Min: 90).
+2026-02-07 15:33:13,847 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/features/2026/2/7/portugal-far-right-presidential-election-historic-victory?traffic_source=rss already exists.
+2026-02-07 15:33:13,853 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/news/2026/2/7/thousands-mourn-32-victims-of-islamabad-shia-mosque-bombing-in-pakistan?traffic_source=rss already exists.
+2026-02-07 15:33:13,855 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/opinions/2026/2/7/india-now-sets-the-terms-of-global-cricket?traffic_source=rss already exists.
+2026-02-07 15:33:13,856 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/news/2026/2/7/france-to-investigate-former-culture-minister-lang-over-epstein-links?traffic_source=rss already exists.
+2026-02-07 15:33:13,859 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/irans-foreign-minister-slams-hypocrisy-over-israeli-military-expansion?traffic_source=rss
+2026-02-07 15:33:13,859 - INFO - [Al Jazeera] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:33:14,072 - WARNING - [Al Jazeera] FAILED with 'requests_browser' (content was too short: 71 words).
+2026-02-07 15:33:14,957 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/irans-foreign-minister-slams-hypocrisy-over-israeli-military-expansion?traffic_source=rss
+2026-02-07 15:33:14,957 - INFO - [Al Jazeera] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:18,256 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:18,526 - INFO - [Al Jazeera] Page content loaded.
+2026-02-07 15:33:18,670 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (414 words).
+2026-02-07 15:33:18,804 - WARNING - [Al Jazeera] FAILED with 'selenium_browser' (content was too short: 75 words).
+2026-02-07 15:33:18,812 - ERROR - [Al Jazeera] All scrape strategies failed for https://www.aljazeera.com/video/newsfeed/2026/2/7/irans-foreign-minister-slams-hypocrisy-over-israeli-military-expansion?traffic_source=rss. Falling back to RSS description.
+2026-02-07 15:33:18,812 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Iran’s foreign minister slams hypocrisy over Israeli military expansion' from Al Jazeera has only 15 words (Min: 90).
+2026-02-07 15:33:18,991 - INFO - Saved article: Centre has significantly increased allocations for Kerala in Union Budget: Nitin Nabin - The Hindu from The Hindu (414 words)
+2026-02-07 15:33:19,067 - INFO - [Times of India] Page content loaded.
+2026-02-07 15:33:19,648 - INFO - [Times of India] Success with 'selenium_browser'. Found content (402 words).
+2026-02-07 15:33:19,826 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/patriotic-fervour-marks-tirupati-book-festival/article70604565.ece
+2026-02-07 15:33:19,826 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:19,997 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/economy/2026/2/7/in-japans-election-voters-hope-for-relief-from-rising-prices?traffic_source=rss already exists.
+2026-02-07 15:33:20,009 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/news/2026/2/7/un-us-condemn-rsf-drone-strikes-on-aid-deliveries-in-famine-hit-sudan?traffic_source=rss already exists.
+2026-02-07 15:33:20,022 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/trump-hails-very-good-iran-talks-but-maintains-threat-of-military-action?traffic_source=rss
+2026-02-07 15:33:20,022 - INFO - [Al Jazeera] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:33:20,072 - INFO - Saved article: Could MrBeast’s $100 million gamble transform East Carolina into college football’s next powerhouse? - The Times of India from Times of India (402 words)
+2026-02-07 15:33:20,107 - WARNING - [Al Jazeera] FAILED with 'requests_browser' (content was too short: 70 words).
+2026-02-07 15:33:20,987 - INFO - [Al Jazeera] Article: https://www.aljazeera.com/video/newsfeed/2026/2/7/trump-hails-very-good-iran-talks-but-maintains-threat-of-military-action?traffic_source=rss
+2026-02-07 15:33:20,987 - INFO - [Al Jazeera] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:21,189 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/his-third-eye-candace-owens-claims-charlie-kirk-believed-he-was-psychic-and-a-time-traveller/articleshow/128015481.cms
+2026-02-07 15:33:21,189 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:21,958 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:22,515 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (213 words).
+2026-02-07 15:33:22,717 - INFO - Saved article: Patriotic fervour marks Tirupati Book Festival - The Hindu from The Hindu (213 words)
+2026-02-07 15:33:23,427 - INFO - [Al Jazeera] Page content loaded.
+2026-02-07 15:33:23,635 - WARNING - [Al Jazeera] FAILED with 'selenium_browser' (content was too short: 74 words).
+2026-02-07 15:33:23,635 - ERROR - [Al Jazeera] All scrape strategies failed for https://www.aljazeera.com/video/newsfeed/2026/2/7/trump-hails-very-good-iran-talks-but-maintains-threat-of-military-action?traffic_source=rss. Falling back to RSS description.
+2026-02-07 15:33:23,635 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Trump hails ‘very good’ Iran talks but maintains threat of military action' from Al Jazeera has only 18 words (Min: 90).
+2026-02-07 15:33:23,725 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/jammu-and-kashmir/manmohan-singh-govts-plan-to-relocate-dal-lake-dwellers-shelved-families-to-stay-on-the-lake/article70604014.ece
+2026-02-07 15:33:23,725 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:24,636 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/features/longform/2026/2/7/vanishing-wildlife-at-egypts-lake-qarun-force-fishermen-to-abandon-trade?traffic_source=rss already exists.
+2026-02-07 15:33:24,637 - INFO - [Al Jazeera] Early skip: URL https://www.aljazeera.com/features/2026/2/7/how-basant-became-lahores-signature-festival-in-pakistan?traffic_source=rss already exists.
+2026-02-07 15:33:24,638 - INFO - [Al Jazeera] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-02-07 15:33:25,123 - INFO - [Al Jazeera] (Thread) driver.quit() successful.
+2026-02-07 15:33:27,757 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:28,143 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (437 words).
+2026-02-07 15:33:28,606 - INFO - Saved article: Manmohan Singh govt.’s plan to relocate Dal Lake dwellers shelved; families to stay on the lake - The Hindu from The Hindu (437 words)
+2026-02-07 15:33:29,264 - ERROR - [Economic Times] Request failed for strategy 'selenium_browser' on URL https://economictimes.indiatimes.com/news/economy/finance/india-must-boost-capital-markets-so-indians-grow-with-economy-larry-fink-chief-executive-blackrock/articleshow/127918099.cms: Message: timeout: Timed out receiving message from renderer: 19.684
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+#0 0x56523190ca4a <unknown>
+#1 0x5652313256a2 <unknown>
+#2 0x56523130cd87 <unknown>
+#3 0x56523130c996 <unknown>
+#4 0x56523130a4a1 <unknown>
+#5 0x56523130ae2f <unknown>
+#6 0x56523131a360 <unknown>
+#7 0x565231334357 <unknown>
+#8 0x56523133b56b <unknown>
+#9 0x56523130b599 <unknown>
+#10 0x5652313340ec <unknown>
+#11 0x5652313c3b68 <unknown>
+#12 0x56523136c8b2 <unknown>
+#13 0x56523136d6a1 <unknown>
+#14 0x5652318d28a9 <unknown>
+#15 0x5652318d57b1 <unknown>
+#16 0x5652318beea9 <unknown>
+#17 0x5652318d636e <unknown>
+#18 0x5652318a5410 <unknown>
+#19 0x5652318fa0c8 <unknown>
+#20 0x5652318fa29b <unknown>
+#21 0x56523190bdb8 <unknown>
+#22 0x7fb74829caa4 <unknown>
+#23 0x7fb748329c6c <unknown>
+
+2026-02-07 15:33:29,264 - ERROR - [Economic Times] All scrape strategies failed for https://economictimes.indiatimes.com/news/economy/finance/india-must-boost-capital-markets-so-indians-grow-with-economy-larry-fink-chief-executive-blackrock/articleshow/127918099.cms. Falling back to RSS description.
+2026-02-07 15:33:29,264 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'India must boost capital markets so Indians grow with economy: Larry Fink, chief executive, BlackRock ' from Economic Times has only 52 words (Min: 90).
+2026-02-07 15:33:29,438 - INFO - [Times of India] Page content loaded.
+2026-02-07 15:33:29,785 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Coimbatore/sustainable-urbanisation-and-better-municipal-governance-needed-to-fuel-growth-in-india/article70604627.ece
+2026-02-07 15:33:29,785 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:30,279 - INFO - [Times of India] Success with 'selenium_browser'. Found content (436 words).
+2026-02-07 15:33:30,706 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/economy/indicators/cbdt-chief-says-88-pc-of-individual-taxpayers-have-opted-for-new-tax-regime/articleshow/127912277.cms already exists.
+2026-02-07 15:33:30,712 - INFO - Saved article: “His third eye…”: Candace Owens claims Charlie Kirk believed he was psychic and a time traveller - The Times of India from Times of India (436 words)
+2026-02-07 15:33:30,720 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/economy/agriculture/how-india-is-likely-to-shield-its-farmers-in-us-trade-deal/articleshow/127911195.cms already exists.
+2026-02-07 15:33:30,723 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/economy/policy/tight-fiscal-room-wont-affect-infra-creation-capex-expenditure-secy/articleshow/127870456.cms already exists.
+2026-02-07 15:33:30,725 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/economy/policy/manufacturing-push-key-to-strong-rupee-in-long-run-cea-anantha-nageswaran/articleshow/127870404.cms already exists.
+2026-02-07 15:33:30,729 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/economy/finance/dipam-secretary-rs-80000-crore-target-high-but-achievable/articleshow/127870363.cms already exists.
+2026-02-07 15:33:30,730 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/tech/technology/apple-faces-indian-engineers-bias-lawsuit/articleshow/81694292.cms already exists.
+2026-02-07 15:33:30,733 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/defence/despite-transatlantic-love-fest-eu-charts-third-way-in-ties-with-us-and-china/articleshow/81467467.cms already exists.
+2026-02-07 15:33:30,734 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/tech/tech-bytes/twitters-india-policy-head-to-step-down-will-transition-in-march/articleshow/80732868.cms already exists.
+2026-02-07 15:33:30,740 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/tech/tech-and-gadgets/govt-may-keep-rs-7500-cr-outlay-for-it-hardware-manufacturing-under-pli-scheme/articleshow/80333429.cms already exists.
+2026-02-07 15:33:30,744 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/tech/technology/indian-dating-apps-services-see-surge-of-paying-users-in-small-cities/articleshow/80063342.cms
+2026-02-07 15:33:30,744 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:33:30,996 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:33:30,996 - ERROR - empty HTML tree: None
+2026-02-07 15:33:30,997 - WARNING - discarding data: None
+2026-02-07 15:33:30,997 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:33:31,867 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:31,916 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (316 words).
+2026-02-07 15:33:31,940 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/tech/technology/indian-dating-apps-services-see-surge-of-paying-users-in-small-cities/articleshow/80063342.cms
+2026-02-07 15:33:31,946 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:32,013 - INFO - Saved article: ‘Sustainable urbanisation and better municipal governance needed to fuel growth in India’ - The Hindu from The Hindu (316 words)
+2026-02-07 15:33:32,104 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/only-complaining-when-its-indians-row-over-dinesh-dsouza-calling-trumps-racist-ai-video-on-obama-harmless/articleshow/128035804.cms
+2026-02-07 15:33:32,104 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:33,119 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/ten-years-of-brs-loot-will-be-etched-in-states-annals-cm-revanth-reddy/article70604728.ece
+2026-02-07 15:33:33,119 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:37,909 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:38,250 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (408 words).
+2026-02-07 15:33:38,793 - INFO - Saved article: Ten years of BRS loot will be etched in State’s annals: CM Revanth Reddy - The Hindu from The Hindu (408 words)
+2026-02-07 15:33:39,469 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tripura-tourist-missing-in-nagaland-found-dead/article70604308.ece
+2026-02-07 15:33:39,469 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:41,321 - INFO - [Times of India] Page content loaded.
+2026-02-07 15:33:41,885 - INFO - [Times of India] Success with 'selenium_browser'. Found content (338 words).
+2026-02-07 15:33:42,250 - INFO - Saved article: 'Only complaining when it’s Indians': Row over Dinesh D’Souza calling Trump’s ‘racist’ AI video on Obama ‘harmless’ - The Times of India from Times of India (338 words)
+2026-02-07 15:33:42,467 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:42,929 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (240 words).
+2026-02-07 15:33:43,052 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/the-goat-job-texas-hires-300-goats-to-clear-invasive-shrubs-in-a-unique-ecological-move/articleshow/128035705.cms
+2026-02-07 15:33:43,052 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:43,198 - INFO - Saved article: Tripura tourist missing in Nagaland found dead - The Hindu from The Hindu (240 words)
+2026-02-07 15:33:44,434 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/traffic-restrictions-announced-for-kattamaisamma-jathara-in-suraram/article70604532.ece
+2026-02-07 15:33:44,434 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:45,890 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:33:46,392 - WARNING - [Economic Times] FAILED with 'selenium_browser' (content was too short: 84 words).
+2026-02-07 15:33:46,392 - ERROR - [Economic Times] All scrape strategies failed for https://economictimes.indiatimes.com/tech/technology/indian-dating-apps-services-see-surge-of-paying-users-in-small-cities/articleshow/80063342.cms. Falling back to RSS description.
+2026-02-07 15:33:46,392 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Indian dating apps, services see surge of paying users in small cities ' from Economic Times has only 54 words (Min: 90).
+2026-02-07 15:33:47,585 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/tech/technology/time-for-govt-cos-to-adopt-ai-deloitte-india/articleshow/79981215.cms
+2026-02-07 15:33:47,585 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:33:47,919 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:33:47,919 - ERROR - empty HTML tree: None
+2026-02-07 15:33:47,919 - WARNING - discarding data: None
+2026-02-07 15:33:47,919 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:33:48,594 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/tech/technology/time-for-govt-cos-to-adopt-ai-deloitte-india/articleshow/79981215.cms
+2026-02-07 15:33:48,594 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:50,177 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:50,339 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (187 words).
+2026-02-07 15:33:50,797 - INFO - Saved article: Traffic restrictions announced for Kattamaisamma Jathara in Suraram - The Hindu from The Hindu (187 words)
+2026-02-07 15:33:51,311 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:33:51,409 - WARNING - [Economic Times] FAILED with 'selenium_browser' (content was too short: 74 words).
+2026-02-07 15:33:51,409 - ERROR - [Economic Times] All scrape strategies failed for https://economictimes.indiatimes.com/tech/technology/time-for-govt-cos-to-adopt-ai-deloitte-india/articleshow/79981215.cms. Falling back to RSS description.
+2026-02-07 15:33:51,409 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Time for government, companies to adopt artificial intelligence: Deloitte India ' from Economic Times has only 49 words (Min: 90).
+2026-02-07 15:33:51,622 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/muslim-jamaat-urges-political-parties-to-reorganise-districts/article70604709.ece
+2026-02-07 15:33:51,622 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:52,075 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/international/business/from-pixar-to-disney-the-100-billion-blueprint-behind-bob-igers-disney/articleshow/127917649.cms already exists.
+2026-02-07 15:33:52,077 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/international/world-news/thousands-evacuated-as-storm-hits-spain-portugal/articleshow/127913957.cms already exists.
+2026-02-07 15:33:52,078 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/international/world-news/bangladesh-jamaat-chief-compares-working-women-with-prostitute-deletes-x-post/articleshow/127826769.cms already exists.
+2026-02-07 15:33:52,081 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/international/business/after-danone-nestle-french-co-recalls-batches-of-baby-formula/articleshow/127570681.cms already exists.
+2026-02-07 15:33:52,084 - INFO - [Economic Times] Early skip: URL https://economictimes.indiatimes.com/news/new-updates/uae-gives-a-big-jolt-to-pakistan-abu-dhabi-pulls-out-of-islamabad-airport-project-days-after-president-nahyans-sudden-visit-to-india/articleshow/127540624.cms already exists.
+2026-02-07 15:33:52,086 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/international/business/china-allows-alibaba-others-to-prep-nvidia-orders/articleshow/127322202.cms
+2026-02-07 15:33:52,086 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:33:52,387 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:33:52,387 - ERROR - empty HTML tree: None
+2026-02-07 15:33:52,387 - WARNING - discarding data: None
+2026-02-07 15:33:52,387 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:33:52,720 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:33:52,823 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (173 words).
+2026-02-07 15:33:52,925 - INFO - Saved article: Muslim Jamaat urges political parties to reorganise districts - The Hindu from The Hindu (173 words)
+2026-02-07 15:33:53,280 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/international/business/china-allows-alibaba-others-to-prep-nvidia-orders/articleshow/127322202.cms
+2026-02-07 15:33:53,281 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:54,173 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Hyderabad/cyberabad-police-announces-1-lakh-accidental-insurance-cover-for-traffic-marshals/article70604591.ece
+2026-02-07 15:33:54,173 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:33:58,503 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:33:58,665 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (232 words).
+2026-02-07 15:33:58,919 - INFO - Saved article: China allows Alibaba, others to prep Nvidia orders - The Economic Times from Economic Times (232 words)
+2026-02-07 15:33:59,810 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/assembly-elections/bihar/rare-intensive-revision-in-bihar-four-months-before-polls/articleshow/122167501.cms
+2026-02-07 15:33:59,810 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:34:00,290 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:34:00,290 - ERROR - empty HTML tree: None
+2026-02-07 15:34:00,290 - WARNING - discarding data: None
+2026-02-07 15:34:00,292 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:34:00,909 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/assembly-elections/bihar/rare-intensive-revision-in-bihar-four-months-before-polls/articleshow/122167501.cms
+2026-02-07 15:34:00,909 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:03,120 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/the-goat-job-texas-hires-300-goats-to-clear-invasive-shrubs-in-a-unique-ecological-move/articleshow/128035705.cms: Message: timeout: Timed out receiving message from renderer: 19.865
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+#0 0x560c7b7f1a4a <unknown>
+#1 0x560c7b20a6a2 <unknown>
+#2 0x560c7b1f1d87 <unknown>
+#3 0x560c7b1f1996 <unknown>
+#4 0x560c7b1ef4a1 <unknown>
+#5 0x560c7b1efe2f <unknown>
+#6 0x560c7b1ff360 <unknown>
+#7 0x560c7b219357 <unknown>
+#8 0x560c7b22056b <unknown>
+#9 0x560c7b1f0599 <unknown>
+#10 0x560c7b2190ec <unknown>
+#11 0x560c7b2a8b68 <unknown>
+#12 0x560c7b2518b2 <unknown>
+#13 0x560c7b2526a1 <unknown>
+#14 0x560c7b7b78a9 <unknown>
+#15 0x560c7b7ba7b1 <unknown>
+#16 0x560c7b7a3ea9 <unknown>
+#17 0x560c7b7bb36e <unknown>
+#18 0x560c7b78a410 <unknown>
+#19 0x560c7b7df0c8 <unknown>
+#20 0x560c7b7df29b <unknown>
+#21 0x560c7b7f0db8 <unknown>
+#22 0x7fba52a9caa4 <unknown>
+#23 0x7fba52b29c6c <unknown>
+
+2026-02-07 15:34:03,120 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/the-goat-job-texas-hires-300-goats-to-clear-invasive-shrubs-in-a-unique-ecological-move/articleshow/128035705.cms. Falling back to RSS description.
+2026-02-07 15:34:03,121 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'The GOAT job: Texas hires 300 goats to clear invasive shrubs in a unique ecological move' from Times of India has only 53 words (Min: 90).
+2026-02-07 15:34:03,676 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/indian-origin-woman-fined-over-rs-2-lakh-for-feeding-pigeons-in-singapore-says-she-is-unemployed-will-do-community-service/articleshow/128032897.cms already exists.
+2026-02-07 15:34:03,677 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/watch-jd-vance-booed-at-olympics-amid-tensions-over-trump-immigration-policies/articleshow/128034107.cms already exists.
+2026-02-07 15:34:03,680 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/slipped-on-ice-and-got-paid-indian-influencer-claims-icy-driveway-falls-in-canada-can-bring-40000-is-it-true/articleshow/128032966.cms already exists.
+2026-02-07 15:34:03,683 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/knowledge-matters-bill-maher-slams-billie-eilishs-stolen-land-remark-during-anti-ice-grammy-speech/articleshow/128033618.cms already exists.
+2026-02-07 15:34:03,685 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/keeping-indian-wife-happy-row-over-republican-congressman-saying-texans-go-to-malls-and-feel-like-theyre-in-pakistan/articleshow/128030754.cms already exists.
+2026-02-07 15:34:03,688 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/islam-is-a-religion-built-on-migration-nyc-mayor-mamdani-invokes-prophet-muhammads-hijrah-while-speaking-on-immigration/articleshow/128023088.cms already exists.
+2026-02-07 15:34:03,690 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/sheikh-mohammed-to-honour-sixth-arab-hope-makers-winners-with-dh1-million-prize-on-february-15/articleshow/128030025.cms already exists.
+2026-02-07 15:34:03,692 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/uae-launches-public-security-reporting-service-ssd-what-it-is-and-how-it-works-explained/articleshow/128026924.cms already exists.
+2026-02-07 15:34:03,693 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/north-korea-executes-teens-for-watching-squid-game-and-listening-to-k-pop/articleshow/128027845.cms already exists.
+2026-02-07 15:34:03,695 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/uae-warns-citizens-in-spain-as-storm-leonardo-triggers-floods-and-evacuations/articleshow/128027075.cms already exists.
+2026-02-07 15:34:03,696 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/uae-education-reform-2026-english-mandatory-for-mathematics-and-science-in-private-schools/articleshow/128025418.cms already exists.
+2026-02-07 15:34:03,699 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/uae-makes-historic-winter-olympics-debut-at-milan-cortina-2026/articleshow/128022596.cms already exists.
+2026-02-07 15:34:03,700 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/uae-weather-forecast-morning-mist-humidity-and-rain-expected-this-week/articleshow/128019175.cms already exists.
+2026-02-07 15:34:03,704 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/consequences-are-very-steep-trump-gives-update-on-us-iran-talks-follows-it-with-stark-warning/articleshow/128018594.cms already exists.
+2026-02-07 15:34:03,705 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/harvard-is-woke-we-are-not-us-to-cut-ties-end-military-training-and-fellowships-with-ivy-league-giant/articleshow/128016949.cms already exists.
+2026-02-07 15:34:03,707 - INFO - [Times of India] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-02-07 15:34:03,969 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:04,067 - INFO - [Times of India] (Thread) driver.quit() successful.
+2026-02-07 15:34:04,119 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (192 words).
+2026-02-07 15:34:04,238 - INFO - Saved article: Cyberabad Police announces ₹1 lakh accidental insurance cover for traffic marshals - The Hindu from The Hindu (192 words)
+2026-02-07 15:34:05,734 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/five-chairpersons-from-kalaburagi-district-accorded-cabinet-rank/article70604632.ece
+2026-02-07 15:34:05,734 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:06,592 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:06,636 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (162 words).
+2026-02-07 15:34:06,731 - INFO - Saved article: Five chairpersons from Kalaburagi district accorded Cabinet rank - The Hindu from The Hindu (162 words)
+2026-02-07 15:34:07,646 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/ttds-new-executive-officer-reviews-pilgrim-facilities/article70604127.ece
+2026-02-07 15:34:07,647 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:11,476 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:11,809 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (198 words).
+2026-02-07 15:34:12,143 - INFO - Saved article: TTD’s new Executive Officer reviews pilgrim facilities - The Hindu from The Hindu (198 words)
+2026-02-07 15:34:13,022 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Hyderabad/from-deccan-dynasties-to-economic-reforms-history-literature-festival-explores-past-politics-and-performance/article70604413.ece
+2026-02-07 15:34:13,022 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:15,056 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:15,135 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (468 words).
+2026-02-07 15:34:15,278 - INFO - Saved article: From Deccan dynasties to economic reforms: History Literature Festival explores past, politics and performance - The Hindu from The Hindu (468 words)
+2026-02-07 15:34:16,049 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/owaisi-urges-muslims-to-cultivate-political-leadership-ahead-of-telangana-polls/article70604553.ece
+2026-02-07 15:34:16,049 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:17,135 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:17,316 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (359 words).
+2026-02-07 15:34:17,465 - INFO - Saved article: Owaisi urges Muslims to cultivate political leadership ahead of Telangana polls - The Hindu from The Hindu (359 words)
+2026-02-07 15:34:18,612 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/budget-quest-aims-at-empowering-youth-participation-in-nation-building/article70604401.ece
+2026-02-07 15:34:18,612 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:19,434 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:19,483 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (179 words).
+2026-02-07 15:34:19,577 - INFO - Saved article: ‘Budget Quest’ aims at empowering youth participation in nation-building - The Hindu from The Hindu (179 words)
+2026-02-07 15:34:20,212 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/polavaram-project-to-be-completed-on-schedule-says-ppa-ceo/article70604408.ece
+2026-02-07 15:34:20,213 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:20,997 - ERROR - [Economic Times] Request failed for strategy 'selenium_browser' on URL https://economictimes.indiatimes.com/news/elections/assembly-elections/bihar/rare-intensive-revision-in-bihar-four-months-before-polls/articleshow/122167501.cms: Message: timeout: Timed out receiving message from renderer: 16.763
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+#0 0x56523190ca4a <unknown>
+#1 0x5652313256a2 <unknown>
+#2 0x56523130cd87 <unknown>
+#3 0x56523130c996 <unknown>
+#4 0x56523130a4a1 <unknown>
+#5 0x56523130ae2f <unknown>
+#6 0x56523131a360 <unknown>
+#7 0x565231334357 <unknown>
+#8 0x56523133b56b <unknown>
+#9 0x56523130b599 <unknown>
+#10 0x5652313340ec <unknown>
+#11 0x5652313c3b68 <unknown>
+#12 0x56523136c8b2 <unknown>
+#13 0x56523136d6a1 <unknown>
+#14 0x5652318d28a9 <unknown>
+#15 0x5652318d57b1 <unknown>
+#16 0x5652318beea9 <unknown>
+#17 0x5652318d636e <unknown>
+#18 0x5652318a5410 <unknown>
+#19 0x5652318fa0c8 <unknown>
+#20 0x5652318fa29b <unknown>
+#21 0x56523190bdb8 <unknown>
+#22 0x7fb74829caa4 <unknown>
+#23 0x7fb748329c6c <unknown>
+
+2026-02-07 15:34:20,997 - ERROR - [Economic Times] All scrape strategies failed for https://economictimes.indiatimes.com/news/elections/assembly-elections/bihar/rare-intensive-revision-in-bihar-four-months-before-polls/articleshow/122167501.cms. Falling back to RSS description.
+2026-02-07 15:34:20,997 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Rare 'intensive' revision in Bihar four months before polls ' from Economic Times has only 52 words (Min: 90).
+2026-02-07 15:34:21,571 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:21,766 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (223 words).
+2026-02-07 15:34:21,847 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/assembly-elections/delhi/bjp-accuses-kejriwal-of-sending-voters-hoax-calls-to-mislead/articleshow/117579007.cms
+2026-02-07 15:34:21,852 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:34:21,856 - INFO - Saved article: Polavaram project to be completed on schedule, says PPA CEO - The Hindu from The Hindu (223 words)
+2026-02-07 15:34:22,233 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:34:22,233 - ERROR - empty HTML tree: None
+2026-02-07 15:34:22,233 - WARNING - discarding data: None
+2026-02-07 15:34:22,234 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:34:22,384 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/amaravati-quantum-valley-a-game-changing-initiative-says-andhra-pradesh-chief-minister-chandrababu-naidu/article70604241.ece
+2026-02-07 15:34:22,384 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:23,179 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/assembly-elections/delhi/bjp-accuses-kejriwal-of-sending-voters-hoax-calls-to-mislead/articleshow/117579007.cms
+2026-02-07 15:34:23,179 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:23,540 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:23,716 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (490 words).
+2026-02-07 15:34:23,942 - INFO - Saved article: Amaravati Quantum Valley a game-changing initiative, says Andhra Pradesh Chief Minister Chandrababu Naidu - The Hindu from The Hindu (490 words)
+2026-02-07 15:34:24,828 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/water-management-strategies-required-to-increase-farm-productivity-vit-chancellor/article70604483.ece
+2026-02-07 15:34:24,828 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:26,483 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:26,760 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (312 words).
+2026-02-07 15:34:26,929 - INFO - Saved article: Water management strategies required to increase farm productivity: VIT chancellor - The Hindu from The Hindu (312 words)
+2026-02-07 15:34:28,138 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/hydraa-chief-interacts-with-complainants-during-first-phone-in-programme/article70604366.ece
+2026-02-07 15:34:28,138 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:29,715 - INFO - [The Hindu] Page content loaded.
+2026-02-07 15:34:29,776 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:34:30,035 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (398 words).
+2026-02-07 15:34:30,361 - INFO - Saved article: HYDRAA chief interacts with complainants during first phone-in programme - The Hindu from The Hindu (398 words)
+2026-02-07 15:34:30,372 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (550 words).
+2026-02-07 15:34:30,509 - INFO - Saved article: BJP accuses Kejriwal of sending voters hoax calls to mislead - The Economic Times from Economic Times (550 words)
+2026-02-07 15:34:31,710 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/lok-sabha/india/lok-sabha-election-2024-maharashtra-get-interesting-after-splits-in-shiv-sena-ncp/articleshow/108559788.cms
+2026-02-07 15:34:31,710 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:34:31,791 - INFO - [The Hindu] Target reached: Successfully saved 20 new articles.
+2026-02-07 15:34:31,792 - INFO - [The Hindu] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-02-07 15:34:31,999 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:34:32,003 - ERROR - empty HTML tree: None
+2026-02-07 15:34:32,003 - WARNING - discarding data: None
+2026-02-07 15:34:32,003 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:34:32,068 - INFO - [The Hindu] (Thread) driver.quit() successful.
+2026-02-07 15:34:32,536 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/lok-sabha/india/lok-sabha-election-2024-maharashtra-get-interesting-after-splits-in-shiv-sena-ncp/articleshow/108559788.cms
+2026-02-07 15:34:32,536 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:36,185 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:34:36,348 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (1442 words).
+2026-02-07 15:34:36,603 - INFO - Saved article: Lok Sabha election 2024: Maharashtra get interesting after splits in Shiv Sena, NCP - The Economic Times from Economic Times (1442 words)
+2026-02-07 15:34:37,649 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/lok-sabha/india/modi-charisma-key-factor-in-bjps-bid-to-retain-all-26-seats-in-gujarat/articleshow/108550858.cms
+2026-02-07 15:34:37,649 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:34:37,956 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:34:37,956 - ERROR - empty HTML tree: None
+2026-02-07 15:34:37,956 - WARNING - discarding data: None
+2026-02-07 15:34:37,957 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:34:38,751 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/lok-sabha/india/modi-charisma-key-factor-in-bjps-bid-to-retain-all-26-seats-in-gujarat/articleshow/108550858.cms
+2026-02-07 15:34:38,751 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:42,579 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:34:42,777 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (392 words).
+2026-02-07 15:34:42,849 - INFO - Saved article: Modi charisma key factor in BJP's bid to retain all 26 seats in Gujarat - The Economic Times from Economic Times (392 words)
+2026-02-07 15:34:43,536 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/lok-sabha/india/implementation-of-guarantees-decline-of-brs-favour-congress-in-telangana-bjp-aiming-for-better-show/articleshow/108548569.cms
+2026-02-07 15:34:43,537 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:34:43,806 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:34:43,806 - ERROR - empty HTML tree: None
+2026-02-07 15:34:43,806 - WARNING - discarding data: None
+2026-02-07 15:34:43,806 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:34:44,416 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/lok-sabha/india/implementation-of-guarantees-decline-of-brs-favour-congress-in-telangana-bjp-aiming-for-better-show/articleshow/108548569.cms
+2026-02-07 15:34:44,416 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:47,488 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:34:47,640 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (610 words).
+2026-02-07 15:34:47,705 - INFO - Saved article: Implementation of 'guarantees', decline of BRS favour Congress in Telangana, BJP aiming for better show - The Economic Times from Economic Times (610 words)
+2026-02-07 15:34:48,756 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/lok-sabha/india/kavitha-arrest-before-polls-may-hit-brs-morale-hasten-desertions-party-calls-for-protests-tomorrow/articleshow/108531509.cms
+2026-02-07 15:34:48,756 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:34:49,236 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:34:49,236 - ERROR - empty HTML tree: None
+2026-02-07 15:34:49,236 - WARNING - discarding data: None
+2026-02-07 15:34:49,236 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:34:50,206 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/elections/lok-sabha/india/kavitha-arrest-before-polls-may-hit-brs-morale-hasten-desertions-party-calls-for-protests-tomorrow/articleshow/108531509.cms
+2026-02-07 15:34:50,206 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:53,397 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:34:53,701 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (844 words).
+2026-02-07 15:34:53,762 - INFO - Saved article: Kavitha arrest before polls may hit BRS morale, hasten desertions; party calls for protests tomorrow - The Economic Times from Economic Times (844 words)
+2026-02-07 15:34:55,175 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/traders-bet-on-calendar-spread-as-nifty-moves-in-a-tight-range/articleshow/6302358.cms
+2026-02-07 15:34:55,175 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:34:55,456 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:34:55,456 - ERROR - empty HTML tree: None
+2026-02-07 15:34:55,456 - WARNING - discarding data: None
+2026-02-07 15:34:55,456 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:34:55,974 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/traders-bet-on-calendar-spread-as-nifty-moves-in-a-tight-range/articleshow/6302358.cms
+2026-02-07 15:34:55,974 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:34:58,151 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:34:58,556 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (411 words).
+2026-02-07 15:34:58,679 - INFO - Saved article: Traders bet on calendar spread as Nifty moves in a tight range - The Economic Times from Economic Times (411 words)
+2026-02-07 15:34:59,559 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/nifty-may-find-support-at-5300-level/articleshow/6296017.cms
+2026-02-07 15:34:59,559 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:34:59,878 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:34:59,878 - ERROR - empty HTML tree: None
+2026-02-07 15:34:59,878 - WARNING - discarding data: None
+2026-02-07 15:34:59,878 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:00,641 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/nifty-may-find-support-at-5300-level/articleshow/6296017.cms
+2026-02-07 15:35:00,641 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:04,038 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:04,207 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (411 words).
+2026-02-07 15:35:04,308 - INFO - Saved article: Nifty may find support at 5300 level - The Economic Times from Economic Times (411 words)
+2026-02-07 15:35:04,903 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/seven-out-of-top-10-asian-small-cap-funds-are-indian/articleshow/6295976.cms
+2026-02-07 15:35:04,903 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:05,267 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:05,268 - ERROR - empty HTML tree: None
+2026-02-07 15:35:05,268 - WARNING - discarding data: None
+2026-02-07 15:35:05,268 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:05,945 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/seven-out-of-top-10-asian-small-cap-funds-are-indian/articleshow/6295976.cms
+2026-02-07 15:35:05,945 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:09,353 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:09,558 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (607 words).
+2026-02-07 15:35:09,683 - INFO - Saved article: Seven out of top 10 Asian small-cap funds are Indian - The Economic Times from Economic Times (607 words)
+2026-02-07 15:35:10,727 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/inflation-reflects-growth-dynamics-in-india-christopher-wood/articleshow/6274053.cms
+2026-02-07 15:35:10,727 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:11,016 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:11,016 - ERROR - empty HTML tree: None
+2026-02-07 15:35:11,016 - WARNING - discarding data: None
+2026-02-07 15:35:11,016 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:11,655 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/inflation-reflects-growth-dynamics-in-india-christopher-wood/articleshow/6274053.cms
+2026-02-07 15:35:11,656 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:15,862 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:16,009 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (4520 words).
+2026-02-07 15:35:16,120 - INFO - Saved article: Inflation reflects growth dynamics in India: Christopher Wood - The Economic Times from Economic Times (4520 words)
+2026-02-07 15:35:17,226 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/market-may-trade-in-a-range-but-fiis-seen-sold-on-india/articleshow/6277705.cms
+2026-02-07 15:35:17,226 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:17,596 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:17,596 - ERROR - empty HTML tree: None
+2026-02-07 15:35:17,596 - WARNING - discarding data: None
+2026-02-07 15:35:17,596 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:18,107 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/market-may-trade-in-a-range-but-fiis-seen-sold-on-india/articleshow/6277705.cms
+2026-02-07 15:35:18,107 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:21,525 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:21,717 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (432 words).
+2026-02-07 15:35:21,816 - INFO - Saved article: Market may trade in a range, but FIIs seen sold on India - The Economic Times from Economic Times (432 words)
+2026-02-07 15:35:22,980 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/dont-bank-only-on-price-to-earning-ratio/articleshow/6278228.cms
+2026-02-07 15:35:22,980 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:23,294 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:23,294 - ERROR - empty HTML tree: None
+2026-02-07 15:35:23,294 - WARNING - discarding data: None
+2026-02-07 15:35:23,294 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:23,938 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/dont-bank-only-on-price-to-earning-ratio/articleshow/6278228.cms
+2026-02-07 15:35:23,938 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:27,216 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:27,403 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (447 words).
+2026-02-07 15:35:27,688 - INFO - Saved article: 'Don't bank only on price-to-earning ratio' - The Economic Times from Economic Times (447 words)
+2026-02-07 15:35:28,778 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/recos/prabhudas-lilladher-has-a-reduce-rating-on-infosys/articleshow/3798718.cms
+2026-02-07 15:35:28,778 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:29,116 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:29,116 - ERROR - empty HTML tree: None
+2026-02-07 15:35:29,116 - WARNING - discarding data: None
+2026-02-07 15:35:29,116 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:29,890 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/recos/prabhudas-lilladher-has-a-reduce-rating-on-infosys/articleshow/3798718.cms
+2026-02-07 15:35:29,890 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:31,834 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:32,101 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (259 words).
+2026-02-07 15:35:32,224 - INFO - Saved article: Prabhudas Lilladher has a ‘reduce’ rating on Infosys - The Economic Times from Economic Times (259 words)
+2026-02-07 15:35:32,981 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/recos/fin-crisis-too-late-and-too-little-done-in-us/articleshow/3794549.cms
+2026-02-07 15:35:32,981 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:33,358 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:33,359 - ERROR - empty HTML tree: None
+2026-02-07 15:35:33,359 - WARNING - discarding data: None
+2026-02-07 15:35:33,359 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:34,141 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/recos/fin-crisis-too-late-and-too-little-done-in-us/articleshow/3794549.cms
+2026-02-07 15:35:34,141 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:37,062 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:37,245 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (452 words).
+2026-02-07 15:35:37,341 - INFO - Saved article: Fin Crisis: Too late and too little done in US - The Economic Times from Economic Times (452 words)
+2026-02-07 15:35:38,798 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/forex/weak-rupee-takes-its-toll-on-cos-with-huge-foreign-debt/articleshow/3546158.cms
+2026-02-07 15:35:38,798 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:39,084 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:39,084 - ERROR - empty HTML tree: None
+2026-02-07 15:35:39,084 - WARNING - discarding data: None
+2026-02-07 15:35:39,084 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:39,954 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/forex/weak-rupee-takes-its-toll-on-cos-with-huge-foreign-debt/articleshow/3546158.cms
+2026-02-07 15:35:39,954 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:43,096 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:43,361 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (482 words).
+2026-02-07 15:35:43,476 - INFO - Saved article: Weak rupee takes its toll on cos with huge foreign debt - The Economic Times from Economic Times (482 words)
+2026-02-07 15:35:44,301 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/recos/wait-for-more-signals-before-turning-positive/articleshow/3292640.cms
+2026-02-07 15:35:44,301 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:44,834 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:44,834 - ERROR - empty HTML tree: None
+2026-02-07 15:35:44,834 - WARNING - discarding data: None
+2026-02-07 15:35:44,834 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:45,548 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/recos/wait-for-more-signals-before-turning-positive/articleshow/3292640.cms
+2026-02-07 15:35:45,549 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:48,593 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:48,777 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (392 words).
+2026-02-07 15:35:48,871 - INFO - Saved article: Wait for more signals before turning positive - The Economic Times from Economic Times (392 words)
+2026-02-07 15:35:49,511 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/company/corporate-trends/six-indian-cos-among-businessweeks-top-100-infotech-firms/articleshow/3189334.cms
+2026-02-07 15:35:49,511 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:49,838 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:49,838 - ERROR - empty HTML tree: None
+2026-02-07 15:35:49,838 - WARNING - discarding data: None
+2026-02-07 15:35:49,838 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:50,534 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/company/corporate-trends/six-indian-cos-among-businessweeks-top-100-infotech-firms/articleshow/3189334.cms
+2026-02-07 15:35:50,535 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:35:55,448 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:35:55,625 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (370 words).
+2026-02-07 15:35:55,687 - INFO - Saved article: Six Indian cos among BusinessWeek's top 100 Infotech firms - The Economic Times from Economic Times (370 words)
+2026-02-07 15:35:57,090 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/company/corporate-trends/indian-firms-slip-in-global-ranking-four-move-out-of-top-500/articleshow/3177077.cms
+2026-02-07 15:35:57,090 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:35:57,410 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:35:57,410 - ERROR - empty HTML tree: None
+2026-02-07 15:35:57,411 - WARNING - discarding data: None
+2026-02-07 15:35:57,411 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:35:58,365 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/news/company/corporate-trends/indian-firms-slip-in-global-ranking-four-move-out-of-top-500/articleshow/3177077.cms
+2026-02-07 15:35:58,365 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:36:01,561 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:36:01,767 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (1044 words).
+2026-02-07 15:36:01,840 - INFO - Saved article: Indian firms slip in global ranking; four move out of Top-500 - The Economic Times from Economic Times (1044 words)
+2026-02-07 15:36:02,713 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/news/big-daddy-laps-up-cipla-after-q1-nos-beat-forecast/articleshow/6308646.cms
+2026-02-07 15:36:02,713 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:36:02,990 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:36:02,990 - ERROR - empty HTML tree: None
+2026-02-07 15:36:02,990 - WARNING - discarding data: None
+2026-02-07 15:36:02,990 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:36:03,858 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/news/big-daddy-laps-up-cipla-after-q1-nos-beat-forecast/articleshow/6308646.cms
+2026-02-07 15:36:03,858 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:36:08,883 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:36:09,078 - WARNING - [Economic Times] FAILED with 'selenium_browser' (content was too short: 83 words).
+2026-02-07 15:36:09,079 - ERROR - [Economic Times] All scrape strategies failed for https://economictimes.indiatimes.com/markets/stocks/news/big-daddy-laps-up-cipla-after-q1-nos-beat-forecast/articleshow/6308646.cms. Falling back to RSS description.
+2026-02-07 15:36:09,079 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article ''Big Daddy' laps up Cipla after Q1 nos beat forecast ' from Economic Times has only 20 words (Min: 90).
+2026-02-07 15:36:09,792 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/news/old-fox-has-dream-run-on-dalal-street/articleshow/6308631.cms
+2026-02-07 15:36:09,792 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:36:10,114 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:36:10,114 - ERROR - empty HTML tree: None
+2026-02-07 15:36:10,114 - WARNING - discarding data: None
+2026-02-07 15:36:10,114 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:36:11,004 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/news/old-fox-has-dream-run-on-dalal-street/articleshow/6308631.cms
+2026-02-07 15:36:11,004 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:36:14,377 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:36:14,503 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (156 words).
+2026-02-07 15:36:14,613 - INFO - Saved article: Old Fox has dream run on Dalal Street - The Economic Times from Economic Times (156 words)
+2026-02-07 15:36:15,517 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/news/cairn-india-hits-record-high-on-bse-amid-stake-sale-talks/articleshow/6306679.cms
+2026-02-07 15:36:15,517 - INFO - [Economic Times] Attempt 1/2: Trying with 'requests_browser' strategy...
+2026-02-07 15:36:15,828 - ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2026-02-07 15:36:15,828 - ERROR - empty HTML tree: None
+2026-02-07 15:36:15,828 - WARNING - discarding data: None
+2026-02-07 15:36:15,828 - WARNING - [Economic Times] FAILED with 'requests_browser' (content was too short: 0 words).
+2026-02-07 15:36:16,546 - INFO - [Economic Times] Article: https://economictimes.indiatimes.com/markets/stocks/news/cairn-india-hits-record-high-on-bse-amid-stake-sale-talks/articleshow/6306679.cms
+2026-02-07 15:36:16,546 - INFO - [Economic Times] Attempt 2/2: Trying with 'selenium_browser' strategy...
+2026-02-07 15:36:19,693 - INFO - [Economic Times] Page content loaded.
+2026-02-07 15:36:19,860 - INFO - [Economic Times] Success with 'selenium_browser'. Found content (363 words).
+2026-02-07 15:36:20,163 - INFO - Saved article: Cairn India hits record high on BSE amid stake sale talks - The Economic Times from Economic Times (363 words)
+2026-02-07 15:36:21,298 - INFO - [Economic Times] Target reached: Successfully saved 20 new articles.
+2026-02-07 15:36:21,298 - INFO - [Economic Times] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-02-07 15:36:21,564 - INFO - [Economic Times] (Thread) driver.quit() successful.
+2026-02-07 15:36:21,564 - INFO - Shutting down thread pool (wait=False)...
+2026-02-07 15:36:21,564 - INFO - Scraped: 1 Al Jazeera, 0 BBC, 3 Times of India, 20 The Hindu, 1 The Guardian, 0 TechCrunch, 20 Economic Times articles. (Total saved: 45)
+2026-02-07 15:36:21,564 - INFO - --- Scraping job finished ---
+2026-02-07 15:36:21,572 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-02-07 15:36:21,572 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
