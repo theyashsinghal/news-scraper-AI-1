@@ -1,0 +1,434 @@
+2026-02-10 19:19:24,087 - INFO - Loading AI Semantic Model (all-MiniLM-L4-v2)...
+2026-02-10 19:19:24,087 - INFO - Use pytorch device_name: cpu
+2026-02-10 19:19:24,087 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L4-v2
+2026-02-10 19:19:24,181 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L4-v2/resolve/main/modules.json "HTTP/1.1 401 Unauthorized"
+2026-02-10 19:19:24,181 - WARNING - No sentence-transformers model found with name sentence-transformers/all-MiniLM-L4-v2. Creating a new one with mean pooling.
+2026-02-10 19:19:24,198 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L4-v2/resolve/main/adapter_config.json "HTTP/1.1 401 Unauthorized"
+2026-02-10 19:19:24,198 - CRITICAL - Failed to load AI model: sentence-transformers/all-MiniLM-L4-v2 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`. Clustering is disabled.
+2026-02-10 19:19:24,199 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-02-10 19:19:24,199 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-02-10 19:19:24,199 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-02-10 19:19:24,199 - INFO - Proxy is DISABLED.
+2026-02-10 19:19:24,199 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-02-10 19:19:24,200 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-02-10 19:19:24,200 - INFO - Starting scrape for TechCrunch RSS feed: https://techcrunch.com/feed/
+2026-02-10 19:19:24,202 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-02-10 19:19:24,203 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-02-10 19:19:24,204 - INFO - Submitted 5 jobs to thread pool. Waiting up to 300s for completion...
+2026-02-10 19:19:24,401 - INFO - Found 30 articles in BBC RSS feed. Processing until 20 new articles are saved.
+2026-02-10 19:19:24,402 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cy4wdgxr081o?at_medium=RSS&at_campaign=rss
+2026-02-10 19:19:24,402 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:24,440 - INFO - Found 45 articles in The Guardian RSS feed. Processing until 20 new articles are saved.
+2026-02-10 19:19:24,441 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/09/deaths-migrant-boat-capsizes-mediterranean-libya already exists.
+2026-02-10 19:19:24,442 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/music/2026/feb/09/ebo-taylor-ghanaian-highlife-pioneer-dies-age-90 already exists.
+2026-02-10 19:19:24,443 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/feb/09/weather-tracker-spain-and-portugal-hit-by-third-fatal-storm already exists.
+2026-02-10 19:19:24,444 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/07/sudan-rsf-drone-attack-rahad-kills-displaced-people already exists.
+2026-02-10 19:19:24,446 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/feb/07/businesses-close-protest-malawi-tax-changes-electronic-invoicing-system already exists.
+2026-02-10 19:19:24,447 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2026/feb/10/trump-canada-windsor-detroit-bridge
+2026-02-10 19:19:24,447 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:24,487 - INFO - [The Guardian] Success with 'requests_browser'. Found content (678 words).
+2026-02-10 19:19:24,532 - INFO - Saved article: Mark Carney reminds Trump that Canada paid for key border bridge US president says he won’t open | Donald Trump | The Guardian from The Guardian (678 words)
+2026-02-10 19:19:24,946 - INFO - [BBC] Success with 'requests_browser'. Found content (564 words).
+2026-02-10 19:19:24,992 - INFO - Saved article: FBI releases images of masked person in hunt for Nancy Guthrie from BBC (564 words)
+2026-02-10 19:19:25,485 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/project-cancelled-chile-worlds-clearest-skies already exists.
+2026-02-10 19:19:25,486 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/09/trump-gordie-howe-bridge-canada already exists.
+2026-02-10 19:19:25,487 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/09/us-military-strike-pacific already exists.
+2026-02-10 19:19:25,488 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/09/air-canada-cancels-cuba-flights-fuel already exists.
+2026-02-10 19:19:25,490 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/feb/10/greek-air-force-officer-arrested-on-suspicion-of-spying-for-china
+2026-02-10 19:19:25,490 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:25,597 - INFO - [The Guardian] Success with 'requests_browser'. Found content (739 words).
+2026-02-10 19:19:25,635 - INFO - Saved article: Greek air force officer arrested on suspicion of spying for China | Greece | The Guardian from The Guardian (739 words)
+2026-02-10 19:19:25,801 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn5gzepnw4lo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:25,803 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ce8n1zdnpd3o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:25,804 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cewz1keql5no?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:25,805 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0k1jzvrykro?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:25,807 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/czx4dnky0dzo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:25,808 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cpw052pkvl0o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:25,810 - INFO - [BBC] Article: https://www.bbc.com/sport/articles/ckglnm521kko?at_medium=RSS&at_campaign=rss
+2026-02-10 19:19:25,810 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:25,853 - INFO - [BBC] Success with 'requests_browser'. Found content (591 words).
+2026-02-10 19:19:25,892 - INFO - Saved article: Biathlon medallist Sturla Holm Laegreid admits cheating on girlfriend - BBC Sport from BBC (591 words)
+2026-02-10 19:19:25,921 - INFO - Found 0 articles in TechCrunch RSS feed. Processing until 20 new articles are saved.
+2026-02-10 19:19:26,395 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/jimmy-lai-jail-sentence-hong-kong-press already exists.
+2026-02-10 19:19:26,396 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/parents-of-melbourne-methanol-poisoning-victims-shocked-by-185-fines-handed-to-laos-hostel-staff already exists.
+2026-02-10 19:19:26,397 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/books/2026/feb/09/us-judges-lawsuits-neil-gaiman already exists.
+2026-02-10 19:19:26,399 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/news/audio/2026/feb/09/jimmy-lai-will-hong-kong-media-tycoon-die-in-jail-the-latest already exists.
+2026-02-10 19:19:26,400 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/10/labor-group-friends-palestine-nsw-police-anti-isaac-herzog-protests already exists.
+2026-02-10 19:19:26,401 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/11/queensland-gun-control-hate-speech-laws-lnp-labor already exists.
+2026-02-10 19:19:26,402 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/11/drawings-of-kangaroo-island-fossils-provide-inspiration-for-stamp-series already exists.
+2026-02-10 19:19:26,403 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/feb/10/police-use-of-violence-disturbing-and-disappointing-at-sydney-rally-against-israeli-president-experts-say already exists.
+2026-02-10 19:19:26,405 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2026/feb/10/telstra-ai-job-cuts-offshore-workforce already exists.
+2026-02-10 19:19:26,406 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/feb/10/estonia-ice-road-frozen-sea-saaremaa-hiiumaa
+2026-02-10 19:19:26,406 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:26,434 - INFO - [The Guardian] Success with 'requests_browser'. Found content (484 words).
+2026-02-10 19:19:26,471 - INFO - Saved article: Drive the ‘ice road’, Estonians told – just don’t fasten your seatbelt | Estonia | The Guardian from The Guardian (484 words)
+2026-02-10 19:19:26,575 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c2d1pz3pxewo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:26,576 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c3wlpqpe2z4o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:26,577 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c98gyegzypxo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:26,579 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g75wer084o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:26,580 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cpd8q659091o?at_medium=RSS&at_campaign=rss
+2026-02-10 19:19:26,580 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:26,615 - INFO - [BBC] Success with 'requests_browser'. Found content (646 words).
+2026-02-10 19:19:26,652 - INFO - Saved article: Venezuelan opposition politician under house arrest after kidnap, son says from BBC (646 words)
+2026-02-10 19:19:27,175 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckg19nql0w8o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,176 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn0zed0dekgo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,177 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cz0g4dkm77zo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,179 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckgzv529v5no?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,180 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c70nwz7z7r1o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,181 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn71y2l51zno?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,182 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5y6534y3y5o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,183 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cn0elx8g00do?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,185 - INFO - [BBC] Early skip: URL https://www.bbc.com/sport/ice-hockey/articles/cx2p1empyn3o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,186 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/clyg4lgm1d2o?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,187 - INFO - [BBC] Early skip: URL https://www.bbc.com/sport/american-football/articles/ce8w172dnkwo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,188 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cg5n8lg2jrdo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:27,190 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cdxzl7n9w0vo?at_medium=RSS&at_campaign=rss
+2026-02-10 19:19:27,190 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:27,240 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 49 words).
+2026-02-10 19:19:27,240 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cdxzl7n9w0vo?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-02-10 19:19:27,240 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'BBC reports from outside court after Jimmy Lai sentencing' from BBC has only 17 words (Min: 90).
+2026-02-10 19:19:27,738 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/feb/10/norway-defence-chief-russia-nuclear-assets
+2026-02-10 19:19:27,738 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:27,851 - INFO - [The Guardian] Success with 'requests_browser'. Found content (1031 words).
+2026-02-10 19:19:27,897 - INFO - Saved article: Norway defence chief says Russia could invade to protect nuclear assets | Norway | The Guardian from The Guardian (1031 words)
+2026-02-10 19:19:28,100 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c30934lqv68o?at_medium=RSS&at_campaign=rss
+2026-02-10 19:19:28,100 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:28,152 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 82 words).
+2026-02-10 19:19:28,152 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c30934lqv68o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-02-10 19:19:28,152 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article ''Super exciting!' - Seahawks fans celebrate Super Bowl win' from BBC has only 14 words (Min: 90).
+2026-02-10 19:19:28,614 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/bulgaria-mysterious-deaths-mountains-petrohan-pass already exists.
+2026-02-10 19:19:28,615 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/eu-moves-closer-to-creating-offshore-centres-for-migrants-and-asylum-seekers already exists.
+2026-02-10 19:19:28,617 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2026/feb/10/russia-ukraine-war-us-talks-europe-live-updates-latest-news already exists.
+2026-02-10 19:19:28,618 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/israel-west-bank-plans-global-backlash already exists.
+2026-02-10 19:19:28,619 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/indonesia-send-troops-gaza-trump-plan already exists.
+2026-02-10 19:19:28,620 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/feb/10/ticking-time-bomb-iran-shadow-fleet-old-tankers-risking-catastrophic-oil-spill already exists.
+2026-02-10 19:19:28,621 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/israel-court-blocks-life-saving-cancer-care-boy-5-gaza-address already exists.
+2026-02-10 19:19:28,623 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/10/trump-west-bank-occupation-white-house-opposition already exists.
+2026-02-10 19:19:28,624 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/feb/10/traditional-food-could-help-reverse-nepals-diabetes-epidemic-studies-suggest already exists.
+2026-02-10 19:19:28,625 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/07/one-person-dead-from-nipah-virus-in-bangladesh-who-says already exists.
+2026-02-10 19:19:28,626 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/06/bombing-explosion-shia-mosque-pakistan-islamabad already exists.
+2026-02-10 19:19:28,628 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/01/pakistan-targets-balochistan-separatists-after-unprecedented-assaults already exists.
+2026-02-10 19:19:28,629 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/feb/01/inside-myanmar-armed-resistance-junta-coup-photo-essay already exists.
+2026-02-10 19:19:28,631 - INFO - [The Guardian] Article: https://www.theguardian.com/politics/2026/feb/10/who-could-fill-key-no-10-vacancies-keir-starmer-ear
+2026-02-10 19:19:28,631 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:28,661 - INFO - [The Guardian] Success with 'requests_browser'. Found content (1056 words).
+2026-02-10 19:19:28,702 - INFO - Saved article: Who could fill key No 10 vacancies – and win the battle for Starmer’s ear? | Politics | The Guardian from The Guardian (1056 words)
+2026-02-10 19:19:29,494 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c93wpxy1qk6o?at_medium=RSS&at_campaign=rss
+2026-02-10 19:19:29,494 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:29,547 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 89 words).
+2026-02-10 19:19:29,547 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c93wpxy1qk6o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-02-10 19:19:29,547 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Aerial footage shows flooded cities as storms hit Spain' from BBC has only 15 words (Min: 90).
+2026-02-10 19:19:30,020 - INFO - [The Guardian] Article: https://www.theguardian.com/music/2026/feb/10/david-bowie-immersive-london-show
+2026-02-10 19:19:30,020 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:30,049 - INFO - [The Guardian] Success with 'requests_browser'. Found content (615 words).
+2026-02-10 19:19:30,089 - INFO - Saved article: ‘Holy grail’ footage of David Bowie at his peak to feature in immersive London show | David Bowie | The Guardian from The Guardian (615 words)
+2026-02-10 19:19:30,914 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/c86v6p1djvqo?at_medium=RSS&at_campaign=rss already exists.
+2026-02-10 19:19:30,916 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cj4l415y4dno?at_medium=RSS&at_campaign=rss
+2026-02-10 19:19:30,916 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:30,941 - INFO - [The Guardian] Article: https://www.theguardian.com/film/2026/feb/10/aardman-exhibition-wallace-gromit-london
+2026-02-10 19:19:30,941 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:30,976 - INFO - [The Guardian] Success with 'requests_browser'. Found content (1162 words).
+2026-02-10 19:19:31,016 - INFO - Saved article: Wallace, Gromit and a new use for lentils: Aardman exhibition aims to break records – and recruit children | Aardman | The Guardian from The Guardian (1162 words)
+2026-02-10 19:19:31,020 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 81 words).
+2026-02-10 19:19:31,020 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cj4l415y4dno?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-02-10 19:19:31,020 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'At the scene of deadly Pakistan mosque explosion ' from BBC has only 21 words (Min: 90).
+2026-02-10 19:19:31,341 - INFO - Selenium driver initialized successfully.
+2026-02-10 19:19:31,341 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-02-10 19:19:31,342 - INFO - Selenium driver initialized successfully.
+2026-02-10 19:19:31,342 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-02-10 19:19:31,564 - INFO - Found 20 articles in Times of India RSS feed. Processing until 20 new articles are saved.
+2026-02-10 19:19:31,564 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/first-images-of-nancy-guthrie-kidnapping-suspect-out-fbi-shares-chilling-photos-of-ski-masked-man-tampering-with-camera/articleshow/128172666.cms
+2026-02-10 19:19:31,564 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:19:31,587 - INFO - Found 100 articles in The Hindu RSS feed. Processing until 20 new articles are saved.
+2026-02-10 19:19:31,587 - INFO - [The Hindu] Article: https://www.thehindu.com/opinion/op-ed/a-tug-of-war-over-claiming-credit/article70616506.ece
+2026-02-10 19:19:31,588 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:19:31,779 - INFO - [The Guardian] Article: https://www.theguardian.com/media/2026/feb/10/paul-dacre-daily-mail-high-court-doreen-lawrence
+2026-02-10 19:19:31,779 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:31,820 - INFO - [The Guardian] Success with 'requests_browser'. Found content (724 words).
+2026-02-10 19:19:31,890 - INFO - Saved article: Paul Dacre says claims Mail broke law to target Doreen Lawrence ‘bitterly wounding’ | Paul Dacre | The Guardian from The Guardian (724 words)
+2026-02-10 19:19:33,164 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/politics/live/2026/feb/10/keir-starmer-labour-leadership-uk-live-updates-politics-cabinet-latest-news already exists.
+2026-02-10 19:19:33,166 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/live/2026/feb/10/donald-trump-ice-democrats-shutdown-jeffrey-epstein-canada-live-news-updates already exists.
+2026-02-10 19:19:33,167 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/10/thomas-massie-epstein-files-redacted-names already exists.
+2026-02-10 19:19:33,170 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/10/savannah-guthrie-missing-mom-nancy already exists.
+2026-02-10 19:19:33,172 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2026/feb/10/analilia-mejia-new-jersey-election-democrats
+2026-02-10 19:19:33,172 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-02-10 19:19:33,246 - INFO - [The Guardian] Success with 'requests_browser'. Found content (483 words).
+2026-02-10 19:19:33,366 - INFO - Saved article: Malinowski concedes to Analilia Mejia in New Jersey Democratic primary for House seat | New Jersey | The Guardian from The Guardian (483 words)
+2026-02-10 19:19:34,028 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/feb/10/chappell-roan-drops-casey-wasserman-epstein-files-maxwell-emails already exists.
+2026-02-10 19:19:38,637 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:19:38,791 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (698 words).
+2026-02-10 19:19:38,985 - INFO - Saved article: A tug of war over claiming credit - The Hindu from The Hindu (698 words)
+2026-02-10 19:19:39,783 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/nandyal-sp-denies-lathicharge-at-srisailam-temple/article70616837.ece
+2026-02-10 19:19:39,783 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:19:45,134 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:19:45,283 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (152 words).
+2026-02-10 19:19:45,518 - INFO - Saved article: No lathi-charge occurred at Srisailam temple, says Nandyal SP - The Hindu from The Hindu (152 words)
+2026-02-10 19:19:46,620 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/telangana/tiger-body-parts-recovered-from-duo-poaching-case-linked-to-kerala/article70616513.ece
+2026-02-10 19:19:46,621 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:19:49,146 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:19:49,484 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (147 words).
+2026-02-10 19:19:49,653 - INFO - Saved article: Tiger body parts recovered from duo; poaching case linked to Kerala - The Hindu from The Hindu (147 words)
+2026-02-10 19:19:50,474 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Hyderabad/burglars-break-into-cr-rao-institute-steal-50-laptops/article70616638.ece
+2026-02-10 19:19:50,474 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:19:51,680 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/first-images-of-nancy-guthrie-kidnapping-suspect-out-fbi-shares-chilling-photos-of-ski-masked-man-tampering-with-camera/articleshow/128172666.cms: Message: timeout: Timed out receiving message from renderer: 19.919
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+#0 0x55bfeb7ada4a <unknown>
+#1 0x55bfeb1c66a2 <unknown>
+#2 0x55bfeb1add87 <unknown>
+#3 0x55bfeb1ad996 <unknown>
+#4 0x55bfeb1ab4a1 <unknown>
+#5 0x55bfeb1abe2f <unknown>
+#6 0x55bfeb1bb360 <unknown>
+#7 0x55bfeb1d5357 <unknown>
+#8 0x55bfeb1dc56b <unknown>
+#9 0x55bfeb1ac599 <unknown>
+#10 0x55bfeb1d50ec <unknown>
+#11 0x55bfeb264b68 <unknown>
+#12 0x55bfeb20d8b2 <unknown>
+#13 0x55bfeb20e6a1 <unknown>
+#14 0x55bfeb7738a9 <unknown>
+#15 0x55bfeb7767b1 <unknown>
+#16 0x55bfeb75fea9 <unknown>
+#17 0x55bfeb77736e <unknown>
+#18 0x55bfeb746410 <unknown>
+#19 0x55bfeb79b0c8 <unknown>
+#20 0x55bfeb79b29b <unknown>
+#21 0x55bfeb7acdb8 <unknown>
+#22 0x7f201f49caa4 <unknown>
+#23 0x7f201f529c6c <unknown>
+
+2026-02-10 19:19:51,681 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/first-images-of-nancy-guthrie-kidnapping-suspect-out-fbi-shares-chilling-photos-of-ski-masked-man-tampering-with-camera/articleshow/128172666.cms. Falling back to RSS description.
+2026-02-10 19:19:51,681 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'First images of Nancy Guthrie kidnapping suspect out: FBI shares chilling photos of ski-masked man tampering with camera' from Times of India has only 57 words (Min: 90).
+2026-02-10 19:19:52,800 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/uk/uk-india-fta-gets-compared-to-bag-of-soggy-poppadums-in-house-of-commons-debate/articleshow/128172697.cms
+2026-02-10 19:19:52,800 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:03,477 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:20:03,678 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (126 words).
+2026-02-10 19:20:03,919 - INFO - Saved article: Burglars break into CR Rao Institute, steal 50 laptops - The Hindu from The Hindu (126 words)
+2026-02-10 19:20:04,473 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/other-states/badal-joins-punjab-governors-drive-against-drugs-cong-terms-it-an-attempt-to-run-samjhauta-express/article70615470.ece
+2026-02-10 19:20:04,473 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:09,087 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:20:09,224 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (246 words).
+2026-02-10 19:20:09,305 - INFO - Saved article: Badal joins Punjab Governor’s drive against drugs; Cong. terms it an attempt to run ‘Samjhauta Express’ - The Hindu from The Hindu (246 words)
+2026-02-10 19:20:10,322 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/lokesh-lauds-teachers-efforts-to-make-teaching-a-joyful-experience/article70616574.ece
+2026-02-10 19:20:10,322 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:12,279 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:20:12,359 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (221 words).
+2026-02-10 19:20:12,465 - INFO - Saved article: Lokesh lauds teacher’s efforts to make teaching a joyful experience - The Hindu from The Hindu (221 words)
+2026-02-10 19:20:12,853 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/uk/uk-india-fta-gets-compared-to-bag-of-soggy-poppadums-in-house-of-commons-debate/articleshow/128172697.cms: Message: timeout: Timed out receiving message from renderer: 19.826
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+#0 0x55bfeb7ada4a <unknown>
+#1 0x55bfeb1c66a2 <unknown>
+#2 0x55bfeb1add87 <unknown>
+#3 0x55bfeb1ad996 <unknown>
+#4 0x55bfeb1ab4a1 <unknown>
+#5 0x55bfeb1abe2f <unknown>
+#6 0x55bfeb1bb360 <unknown>
+#7 0x55bfeb1d5357 <unknown>
+#8 0x55bfeb1dc56b <unknown>
+#9 0x55bfeb1ac599 <unknown>
+#10 0x55bfeb1d50ec <unknown>
+#11 0x55bfeb264b68 <unknown>
+#12 0x55bfeb20d8b2 <unknown>
+#13 0x55bfeb20e6a1 <unknown>
+#14 0x55bfeb7738a9 <unknown>
+#15 0x55bfeb7767b1 <unknown>
+#16 0x55bfeb75fea9 <unknown>
+#17 0x55bfeb77736e <unknown>
+#18 0x55bfeb746410 <unknown>
+#19 0x55bfeb79b0c8 <unknown>
+#20 0x55bfeb79b29b <unknown>
+#21 0x55bfeb7acdb8 <unknown>
+#22 0x7f201f49caa4 <unknown>
+#23 0x7f201f529c6c <unknown>
+
+2026-02-10 19:20:12,853 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/uk/uk-india-fta-gets-compared-to-bag-of-soggy-poppadums-in-house-of-commons-debate/articleshow/128172697.cms. Falling back to RSS description.
+2026-02-10 19:20:12,853 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'UK-India FTA gets compared to ‘bag of soggy poppadums’ in House of Commons debate' from Times of India has only 52 words (Min: 90).
+2026-02-10 19:20:13,297 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/chennai/tnscs-staff-stage-protest-seeking-pension/article70616061.ece
+2026-02-10 19:20:13,297 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:14,129 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/us-commerce-secretary-rejects-epstein-links-amid-bipartisan-calls-to-step-down-met-3-times-in-14-years/articleshow/128171441.cms
+2026-02-10 19:20:14,129 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:17,682 - INFO - [Times of India] Page content loaded.
+2026-02-10 19:20:18,108 - INFO - [Times of India] Success with 'selenium_browser'. Found content (387 words).
+2026-02-10 19:20:18,235 - INFO - Saved article: US commerce secretary rejects Epstein links amid bipartisan calls to step down: 'Met 3 times in 14 years' - The Times of India from Times of India (387 words)
+2026-02-10 19:20:19,733 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/what-is-us-visa-denial-under-214b-how-to-prove-strong-ties-to-ones-country-to-consular-officers/articleshow/128171731.cms
+2026-02-10 19:20:19,733 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:20,265 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:20:20,388 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (108 words).
+2026-02-10 19:20:20,539 - INFO - Saved article: TNSCS staff stage protest seeking pension - The Hindu from The Hindu (108 words)
+2026-02-10 19:20:20,942 - INFO - [Times of India] Page content loaded.
+2026-02-10 19:20:21,108 - INFO - [Times of India] Success with 'selenium_browser'. Found content (430 words).
+2026-02-10 19:20:21,170 - INFO - Saved article: What is US visa denial under 214(b)? How to prove strong ties to one's country to consular officers - The Times of India from Times of India (430 words)
+2026-02-10 19:20:21,491 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/chennai/cm-honours-elderly-couples-on-behalf-of-hrce-dept/article70616614.ece
+2026-02-10 19:20:21,491 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:21,860 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/positive-conversation-carney-calls-donald-trump-after-president-threatened-to-block-gordie-howe-international-bridge-opening/articleshow/128169988.cms
+2026-02-10 19:20:21,860 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:22,518 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:20:22,718 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (147 words).
+2026-02-10 19:20:22,818 - INFO - Saved article: CM honours elderly couples on behalf of HR&CE Dept. - The Hindu from The Hindu (147 words)
+2026-02-10 19:20:23,421 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/vidhana-soudha-group-d-employee-arrested-for-stealing-visitors-bag-with-gold-cash-from-ministers-office/article70615951.ece
+2026-02-10 19:20:23,421 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:23,518 - INFO - [Times of India] Page content loaded.
+2026-02-10 19:20:23,830 - INFO - [Times of India] Success with 'selenium_browser'. Found content (335 words).
+2026-02-10 19:20:23,984 - INFO - Saved article: 'Positive conversation': Carney calls Donald Trump after president threatened to block Gordie Howe International Bridge opening - The Times of India from Times of India (335 words)
+2026-02-10 19:20:25,313 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/indian-american-ceos-mother-earned-10000-babysitting-in-us-home-kids-loved-her-rotis/articleshow/128167450.cms already exists.
+2026-02-10 19:20:25,315 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/go-back-to-india-die-nazi-melbourne-dad-finds-racist-notes-while-cleaning-car-says-theres-no-reason-for-such-attacks/articleshow/128167874.cms already exists.
+2026-02-10 19:20:25,316 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/plane-with-55-on-board-crashes-after-takeoff-in-somalia-all-survive-watch/articleshow/128167256.cms already exists.
+2026-02-10 19:20:25,318 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/we-are-allowed-to-voice-our-opinion-chloe-kim-defends-fellow-olympian-hunter-hess-after-trump-calls-her-real-loser/articleshow/128164886.cms already exists.
+2026-02-10 19:20:25,319 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/rest-of-world/bramptons-indian-origin-visa-king-shuts-down-social-media-after-flaunting-300000-watch-in-viral-video/articleshow/128163905.cms already exists.
+2026-02-10 19:20:25,322 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/elon-musks-brother-blames-newsletter-for-174-mentions-in-epstein-files-met-the-demon-once/articleshow/128164640.cms already exists.
+2026-02-10 19:20:25,326 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/india-origin-us-lawmaker-ro-khanna-accuses-justice-department-of-inappropriately-redacting-six-names-in-epstein-files-seeks-transparency-todd-blanche/articleshow/128163255.cms already exists.
+2026-02-10 19:20:25,327 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/you-called-americans-the-dumbest-people-row-over-indian-matchmaking-app-ceo-being-denied-us-visa/articleshow/128162451.cms already exists.
+2026-02-10 19:20:25,329 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/europe/french-ex-teacher-charged-with-abuse-of-89-minors-prosecutors-reveal-crimes-across-10-countries/articleshow/128162833.cms already exists.
+2026-02-10 19:20:25,331 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/missing-ohio-father-found-dead-inside-cvs-trash-compactor-after-wifes-desperate-phone-search/articleshow/128162688.cms already exists.
+2026-02-10 19:20:25,335 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/qatar-10-year-residency-permit-or-uae-golden-visa-which-works-best-for-entrepreneurs-investors/articleshow/128161400.cms already exists.
+2026-02-10 19:20:25,337 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/certainly-an-indian-maga-commentator-questions-vivek-ramaswamys-us-citizenship-over-parents-naturalisation/articleshow/128160656.cms already exists.
+2026-02-10 19:20:25,338 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/a-missing-mother-a-ransom-clock-and-a-nation-watching-why-nancy-guthries-disappearance-has-gripped-america/articleshow/128161826.cms already exists.
+2026-02-10 19:20:25,339 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/loved-the-torture-video-new-epstein-files-emails-expose-dp-world-chairman-sultan-ahmed-bin-sulayem-discussed-disturbing-sexual-details-with-jeffrey-epstein/articleshow/128157382.cms already exists.
+2026-02-10 19:20:25,341 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/wage-gap-keeps-hiring-h-1b-workers-attractive-despite-100000-visa-fees-says-national-bureau-of-economic-research-economist-george-borjas-heres-why/articleshow/128160819.cms already exists.
+2026-02-10 19:20:25,343 - INFO - [Times of India] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-02-10 19:20:25,554 - INFO - [Times of India] (Thread) driver.quit() successful.
+2026-02-10 19:20:25,659 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:20:25,812 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (162 words).
+2026-02-10 19:20:25,888 - INFO - Saved article: Vidhana Soudha group D employee arrested for stealing visitor’s bag with gold, cash from Minister’s office - The Hindu from The Hindu (162 words)
+2026-02-10 19:20:26,916 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/dmk-should-win-seats-only-in-single-digit-in-tn-assembly-poll-says-anbumani/article70615526.ece
+2026-02-10 19:20:26,916 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:46,933 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/tamil-nadu/dmk-should-win-seats-only-in-single-digit-in-tn-assembly-poll-says-anbumani/article70615526.ece: Message: timeout: Timed out receiving message from renderer: 19.485
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+#0 0x5614cdef4a4a <unknown>
+#1 0x5614cd90d6a2 <unknown>
+#2 0x5614cd8f4d87 <unknown>
+#3 0x5614cd8f4996 <unknown>
+#4 0x5614cd8f24a1 <unknown>
+#5 0x5614cd8f2e2f <unknown>
+#6 0x5614cd902360 <unknown>
+#7 0x5614cd91c357 <unknown>
+#8 0x5614cd92356b <unknown>
+#9 0x5614cd8f3599 <unknown>
+#10 0x5614cd91c0ec <unknown>
+#11 0x5614cd9abb68 <unknown>
+#12 0x5614cd9548b2 <unknown>
+#13 0x5614cd9556a1 <unknown>
+#14 0x5614cdeba8a9 <unknown>
+#15 0x5614cdebd7b1 <unknown>
+#16 0x5614cdea6ea9 <unknown>
+#17 0x5614cdebe36e <unknown>
+#18 0x5614cde8d410 <unknown>
+#19 0x5614cdee20c8 <unknown>
+#20 0x5614cdee229b <unknown>
+#21 0x5614cdef3db8 <unknown>
+#22 0x7f663209caa4 <unknown>
+#23 0x7f6632129c6c <unknown>
+
+2026-02-10 19:20:46,933 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/tamil-nadu/dmk-should-win-seats-only-in-single-digit-in-tn-assembly-poll-says-anbumani/article70615526.ece. Falling back to RSS description.
+2026-02-10 19:20:46,933 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'DMK should win seats only in single digit in T.N. Assembly poll, says Anbumani' from The Hindu has only 17 words (Min: 90).
+2026-02-10 19:20:47,631 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/tn-likely-to-become-150-billion-electronics-hub-by-2030-says-state-industries-minister-trb-rajaa/article70616211.ece
+2026-02-10 19:20:47,631 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:49,152 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:20:49,220 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (533 words).
+2026-02-10 19:20:49,285 - INFO - Saved article: T.N. likely to become $150 billion electronics hub by 2030, says State Industries Minister T.R.B. Rajaa - The Hindu from The Hindu (533 words)
+2026-02-10 19:20:50,122 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/somaskanda-murthy-rides-bhootha-simha-vahanams-at-kapila-theertham-fest/article70616191.ece
+2026-02-10 19:20:50,122 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:20:59,480 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:20:59,568 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (173 words).
+2026-02-10 19:20:59,661 - INFO - Saved article: Somaskanda Murthy rides Bhootha, Simha Vahanams at Kapila Theertham fest - The Hindu from The Hindu (173 words)
+2026-02-10 19:21:01,148 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/vundavalli-kannababu-visit-ambati-in-prison/article70616573.ece
+2026-02-10 19:21:01,148 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:01,829 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:01,922 - WARNING - [The Hindu] FAILED with 'selenium_browser' (content was too short: 74 words).
+2026-02-10 19:21:01,922 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/andhra-pradesh/vundavalli-kannababu-visit-ambati-in-prison/article70616573.ece. Falling back to RSS description.
+2026-02-10 19:21:01,922 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Vundavalli, Kannababu visit Ambati in prison' from The Hindu has only 3 words (Min: 90).
+2026-02-10 19:21:02,517 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/kerala-launches-rakshakavacham-accident-insurance-scheme-for-private-sector-workers/article70616950.ece
+2026-02-10 19:21:02,518 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:13,972 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:14,059 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (389 words).
+2026-02-10 19:21:14,127 - INFO - Saved article: Kerala launches ‘Rakshakavacham’ accident insurance scheme for private sector workers - The Hindu from The Hindu (389 words)
+2026-02-10 19:21:14,633 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/kerala-bjp-says-councillors-delhi-tour-party-funded/article70615402.ece
+2026-02-10 19:21:14,633 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:34,650 - ERROR - [The Hindu] Request failed for strategy 'selenium_browser' on URL https://www.thehindu.com/news/national/kerala/kerala-bjp-says-councillors-delhi-tour-party-funded/article70615402.ece: Message: timeout: Timed out receiving message from renderer: 19.953
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+#0 0x5614cdef4a4a <unknown>
+#1 0x5614cd90d6a2 <unknown>
+#2 0x5614cd8f4d87 <unknown>
+#3 0x5614cd8f4996 <unknown>
+#4 0x5614cd8f24a1 <unknown>
+#5 0x5614cd8f2e2f <unknown>
+#6 0x5614cd902360 <unknown>
+#7 0x5614cd91c357 <unknown>
+#8 0x5614cd92356b <unknown>
+#9 0x5614cd8f3599 <unknown>
+#10 0x5614cd91c0ec <unknown>
+#11 0x5614cd9abb68 <unknown>
+#12 0x5614cd9548b2 <unknown>
+#13 0x5614cd9556a1 <unknown>
+#14 0x5614cdeba8a9 <unknown>
+#15 0x5614cdebd7b1 <unknown>
+#16 0x5614cdea6ea9 <unknown>
+#17 0x5614cdebe36e <unknown>
+#18 0x5614cde8d410 <unknown>
+#19 0x5614cdee20c8 <unknown>
+#20 0x5614cdee229b <unknown>
+#21 0x5614cdef3db8 <unknown>
+#22 0x7f663209caa4 <unknown>
+#23 0x7f6632129c6c <unknown>
+
+2026-02-10 19:21:34,651 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/kerala/kerala-bjp-says-councillors-delhi-tour-party-funded/article70615402.ece. Falling back to RSS description.
+2026-02-10 19:21:34,651 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Kerala BJP says councillors’ Delhi tour party-funded' from The Hindu has only 3 words (Min: 90).
+2026-02-10 19:21:35,714 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/devadasi-survey-6222-fresh-applications-still-pending-before-talukdistrict-panels-in-karnataka/article70616745.ece
+2026-02-10 19:21:35,714 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:37,299 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:37,355 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (463 words).
+2026-02-10 19:21:37,416 - INFO - Saved article: Devadasi survey: 6,222 fresh applications still pending before taluk/district panels in Karnataka - The Hindu from The Hindu (463 words)
+2026-02-10 19:21:38,143 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/veteran-journalist-p-ramaiah-passes-away-at-92/article70616928.ece
+2026-02-10 19:21:38,143 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:41,415 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:41,592 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (404 words).
+2026-02-10 19:21:41,696 - INFO - Saved article: Veteran journalist P. Ramaiah passes away at 92 - The Hindu from The Hindu (404 words)
+2026-02-10 19:21:42,320 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/apsche-marks-quantum-milestone-with-large-scale-training-initiative/article70616201.ece
+2026-02-10 19:21:42,320 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:43,294 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:43,347 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (339 words).
+2026-02-10 19:21:43,416 - INFO - Saved article: APSCHE marks quantum milestone with large-scale training initiative - The Hindu from The Hindu (339 words)
+2026-02-10 19:21:44,898 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/trade-deal-with-us-best-possible-amid-shifting-global-order-foreign-secretary-tells-house-panel/article70616751.ece
+2026-02-10 19:21:44,898 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:46,251 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:46,932 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (385 words).
+2026-02-10 19:21:47,193 - INFO - Saved article: Trade deal with U.S. ‘best possible’ amid shifting global order, Foreign Secretary tells House panel - The Hindu from The Hindu (385 words)
+2026-02-10 19:21:48,496 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/amit-shah-calls-for-urgent-action-to-stem-the-rot-of-cyber-fraud/article70616681.ece
+2026-02-10 19:21:48,496 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:49,114 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:49,260 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (608 words).
+2026-02-10 19:21:49,338 - INFO - Saved article: Amit Shah calls for urgent action to stem the rot of cyber fraud - The Hindu from The Hindu (608 words)
+2026-02-10 19:21:50,119 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/chikkamagaluru-farmer-cuts-sandalwood-branches-near-vidhana-soudha-to-protest-nhai-action-on-his-farm/article70615701.ece
+2026-02-10 19:21:50,119 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:51,294 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:51,368 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (545 words).
+2026-02-10 19:21:51,458 - INFO - Saved article: A sandalwood farmer from Chikkamagaluru, T.N. Vishu Kumar, allegedly severed branches of a sandalwood tree near Vidhana Soudha on February 10. - The Hindu from The Hindu (545 words)
+2026-02-10 19:21:52,944 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/bangalore/east-city-corporation-to-expedite-varthur-lake-takeover-from-bda/article70616024.ece
+2026-02-10 19:21:52,944 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:54,930 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:55,046 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (90 words).
+2026-02-10 19:21:55,110 - INFO - Saved article: East City Corporation to expedite Varthur Lake takeover from BDA - The Hindu from The Hindu (90 words)
+2026-02-10 19:21:56,235 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/bangalore/central-corporation-to-take-up-heritage-buildings-beautification-works/article70616089.ece
+2026-02-10 19:21:56,235 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:57,238 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:21:57,334 - WARNING - [The Hindu] FAILED with 'selenium_browser' (content was too short: 76 words).
+2026-02-10 19:21:57,335 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/cities/bangalore/central-corporation-to-take-up-heritage-buildings-beautification-works/article70616089.ece. Falling back to RSS description.
+2026-02-10 19:21:57,336 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Central Corporation to take up heritage buildings beautification works' from The Hindu has only 3 words (Min: 90).
+2026-02-10 19:21:58,294 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/family-forced-to-carry-body-of-relative-home-on-two-wheeler-in-andhra-pradesh-as-government-hospital-has-no-ambulance/article70616117.ece
+2026-02-10 19:21:58,294 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-02-10 19:21:59,987 - INFO - [The Hindu] Page content loaded.
+2026-02-10 19:22:00,036 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (437 words).
+2026-02-10 19:22:00,090 - INFO - Saved article: Family forced to carry body of relative home on two-wheeler in Andhra Pradesh as government hospital has no ambulance - The Hindu from The Hindu (437 words)
+2026-02-10 19:22:01,335 - INFO - [The Hindu] Target reached: Successfully saved 20 new articles.
+2026-02-10 19:22:01,336 - INFO - [The Hindu] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-02-10 19:22:01,536 - INFO - [The Hindu] (Thread) driver.quit() successful.
+2026-02-10 19:22:01,536 - INFO - Shutting down thread pool (wait=False)...
+2026-02-10 19:22:01,536 - INFO - Scraped: 9 The Guardian, 20 The Hindu, 0 TechCrunch, 3 BBC, 3 Times of India articles. (Total saved: 35)
+2026-02-10 19:22:01,536 - INFO - --- Scraping job finished ---
+2026-02-10 19:22:01,543 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-02-10 19:22:01,543 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
