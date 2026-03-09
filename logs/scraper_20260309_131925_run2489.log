@@ -1,0 +1,445 @@
+2026-03-09 13:17:56,658 - INFO - Loading AI Semantic Model (all-MiniLM-L4-v2)...
+2026-03-09 13:17:56,659 - INFO - Use pytorch device_name: cpu
+2026-03-09 13:17:56,659 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L4-v2
+2026-03-09 13:17:56,778 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L4-v2/resolve/main/modules.json "HTTP/1.1 401 Unauthorized"
+2026-03-09 13:17:56,778 - WARNING - No sentence-transformers model found with name sentence-transformers/all-MiniLM-L4-v2. Creating a new one with mean pooling.
+2026-03-09 13:17:56,814 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L4-v2/resolve/main/adapter_config.json "HTTP/1.1 401 Unauthorized"
+2026-03-09 13:17:56,814 - CRITICAL - Failed to load AI model: sentence-transformers/all-MiniLM-L4-v2 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`. Clustering is disabled.
+2026-03-09 13:17:56,815 - INFO - --- Scraper service started (CI Mode: Run Once) ---
+2026-03-09 13:17:56,815 - INFO - --- Starting new scraping job (Parallel Mode) ---
+2026-03-09 13:17:56,815 - INFO - Creating new robust session with 3 retries on 5xx/connection/read errors.
+2026-03-09 13:17:56,815 - INFO - Proxy is DISABLED.
+2026-03-09 13:17:56,816 - INFO - Starting scrape for BBC RSS feed: http://feeds.bbci.co.uk/news/world/rss.xml
+2026-03-09 13:17:56,816 - INFO - [Times of India] (Thread) requires Selenium. Initializing driver...
+2026-03-09 13:17:56,817 - INFO - Starting scrape for TechCrunch RSS feed: https://techcrunch.com/feed/
+2026-03-09 13:17:56,817 - INFO - Starting scrape for The Guardian RSS feed: https://www.theguardian.com/world/rss
+2026-03-09 13:17:56,822 - INFO - [The Hindu] (Thread) requires Selenium. Initializing driver...
+2026-03-09 13:17:56,822 - INFO - Submitted 5 jobs to thread pool. Waiting up to 300s for completion...
+2026-03-09 13:17:56,967 - INFO - Found 29 articles in BBC RSS feed. Processing until 20 new articles are saved.
+2026-03-09 13:17:56,967 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:17:56,969 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:17:56,977 - INFO - [BBC] Article: https://www.bbc.com/news/articles/c2e4yxj0pd3o?at_medium=RSS&at_campaign=rss
+2026-03-09 13:17:56,977 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:17:57,018 - INFO - Found 45 articles in The Guardian RSS feed. Processing until 20 new articles are saved.
+2026-03-09 13:17:57,020 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/07/descendants-of-zimbabwe-resistance-heroes-urge-uk-to-locate-looted-skulls already exists.
+2026-03-09 13:17:57,021 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/global-development/2026/mar/06/generic-drugs-weight-loss-semaglutide-ozempic-wegovy-diabetes-obesity-study already exists.
+2026-03-09 13:17:57,023 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/05/three-men-deported-us-eswatini-legal-case-detention already exists.
+2026-03-09 13:17:57,024 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/05/south-africa-president-cyril-ramaphosa-calls-donald-trump-policy-white-afrikaners-racist already exists.
+2026-03-09 13:17:57,027 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/sport/2026/mar/05/lewis-hamilton-race-africa-grand-prix-retiring-formula-one-colonial already exists.
+2026-03-09 13:17:57,028 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/08/haiti-immigrant-mexico-tapachula already exists.
+2026-03-09 13:17:57,029 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/08/british-columbia-canada-daylight-saving-time already exists.
+2026-03-09 13:17:57,031 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/07/peru-nightclub-bombing already exists.
+2026-03-09 13:17:57,032 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/mar/07/trump-shield-of-americas-summit already exists.
+2026-03-09 13:17:57,034 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/mar/07/deaf-six-year-old-deported-colombia already exists.
+2026-03-09 13:17:57,035 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/09/kasasa-island-japan-china-tension already exists.
+2026-03-09 13:17:57,037 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/sport/2026/mar/08/emperor-naruhito-watches-ohtani-and-japan-survive-scare-against-australia-at-world-baseball-classic already exists.
+2026-03-09 13:17:57,038 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/technology/2026/mar/06/indonesia-social-media-ban-children already exists.
+2026-03-09 13:17:57,040 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/06/philippines-orders-energy-cuts-middle-east-war-fuel-prices already exists.
+2026-03-09 13:17:57,041 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/06/jimmy-lai-will-not-appeal-conviction-paving-way-for-political-neogtiations-over-release already exists.
+2026-03-09 13:17:57,042 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/mar/09/australia-iran-war-deception-greens-shoebridge already exists.
+2026-03-09 13:17:57,044 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/live/2026/mar/09/northern-territory-queensland-floods-federal-politics-reactions-penny-wong-iran-anthony-albanese-labor-angus-taylor-coalition-ntwnfb already exists.
+2026-03-09 13:17:57,045 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/mar/09/alleged-bondi-terror-attack-gunman-naveed-akram-gag-order-ntwnfb already exists.
+2026-03-09 13:17:57,046 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/mar/09/boil-water-and-look-out-for-crocodiles-nt-residents-evacuate-as-unusually-wet-week-brings-more-flooding already exists.
+2026-03-09 13:17:57,048 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/australia-news/2026/mar/09/asx-australian-shares-plunge-as-spike-in-oil-prices-over-middle-east-conflict-sparks-global-inflation-fears already exists.
+2026-03-09 13:17:57,049 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/environment/2026/mar/09/countries-can-rewild-borders-to-deter-invasions-says-eu-environment-chief already exists.
+2026-03-09 13:17:57,050 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/09/belgium-at-risk-of-becoming-narco-state-judge-warns already exists.
+2026-03-09 13:17:57,051 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/society/2026/mar/09/romania-gambling-decree-allowing-betting-shop-slot-machine-bans already exists.
+2026-03-09 13:17:57,053 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/09/ukraine-war-briefing-drone-experts-will-be-in-middle-east-in-coming-days-says-zelenskyy already exists.
+2026-03-09 13:17:57,054 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2026/mar/08/great-britain-has-only-two-days-of-gas-stored-as-iran-war-disrupts-supplies already exists.
+2026-03-09 13:17:57,055 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/09/uk-has-sufficient-oil-and-gas-supplies-says-minister-after-two-days-left-reports already exists.
+2026-03-09 13:17:57,057 - INFO - [The Guardian] Article: https://www.theguardian.com/world/2026/mar/09/video-shows-us-tomahawk-missile-hit-base-next-bombed-iranian-school
+2026-03-09 13:17:57,057 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:17:57,178 - INFO - [The Guardian] Success with 'requests_browser'. Found content (439 words).
+2026-03-09 13:17:57,246 - INFO - Saved article: Video shows US Tomahawk missile hit base next to bombed Iranian school | Iran | The Guardian from The Guardian (439 words)
+2026-03-09 13:17:57,354 - INFO - [BBC] Success with 'requests_browser'. Found content (582 words).
+2026-03-09 13:17:57,396 - INFO - Saved article: Iris Dena: Torpedoed Iranian warship was offered sanctuary in India from BBC (582 words)
+2026-03-09 13:17:57,678 - INFO - Found 0 articles in TechCrunch RSS feed. Processing until 20 new articles are saved.
+2026-03-09 13:17:58,153 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:17:58,154 - INFO - [BBC] Article: https://www.bbc.com/news/articles/ce8wk563473o?at_medium=RSS&at_campaign=rss
+2026-03-09 13:17:58,154 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:17:58,185 - INFO - [BBC] Success with 'requests_browser'. Found content (325 words).
+2026-03-09 13:17:58,365 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/live/2026/mar/09/iran-war-live-updates-new-supreme-leader-mojtaba-khamenei-oil-prices-soar already exists.
+2026-03-09 13:17:58,379 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/08/ali-khameneis-son-mojtaba-chosen-as-irans-new-supreme-leader already exists.
+2026-03-09 13:17:58,382 - INFO - Saved article: US embassy explosion in Oslo: Police release images of suspect from BBC (325 words)
+2026-03-09 13:17:58,382 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2026/mar/09/iran-war-drives-oil-price-above-100-a-barrel-for-first-time-since-2022 already exists.
+2026-03-09 13:17:58,383 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/08/ex-rapper-balendra-shah-nepal-pm-landslide-election-win already exists.
+2026-03-09 13:17:58,384 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/us-news/2026/mar/05/us-waiver-india-russian-oil already exists.
+2026-03-09 13:17:58,386 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/05/iran-ship-sri-lanka-port-after-us-sinking-of-frigate already exists.
+2026-03-09 13:17:58,387 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/05/nepal-election-2026-voting-balen-shah-sharma-oli already exists.
+2026-03-09 13:17:58,388 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/world/2026/mar/04/us-submarine-torpedo-iran-warship-sri-lanka-coast-pete-hegseth already exists.
+2026-03-09 13:17:58,389 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/politics/live/2026/mar/09/keir-starmer-uk-gas-oil-prices-100-petrol-energy-inflation-latest-news-live-updates already exists.
+2026-03-09 13:17:58,391 - INFO - [The Guardian] Article: https://www.theguardian.com/politics/2026/mar/09/nigel-farage-kwasi-kwarteng-bitcoin-reform-uk-crypto-stack-btc
+2026-03-09 13:17:58,391 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:17:58,420 - INFO - [The Guardian] Success with 'requests_browser'. Found content (483 words).
+2026-03-09 13:17:58,469 - INFO - Saved article: Nigel Farage invests £215,000 in Kwasi Kwarteng’s bitcoin firm | Nigel Farage | The Guardian from The Guardian (483 words)
+2026-03-09 13:17:59,703 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c1w5yq924j1o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:17:59,704 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/uk-news/2026/mar/09/glasgow-central-station-closed-fire already exists.
+2026-03-09 13:17:59,706 - INFO - [BBC] Article: https://www.bbc.com/news/articles/cjrqg80y57po?at_medium=RSS&at_campaign=rss
+2026-03-09 13:17:59,706 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:17:59,707 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/business/2026/mar/09/uk-interest-rate-cuts-iran-rise-bank-of-england-bond-yields already exists.
+2026-03-09 13:17:59,708 - INFO - [The Guardian] Early skip: URL https://www.theguardian.com/technology/2026/mar/09/liverpool-and-manchester-united-complain-to-x-over-sickening-grok-ai-posts already exists.
+2026-03-09 13:17:59,710 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/live/2026/mar/09/white-house-dhs-donald-trump-us-politics-latest-updates
+2026-03-09 13:17:59,710 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:17:59,753 - INFO - [BBC] Success with 'requests_browser'. Found content (361 words).
+2026-03-09 13:17:59,797 - INFO - Saved article: Guinea opposition leader Diallo calls for 'direct resistance' as political parties dissolved from BBC (361 words)
+2026-03-09 13:17:59,980 - INFO - [The Guardian] Success with 'requests_browser'. Found content (1599 words).
+2026-03-09 13:18:00,044 - INFO - Saved article: DHS leadership change is not enough to reopen government and start funding department, says Hakeem Jeffries – US politics live | US news | The Guardian from The Guardian (1599 words)
+2026-03-09 13:18:00,890 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,891 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c204ymjnn80o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,892 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/ckg2pm2kvkeo?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,894 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cwy92qpv424o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,895 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c93w6y0lnd9o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,896 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5yjegg892lo?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,897 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cx2r1xldl1ko?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,899 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/crrxpwzvd5vo?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,900 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c0q32322wq8o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,901 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c93jdk1yy3zo?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,902 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/crk8rdz5131o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,904 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cp32lwy4077o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,905 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c5y5lqygrn7o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,906 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c7430kn9ze4o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,907 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cgmllk32g72o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,909 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/cq6qq6q2692o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,910 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/articles/c4g4q9xl4p6o?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,911 - INFO - [BBC] Early skip: URL https://www.bbc.com/news/videos/cpv83ndmezno?at_medium=RSS&at_campaign=rss already exists.
+2026-03-09 13:18:00,912 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c7vj9redqz2o?at_medium=RSS&at_campaign=rss
+2026-03-09 13:18:00,912 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:18:00,960 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 71 words).
+2026-03-09 13:18:00,960 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c7vj9redqz2o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-03-09 13:18:00,960 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Huge flames in Tehran after air strikes on oil depots' from BBC has only 17 words (Min: 90).
+2026-03-09 13:18:01,338 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2026/mar/09/first-thing-ali-khamenei-son-mojtaba-chosen-iran-new-supreme-leader
+2026-03-09 13:18:01,338 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:18:01,372 - INFO - [The Guardian] Success with 'requests_browser'. Found content (1075 words).
+2026-03-09 13:18:01,425 - INFO - Saved article: First Thing: Ali Khamenei’s son Mojtaba chosen as Iran’s new supreme leader | US news | The Guardian from The Guardian (1075 words)
+2026-03-09 13:18:01,602 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c9wnevqljd0o?at_medium=RSS&at_campaign=rss
+2026-03-09 13:18:01,602 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:18:01,659 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 85 words).
+2026-03-09 13:18:01,659 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c9wnevqljd0o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-03-09 13:18:01,659 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article ''This is a moment of grave peril' - UN humanitarian chief' from BBC has only 17 words (Min: 90).
+2026-03-09 13:18:02,652 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2026/mar/09/airline-wait-times-dhs-shutdown
+2026-03-09 13:18:02,652 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:18:02,766 - INFO - [The Guardian] Success with 'requests_browser'. Found content (610 words).
+2026-03-09 13:18:02,809 - INFO - Saved article: Travelers face long waits at some US airports amid DHS shutdown | US news | The Guardian from The Guardian (610 words)
+2026-03-09 13:18:02,910 - INFO - [BBC] Article: https://www.bbc.com/news/videos/c5yr734zml3o?at_medium=RSS&at_campaign=rss
+2026-03-09 13:18:02,910 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:18:02,969 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 67 words).
+2026-03-09 13:18:02,970 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/c5yr734zml3o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-03-09 13:18:02,970 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Moment of drone strike close to Dubai Airport' from BBC has only 18 words (Min: 90).
+2026-03-09 13:18:03,406 - INFO - [The Guardian] Article: https://www.theguardian.com/science/2026/mar/09/nasa-contractors-artemis-mission
+2026-03-09 13:18:03,406 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:18:03,430 - INFO - [The Guardian] Success with 'requests_browser'. Found content (1007 words).
+2026-03-09 13:18:03,471 - INFO - Saved article: How Nasa contractors are pressing on to bring humans to the moon with Artemis | Nasa | The Guardian from The Guardian (1007 words)
+2026-03-09 13:18:03,650 - INFO - Selenium driver initialized successfully.
+2026-03-09 13:18:03,650 - INFO - Starting scrape for The Hindu RSS feed: https://www.thehindu.com/news/national/feeder/default.rss
+2026-03-09 13:18:03,651 - INFO - Selenium driver initialized successfully.
+2026-03-09 13:18:03,651 - INFO - Starting scrape for Times of India RSS feed: https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+2026-03-09 13:18:03,729 - INFO - Found 20 articles in Times of India RSS feed. Processing until 20 new articles are saved.
+2026-03-09 13:18:03,730 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/middle-east/us-israel-iran-war-news-live-udates-middle-east-crisis-conflict-drone-ballistic-missile-attacks-explosions-flights-status-dubai-uae-qatar-tehran-gulf-donald-trump-netanyahu-khamenei/liveblog/129286007.cms
+2026-03-09 13:18:03,730 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:03,801 - INFO - Found 100 articles in The Hindu RSS feed. Processing until 20 new articles are saved.
+2026-03-09 13:18:03,802 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/nainar-nagenthran-slams-dmk-government-over-law-and-order/article70722200.ece
+2026-03-09 13:18:03,802 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:03,813 - INFO - [BBC] Article: https://www.bbc.com/news/videos/cg4g0gl23z4o?at_medium=RSS&at_campaign=rss
+2026-03-09 13:18:03,813 - INFO - [BBC] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:18:03,866 - WARNING - [BBC] FAILED with 'requests_browser' (content was too short: 51 words).
+2026-03-09 13:18:03,866 - ERROR - [BBC] All scrape strategies failed for https://www.bbc.com/news/videos/cg4g0gl23z4o?at_medium=RSS&at_campaign=rss. Falling back to RSS description.
+2026-03-09 13:18:03,866 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Beirut evacuees 'sleeping in tents and cars'' from BBC has only 18 words (Min: 90).
+2026-03-09 13:18:04,712 - INFO - [The Guardian] Article: https://www.theguardian.com/us-news/2026/mar/09/small-businesses-trump-tariffs
+2026-03-09 13:18:04,712 - INFO - [The Guardian] Attempt 1/1: Trying with 'requests_browser' strategy...
+2026-03-09 13:18:04,753 - INFO - [The Guardian] Success with 'requests_browser'. Found content (739 words).
+2026-03-09 13:18:04,890 - INFO - Saved article: Small business owners doubt they’ll see refunds after supreme court invalidates Trump’s tariffs | Trump tariffs | The Guardian from The Guardian (739 words)
+2026-03-09 13:18:10,155 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:10,270 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (122 words).
+2026-03-09 13:18:10,415 - INFO - Saved article: Nainar Nagenthran slams DMK government over law and order - The Hindu from The Hindu (122 words)
+2026-03-09 13:18:11,353 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/other-states/bjp-finalises-seat-sharing-deal-with-two-regional-parties-for-assam-polls/article70722466.ece
+2026-03-09 13:18:11,353 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:13,904 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:14,220 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (415 words).
+2026-03-09 13:18:14,596 - INFO - Saved article: BJP finalises seat-sharing deal with two regional parties for Assam polls - The Hindu from The Hindu (415 words)
+2026-03-09 13:18:15,403 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/tvk-flags-series-of-crimes-accuses-govt-of-law-and-order-failure/article70722205.ece
+2026-03-09 13:18:15,403 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:23,000 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:23,514 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (160 words).
+2026-03-09 13:18:23,644 - INFO - Saved article: TVK flags series of crimes, accuses govt. of law and order failure - The Hindu from The Hindu (160 words)
+2026-03-09 13:18:23,777 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/middle-east/us-israel-iran-war-news-live-udates-middle-east-crisis-conflict-drone-ballistic-missile-attacks-explosions-flights-status-dubai-uae-qatar-tehran-gulf-donald-trump-netanyahu-khamenei/liveblog/129286007.cms: Message: timeout: Timed out receiving message from renderer: 19.707
+  (Session info: chrome=145.0.7632.116)
+Stacktrace:
+#0 0x559a5ed07b6a <unknown>
+#1 0x559a5e71aa32 <unknown>
+#2 0x559a5e702007 <unknown>
+#3 0x559a5e701c16 <unknown>
+#4 0x559a5e6ff731 <unknown>
+#5 0x559a5e7000bf <unknown>
+#6 0x559a5e70f560 <unknown>
+#7 0x559a5e729707 <unknown>
+#8 0x559a5e7308db <unknown>
+#9 0x559a5e700829 <unknown>
+#10 0x559a5e72949c <unknown>
+#11 0x559a5e7b86e1 <unknown>
+#12 0x559a5e761c0f <unknown>
+#13 0x559a5e7629d1 <unknown>
+#14 0x559a5eccc6b9 <unknown>
+#15 0x559a5eccf5c1 <unknown>
+#16 0x559a5ecb8e29 <unknown>
+#17 0x559a5ecd017e <unknown>
+#18 0x559a5ec9f4b0 <unknown>
+#19 0x559a5ecf4578 <unknown>
+#20 0x559a5ecf474b <unknown>
+#21 0x559a5ed061a3 <unknown>
+#22 0x7f6f6b49caa4 <unknown>
+#23 0x7f6f6b529c6c <unknown>
+
+2026-03-09 13:18:23,777 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/middle-east/us-israel-iran-war-news-live-udates-middle-east-crisis-conflict-drone-ballistic-missile-attacks-explosions-flights-status-dubai-uae-qatar-tehran-gulf-donald-trump-netanyahu-khamenei/liveblog/129286007.cms. Falling back to RSS description.
+2026-03-09 13:18:23,777 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'US-Israel-Iran War News Live Updates: Iran fires first wave of missiles at Israel under new Supreme Leader Mojtaba Khamenei' from Times of India has only 3 words (Min: 90).
+2026-03-09 13:18:24,445 - INFO - [The Hindu] Article: https://www.thehindu.com/business/Industry/broadcast-audience-research-council-and-nielsen-launch-cross-media-advertising-measurement-solution/article70722220.ece
+2026-03-09 13:18:24,446 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:24,592 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/70-year-old-canadian-citizen-living-in-north-carolina-voted-illegally-for-decades-in-us-faces-up-to-10-years/articleshow/129331107.cms
+2026-03-09 13:18:24,592 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:26,504 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:26,688 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (291 words).
+2026-03-09 13:18:26,908 - INFO - Saved article: Broadcast Audience Research Council and Nielsen launch cross-media advertising measurement solution - The Hindu from The Hindu (291 words)
+2026-03-09 13:18:28,347 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/west-bengal/protocol-lapses-at-president-event-bengal-government-submits-report-to-centre/article70722460.ece
+2026-03-09 13:18:28,347 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:30,393 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:30,472 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (272 words).
+2026-03-09 13:18:30,570 - INFO - Saved article: Protocol lapses at President event: Bengal government submits report to Centre - The Hindu from The Hindu (272 words)
+2026-03-09 13:18:31,450 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/performance-grading-feature-to-be-introduced-in-kerala-local-self-government-departments-k-smart-online-service-delivery-application/article70722385.ece
+2026-03-09 13:18:31,450 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:33,965 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:34,118 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (257 words).
+2026-03-09 13:18:34,207 - INFO - Saved article: Performance grading feature to be introduced in Kerala Local Self-Government department’s K-Smart online service delivery application - The Hindu from The Hindu (257 words)
+2026-03-09 13:18:35,463 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Hyderabad/two-ar-sub-inspectors-in-telangana-acb-net-for-taking-1-lakh-bribe-after-framing-cybercrime-victim/article70722341.ece
+2026-03-09 13:18:35,463 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:37,172 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:37,285 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (351 words).
+2026-03-09 13:18:37,429 - INFO - Saved article: Two AR sub inspectors in Telangana ACB net for taking ₹1 lakh bribe after framing cybercrime victim - The Hindu from The Hindu (351 words)
+2026-03-09 13:18:38,027 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/dmk-state-conference-triggers-traffic-chaos-in-tiruchi/article70722349.ece
+2026-03-09 13:18:38,027 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:42,219 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:42,669 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (147 words).
+2026-03-09 13:18:42,806 - INFO - Saved article: DMK State conference triggers traffic chaos in Tiruchi - The Hindu from The Hindu (147 words)
+2026-03-09 13:18:43,827 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/tamil-nadu/savukku-shankar-seeks-discharge-from-case-on-tweets-against-palaniswami-panneerselvam/article70722195.ece
+2026-03-09 13:18:43,827 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:47,796 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:48,397 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (408 words).
+2026-03-09 13:18:48,520 - INFO - Saved article: ‘Savukku’ Shankar seeks discharge from case on tweets against Palaniswami, Panneerselvam - The Hindu from The Hindu (408 words)
+2026-03-09 13:18:49,296 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/kerala-cm-should-explain-why-police-failed-to-process-a-distress-call-from-minister-ganesh-kumars-wife-asks-satheesan/article70722298.ece
+2026-03-09 13:18:49,296 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:50,334 - ERROR - [Times of India] Request failed for strategy 'selenium_browser' on URL https://timesofindia.indiatimes.com/world/us/70-year-old-canadian-citizen-living-in-north-carolina-voted-illegally-for-decades-in-us-faces-up-to-10-years/articleshow/129331107.cms: Message: timeout: Timed out receiving message from renderer: 19.880
+  (Session info: chrome=145.0.7632.116)
+Stacktrace:
+#0 0x559a5ed07b6a <unknown>
+#1 0x559a5e71aa32 <unknown>
+#2 0x559a5e702007 <unknown>
+#3 0x559a5e701c16 <unknown>
+#4 0x559a5e6ff731 <unknown>
+#5 0x559a5e7000bf <unknown>
+#6 0x559a5e70f560 <unknown>
+#7 0x559a5e729707 <unknown>
+#8 0x559a5e7308db <unknown>
+#9 0x559a5e700829 <unknown>
+#10 0x559a5e72949c <unknown>
+#11 0x559a5e7b86e1 <unknown>
+#12 0x559a5e761c0f <unknown>
+#13 0x559a5e7629d1 <unknown>
+#14 0x559a5eccc6b9 <unknown>
+#15 0x559a5eccf5c1 <unknown>
+#16 0x559a5ecb8e29 <unknown>
+#17 0x559a5ecd017e <unknown>
+#18 0x559a5ec9f4b0 <unknown>
+#19 0x559a5ecf4578 <unknown>
+#20 0x559a5ecf474b <unknown>
+#21 0x559a5ed061a3 <unknown>
+#22 0x7f6f6b49caa4 <unknown>
+#23 0x7f6f6b529c6c <unknown>
+
+2026-03-09 13:18:50,334 - ERROR - [Times of India] All scrape strategies failed for https://timesofindia.indiatimes.com/world/us/70-year-old-canadian-citizen-living-in-north-carolina-voted-illegally-for-decades-in-us-faces-up-to-10-years/articleshow/129331107.cms. Falling back to RSS description.
+2026-03-09 13:18:50,334 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article '70-year-old Canadian citizen living in North Carolina voted illegally for decades in US' from Times of India has only 3 words (Min: 90).
+2026-03-09 13:18:51,290 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:51,372 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (365 words).
+2026-03-09 13:18:51,505 - INFO - Saved article: Kerala CM should explain why police failed to process a distress call from Minister Ganesh Kumar’s wife, asks Satheesan - The Hindu from The Hindu (365 words)
+2026-03-09 13:18:51,813 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/because-of-h1b-visas-maga-enraged-at-35000-indian-americans-dominating-schools-and-offices-in-forsyth-county/articleshow/129334739.cms
+2026-03-09 13:18:51,813 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:52,957 - INFO - [The Hindu] Article: https://www.thehindu.com/news/cities/Coimbatore/two-killed-in-encounter-with-wild-elephant-in-nilgiris/article70721786.ece
+2026-03-09 13:18:52,957 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:56,757 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:18:56,929 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (293 words).
+2026-03-09 13:18:57,055 - INFO - Saved article: Two killed in encounter with wild elephant in Nilgiris - The Hindu from The Hindu (293 words)
+2026-03-09 13:18:57,157 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:18:57,591 - INFO - [Times of India] Success with 'selenium_browser'. Found content (583 words).
+2026-03-09 13:18:57,934 - INFO - Saved article: 'Because of H1B visas': MAGA enraged at 35,000 Indian-Americans dominating schools and offices in Forsyth County | World News - The Times of India from Times of India (583 words)
+2026-03-09 13:18:58,534 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/kerala/first-phase-of-mananchira-vellimadukunnu-road-project-opened-to-traffic/article70722118.ece
+2026-03-09 13:18:58,534 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:18:59,040 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/who-are-emir-balat-and-ibrahim-kayumi-suspects-in-new-york-city-ied-attack-identified-as-sons-of-turkish-and-afghan-immigrants/articleshow/129332412.cms
+2026-03-09 13:18:59,041 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:00,571 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:00,949 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:19:01,192 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (420 words).
+2026-03-09 13:19:01,377 - INFO - Saved article: First phase of Mananchira-Vellimadukunnu road project opened to traffic - The Hindu from The Hindu (420 words)
+2026-03-09 13:19:01,690 - INFO - [Times of India] Success with 'selenium_browser'. Found content (385 words).
+2026-03-09 13:19:01,933 - INFO - Saved article: Who are Emir Balat and Ibrahim Kayumi? Suspects in New York City IED attack identified as sons of Turkish and Afghan immigrants - The Times of India from Times of India (385 words)
+2026-03-09 13:19:01,954 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/opposition-to-move-impeachment-motion-against-cec-gyanesh-kumar/article70722206.ece already exists.
+2026-03-09 13:19:01,955 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/karnataka/70-year-old-man-dies-after-car-catches-fire-in-bagepalli/article70721915.ece already exists.
+2026-03-09 13:19:01,957 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/sc-impleads-unnao-rape-survivor-in-cbi-plea-against-bail-for-sengar/article70722115.ece already exists.
+2026-03-09 13:19:01,959 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/west-bengal/cpim-demands-single-phase-assembly-polls-in-west-bengal/article70722196.ece already exists.
+2026-03-09 13:19:01,960 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/daily-power-consumption-in-kerala-crosses-100-million-unit-mark-for-the-first-time-this-summer/article70722134.ece already exists.
+2026-03-09 13:19:01,961 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/bangalore/bengaluru-realtor-abducted-murdered-near-anekal-probe-on/article70721956.ece already exists.
+2026-03-09 13:19:01,965 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/telangana/telangana-dca-introduces-sms-alert-system-to-warn-pharmacies-about-substandard-medicines/article70722082.ece already exists.
+2026-03-09 13:19:01,966 - INFO - [The Hindu] Article: https://www.thehindu.com/elections/west-bengal-assembly/west-bengal-sir-concerns-not-heard-told-supreme-court-will-decide-tmc-after-meeting-with-election-commission/article70722109.ece
+2026-03-09 13:19:01,966 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:02,508 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/uk/six-hours-through-omans-desert-how-a-british-father-and-daughter-fled-the-middle-east-crisis/articleshow/129330970.cms
+2026-03-09 13:19:02,508 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:03,176 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:19:03,273 - INFO - [The Hindu] Success with 'selenium_browser'. Found content (430 words).
+2026-03-09 13:19:03,356 - INFO - Saved article: Concerns over SIR not heard, told SC will decide it: TMC after meeting with Election Commission - The Hindu from The Hindu (430 words)
+2026-03-09 13:19:04,454 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/eminent-historian-kn-panikkar-passes-away/article70722151.ece already exists.
+2026-03-09 13:19:04,455 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/tn-physiotherapists-welcome-pay-hike-call-for-benefits-and-timely-payments/article70718715.ece already exists.
+2026-03-09 13:19:04,457 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/telangana/tghrc-takes-suo-motu-cognisance-of-110-year-old-freedom-fighters-plight/article70722018.ece already exists.
+2026-03-09 13:19:04,458 - INFO - [The Hindu] Article: https://www.thehindu.com/shorts/watch-shashi-tharoor-says-west-asia-crisis-deserves-full-discussion-in-parliament/article70722154.ece
+2026-03-09 13:19:04,459 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:05,028 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:05,178 - INFO - [Times of India] Success with 'selenium_browser'. Found content (555 words).
+2026-03-09 13:19:05,257 - INFO - Saved article: Six hours through Oman’s desert: How a British father and daughter fled the Middle East crisis | World News - The Times of India from Times of India (555 words)
+2026-03-09 13:19:06,449 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/not-my-son-over-my-dead-body-mtg-vs-karoline-leavitt-over-possibility-of-us-military-draft-for-iran-war/articleshow/129334095.cms
+2026-03-09 13:19:06,449 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:07,355 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:07,543 - INFO - [Times of India] Success with 'selenium_browser'. Found content (389 words).
+2026-03-09 13:19:07,610 - INFO - Saved article: 'Not my son, over my dead body': MTG vs Karoline Leavitt over possibility of US military draft for Iran war - The Times of India from Times of India (389 words)
+2026-03-09 13:19:08,557 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/fact-check-does-kai-cenat-really-have-a-boyfriend-the-truth-behind-the-viral-instagram-rumor/articleshow/129320699.cms
+2026-03-09 13:19:08,557 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:09,449 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:09,564 - INFO - [Times of India] Success with 'selenium_browser'. Found content (459 words).
+2026-03-09 13:19:09,630 - INFO - Saved article: Fact check: Does Kai Cenat really have a boyfriend? The truth behind the viral Instagram rumor | World News - The Times of India from Times of India (459 words)
+2026-03-09 13:19:10,639 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/rest-of-world/south-africas-2-7-billion-year-old-mountain-that-produced-40-of-the-worlds-gold-still-holds-half-a-trillion-dollars/articleshow/129331750.cms
+2026-03-09 13:19:10,639 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:11,377 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:11,574 - INFO - [Times of India] Success with 'selenium_browser'. Found content (709 words).
+2026-03-09 13:19:11,683 - INFO - Saved article: South Africa’s 2.7-billion-year-old mountain that produced 40% of the world’s gold still holds half a trillion dollars | World News - The Times of India from Times of India (709 words)
+2026-03-09 13:19:12,938 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/us-citizen-sunny-naqvi-detained-by-dhs-for-43-hours-because-of-curious-travel-history/articleshow/129331373.cms
+2026-03-09 13:19:12,938 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:13,894 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:14,103 - INFO - [Times of India] Success with 'selenium_browser'. Found content (352 words).
+2026-03-09 13:19:14,160 - INFO - Saved article: US citizen Sunny Naqvi detained by DHS for 43 hours because of 'curious travel history' - The Times of India from Times of India (352 words)
+2026-03-09 13:19:15,575 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us/us-israel-war-with-iran-where-is-jd-vance-the-curious-case-of-the-missing-vice-president/articleshow/129330254.cms
+2026-03-09 13:19:15,575 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:15,790 - WARNING - [The Hindu] Page timed out (10s). Proceeding anyway.
+2026-03-09 13:19:15,822 - WARNING - [The Hindu] FAILED with 'selenium_browser' (content was too short: 50 words).
+2026-03-09 13:19:15,823 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/shorts/watch-shashi-tharoor-says-west-asia-crisis-deserves-full-discussion-in-parliament/article70722154.ece. Falling back to RSS description.
+2026-03-09 13:19:15,823 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Watch: Shashi Tharoor says West Asia crisis deserves full discussion in Parliament' from The Hindu has only 3 words (Min: 90).
+2026-03-09 13:19:16,826 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:16,969 - INFO - [Times of India] Success with 'selenium_browser'. Found content (1463 words).
+2026-03-09 13:19:17,043 - INFO - Saved article: US-Israel War with Iran: Where is JD Vance? The curious case of the 'missing' vice president | World News - The Times of India from Times of India (1463 words)
+2026-03-09 13:19:17,108 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/rajya-sabha-poll-tiruchi-siva-m-thambi-durai-anbumani-among-six-elected-unopposed-from-tamil-nadu/article70722048.ece already exists.
+2026-03-09 13:19:17,109 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/bangalore/bengaluru-north-division-police-recover-107-stolen-mobile-phones-worth-214-lakh/article70721861.ece already exists.
+2026-03-09 13:19:17,111 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tax-law-needed-teeth-to-deal-with-bigwig-evaders-supreme-court/article70721909.ece already exists.
+2026-03-09 13:19:17,112 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/elections/tamil-nadu-assembly/aiadmk-leader-says-no-information-amid-reports-of-bid-to-bring-vijays-tvk-into-nda/article70721724.ece already exists.
+2026-03-09 13:19:17,113 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/facilities-needed-at-sports-university-designs-for-gachibowli-outdoor-stadium-reviewed/article70722059.ece already exists.
+2026-03-09 13:19:17,115 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/ahmedabad-air-india-crash-probe-report-will-be-out-very-soon-says-government/article70722049.ece already exists.
+2026-03-09 13:19:17,116 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/sci-tech/health/74000-deaths-why-the-hpv-vaccine-is-necessary-in-india/article70714799.ece already exists.
+2026-03-09 13:19:17,117 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/remove-cd-waste-from-indira-park-restore-childrens-play-rea-ghmc-commissioner/article70721946.ece already exists.
+2026-03-09 13:19:17,119 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/west-asia-conflict-indigo-delhi-manchester-14-hour-journey-nowhere/article70721935.ece already exists.
+2026-03-09 13:19:17,120 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/andhra-pradesh/sri-sri-vidhushekhara-bharati-swamy-of-sringeri-sharada-peetham-offers-prayers-at-srisailam/article70721771.ece already exists.
+2026-03-09 13:19:17,122 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/palaniswami-alleges-murder-everywhere-always-under-dmk-regime-in-tamil-nadu/article70721843.ece already exists.
+2026-03-09 13:19:17,123 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/bihar/bihar-cleric-booked-over-objectionable-remarks-on-adityanaths-mother/article70721927.ece already exists.
+2026-03-09 13:19:17,124 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/rajasthan/jaipur-businessman-vallabh-maheshwari-killed-in-road-accident-in-alwar/article70721807.ece already exists.
+2026-03-09 13:19:17,126 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/bangalore/chaos-erupts-as-actor-jr-ntr-mobbed-by-fans-during-bengaluru-visit-police-lathi-charge-crowd/article70721884.ece already exists.
+2026-03-09 13:19:17,127 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/keralas-cpi-legislator-cc-mukundan-accuses-party-leadership-of-trading-seats-for-election-funding/article70721768.ece already exists.
+2026-03-09 13:19:17,128 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/parliament-budget-session-jaishankar-statement-on-west-asia-war-opposition-walkout-jp-nadda-kiren-rijiju/article70721681.ece already exists.
+2026-03-09 13:19:17,129 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/namibian-cheetah-gives-birth-to-five-cubs-in-kuno-national-park-total-count-rises-to-53/article70721781.ece already exists.
+2026-03-09 13:19:17,131 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/bihar/rajya-sabha-polls-bjp-appoints-central-observers-in-bihar-haryana-odisha/article70721672.ece already exists.
+2026-03-09 13:19:17,132 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/sir-in-wb-supreme-court-to-consider-plea-against-deletion-of-electors-from-electoral-rolls/article70721548.ece already exists.
+2026-03-09 13:19:17,133 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/telangana/telangana-man-arrested-for-drowning-three-minor-daughters-in-lake-lodges-complaint-with-wife/article70721674.ece already exists.
+2026-03-09 13:19:17,136 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/karur-stampede-case-cbi-summons-vijay-on-march-10-for-further-questioning/article70721675.ece already exists.
+2026-03-09 13:19:17,138 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/four-killed-as-bikes-collide-at-nedumangad-in-kerala/article70721562.ece already exists.
+2026-03-09 13:19:17,139 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/meghalaya-cm-sangma-condemns-delhi-assault-says-racial-bullying-against-northeast-people-not-acceptable/article70721663.ece already exists.
+2026-03-09 13:19:17,140 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/kerala-private-sector-nurses-strike-disrupts-hospital-services-in-kozhikode/article70721559.ece already exists.
+2026-03-09 13:19:17,142 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/telangana-cm-inaugurates-bam-rukn-ud-dowla-in-hyderabad-wants-lake-policing-for-womens-safety/article70721474.ece already exists.
+2026-03-09 13:19:17,143 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/karnataka/karnatakas-guarantee-schemes-have-made-women-self-reliant-says-minister-hk-patil/article70719757.ece already exists.
+2026-03-09 13:19:17,144 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/elections/west-bengal-assembly/west-bengal-assembly-election-bjp-urges-election-commission-not-more-than-3-phases/article70721536.ece already exists.
+2026-03-09 13:19:17,146 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/karnataka/ev-firm-ultraviolette-launches-battery-aimed-at-sustainable-mobility/article70715167.ece already exists.
+2026-03-09 13:19:17,147 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/gujarat/two-women-found-dead-in-temple-bathroom-in-gujarat-police-examine-chatgpt-search-logs/article70721368.ece already exists.
+2026-03-09 13:19:17,148 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/kerala-govt-to-honour-t20-world-cup-hero-sanju-samson-with-civic-reception/article70721461.ece already exists.
+2026-03-09 13:19:17,149 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/class-10-student-dies-as-thatched-hut-catches-fire-near-minjur/article70721341.ece already exists.
+2026-03-09 13:19:17,151 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/west-asia-conflict-india-favours-peace-return-to-dialogue-diplomacy-says-eam-jaishankar/article70721441.ece already exists.
+2026-03-09 13:19:17,152 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/trinamool-congress-mps-give-notices-in-lok-sabha-rajya-sabha-to-discuss-voter-disenfranchisement/article70721364.ece already exists.
+2026-03-09 13:19:17,153 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/videos/watch-from-protests-to-power-rsps-victory-reshapes-nepal-politics-the-hindu-editorial/article70721427.ece already exists.
+2026-03-09 13:19:17,154 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/life-and-style/travel/a-weekend-in-jodhpur-inside-chandelao-garh-and-the-citys-legendary-street-food-trail/article70698534.ece already exists.
+2026-03-09 13:19:17,156 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/west-bengal/cec-gyanesh-kumar-faces-go-back-slogans-shown-black-flags-outside-kalighat-temple-in-kolkata/article70721360.ece already exists.
+2026-03-09 13:19:17,157 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/focus-on-subjects-like-ai-automation-needs-to-be-increased-pm-modi/article70721371.ece already exists.
+2026-03-09 13:19:17,158 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/business/Economy/us-urged-india-to-buy-russian-oil-already-at-sea-to-ease-supply-fears-energy-secretary/article70721339.ece already exists.
+2026-03-09 13:19:17,160 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/west-bengal/two-accused-in-bangladeshs-political-leader-osman-hadis-murder-arrested-by-bengal-stf-official/article70721268.ece already exists.
+2026-03-09 13:19:17,161 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/case-filed-against-captain-of-panama-registered-ship-over-fishing-boat-collision-off-kerala-coast/article70721287.ece already exists.
+2026-03-09 13:19:17,162 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/jammu-and-kashmir/schools-reopen-in-kashmir/article70721258.ece already exists.
+2026-03-09 13:19:17,164 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/maharashtra/west-asia-crisis-pune-gas-crematoriums-shut-temporarily/article70721196.ece already exists.
+2026-03-09 13:19:17,165 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/chennai/swachhpoesbaby-steps-to-a-clean-and-green-neighbourhood/article70702701.ece already exists.
+2026-03-09 13:19:17,166 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/andhra-pradesh/around-30-students-fall-ill-with-diarrhoea-at-aiims-mangalagiri-10-under-observation/article70721084.ece already exists.
+2026-03-09 13:19:17,168 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/videos/watch-rn-ravis-turbulent-tamil-nadu-tenure-ends-amid-political-tensions-the-hindu-editorial/article70721199.ece already exists.
+2026-03-09 13:19:17,169 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/parliament-budget-session-march-9-2026-live-motion-to-remove-speaker-om-birla-sets-stage-for-fiery-session/article70721097.ece already exists.
+2026-03-09 13:19:17,170 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/passenger-smokes-beedi-on-delhi-goa-akasa-air-flight-case-registered/article70721072.ece already exists.
+2026-03-09 13:19:17,172 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/why-are-finance-commission-grants-to-cities-still-so-limited-explained/article70718805.ece already exists.
+2026-03-09 13:19:17,173 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/over-1000-join-purple-ride-in-hyderabad-to-promote-womens-preventive-healthcare/article70718420.ece already exists.
+2026-03-09 13:19:17,174 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/data/how-dalit-voting-patterns-have-changed-across-elections/article70710766.ece already exists.
+2026-03-09 13:19:17,175 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/bangalore/international-womens-day-shakuntala-grants-launched-to-back-women-researchers-and-stem-education/article70719364.ece already exists.
+2026-03-09 13:19:17,177 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/maharashtra/maharashtra-health-department-rolls-out-hpv-vaccine-for-girls-on-womens-day/article70719816.ece already exists.
+2026-03-09 13:19:17,178 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/chhattisgarh/death-behind-bars-in-chhattisgarh/article70716848.ece already exists.
+2026-03-09 13:19:17,179 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/pink-protection-project-services-extended-to-late-hours-in-aluva/article70719778.ece already exists.
+2026-03-09 13:19:17,180 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/kerala/kscste-to-organise-sparkher-boot-camp-for-women-scientists/article70719682.ece already exists.
+2026-03-09 13:19:17,182 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/use-our-talent-to-strengthen-the-nation-eatala-rajendar-at-paniit-summit/article70719337.ece already exists.
+2026-03-09 13:19:17,183 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/opinion/op-ed/dmk-congress-seat-sharing-deal-a-successful-but-battered-alliance/article70719897.ece already exists.
+2026-03-09 13:19:17,184 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/telangana/bal-vivah-mukti-rath-campaign-reaches-over-22-lakh-people-across-telangana/article70719289.ece already exists.
+2026-03-09 13:19:17,186 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/andhra-pradesh/police-cane-cricket-fans-in-vijayawada/article70720025.ece
+2026-03-09 13:19:17,186 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:18,344 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/science/scientists-uncover-space-glass-in-brazil-linked-to-a-6-million-year-old-meteorite-impact/articleshow/129328617.cms
+2026-03-09 13:19:18,344 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:19,640 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:19:19,896 - WARNING - [The Hindu] FAILED with 'selenium_browser' (content was too short: 81 words).
+2026-03-09 13:19:19,899 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/andhra-pradesh/police-cane-cricket-fans-in-vijayawada/article70720025.ece. Falling back to RSS description.
+2026-03-09 13:19:19,900 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Police cane cricket fans in Vijayawada' from The Hindu has only 3 words (Min: 90).
+2026-03-09 13:19:20,509 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:20,657 - INFO - [Times of India] Success with 'selenium_browser'. Found content (762 words).
+2026-03-09 13:19:20,943 - INFO - Saved article: Scientists uncover ‘space glass’ in Brazil linked to a 6-million-year-old meteorite impact | - The Times of India from Times of India (762 words)
+2026-03-09 13:19:21,097 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/cafes-salons-community-spaces-bustle-as-hyderabad-celebrates-womens-day/article70719136.ece already exists.
+2026-03-09 13:19:21,099 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/chennai/senior-journalist-pti-ramaswami-passes-away/article70719814.ece already exists.
+2026-03-09 13:19:21,100 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/icc-mens-t20-world-cup-stalin-palaniswami-hail-indias-victory-over-new-zealand/article70719957.ece already exists.
+2026-03-09 13:19:21,101 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/opinion/editorial/end-of-chapter-on-governors-and-reshuffle/article70718822.ece already exists.
+2026-03-09 13:19:21,103 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/opinion/lead/one-nation-one-election-remedy-worse-than-disease/article70719321.ece already exists.
+2026-03-09 13:19:21,104 - INFO - [The Hindu] Article: https://www.thehindu.com/news/national/karnataka/sri-ms-discourse-in-bengaluru-today/article70719730.ece
+2026-03-09 13:19:21,104 - INFO - [The Hindu] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:22,268 - INFO - [Times of India] Article: https://timesofindia.indiatimes.com/world/us-streamers/im-suing-a-lot-of-people-adin-ross-vows-massive-lawsuit-against-tmz-over-report-about-sisters-death/articleshow/129319884.cms
+2026-03-09 13:19:22,269 - INFO - [Times of India] Attempt 1/1: Trying with 'selenium_browser' strategy...
+2026-03-09 13:19:22,316 - INFO - [The Hindu] Page content loaded.
+2026-03-09 13:19:23,100 - WARNING - [The Hindu] FAILED with 'selenium_browser' (content was too short: 76 words).
+2026-03-09 13:19:23,100 - ERROR - [The Hindu] All scrape strategies failed for https://www.thehindu.com/news/national/karnataka/sri-ms-discourse-in-bengaluru-today/article70719730.ece. Falling back to RSS description.
+2026-03-09 13:19:23,100 - WARNING - SKIPPED (GLOBAL WORD LIMIT): Article 'Sri M’s discourse in Bengaluru today ' from The Hindu has only 3 words (Min: 90).
+2026-03-09 13:19:23,637 - INFO - [Times of India] Page content loaded.
+2026-03-09 13:19:23,835 - INFO - [Times of India] Success with 'selenium_browser'. Found content (470 words).
+2026-03-09 13:19:23,908 - INFO - Saved article: "I'm suing a lot of people": Adin Ross vows massive lawsuit against TMZ over report about sister’s death - The Times of India from Times of India (470 words)
+2026-03-09 13:19:24,494 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/andhra-pradesh/governor-congratulates-indian-cricket-team/article70719972.ece already exists.
+2026-03-09 13:19:24,495 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/congress-will-lead-secular-alliance-which-includes-dmk-in-puducherry-tncc-chief/article70719501.ece already exists.
+2026-03-09 13:19:24,496 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/krishnammal-jagannathan-a-symbol-of-gandhian-model-of-empowerment/article70719044.ece already exists.
+2026-03-09 13:19:24,498 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/tn-forms-panel-to-frame-rules-to-ban-hostile-dog-breeds/article70719503.ece already exists.
+2026-03-09 13:19:24,499 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Coimbatore/dmk-will-meet-its-downfall-for-inducting-traitors-ousted-from-aiadmk-palaniswami/article70719687.ece already exists.
+2026-03-09 13:19:24,500 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/tamil-nadu/madras-hc-judge-helps-transform-british-era-stage-into-an-open-auditorium-at-government-boys-school-in-ranipet/article70718948.ece already exists.
+2026-03-09 13:19:24,502 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/indian-womens-press-corps-reiterates-commitment-to-support-safe-equitable-spaces-in-media/article70719029.ece already exists.
+2026-03-09 13:19:24,503 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/andhra-pradesh/roof-collapses-at-mopidevi-temple-no-injuries-reported/article70719804.ece already exists.
+2026-03-09 13:19:24,504 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/telangana/revanth-seeks-asads-support-for-musi-rejuvenation/article70719942.ece already exists.
+2026-03-09 13:19:24,506 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/national/darjeeling-district-officials-had-raised-alarm-over-lack-of-arrangements-at-venue/article70719587.ece already exists.
+2026-03-09 13:19:24,507 - INFO - [The Hindu] Early skip: URL https://www.thehindu.com/news/cities/Hyderabad/hyderabad-erupts-in-celebration-as-india-clinches-t20-world-cup-tank-bund-turns-into-sea-of-tricolour/article70719933.ece already exists.
+2026-03-09 13:19:24,508 - INFO - [The Hindu] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-03-09 13:19:24,724 - INFO - [The Hindu] (Thread) driver.quit() successful.
+2026-03-09 13:19:24,781 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/middle-east/no-point-talking-ceasefire-iran-vows-defence-and-crushing-retaliation/articleshow/129329778.cms already exists.
+2026-03-09 13:19:24,785 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/who-solved-mrbeasts-hidden-one-million-dollar-super-bowl-puzzle-as-youtuber-shares-video-after-weeks-of-mystery/articleshow/129262185.cms already exists.
+2026-03-09 13:19:24,787 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/using-the-women-card-mizkif-says-emiru-should-face-jail-time-over-allegations-that-damaged-his-career/articleshow/129258900.cms already exists.
+2026-03-09 13:19:24,788 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/why-did-theodd1sout-reduce-his-animation-team-james-rallison-responds-as-internet-debate-explodes/articleshow/129274829.cms already exists.
+2026-03-09 13:19:24,790 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/did-kai-cenat-officially-come-out-as-gay-on-instagram-as-viral-x-post-claims-debunking-the-viral-rumor/articleshow/129291006.cms already exists.
+2026-03-09 13:19:24,791 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us-streamers/obsessed-with-charlie-kirk-candace-owens-called-out-online-as-feud-involving-erika-kirk-intensifies/articleshow/129319472.cms already exists.
+2026-03-09 13:19:24,792 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/world/us/suicide-after-llm-queries-katie-miller-says-dont-let-loved-ones-use-chatgpt-elon-musk-adds-one-word-reply/articleshow/129325560.cms already exists.
+2026-03-09 13:19:24,794 - INFO - [Times of India] Early skip: URL https://timesofindia.indiatimes.com/science/the-moon-is-slowly-shrinking-and-scientists-are-asking-a-scary-question-what-if-it-disappears/articleshow/129319768.cms already exists.
+2026-03-09 13:19:24,795 - INFO - [Times of India] (Thread) Finished. Attempting to shut down its Selenium driver.
+2026-03-09 13:19:24,990 - INFO - [Times of India] (Thread) driver.quit() successful.
+2026-03-09 13:19:24,991 - INFO - Shutting down thread pool (wait=False)...
+2026-03-09 13:19:24,991 - INFO - Scraped: 10 Times of India, 0 TechCrunch, 3 BBC, 13 The Hindu, 7 The Guardian articles. (Total saved: 33)
+2026-03-09 13:19:24,991 - INFO - --- Scraping job finished ---
+2026-03-09 13:19:24,999 - INFO - --- Scraper service stopped and database connection closed. ---
+2026-03-09 13:19:24,999 - INFO - --- Main thread finished. Forcing process exit to kill zombie threads. ---
